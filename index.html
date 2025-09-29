@@ -269,84 +269,146 @@
 </section>
 
     <!-- Contato -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Entre em Contato</h2>
-                <p class="section-subtitle">Agende sua consulta domiciliar hoje mesmo</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div class="contact-text">
-                            <h3>WhatsApp</h3>
-                            <p>(47) 8916-3649</p>
-                            <button class="btn btn--primary" onclick="openWhatsApp('domicilio')">
-                                Conversar no WhatsApp
-                            </button>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div class="contact-text">
-                            <h3>Telefone</h3>
-                            <p>(47) 98916-3649</p>
-                            <a href="tel:047989163649" class="btn btn--outline">
-                                Ligar Agora
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-text">
-                            <h3>Área de Atendimento</h3>
-                            <p>Blumenau e Região</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🕒</div>
-                        <div class="contact-text">
-                            <h3>Disponibilidade</h3>
-                            <p>Segunda a Sábado - Horário flexível</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Solicitar Informações</h3>
-                    <form class="form" onsubmit="handleFormSubmit(event)">
-                        <div class="form-group">
-                            <label class="form-label">Nome completo</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Telefone</label>
-                            <input type="tel" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Tipo de atendimento</label>
-                            <select class="form-control" required>
-                                <option value="">Selecione...</option>
-                                <option value="consulta">Consulta e avaliação</option>
-                                <option value="limpeza">Limpeza dental</option>
-                                <option value="urgencia">Urgência odontológica</option>
-                                <option value="restauracao">Tratamento restaurador</option>
-                                <option value="orientacao">Orientações de higiene</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Mensagem</label>
-                            <textarea class="form-control" rows="4" placeholder="Descreva suas necessidades ou dúvidas..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full-width">
-                            Enviar via WhatsApp
-                        </button>
-                    </form>
-                </div>
-            </div>
+<section id="contato" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-subtitle">Agende sua consulta domiciliar hoje mesmo</p>
+    </div>
+
+    <div class="contact-content">
+      <!-- Info -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-text">
+            <h3>WhatsApp</h3>
+            <p>(47) 98916-3649</p>
+            <button type="button" class="btn btn--primary" onclick="openWhatsApp('domicílio')">
+              Conversar no WhatsApp
+            </button>
+          </div>
         </div>
-    </section>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-text">
+            <h3>Telefone</h3>
+            <p>(47) 98916-3649</p>
+            <!-- Tel in formato E.164 con +55 -->
+            <a href="tel:+5547989163649" class="btn btn--outline">Ligar Agora</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text">
+            <h3>Área de Atendimento</h3>
+            <p>Blumenau e Região</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🕒</div>
+          <div class="contact-text">
+            <h3>Disponibilidade</h3>
+            <p>Segunda a Sábado - Horário flexível</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form">
+        <h3>Solicitar Informações</h3>
+
+        <form class="form" onsubmit="handleFormSubmit(event)" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" class="form-control" required autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tel">Telefone</label>
+            <input
+              id="tel"
+              name="tel"
+              type="tel"
+              class="form-control"
+              required
+              inputmode="tel"
+              pattern="^[0-9()\-+\s]{8,}$"
+              placeholder="(47) 98916-3649"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tipo">Tipo de atendimento</label>
+            <select id="tipo" name="tipo" class="form-control" required>
+              <option value="">Selecione...</option>
+              <option value="Consulta e avaliação">Consulta e avaliação</option>
+              <option value="Limpeza dental">Limpeza dental</option>
+              <option value="Urgência odontológica">Urgência odontológica</option>
+              <option value="Tratamento restaurador">Tratamento restaurador</option>
+              <option value="Orientações de higiene">Orientações de higiene</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="msg">Mensagem</label>
+            <textarea
+              id="msg"
+              name="msg"
+              class="form-control"
+              rows="4"
+              placeholder="Descreva suas necessidades ou dúvidas..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full-width">
+            Enviar via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Script -->
+<script>
+  // Número WhatsApp em formato internacional (sem espaços/()/- e SEM '+')
+  const WAPP_NUMBER = '5547989163649';
+
+  // Botão "Conversar no WhatsApp"
+  function openWhatsApp(contexto = '') {
+    const raw = `Olá! Gostaria de informações sobre atendimento ${contexto}.`;
+    const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(raw)}`;
+    window.open(url, '_blank');
+  }
+
+  // Envio do formulário para WhatsApp (preserva acentos e quebras de linha)
+  function handleFormSubmit(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome').value.trim();
+    const tel  = document.getElementById('tel').value.trim();
+    const tipo = document.getElementById('tipo').value.trim();
+    const msg  = document.getElementById('msg').value.trim();
+
+    // Mensagem com quebras de linha (\n) que serão codificadas corretamente
+    const texto = [
+      'Solicitação de contato',
+      `Nome: ${nome || '—'}`,
+      `Telefone: ${tel || '—'}`,
+      `Tipo: ${tipo || '—'}`,
+      `Mensagem: ${msg || '—'}`
+    ].join('\n');
+
+    const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+  }
+</script>
 
     <!-- Footer -->
     <footer class="footer">
