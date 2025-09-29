@@ -200,26 +200,6 @@
         </div>
     </section>
 
-    <!-- Depoimentos -->
-    <section id="depoimentos" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Depoimentos dos Pacientes</h2>
-                <p class="section-subtitle">O que nossos pacientes dizem sobre o atendimento</p>
-            </div>
-            <div class="testimonials-placeholder">
-                <div class="testimonial-placeholder">
-                    <div class="placeholder-icon">💬</div>
-                    <h3>Espaço para Depoimentos</h3>
-                    <p>Esta seção será preenchida com as experiências reais dos nossos pacientes. Em breve você poderá ler sobre a qualidade do nosso atendimento domiciliar.</p>
-                    <button class="btn btn--outline" onclick="openWhatsApp('domicilio')">
-                        Seja o primeiro a avaliar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
 </p>    
 </p>
 <!-- Atendimento em Consultório -->
@@ -315,98 +295,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Form -->
-      <div class="contact-form">
-        <h3>Solicitar Informações</h3>
-
-        <form class="form" onsubmit="handleFormSubmit(event)" novalidate>
-          <div class="form-group">
-            <label class="form-label" for="nome">Nome completo</label>
-            <input id="nome" name="nome" type="text" class="form-control" required autocomplete="name" />
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="tel">Telefone</label>
-            <input
-              id="tel"
-              name="tel"
-              type="tel"
-              class="form-control"
-              required
-              inputmode="tel"
-              pattern="^[0-9()\\-+\\s]{8,}$"
-              placeholder="(47) 98916-3649"
-              autocomplete="tel"
-            />
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="tipo">Tipo de atendimento</label>
-            <select id="tipo" name="tipo" class="form-control" required>
-              <option value="">Selecione...</option>
-              <option value="Consulta e avaliação">Consulta e avaliação</option>
-              <option value="Limpeza dental">Limpeza dental</option>
-              <option value="Urgência odontológica">Urgência odontológica</option>
-              <option value="Tratamento restaurador">Tratamento restaurador</option>
-              <option value="Orientações de higiene">Orientações de higiene</option>
-              <option value="Outro">Outro</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="msg">Mensagem</label>
-            <textarea
-              id="msg"
-              name="msg"
-              class="form-control"
-              rows="4"
-              placeholder="Descreva suas necessidades ou dúvidas..."
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--full-width">
-            Enviar via WhatsApp
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Script -->
-<script>
-  // Número WhatsApp sem '+'
-  const WAPP_NUMBER = '5547989163649';
-
-  // Botão "Conversar no WhatsApp"
-  function openWhatsApp(contexto = 'domicilio') {
-    const raw = `Olá! Gostaria de informações sobre atendimento ${contexto}.`;
-    const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(raw)}`;
-    window.open(url, '_blank');
-  }
-
-  // Envio do formulário para WhatsApp (preserva acentos e quebras de linha)
-  function handleFormSubmit(e) {
-    e.preventDefault();
-
-    const nome = document.getElementById('nome').value.trim();
-    const tel  = document.getElementById('tel').value.trim();
-    const tipo = document.getElementById('tipo').value.trim();
-    const msg  = document.getElementById('msg').value.trim();
-
-    const texto = [
-      'Solicitação de contato',
-      `Nome: ${nome || '—'}`,
-      `Telefone: ${tel || '—'}`,
-      `Tipo: ${tipo || '—'}`,
-      `Mensagem: ${msg || '—'}`
-    ].join('\n');
-
-    const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
-    window.open(url, '_blank');
-  }
-</script>
 
     <!-- Footer -->
     <footer class="footer">
