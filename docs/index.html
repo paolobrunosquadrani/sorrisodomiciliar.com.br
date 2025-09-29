@@ -377,37 +377,30 @@
 
 <!-- Script -->
 <script>
-  // Número WhatsApp em formato internacional (sem espaços/()/- e SEM '+')
+  // Numero WhatsApp senza '+'
   const WAPP_NUMBER = '5547989163649';
 
-  // Botão "Conversar no WhatsApp"
-  function openWhatsApp(contexto = '') {
-    const raw = `Olá! Gostaria de informações sobre atendimento ${contexto}.`;
-    const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(raw)}`;
-    window.open(url, '_blank');
-  }
-
-  // Envio do formulário para WhatsApp (preserva acentos e quebras de linha)
   function handleFormSubmit(e) {
     e.preventDefault();
+    const nome = document.querySelector('#nome')?.value.trim() || '';
+    const tel  = document.querySelector('#tel')?.value.trim() || '';
+    const tipo = document.querySelector('#tipo')?.value.trim() || '';
+    const msg  = document.querySelector('#msg')?.value.trim() || '';
 
-    const nome = document.getElementById('nome').value.trim();
-    const tel  = document.getElementById('tel').value.trim();
-    const tipo = document.getElementById('tipo').value.trim();
-    const msg  = document.getElementById('msg').value.trim();
-
-    // Mensagem com quebras de linha (\n) que serão codificadas corretamente
-    const texto = [
+    const testo = [
       'Solicitação de contato',
       `Nome: ${nome || '—'}`,
       `Telefone: ${tel || '—'}`,
       `Tipo: ${tipo || '—'}`,
       `Mensagem: ${msg || '—'}`
-    ].join('\n');
+    ].join('\n'); // \n => a capo dopo l’encoding
 
-    const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(testo)}`;
     window.open(url, '_blank');
   }
+
+  // Associa l’handler al primo form con onsubmit esistente (fallback)
+  document.querySelector('form[onsubmit*="handleFormSubmit"]')?.addEventListener('submit', handleFormSubmit);
 </script>
 
     <!-- Footer -->
