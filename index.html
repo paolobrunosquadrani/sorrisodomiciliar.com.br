@@ -168,49 +168,6 @@
   </div>
 </section>
 
-    /* wrapper due colonne con foto a destra */
-.services-two-cols {
-  display: flex;               /* Flexbox per l’affiancamento */
-  gap: 2rem;
-  align-items: flex-start;
-}
-
-/* sinistra = servizi, occupa lo spazio rimanente */
-.services-two-cols .services-grid {
-  flex: 1 1 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 1rem 1.25rem;
-}
-
-/* destra = immagine con larghezza fissa/percentuale */
-.services-two-cols .about-image {
-  flex: 0 0 36%;               /* ~36% della riga per la foto */
-  max-width: 420px;
-}
-
-.services-two-cols .about-img {
-  width: 100%;
-  height: 100%;
-  max-height: 540px;           /* opzionale */
-  object-fit: cover;           /* evita distorsioni */
-  border-radius: 12px;
-}
-
-/* Responsive: impila in colonna su schermi stretti */
-@media (max-width: 900px) {
-  .services-two-cols {
-    flex-direction: column;    /* servizi sopra, immagine sotto */
-  }
-  .services-two-cols .about-image {
-    flex-basis: auto;
-    max-width: none;
-  }
-  .services-two-cols .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
-    
     <!-- Vantagens -->
     <section id="vantagens" class="advantages">
         <div class="container">
