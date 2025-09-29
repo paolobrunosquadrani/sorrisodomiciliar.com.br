@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Paolo Bruno Squadrani - Odontologia Domiciliar em Blumenau</title>
+    <meta name="description" content="Cirurgião-Dentista especializado em atendimento domiciliar em Blumenau e região. Comodidade e qualidade no cuidado da sua saúde bucal.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 class="logo-text">🦷 Dr. Paolo Bruno Squadrani</h1>
+                    <p class="logo-subtitle">Cirurgião-Dentista CRO SC-024565</p>
+                </div>
+                <nav class="nav">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                    <a href="#vantagens" class="nav-link">Vantagens</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+                <button class="whatsapp-btn" onclick="openWhatsApp('domicilio')">
+                    💬 WhatsApp
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Odontologia de Qualidade no Conforto da Sua Casa</h2>
+                    <p class="hero-description">
+                        Atendimento odontológico profissional domiciliar em Blumenau e Região. 
+                        Equipamentos modernos, segurança total e o cuidado que você merece com respeito.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn--primary" onclick="openWhatsApp('domicilio')">
+                            📲 Agendar Consulta
+                        </button>
+                        
+                    </div>
+                    <div class="hero-contact">
+                        <span class="contact-info">📞 (47) 98916-3649</span>
+                    </div>
+                    </p>
+                    <div class="hero-contact">
+                        <span class="coverage">📍 R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250, Brasil</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="C:\Users\39371\Desktop\Sito web\dr-paolo-dentista.zip\idoso-casa.png" alt="Atendimento odontológico confortável em casa" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Dr. Paolo -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre o Dr. Paolo Bruno Squadrani</h2>
+                <p class="section-subtitle">Formação sólida e experiência internacional em odontologia</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="C:\Users\39371\Desktop\Sito web\dr-paolo-dentista.zip\Foto saude coworking.png" alt="Equipamentos odontológicos modernos" class="about-img">
+                </div>
+                <div class="about-info">
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <div class="credential-icon">🎓</div>
+                            <div class="credential-text">
+                                <h3>Formação Acadêmica</h3>
+                                <p>Graduado pela renomada Università degli Studi di Firenze, Itália</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-icon">🏛️</div>
+                            <div class="credential-text">
+                                <h3>Revalidação no Brasil</h3>
+                                <p>Diploma revalidado pela Universidade FURB - Blumenau (Dezembro 2024)</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-icon">🌍</div>
+                            <div class="credential-text">
+                                <h3>Experiência Internacional</h3>
+                                <p>1 ano acadêmico de experiência em Antalya, Turquia - Parodontologia e Cirurgia Oral</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-icon">📜</div>
+                            <div class="credential-text">
+                                <h3>Especialização</h3>
+                                <p>Aperfeiçoamento em Endodontia - IOA Blumenau (Setembro 2025)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <p>Com formação internacional e aperfeiçoamento em endodontia, o Dr. Paolo oferece cuidados odontológicos de alta qualidade diretamente em sua residência, seguindo todos os protocolos de segurança e biossegurança. Ele dedica atenção especial e carinho aos pacientes com necessidades especiais, garantindo um atendimento acolhedor, respeitoso e confortável para cada situação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Domiciliares -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Serviços Domiciliares</h2>
+                <p class="section-subtitle">Tratamentos odontológicos no conforto da sua casa</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🦷</div>
+                    <h3 class="service-title">Consultas e Avaliações</h3>
+                    <p class="service-description">Exame clínico completo e diagnóstico no conforto da sua casa</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3 class="service-title">Limpeza e Profilaxia</h3>
+                    <p class="service-description">Remoção de tártaro e placa bacteriana com equipamentos portáteis</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3 class="service-title">Urgências Odontológicas</h3>
+                    <p class="service-description">Atendimento rápido para dores e emergências dentárias</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Tratamentos Restauradores</h3>
+                    <p class="service-description">Obturações e pequenos reparos dentários</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪥</div>
+                    <h3 class="service-title">Orientações de Higiene</h3>
+                    <p class="service-description">Ensino personalizado de técnicas de escovação e cuidados</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❤️</div>
+                    <h3 class="service-title">Acompanhamento Especial</h3>
+                    <p class="service-description">Cuidados para idosos e pacientes com mobilidade reduzida</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens -->
+    <section id="vantagens" class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vantagens do Atendimento em Casa</h2>
+                <p class="section-subtitle">Por que escolher o cuidado domiciliar?</p>
+            </div>
+            <div class="advantages-content">
+                <div class="advantages-image">
+                    <img src="C:\Users\39371\Desktop\Sito web\dr-paolo-dentista.zip\idoso-casa-2.png" alt="Idoso em casa" class="advantages-img">
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🏠</div>
+                        <h3>Comodidade Total</h3>
+                        <p>Atendimento no conforto e segurança da sua casa</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">⚙️</div>
+                        <h3>Equipamentos Modernos</h3>
+                        <p>Tecnologia portátil de última geração</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">😌</div>
+                        <h3>Ambiente Familiar</h3>
+                        <p>Reduz ansiedade e stress, especialmente em crianças e idosos com necessidades especiais</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">⏰</div>
+                        <h3>Horário Flexível</h3>
+                        <p>Agendamento adaptado à sua rotina</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🛡️</div>
+                        <h3>Segurança Sanitária</h3>
+                        <p>Protocolos rigorosos de biossegurança</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">👨‍⚕️</div>
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Cuidado individual e dedicado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Depoimentos dos Pacientes</h2>
+                <p class="section-subtitle">O que nossos pacientes dizem sobre o atendimento</p>
+            </div>
+            <div class="testimonials-placeholder">
+                <div class="testimonial-placeholder">
+                    <div class="placeholder-icon">💬</div>
+                    <h3>Espaço para Depoimentos</h3>
+                    <p>Esta seção será preenchida com as experiências reais dos nossos pacientes. Em breve você poderá ler sobre a qualidade do nosso atendimento domiciliar.</p>
+                    <button class="btn btn--outline" onclick="openWhatsApp('domicilio')">
+                        Seja o primeiro a avaliar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</p>    
+</p>
+<!-- Atendimento em Consultório -->
+<section id="estudio" class="studio">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Atendimento em Consultório</h2>
+      <p class="section-subtitle">
+        Este site é dedicado ao atendimento domiciliar; também ofereço consultas em consultório mediante agendamento.
+      </p>
+    </div>
+
+    <div class="studio-content">
+      <div class="contact-content">
+        <div class="contact-item">
+          <div class="contact-icon"></div>
+          <div class="contact-text">
+            <h3>Endereço</h3>
+            <p>R. Jac Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250, Brasil</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"></div>
+          <div class="contact-text">
+            <h3>Agendamento</h3>
+            <p>Agende pelo WhatsApp; veja atualizações e fotos do consultório no Instagram.</p>
+            <div>
+              <button class="btn btn--primary" onclick="openWhatsApp('consultorio)">Agendar no consultório</button> 
+              <a href="https://www.instagram.com/dr.paolo.bruno/" 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="btn btn--outline"
+                 aria-label="Abrir Instagram do consultório">
+                Instagram do consultório
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="section-note">
+        O foco deste site é o atendimento domiciliar; o consultório está disponível como opção complementar.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Agende sua consulta domiciliar hoje mesmo</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h3>WhatsApp</h3>
+                            <p>(47) 8916-3649</p>
+                            <button class="btn btn--primary" onclick="openWhatsApp('domicilio')">
+                                Conversar no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <h3>Telefone</h3>
+                            <p>(47) 98916-3649</p>
+                            <a href="tel:047989163649" class="btn btn--outline">
+                                Ligar Agora
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h3>Área de Atendimento</h3>
+                            <p>Blumenau e Região</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-text">
+                            <h3>Disponibilidade</h3>
+                            <p>Segunda a Sábado - Horário flexível</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Solicitar Informações</h3>
+                    <form class="form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Tipo de atendimento</label>
+                            <select class="form-control" required>
+                                <option value="">Selecione...</option>
+                                <option value="consulta">Consulta e avaliação</option>
+                                <option value="limpeza">Limpeza dental</option>
+                                <option value="urgencia">Urgência odontológica</option>
+                                <option value="restauracao">Tratamento restaurador</option>
+                                <option value="orientacao">Orientações de higiene</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mensagem</label>
+                            <textarea class="form-control" rows="4" placeholder="Descreva suas necessidades ou dúvidas..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            Enviar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <h3>🦷 Dr. Paolo Bruno Squadrani</h3>
+                        <p>Cirurgião-Dentista CRO SC-024565</p>
+                    </div>
+                    <p class="footer-description">
+                        Odontologia de qualidade no conforto da sua casa. Atendimento domiciliar em Blumenau e região com equipamentos modernos e protocolos de segurança e biosegurança.
+                    </p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>📱 WhatsApp: (47) 8916-3649</p>
+                    <p>📞 Telefone: (47) 98916-3649</p>
+                    <p>📍 R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250, Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
+                <p class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp('domicilio')">
+        <div class="whatsapp-icon">💬</div>
+        <div class="whatsapp-text">WhatsApp</div>
+    </div>
+
+    <script src="app.js"></script>
+
+<script>
+  function openWhatsApp(tipo = 'domicilio') {
+    const phone = '5547989163649';
+    const msgs = {
+      domicilio: 'Olá Dr. Paolo! Gostaria de agendar uma consulta domiciliar.',
+      consultorio: 'Olá Dr. Paolo! Gostaria de agendar uma consulta no consultório.'
+    };
+    const text = encodeURIComponent(msgs[tipo] || msgs.domicilio);
+    window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+  }
+</script>
+
+</body>
+</html>
