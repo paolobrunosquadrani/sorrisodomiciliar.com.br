@@ -23,7 +23,7 @@
                     <a href="#vantagens" class="nav-link">Vantagens</a>
                     <a href="#contato" class="nav-link">Contato</a>
                 </nav>
-                <button class="whatsapp-btn" onclick="openWhatsApp()">
+                <button class="whatsapp-btn" onclick="openWhatsApp('domicilio')">
                     💬 WhatsApp
                 </button>
             </div>
@@ -41,7 +41,7 @@
                         Equipamentos modernos, segurança total e o cuidado que você merece com respeito.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn btn--primary" onclick="openWhatsApp()">
+                        <button class="btn btn--primary" onclick="openWhatsApp('domicilio')">
                             📲 Agendar Consulta
                         </button>
                         
@@ -212,13 +212,61 @@
                     <div class="placeholder-icon">💬</div>
                     <h3>Espaço para Depoimentos</h3>
                     <p>Esta seção será preenchida com as experiências reais dos nossos pacientes. Em breve você poderá ler sobre a qualidade do nosso atendimento domiciliar.</p>
-                    <button class="btn btn--outline" onclick="openWhatsApp()">
+                    <button class="btn btn--outline" onclick="openWhatsApp('domicilio')">
                         Seja o primeiro a avaliar
                     </button>
                 </div>
             </div>
         </div>
     </section>
+
+</p>    
+</p>
+<!-- Atendimento em Consultório -->
+<section id="estudio" class="studio">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Atendimento em Consultório</h2>
+      <p class="section-subtitle">
+        Este site é dedicado ao atendimento domiciliar; também ofereço consultas em consultório mediante agendamento.
+      </p>
+    </div>
+
+    <div class="studio-content">
+      <div class="contact-content">
+        <div class="contact-item">
+          <div class="contact-icon"></div>
+          <div class="contact-text">
+            <h3>Endereço</h3>
+            <p>R. Jac Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250, Brasil</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"></div>
+          <div class="contact-text">
+            <h3>Agendamento</h3>
+            <p>Agende pelo WhatsApp; veja atualizações e fotos do consultório no Instagram.</p>
+            <div>
+              <button class="btn btn--primary" onclick="openWhatsApp('consultorio')">Agendar no consultório</button> 
+              <a href="https://www.instagram.com/dr.paolo.bruno/" 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="btn btn--outline"
+                 aria-label="Abrir Instagram do consultório">
+                Instagram do consultório
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="section-note">
+        O foco deste site é o atendimento domiciliar; o consultório está disponível como opção complementar.
+      </p>
+    </div>
+  </div>
+</section>
 
     <!-- Contato -->
     <section id="contato" class="contact">
@@ -234,7 +282,7 @@
                         <div class="contact-text">
                             <h3>WhatsApp</h3>
                             <p>(47) 8916-3649</p>
-                            <button class="btn btn--primary" onclick="openWhatsApp()">
+                            <button class="btn btn--primary" onclick="openWhatsApp('domicilio')">
                                 Conversar no WhatsApp
                             </button>
                         </div>
@@ -328,11 +376,24 @@
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <div class="whatsapp-float" onclick="openWhatsApp()">
+    <div class="whatsapp-float" onclick="openWhatsApp('domicilio')">
         <div class="whatsapp-icon">💬</div>
         <div class="whatsapp-text">WhatsApp</div>
     </div>
 
     <script src="app.js"></script>
+
+<script>
+  function openWhatsApp(tipo = 'domicilio') {
+    const phone = '5547989163649';
+    const msgs = {
+      domicilio: 'Olá Dr. Paolo! Gostaria de agendar uma consulta domiciliar.',
+      consultorio: 'Olá Dr. Paolo! Gostaria de agendar uma consulta no consultório.'
+    };
+    const text = encodeURIComponent(msgs[tipo] || msgs.domicilio);
+    window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+  }
+</script>
+
 </body>
 </html>
