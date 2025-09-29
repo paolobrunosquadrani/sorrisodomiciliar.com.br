@@ -2,8 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="512" height="512" viewBox="0 0 512 512">
   <rect width="512" height="512" fill="none"/>
-  <!-- Mostra Logo.png centrato e contenuto nell’area 512×512 -->
-  <image href="/Logo.png"
+  <image href="data:image/png;base64,BASE64_PNG"
          x="0" y="0" width="512" height="512"
          preserveAspectRatio="xMidYMid meet"/>
 </svg>
