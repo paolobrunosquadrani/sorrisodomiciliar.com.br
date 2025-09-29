@@ -284,7 +284,7 @@
           <div class="contact-text">
             <h3>WhatsApp</h3>
             <p>(47) 98916-3649</p>
-            <button type="button" class="btn btn--primary" onclick="openWhatsApp('domicílio')">
+            <button type="button" class="btn btn--primary" onclick="openWhatsApp('domicilio')">
               Conversar no WhatsApp
             </button>
           </div>
@@ -295,7 +295,6 @@
           <div class="contact-text">
             <h3>Telefone</h3>
             <p>(47) 98916-3649</p>
-            <!-- Tel in formato E.164 con +55 -->
             <a href="tel:+5547989163649" class="btn btn--outline">Ligar Agora</a>
           </div>
         </div>
@@ -336,7 +335,7 @@
               class="form-control"
               required
               inputmode="tel"
-              pattern="^[0-9()\-+\s]{8,}$"
+              pattern="^[0-9()\\-+\\s]{8,}$"
               placeholder="(47) 98916-3649"
               autocomplete="tel"
             />
@@ -377,11 +376,11 @@
 
 <!-- Script -->
 <script>
-  // Número WhatsApp em formato internacional (sem espaços/()/- e SEM '+')
+  // Número WhatsApp sem '+'
   const WAPP_NUMBER = '5547989163649';
 
   // Botão "Conversar no WhatsApp"
-  function openWhatsApp(contexto = '') {
+  function openWhatsApp(contexto = 'domicilio') {
     const raw = `Olá! Gostaria de informações sobre atendimento ${contexto}.`;
     const url = `https://wa.me/${WAPP_NUMBER}?text=${encodeURIComponent(raw)}`;
     window.open(url, '_blank');
@@ -396,7 +395,6 @@
     const tipo = document.getElementById('tipo').value.trim();
     const msg  = document.getElementById('msg').value.trim();
 
-    // Mensagem com quebras de linha (\n) que serão codificadas corretamente
     const texto = [
       'Solicitação de contato',
       `Nome: ${nome || '—'}`,
