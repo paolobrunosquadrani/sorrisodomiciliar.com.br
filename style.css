@@ -1124,6 +1124,14 @@ select.form-control {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   padding: var(--space-32) 0 var(--space-16);
+
+  /* centratura del contenitore interno */
+  display: flex;                 /* abilita Flexbox */
+  justify-content: center;       /* centra orizzontalmente il .container */
+}
+
+.footer .container {
+  text-align: center;            /* centra il testo e gli elementi inline */
 }
 
 .footer-content {
