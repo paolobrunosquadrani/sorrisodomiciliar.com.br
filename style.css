@@ -1450,8 +1450,6 @@ a:focus-visible {
 }
 
 /* Loading state for images */
-img {
-  loading: lazy;
   transition: opacity var(--duration-normal) var(--ease-standard);
 }
 
