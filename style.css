@@ -1138,10 +1138,6 @@ select.form-control {
   pointer-events: none; /* clic solo sul bottone */
 }
 
-/* CTA Instagram (opzionale, se serve differenziare) */
-.ig-cta{ color: var(--color-primary); border-color: var(--color-primary); }
-.ig-cta:hover{ background: var(--color-primary); color:#fff; }
-
 /* IG CTA con bottone primario: testo sempre leggibile */
 .ig-cta{
   color: var(--color-btn-primary-text) !important; /* es. bianco */
