@@ -1326,7 +1326,6 @@ select.form-control {
 }
 .btn-maps:hover{ background:#0F5AE0; }
 .btn-maps:active{ background:#0B47B5; }
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
