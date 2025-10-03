@@ -2,30 +2,7 @@
 <html lang="pt-BR">
 <head>
     
-<style>
-  /* Footer: centratura e spaziatura */
-  .footer {
-    display: flex;              /* abilita Flexbox per centrare il contenitore */
-    justify-content: center;    /* centra orizzontalmente il contenitore interno */
-    align-items: center;        /* opzionale: centra verticalmente se serve altezza fissa */
-    padding: 16px 12px;         /* spazi interni */
-    /* min-height: 64px;        // opzionale: sbloccare per altezza minima */
-  }
-
-  .footer .container {
-    max-width: 900px;           /* opzionale: limita larghezza del contenuto */
-    margin: 0 auto;             /* mantiene il blocco centrato se non si usa Flex sul parent */
-    text-align: center;         /* centra il contenuto inline/inline-block */
-  }
-
-  .footer p {
-    margin: 6px 0;
-  }
-
-  .footer-legal {
-    opacity: 0.9;
-  }
-</style>
+<link rel="stylesheet" href="/style.css">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,8 +19,15 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1 class="logo-text">🦷 Dr. Paolo Bruno Squadrani</h1>
+                  <img
+                    src="/Logo.jpg"
+                    alt="Logo Dr. Paolo Bruno Squadrani"
+                    width="200" height="200"
+                    class="logo-img">
+                  <div class="logo-texts">
+                    <h1 class="logo-text">Dr. Paolo Bruno Squadrani</h1>
                     <p class="logo-subtitle">Cirurgião-Dentista CRO SC-024565</p>
+                  </div>
                 </div>
                 <nav class="nav">
                     <a href="#inicio" class="nav-link">Início</a>
