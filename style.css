@@ -1299,24 +1299,35 @@ select.form-control {
 .btn-phone:hover{ background:#FFC9D7; }
 .btn-phone:active{ background:#FFB7CB; }
 
-/* Bottone "Como chegar": blu accessibile su testo bianco */
-.btn-maps{
-  background:#1A73E8; color:#fff; border:none;
+/* Bottone WhatsApp verde */
+.btn-whatsapp{
+  background:#25D366; color:#fff; border:none;
+  padding: var(--space-12) var(--space-20);
+  border-radius: var(--radius-md);
 }
-.btn-maps:hover{ background:#0F5AE0; }
-.btn-maps:active{ background:#0B47B5; }
-/* Contrasto AA rispettato per testo bianco su blu scuro. */
+.btn-whatsapp:hover{ background:#128C7E; }
+.btn-whatsapp:active{ background:#075E54; }
 
-/* Icona WhatsApp nel bottone */
+/* Icona WhatsApp nel bottone (richiede /whatsapp.svg in root) */
 .btn .btn-wa-icon{
   width:18px; height:18px; margin-right: var(--space-8);
   background-color: currentColor;
-  -webkit-mask-image: url(/Digital_Glyph_Black.svg);
-  mask-image: url(/Digital_Glyph_Black.svg);
+  -webkit-mask-image: url(/whatsapp.svg);
+  mask-image: url(/whatsapp.svg);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+/* Bottone "Como chegar" blu pieno */
+.btn-maps{
+  background:#1A73E8; color:#fff; border:none;
+  padding: var(--space-12) var(--space-20);
+  border-radius: var(--radius-md);
+}
+.btn-maps:hover{ background:#0F5AE0; }
+.btn-maps:active{ background:#0B47B5; }
 }
 
 /* Responsive Design */
