@@ -1129,8 +1129,8 @@ select.form-control {
   width:29px; height:29px; display:inline-block; flex-shrink:0;
   margin-right: var(--space-16);
   background-color: currentColor;
-  -webkit-mask-image: url(/instagram-glyph.svg);
-  mask-image: url(/instagram-glyph.svg);
+  -webkit-mask-image: url(/Instagram_Glyph_Gradient.svg);
+  mask-image: url(/Instagram_Glyph_Gradient.svg);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
