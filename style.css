@@ -1318,6 +1318,19 @@ select.form-control {
   flex:0 0 auto;
 }
 
+/* Disattiva icone iniettate da pseudo-elementi */
+.btn-whatsapp::before,
+.btn-whatsapp::after{
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+/* Impedisci qualunque immagine di sfondo */
+.btn-whatsapp{
+  background-image: none !important;
+}
+
 /* Bottone "Como chegar" blu pieno */
 .btn-maps{
   background:#1A73E8; color:#fff; border:none;
