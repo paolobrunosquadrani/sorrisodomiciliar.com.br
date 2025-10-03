@@ -1095,6 +1095,16 @@ select.form-control {
   flex-shrink: 0;
 }
 
+/* Override mirato alle immagini icona (evita di toccare i div con emoji) */
+.contact-item { display: flex; align-items: center; gap: 0.75rem; } /* lasciarlo dopo il primo blocco */
+
+.contact-icon-img {
+  width: 29px;
+  height: 29px;
+  display: block;         /* rimuove il gap baseline */
+  object-fit: contain;    /* opzionale, per PNG/SVG eterogenei */
+}
+
 .contact-text h3 {
   font-size: var(--font-size-lg);
   color: var(--color-text);
