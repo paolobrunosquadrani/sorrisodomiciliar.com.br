@@ -1095,14 +1095,18 @@ select.form-control {
   flex-shrink: 0;
 }
 
-/* Override mirato alle immagini icona (evita di toccare i div con emoji) */
-.contact-item { display: flex; align-items: center; gap: 0.75rem; } /* lasciarlo dopo il primo blocco */
+/* Override globale: inserire dopo i blocchi .contact-* esistenti */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
+.contact-icon,
 .contact-icon-img {
   width: 29px;
   height: 29px;
-  display: block;         /* rimuove il gap baseline */
-  object-fit: contain;    /* opzionale, per PNG/SVG eterogenei */
+  display: block; /* rimuove il gap della baseline */
 }
 
 .contact-text h3 {
