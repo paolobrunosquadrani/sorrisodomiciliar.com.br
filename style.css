@@ -1106,6 +1106,24 @@ select.form-control {
   margin-bottom: var(--space-12);
 }
 
+/* icona WhatsApp monocromatica che eredita il colore del testo */
+.icon-wa{
+  width:24px; height:24px; display:inline-block; flex-shrink:0;
+  background-color: currentColor;                 /* stesso colore del testo */
+  -webkit-mask-image: url(/whatsapp.svg);
+  mask-image: url(/whatsapp.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  opacity:.95;
+}
+
+/* link titolo: colore base e hover coerenti */
+.contact-link{ color: var(--color-text); text-decoration:none; }
+.contact-link:hover{ color: var(--color-primary); 
+}
+
 .contact-form {
   background: var(--color-surface);
   padding: var(--space-24);
