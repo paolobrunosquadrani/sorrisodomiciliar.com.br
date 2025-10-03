@@ -803,6 +803,10 @@ select.form-control {
   transform: translateY(-2px);
 }
 
+.logo { display:flex; align-items:center; gap:.5rem; }
+.logo-img { height:28px; width:auto; 
+}
+
 /* Hero Section */
 .hero {
   background: var(--color-bg-1);
