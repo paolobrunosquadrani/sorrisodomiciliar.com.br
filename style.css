@@ -1304,20 +1304,17 @@ select.form-control {
   background:#25D366; color:#fff; border:none;
   padding: var(--space-12) var(--space-20);
   border-radius: var(--radius-md);
+  display:inline-flex;                 /* icona + testo allineati */
+  align-items:center;
+  gap: var(--space-8);
 }
 .btn-whatsapp:hover{ background:#128C7E; }
 .btn-whatsapp:active{ background:#075E54; }
 
-/* Icona WhatsApp nel bottone (richiede /whatsapp.svg in root) */
+/* Icona WhatsApp come <img> interno */
 .btn .btn-wa-icon{
-  width:18px; height:18px; margin-right: var(--space-8);
-  background-color: currentColor;
-  -webkit-mask-image: url(/whatsapp.svg);
-  mask-image: url(/whatsapp.svg);
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+  width:18px; height:18px; display:inline-block;
+  flex:0 0 auto;
 }
 
 /* Bottone "Como chegar" blu pieno */
