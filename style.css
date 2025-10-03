@@ -1301,15 +1301,16 @@ select.form-control {
 
 /* Bottone WhatsApp verde */
 .btn-whatsapp{
-  background:#25D366; color:#fff; border:none;
+  background-color:#25D366; color:#fff; border:none;
   padding: var(--space-12) var(--space-20);
   border-radius: var(--radius-md);
-  display:inline-flex;                 /* icona + testo allineati */
+  display:inline-flex;
   align-items:center;
   gap: var(--space-8);
+  background-image: none; /* ulteriore sicurezza */
 }
-.btn-whatsapp:hover{ background:#128C7E; }
-.btn-whatsapp:active{ background:#075E54; }
+.btn-whatsapp:hover{ background-color:#128C7E; }
+.btn-whatsapp:active{ background-color:#075E54; }
 
 /* Icona WhatsApp come <img> interno */
 .btn .btn-wa-icon{
