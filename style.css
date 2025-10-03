@@ -1124,6 +1124,24 @@ select.form-control {
 .contact-link:hover{ color: var(--color-primary); 
 }
 
+/* icona Instagram monocromatica che eredita il colore del testo */
+.icon-ig{
+  width:29px; height:29px; display:inline-block; flex-shrink:0;
+  margin-right: var(--space-16);
+  background-color: currentColor;
+  -webkit-mask-image: url(/instagram-glyph.svg);
+  mask-image: url(/instagram-glyph.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  pointer-events: none; /* clic solo sul bottone */
+}
+
+/* CTA Instagram (opzionale, se serve differenziare) */
+.ig-cta{ color: var(--color-primary); border-color: var(--color-primary); }
+.ig-cta:hover{ background: var(--color-primary); color:#fff; }
+
 .contact-form {
   background: var(--color-surface);
   padding: var(--space-24);
