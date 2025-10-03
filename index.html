@@ -88,23 +88,26 @@
             <div class="hero-contact">
               <a class="contact-info contact-link" href="tel:+5547989163649">📞 (47) 98916-3649</a>
             </div>
-            
-            <!-- 2) Agendar Consulta con icona WhatsApp -->
-            <div class="hero-buttons mt-8">
-              <button class="btn btn--primary" onclick="openWhatsApp('domicilio')">
+    
+            <!-- 2) Riquadro verde WhatsApp + nota esterna -->
+            <p class="mt-8" style="margin-bottom: var(--space-8); color: var(--color-text-muted);">
+              Para marcar, use o <span style="font-weight: var(--font-weight-medium);">WhatsApp</span>:
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-whatsapp" onclick="openWhatsApp('domicilio')" aria-label="Abrir WhatsApp para agendar consulta domiciliar">
                 <span class="icon-wa btn-wa-icon" aria-hidden="true"></span>
-                Agendar Consulta
+                WhatsApp
               </button>
             </div>
-            
-            <!-- 3) Indirizzo NON cliccabile -->
+    
+            <!-- 3) Endereço (não clicável) -->
             <div class="hero-contact mt-8">
               <span class="coverage">
                 📍 R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250, Brasil
               </span>
             </div>
-            
-            <!-- 4) Como chegar come bottone colorato -->
+    
+            <!-- 4) Como chegar (botão colorido) -->
             <div class="hero-buttons mt-8">
               <a class="btn btn-maps"
                  href="https://www.google.com/maps/dir/?api=1&destination=R.%20Jac%C3%B3%20Brueckheimer%2C%20425%20-%20Sala%20402%20-%20Velha%2C%20Blumenau%20-%20SC%2C%2089036-250%2C%20Brasil&destination_place_id=ChIJA0V9WjMZ35QRvzHEnd7cgCc"
@@ -112,6 +115,7 @@
                 🗺️ Como chegar
               </a>
             </div>
+          </div>
     
           <div class="hero-image">
             <img src="/idoso-casa.png" alt="Atendimento odontológico confortável em casa" class="hero-img">
