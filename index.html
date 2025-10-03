@@ -84,30 +84,31 @@
               Atendimento odontológico domiciliar profissional em Blumenau e região. Equipamentos modernos, protocolos rigorosos de biossegurança e o cuidado que você merece, com respeito.
             </p>
     
-            <div class="hero-buttons">
+            <!-- 1) Telefone (cliccabile) -->
+            <div class="hero-contact">
+              <a class="contact-info contact-link" href="tel:+5547989163649">📞 (47) 98916-3649</a>
+            </div>
+    
+            <!-- 2) Agendar Consulta (WhatsApp) -->
+            <div class="hero-buttons mt-8">
               <button class="btn btn--primary" onclick="openWhatsApp('domicilio')">
                 📲 Agendar Consulta
               </button>
+            </div>
     
-              <!-- Botão de direções no Google Maps -->
+            <!-- 3) Indirizzo non cliccabile -->
+            <div class="hero-contact mt-8">
+              <span class="coverage">
+                📍 R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250, Brasil
+              </span>
+            </div>
+    
+            <!-- 4) Como chegar (link a Maps con place_id) -->
+            <div class="hero-buttons mt-8">
               <a class="btn btn--outline"
                  href="https://www.google.com/maps/dir/?api=1&destination=R.%20Jac%C3%B3%20Brueckheimer%2C%20425%20-%20Sala%20402%20-%20Velha%2C%20Blumenau%20-%20SC%2C%2089036-250%2C%20Brasil&destination_place_id=ChIJA0V9WjMZ35QRvzHEnd7cgCc"
                  target="_blank" rel="noopener">
                 🗺️ Como chegar
-              </a>
-            </div>
-    
-            <div class="hero-contact">
-              <!-- Telefone clicável -->
-              <a class="contact-info contact-link" href="tel:+5547989163649">📞 (47) 98916-3649</a>
-            </div>
-    
-            <div class="hero-contact">
-              <!-- Endereço clicável (abre a ficha do local no Maps com place_id) -->
-              <a class="coverage address-link"
-                 href="https://www.google.com/maps/place/?q=place_id:ChIJA0V9WjMZ35QRvzHEnd7cgCc"
-                 target="_blank" rel="noopener">
-                📍 R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250, Brasil
               </a>
             </div>
           </div>
@@ -118,6 +119,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Sobre o Dr. Paolo -->
     <section id="sobre" class="about">
