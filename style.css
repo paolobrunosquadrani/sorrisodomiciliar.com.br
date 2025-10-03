@@ -1142,6 +1142,20 @@ select.form-control {
 .ig-cta{ color: var(--color-primary); border-color: var(--color-primary); }
 .ig-cta:hover{ background: var(--color-primary); color:#fff; }
 
+/* IG CTA con bottone primario: testo sempre leggibile */
+.ig-cta{
+  color: var(--color-btn-primary-text) !important; /* es. bianco */
+  border: none;
+}
+.ig-cta:hover{
+  background: var(--color-primary-hover);
+  color: var(--color-btn-primary-text);
+}
+.ig-cta:active{
+  background: var(--color-primary-active);
+  color: var(--color-btn-primary-text);
+}
+
 .contact-form {
   background: var(--color-surface);
   padding: var(--space-24);
