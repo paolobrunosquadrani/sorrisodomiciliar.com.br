@@ -1281,6 +1281,24 @@ select.form-control {
   .whatsapp-float{ display:none !important; }
 }
 
+/* WhatsApp CTA brand */
+.btn-whatsapp{
+  background:#25D366;                  /* WhatsApp Light Green */
+  color:#fff;                          /* testo bianco AA */
+  border:none;
+}
+.btn-whatsapp:hover{ background:#128C7E; }   /* Teal Green */
+.btn-whatsapp:active{ background:#075E54; }  /* Teal Dark */
+
+/* Telefone CTA migliorato (testo scuro su sfondo chiaro) */
+.btn-phone{
+  background:#FFE3EA;                  /* rosa molto chiaro per contrasto */
+  color:#1F2121;                       /* testo scuro */
+  border:1px solid rgba(31,33,33,.15);
+}
+.btn-phone:hover{ background:#FFC9D7; }
+.btn-phone:active{ background:#FFB7CB; }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .header-content {
