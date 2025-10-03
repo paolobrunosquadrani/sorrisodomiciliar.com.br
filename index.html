@@ -314,28 +314,31 @@
 
         <!-- Card WhatsApp -->
         <div class="contact-item">
-          <!-- icona a sinistra come per Telefone -->
+          <!-- icona a sinistra come per Telefone (non cliccabile) -->
           <img src="/Digital_Glyph_Black.svg" alt="" width="24" height="24"
-               class="contact-icon contact-icon-img" aria-hidden="true">
+               class="contact-icon contact-icon-img" aria-hidden="true" style="pointer-events:none">
         
           <div class="contact-text">
             <h3>WhatsApp</h3>
             <p>(47) 98916-3649</p>
         
-            <!-- CTA: apre WhatsApp con messaggio precompilato -->
-            <a class="btn btn--outline whatsapp-cta"
+            <!-- CTA: apre WhatsApp con messaggio precompilato (pulsante colorato) -->
+            <a class="btn btn--sm btn-whatsapp"
                href="https://wa.me/5547989163649?text=Ol%C3%A1%20Dr.%20Paolo!%20Gostaria%20de%20agendar%20uma%20consulta%20domiciliar.">
               Enviar mensagem
             </a>
           </div>
         </div>
-          
+        
+        <!-- Card Telefone -->
         <div class="contact-item">
-          <div class="contact-icon">📞</div>
+          <div class="contact-icon" aria-hidden="true" style="pointer-events:none">📞</div>
           <div class="contact-text">
             <h3>Telefone</h3>
             <p>(47) 98916-3649</p>
-            <a href="tel:+5547989163649" class="btn btn--outline">Ligar Agora</a>
+            <a href="tel:+5547989163649" class="btn btn--sm btn-phone">
+              Ligar Agora
+            </a>
           </div>
         </div>
 
