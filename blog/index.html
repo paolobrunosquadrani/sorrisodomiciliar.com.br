@@ -3,40 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Blog | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
   <meta name="description" content="Introdução do blog: conteúdos práticos e baseados em evidência sobre odontologia domiciliar, endodontia e cuidados para necessidades especiais.">
   <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/style.css">
-
-  <!-- Preload do fundo do blog -->
-  <link rel="preload" as="image" href="/blog/Sfondo.png">
-
-  <!-- Ajustes visuais específicos do blog (mínimos, mantendo o seu estilo) -->
   <style>
-    body.blog {
-      /* usa o seu CSS base e aplica o fundo do blog */
-      background: #f5f7f9 url("/blog/Sfondo.png") center/cover no-repeat fixed;
-    }
-    .blog-hero {
-      padding: clamp(24px, 4vw, 48px);
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      background: rgba(255,255,255,.9);
-    }
-    .blog-hero h2 { margin: 0 0 8px }
-    .blog-hero p { margin: 0 }
-    .breadcrumb {
-      margin: 12px 0 0;
-      color: var(--color-text-muted, #5a5a5a);
-      font-size: 14px;
-    }
-    .breadcrumb a { color: inherit; text-decoration: none }
-    .breadcrumb a:hover { text-decoration: underline }
+    :root{--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--bg:#ffffff;--accent:#0a7c6a;--maxw:980px}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:#f7f9fb;color:var(--text)}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    .topbar{background:#fff;border-bottom:1px solid var(--border)}
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:40px;height:40px}
+    .brand h1{font-size:18px;margin:0}
+    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a:hover{background:#e8faf6}
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
+    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
+    .breadcrumb a{color:inherit;text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+    .hero h2{margin:0 0 8px}
+    .hero p{margin:0 0 10px}
+    .post-list{margin-top:24px;display:grid;gap:16px}
+    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
+    .post h3{margin:0 0 6px;font-size:22px}
+    .meta{color:var(--muted);font-size:14px}
+    .post a{color:var(--accent);text-decoration:none}
+    .post a:hover{text-decoration:underline}
+    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
   </style>
-
-  <!-- Structured Data: Breadcrumb para Home > Blog -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -48,64 +45,48 @@
   }
   </script>
 </head>
-<body class="blog">
-  <!-- Header (mesma estrutura e classes da sua home) -->
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <img src="/Logo.ico" alt="Logo Dr. Paolo Bruno Squadrani" width="200" height="200" class="logo-img">
-          <div class="logo-texts">
-            <h1 class="logo-text">Dr. Paolo Bruno Squadrani</h1>
-            <p class="logo-subtitle">Cirurgião-Dentista CRO SC-024565</p>
-          </div>
-        </div>
-        <nav class="nav">
-          <a href="/" class="nav-link" rel="home">Início</a>
-          <a href="/blog/" class="nav-link" aria-current="page">Blog</a>
-        </nav>
+<body>
+  <div class="topbar">
+    <div class="inner">
+      <div class="brand">
+        <img src="/Logo.ico" alt="">
+        <h1>Blog · Sorriso Domiciliar</h1>
       </div>
+      <nav aria-label="Navegação principal">
+        <a href="/" rel="home">Início</a>
+      </nav>
     </div>
-  </header>
+  </div>
 
-  <main id="conteudo" class="container" role="main">
-    <!-- Breadcrumb simples visível -->
+  <main class="container" id="conteudo" role="main">
     <nav class="breadcrumb" aria-label="Você está aqui">
       <a href="/">Início</a> › <span>Blog</span>
     </nav>
 
-    <!-- Seção introdutiva do blog (apenas esta, por ora) -->
-    <section class="hero blog-hero" aria-label="Introdução do blog">
+    <section class="card hero" aria-label="Introdução do blog">
       <h2>Blog de Odontologia Domiciliar</h2>
-      <p>
-        Este espaço reúne sínteses claras e práticas da literatura odontológica, com foco em atendimento domiciliar, endodontia e cuidados para pessoas com necessidades especiais em Blumenau e região.
-      </p>
-      <p style="margin-top:10px">
-        A proposta é transformar evidências em decisões do dia a dia: perguntas clínicas objetivas, pontos‑chave úteis, limites da evidência e quando encaminhar para avaliação em consultório ou serviço especializado.
-      </p>
-      <p style="margin-top:10px">
-        Em breve: avaliação de dor orofacial em deficiência intelectual, biossegurança portátil no domicílio e guias práticos para cuidadores.
-      </p>
+      <p>Este espaço reúne sínteses claras e práticas da literatura odontológica, com foco em atendimento domiciliar, endodontia e cuidados para pessoas com necessidades especiais em Blumenau e região.</p>
+      <p>A proposta é transformar evidências em decisões do dia a dia: perguntas clínicas objetivas, pontos‑chave úteis, limites da evidência e quando encaminhar para avaliação em consultório ou serviço especializado.</p>
+    </section>
+
+    <section class="post-list" aria-label="Artigos recentes">
+      <article class="post">
+        <h3>
+          <a href="/blog/avaliacao-dor-orofacial-deficiencia-intelectual/">
+            Avaliação da dor orofacial em pessoas com deficiência intelectual: ferramentas validadas
+          </a>
+        </h3>
+        <p class="meta">Autor: Dr. Paolo Bruno Squadrani · Publicado: 10 out 2025 · Leitura: ~6 min</p>
+        <p>Introdução ao tema, por que a avaliação é desafiadora nesse público, quais instrumentos têm validação e como aplicar no contexto domiciliar. Clique para ler o artigo completo.</p>
+      </article>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
-      <p class="footer-legal">
-        Atendimento conforme a legislação brasileira para odontologia domiciliar
-      </p>
-    </div>
+  <footer>
+    © 2025 Sorriso Domiciliar · R. Jacó Brueckheimer, 425, Blumenau · WhatsApp (47) 98916‑3649
+    <div class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</div>
   </footer>
 
-  <!-- Reuso do seu script -->
   <script src="/app.js" defer></script>
-</body>
-</html>
-
-    <footer class="container" role="contentinfo">
-      © 2025 Sorriso Domiciliar · R. Jacó Brueckheimer, 425, Blumenau · WhatsApp (47) 98916‑3649
-    </footer>
-  </div>
 </body>
 </html>
