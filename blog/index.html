@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog de Odontologia Domiciliar | Sorriso Domiciliar</title>
+  <meta name="description" content="Artigos práticos e baseados em evidência sobre odontologia domiciliar, endodontia e cuidados especiais em Blumenau.">
+  <link rel="canonical" href="/blog/">
 
+  <!-- Styles -->
+  <style>
+    :root{
+      --text:#1a1a1a;
+      --muted:#5a5a5a;
+      --accent:#0a7c6a;
+      --bg-overlay: rgba(255,255,255,0.88);
+      --maxw: 1120px;
+    }
+    /* Base */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background: #f5f7f9 url("/blog/Sfondo.png") center / cover no-repeat fixed;
+    }
+    .overlay{
+      min-height:100vh;
+      background: var(--bg-overlay);
+      backdrop-filter: blur(2px);
+    }
+    .container{max-width:var(--maxw); margin:0 auto; padding:24px}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Header / Nav */
+    .topbar{display:flex; gap:16px; align-items:center; justify-content:space-between}
+    .brand{display:flex; flex-direction:column}
+    .brand h1{font-size:22px; margin:0}
+    .brand p{margin:4px 0 0; color:var(--muted); font-size:14px}
+    nav ul{list-style:none; margin:0; padding:0; display:flex; gap:14px; flex-wrap:wrap}
+    nav a{padding:8px 10px; border-radius:6px}
+    nav a[aria-current="page"]{background:#e8faf6}
+
+    /* Hero */
+    .hero{margin:24px 0; padding:20px; border-radius:12px; background:#ffffffcc; border:1px solid #e5e7eb}
+    .hero h2{margin:0 0 8px}
+    .hero p{margin:0}
+
+    /* Layout */
+    .grid{display:grid; grid-template-columns: 1fr; gap:20px}
+    @media (min-width: 960px){
+      .grid{grid-template-columns: 2fr 1fr}
+    }
+
+    /* Article list */
+    .posts{display:grid; grid-template-columns: 1fr; gap:16px}
+    .card{
+      border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff;
+    }
+    .card > a{display:block; padding:16px}
+    .meta{color:var(--muted); font-size:13px; margin-top:6px}
+
+    /* Sidebar */
+    .widget{border:1px solid #e5e7eb; background:#fff; border-radius:12px; padding:16px}
+    .widget h3{margin:0 0 8px}
+    .widget ul{list-style:none; margin:0; padding:0}
+    .widget li{margin:6px 0}
+
+    /* Breadcrumb */
+    .breadcrumb{font-size:13px; color:var(--muted); margin:10px 0}
+    .breadcrumb a{color:var(--muted)}
+
+    /* Footer */
+    footer{margin-top:24px; padding:16px; font-size:14px; color:var(--muted)}
+    .skip{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden}
+    .skip:focus{left:8px; top:8px; width:auto; height:auto; background:#fff; padding:8px; border-radius:6px; border:1px solid #e5e7eb}
+  </style>
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sorrisodomiciliar.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sorrisodomiciliar.com.br/blog/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="overlay">
+    <header class="container">
+      <div class="topbar" role="navigation" aria-label="Topo">
+        <div class="brand">
+          <h1>Blog de Odontologia Domiciliar</h1>
+          <p>Conteúdo prático e baseado em evidência para cuidados em casa, endodontia e necessidades especiais.</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/" rel="home">Início</a></li>
+            <li><a href="/servicos/">Serviços</a></li>
+            <li><a href="/contato/">Contato</a></li>
+            <li><a href="/blog/" aria-current="page">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="breadcrumb" aria-label="Você está aqui">
+        <a href="/">Início</a> › <span>Blog</span>
+      </nav>
+      <section class="hero" role="region" aria-label="Introdução do blog">
+        <h2>Missão</h2>
+        <p>Sintetizar literatura odontológica em linguagem clara e “people‑first”, com foco em atendimento domiciliar e pacientes com necessidades especiais.</p>
+      </section>
+    </header>
+
+    <main id="conteudo" class="container">
+      <div class="grid">
+        <!-- Lista de artigos -->
+        <section aria-label="Artigos recentes">
+          <div class="posts">
+            <!-- Card de exemplo 1 -->
+            <article class="card">
+              <a href="/blog/avaliacao-dor-orofacial-deficiencia-intelectual/">
+                <h3>Avaliação da dor orofacial em pessoas com deficiência intelectual: ferramentas validadas</h3>
+                <p class="meta">Por Dr. Paolo Bruno Squadrani · 10 out 2025 · 6 min</p>
+                <p>Resumo prático de uma revisão sistemática e implicações para atendimento domiciliar.</p>
+              </a>
+            </article>
+
+            <!-- Card de exemplo 2 -->
+            <article class="card">
+              <a href="/blog/biosseguranca-atendimento-domiciliar/">
+                <h3>Biossegurança no atendimento domiciliar: protocolos essenciais</h3>
+                <p class="meta">Por Equipe · 03 out 2025 · 5 min</p>
+                <p>Checklist de preparo, EPIs e fluxo de trabalho seguro no domicílio.</p>
+              </a>
+            </article>
+
+            <!-- Mais cards... -->
+          </div>
+
+          <!-- Paginação (opcional) -->
+          <nav class="breadcrumb" aria-label="Paginação" style="margin-top:16px">
+            <a href="/blog/page/2/">Artigos anteriores »</a>
+          </nav>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" aria-label="Navegação lateral">
+          <div class="widget">
+            <h3>Categorias</h3>
+            <ul>
+              <li><a href="/blog/categoria/domiciliar/">Domiciliar</a></li>
+              <li><a href="/blog/categoria/urgencias/">Urgências</a></li>
+              <li><a href="/blog/categoria/endodontia/">Endodontia</a></li>
+              <li><a href="/blog/categoria/cuidados-especiais/">Cuidados especiais</a></li>
+            </ul>
+          </div>
+
+          <div class="widget" style="margin-top:16px">
+            <h3>Pesquisar</h3>
+            <form action="/busca/" method="get" role="search" aria-label="Buscar no blog">
+              <label for="q" class="sr-only">Buscar</label>
+              <input id="q" name="q" type="search" placeholder="Pesquisar artigos..." style="width:100%; padding:10px; border:1px solid #e5e7eb; border-radius:8px">
+            </form>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="container" role="contentinfo">
+      © 2025 Sorriso Domiciliar · R. Jacó Brueckheimer, 425, Blumenau · WhatsApp (47) 98916‑3649
+    </footer>
+  </div>
+</body>
+</html>
