@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
-  <meta name="description" content="Sinteses práticas e baseadas em evidência sobre odontologia domiciliar, endodontia e cuidados para necessidades especiais em Blumenau e região.">
+  <meta name="description" content="Sínteses práticas e baseadas em evidência sobre odontologia domiciliar, endodontia e cuidados para necessidades especiais em Blumenau e região.">
+  <meta name="author" content="Dr. Paolo Bruno Squadrani">
   <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/style.css">
 
-  <!-- Estilos mínimos locais (mantém seu visual, sem fundos) -->
   <style>
-    :root{--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--bg:#ffffff;--accent:#0a7c6a;--maxw:980px}
+    :root{--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--accent:#0a7c6a;--maxw:980px}
     html,body{height:100%}
     body{margin:0;background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
     .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
     .topbar{background:#fff;border-bottom:1px solid var(--border)}
     .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{width:40px;height:40px}
-    .brand h1{font-size:18px;margin:0}
+    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
+    .brand img{width:32px;height:32px}
+    .brand .brand-text{font-weight:600}
+    @media (max-width:420px){.brand .brand-text{display:none}}
     nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
     nav a:hover{background:#e8faf6}
     .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
@@ -37,7 +40,7 @@
     footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
   </style>
 
-  <!-- Breadcrumb estruturado -->
+  <!-- Structured data: Breadcrumb -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -50,32 +53,34 @@
   </script>
 </head>
 <body>
-  <!-- Topo simples: link único para a Home -->
-  <div class="topbar">
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Header simples com marca e link único -->
+  <div class="topbar" role="navigation" aria-label="Topo">
     <div class="inner">
-      <div class="brand">
-        <img src="/Logo.ico" alt="">
-        <h1>Blog · sorrisodomiciliar.com.br</h1>
-      </div>
+      <a class="brand" href="/" rel="home" aria-label="Ir para a página inicial">
+        <img src="/Logo.ico" alt="" aria-hidden="true">
+        <span class="brand-text">sorrisodomiciliar.com.br</span>
+      </a>
       <nav aria-label="Navegação principal">
         <a href="/" rel="home">Início</a>
       </nav>
     </div>
   </div>
 
-  <main class="container" id="conteudo" role="main">
+  <main id="conteudo" class="container" role="main">
     <nav class="breadcrumb" aria-label="Você está aqui">
       <a href="/">Início</a> › <span>Blog</span>
     </nav>
 
-    <!-- Introdução -->
+    <!-- Introdução do blog -->
     <section class="card hero" aria-label="Introdução do blog">
       <h1>Blog de Odontologia Domiciliar</h1>
       <p>Este espaço reúne sínteses claras e práticas da literatura odontológica, com foco em atendimento domiciliar, endodontia e cuidados para pessoas com necessidades especiais.</p>
       <p>A proposta é transformar evidências em decisões do dia a dia: perguntas clínicas objetivas, pontos‑chave úteis, limites da evidência e quando encaminhar para avaliação em consultório ou serviço especializado.</p>
     </section>
 
-    <!-- Artigos -->
+    <!-- Lista de artigos -->
     <section class="post-list" aria-label="Artigos recentes">
       <article class="post" itemscope itemtype="https://schema.org/Article">
         <h2 itemprop="headline">
@@ -84,15 +89,18 @@
           </a>
         </h2>
         <p class="meta">
-          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado: <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> · Leitura: ~6 min
+          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
+          <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> · Leitura: ~6 min
         </p>
-        <p itemprop="description">Introdução ao tema, por que a avaliação é desafiadora nesse público, quais instrumentos têm validação e como aplicar no contexto domiciliar. Clique para ler o artigo completo.</p>
+        <p itemprop="description">
+          Introdução ao tema, por que a avaliação é desafiadora nesse público, quais instrumentos têm validação e como aplicar no contexto domiciliar. Clique para ler o artigo completo.
+        </p>
       </article>
     </section>
   </main>
 
   <!-- Footer igual ao do site -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
       <p class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</p>
