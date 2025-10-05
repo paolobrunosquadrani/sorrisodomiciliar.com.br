@@ -38,9 +38,27 @@
     .post a:hover{text-decoration:underline}
     footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
     .wrap{margin-top:24px}
+
+    /* Rimuoviamo la griglia a 2 colonne per le sezioni interessate e forziamo una sola riga scrollabile */
+    .row-nowrap{
+      display:flex;
+      gap:16px;
+      flex-wrap:nowrap;              /* una sola riga */
+      overflow-x:auto;               /* scroll orizzontale se necessario */
+      -webkit-overflow-scrolling:touch;
+      scroll-snap-type:x mandatory;  /* snap piacevole (facoltativo) */
+    }
+    .row-nowrap > .card,
+    .row-nowrap > .figure{
+      flex:0 0 min(560px, 100%);     /* larghezza minima per ciascun riquadro */
+      scroll-snap-align:start;
+    }
+
+    /* Le classi grid/cols-2 restano per altre aree non modificate */
     .grid{display:grid;gap:16px}
     .cols-2{grid-template-columns:1fr 1fr}
     @media (max-width: 900px){.cols-2{grid-template-columns:1fr}}
+
     .figure{display:block}
     .figure .box-title{display:block;font-weight:600;margin:0 0 8px;color:#0f172a}
     .figure svg{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#fff}
@@ -52,7 +70,7 @@
     .card h2{margin-top:0}
     .box-title{font-size:14px;color:var(--muted)}
     
-    /* SVG text responsive sizing */
+    /* SVG text responsive sizing per migliore leggibilità */
     svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
     svg text.small{font-size:clamp(10px,1.5vw,14px)}
     svg text.large{font-size:clamp(18px,2.5vw,24px)}
@@ -111,7 +129,8 @@
         <p class="post-meta">Guia prático com triagem estruturada, anamnese direcionada, exame gentil e critérios de decisão com instrumentos validados e tendências seriadas.</p>
       </header>
 
-      <section class="wrap grid cols-2">
+      <!-- Sostituito: class="wrap grid cols-2" -> class="wrap row-nowrap" -->
+      <section class="wrap row-nowrap">
         <article class="card">
           <h2>Por que um método estruturado</h2>
           <p>A subestimação da dor orofacial em pessoas com deficiência intelectual está ligada a diagnósticos tardios e piores resultados clínicos, o que demanda processos padronizados para aumentar a confiabilidade da avaliação em cenários reais com múltiplos cuidadores.</p>
@@ -139,7 +158,7 @@
         </aside>
       </section>
 
-      <section class="wrap grid cols-2">
+      <section class="wrap row-nowrap">
         <article class="card">
           <h2>Protocolo prático em 3 fases (total 15–30 min)</h2>
           <p><span class="kbd">Fase 1</span> Triagem estruturada (5–10 min): usar DDQ em pediatria (preferencialmente DDQ‑B) e CPS‑NAID ou NCAPC em adultos, registrando escore basal e privilegiando versões validadas em PT‑BR quando disponíveis.</p>
@@ -172,7 +191,7 @@
         </figure>
       </section>
 
-      <section class="wrap grid cols-2">
+      <section class="wrap row-nowrap">
         <article class="card">
           <h2>Critérios para decisão clínica</h2>
           <p>Um escore alto em escala validada, associado a sinais clínicos concordantes, indica prioridade elevada: instituir analgesia adequada e programar tratamento odontológico prioritário, considerando a confiabilidade do instrumento no público‑alvo.</p>
@@ -206,7 +225,7 @@
         </figure>
       </section>
 
-      <section class="wrap grid cols-2">
+      <section class="wrap row-nowrap">
         <article class="card">
           <h2>Follow‑up e responsividade</h2>
           <p>A comparação seriada com a mesma escala é fundamental: T0 define a base, T24–48 h confirma tendência e resposta à analgesia/intervenção, T7 revisa a eficácia terapêutica e T30 consolida o plano preventivo.</p>
@@ -223,7 +242,7 @@
         </article>
       </section>
 
-      <section class="wrap grid cols-2">
+      <section class="wrap row-nowrap">
         <article class="card">
           <h2>Box prático — guia passo‑a‑passo</h2>
 
@@ -264,7 +283,7 @@
         </figure>
       </section>
 
-      <section class="wrap grid cols-2">
+      <section class="wrap row-nowrap">
         <article class="card">
           <h2>Sinais universais de alerta</h2>
           <ul>
@@ -287,7 +306,7 @@
         </article>
       </section>
 
-      <section class="wrap grid cols-2">
+      <section class="wrap row-nowrap">
         <article class="card">
           <h2>Casos exemplificativos (anonimizados)</h2>
           <p>Criança de 8 anos com recusa a alimentos duros e irritabilidade na higiene: DDQ basal 8/12; exame revela cárie profunda; após analgesia e restauração, 2/12 em 48 h, redução de 75% (melhora substancial).</p>
