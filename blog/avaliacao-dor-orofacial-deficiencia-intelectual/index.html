@@ -66,6 +66,15 @@
     svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
     svg text.small{font-size:clamp(10px,1.5vw,14px)}
     svg text.large{font-size:clamp(18px,2.5vw,24px)}
+
+    /* Forza 1 colonna in tutte le sezioni a griglia di questa pagina */
+    .post .wrap.grid.cols-2 { grid-template-columns: 1fr !important; }
+
+    /* Se in passato è stata usata una riga orizzontale, neutralizzala */
+    .wrap.row-nowrap { display: block !important; overflow: visible !important; }
+
+    /* Evita barre di scorrimento orizzontali globali */
+    .container { overflow-x: hidden; }
   </style>
 
   <!-- Structured data: Breadcrumb + Article -->
