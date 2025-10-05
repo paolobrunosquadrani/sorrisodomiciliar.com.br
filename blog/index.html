@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avaliar a dor orofacial em deficiência intelectual | Blog | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
+  <meta name="description" content="Ferramentas validadas e protocolo domiciliar em três fases para avaliação de dor orofacial em pessoas com deficiência intelectual, além de conteúdos práticos sobre odontologia domiciliar, endodontia e cuidados a pessoas com necessidades especiais.">
+  <meta name="author" content="Dr. Paolo Bruno Squadrani">
+  <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/">
+  <meta name="theme-color" content="#0d47a1">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
 
+  <style>
+    /* Palette & tipografia coerenti con il tema del sito */
+    :root{
+      --brand-1:#0d47a1; /* azul escuro */
+      --brand-2:#1e88e5; /* azul médio */
+      --brand-3:#90caf9; /* azul claro */
+      --accent-1:#2e7d32; /* verde de apoio */
+      --accent-2:#f9a825; /* âmbar de apoio */
+      --text:#0f1a2b;
+      --muted:#5f6b7a;
+      --border:#e5e7eb;
+      --bg:#f7f9fb;
+      --maxw:980px
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:inherit; /* eredita i caratteri del sito */
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    @supports (font-variation-settings: normal){
+      body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif;}
+    }
+
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
+
+    .topbar{background:#ffffff;border-bottom:1px solid var(--border)}
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap;color:var(--brand-1);text-decoration:none}
+    .brand .logo{width:32px;height:32px}
+    .brand .brand-text{font-weight:700;letter-spacing:.2px}
+    @media (max-width:420px){.brand .brand-text{display:none}}
+
+    nav a{color:var(--brand-1);text-decoration:none;padding:8px 10px;border-radius:6px;font-weight:600}
+    nav a:hover{background:#eef5ff}
+
+    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
+    .breadcrumb a{color:inherit;text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px;box-shadow:0 8px 24px rgba(2,6,23,.04)}
+    .hero h1{margin:0 0 8px;color:var(--brand-1)}
+    .hero p{margin:0 0 10px;color:#334155}
+
+    .post-list{margin-top:24px;display:grid;gap:16px}
+    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
+    .post h2{margin:0 0 6px;font-size:22px;line-height:1.25;color:#0f1a2b}
+    .meta{color:var(--muted);font-size:14px}
+    .post a{color:var(--brand-1);text-decoration:none}
+    .post a:hover{text-decoration:underline}
+
+    .badge{display:inline-flex;align-items:center;gap:.4rem;background:#eef5ff;color:#0b3a8a;border:1px solid #dbeafe;border-radius:999px;padding:.25rem .6rem;font-size:.78rem;font-weight:700}
+    .badge svg{width:16px;height:16px}
+
+    .figure{background:#f8fbff;border:1px solid var(--border);border-radius:12px;padding:12px}
+    .figure svg{width:100%;height:auto;display:block}
+
+    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center;border-top:1px solid var(--border);background:#fcfdff}
+  </style>
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sorrisodomiciliar.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sorrisodomiciliar.com.br/blog/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Header con brand e icona sorriso SVG -->
+  <div class="topbar" role="navigation" aria-label="Topo">
+    <div class="inner">
+      <a class="brand" href="/" rel="home" aria-label="Ir para a página inicial">
+        <!-- Sorriso SVG -->
+        <svg class="logo" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 15c2.5 2.5 5.5 3.5 8 3.5s5.5-1 8-3.5" stroke="#1e88e5" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="8" cy="9" r="1.4" fill="#1e88e5"/><circle cx="16" cy="9" r="1.4" fill="#1e88e5"/>
+        </svg>
+        <span class="brand-text">sorrisodomiciliar.com.br</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="/" rel="home">Início</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="conteudo" class="container" role="main">
+    <nav class="breadcrumb" aria-label="Você está aqui">
+      <a href="/">Início</a> › <span>Blog</span>
+    </nav>
+
+    <!-- Hero del blog con titolo corretto in evidenza -->
+    <section class="card hero" aria-label="Introdução do blog">
+      <span class="badge" aria-hidden="true">
+        <!-- Ícone livro/guia -->
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 0-3 3V4Z" stroke="#1e88e5" stroke-width="1.6"/><path d="M8 20h9a3 3 0 0 1 3 3V7a3 3 0 0 0-3-3H8" stroke="#1e88e5" stroke-width="1.6"/></svg>
+        Guia clínico
+      </span>
+      <h1>Avaliar a dor orofacial em deficiência intelectual: ferramentas validadas e protocolo prático domiciliar</h1>
+      <p>Conteúdos práticos baseados em evidência para transformar sinais indiretos em decisões clínicas reprodutíveis, com foco em atendimento domiciliar, endodontia e cuidados a pessoas com necessidades especiais.</p>
+      <p>A proposta é converter evidências em prática: perguntas clínicas objetivas, pontos‑chave, limites da evidência e quando encaminhar para avaliação em consultório ou serviço especializado.</p>
+    </section>
+
+    <!-- Lista degli articoli (con titolo aggiornato) -->
+    <section class="post-list" aria-label="Artigos recentes">
+      <article class="post" itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">
+          <a href="/blog/avaliar-dor-orofacial-deficiencia-intelectual/" itemprop="url">
+            Avaliar a dor orofacial em pacientes com deficiência intelectual: ferramentas validadas e protocolo prático domiciliar
+          </a>
+        </h2>
+        <p class="meta">
+          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
+          <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> · Leitura: ~7–9 min
+        </p>
+        <p itemprop="description">
+          Por que é difícil reconhecer dor orofacial na deficiência intelectual, quais instrumentos possuem validação e como aplicar um protocolo em três fases no domicílio. Clique para ler o artigo completo com diagramas e materiais para download.
+        </p>
+      </article>
+    </section>
+
+    <!-- (Opzionale) Figura/diagramma riassuntivo inline -->
+    <section class="card figure" aria-labelledby="fig-flow-title">
+      <h2 id="fig-flow-title">Resumo visual do protocolo (3 fases)</h2>
+      <svg role="img" aria-labelledby="flow-title flow-desc" viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg">
+        <title id="flow-title">Fluxo em três fases</title>
+        <desc id="flow-desc">Triagem, Anamnese, Exame clínico e Decisão final.</desc>
+        <rect x="20" y="40" width="210" height="100" rx="12" fill="#E6F4FF" stroke="#1E88E5"/>
+        <text x="125" y="95" text-anchor="middle" font-size="16" fill="#0D47A1">Triagem</text>
+        <polygon points="250,90 290,90 290,80 320,100 290,120 290,110 250,110" fill="#90CAF9"/>
+        <rect x="320" y="40" width="210" height="100" rx="12" fill="#E8F5E9" stroke="#2E7D32"/>
+        <text x="425" y="95" text-anchor="middle" font-size="16" fill="#1B5E20">Anamnese</text>
+        <polygon points="550,90 590,90 590,80 620,100 590,120 590,110 550,110" fill="#A5D6A7"/>
+        <rect x="620" y="40" width="210" height="100" rx="12" fill="#FFF8E1" stroke="#F9A825"/>
+        <text x="725" y="95" text-anchor="middle" font-size="16" fill="#E65100">Exame</text>
+        <rect x="320" y="150" width="210" height="50" rx="12" fill="#F3E5F5" stroke="#6A1B9A"/>
+        <text x="425" y="180" text-anchor="middle" font-size="16" fill="#4A148C">Decisão</text>
+      </svg>
+    </section>
+  </main>
+
+  <!-- Footer coerente -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
+      <p class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</p>
+      <p class="footer-contact">R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250 · WhatsApp (47) 98916‑3649</p>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
