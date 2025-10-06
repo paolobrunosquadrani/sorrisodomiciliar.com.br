@@ -8,9 +8,20 @@
   <meta name="author" content="Dr. Paolo Bruno Squadrani">
   <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Evita lo scuro automatico/inversione su Android -->
+  <meta name="color-scheme" content="only light">
   <link rel="stylesheet" href="/style.css">
   <style>
-    :root{--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--accent:#0d47a1;--maxw:980px}
+    :root{
+      /* Comunica agli UA che il documento usa solo schema chiaro */
+      color-scheme: light;
+
+      --text:#1a1a1a;
+      --muted:#5f6b7a;
+      --border:#e5e7eb;
+      --accent:#0d47a1;
+      --maxw:980px
+    }
     html,body{height:100%}
     body{margin:0;background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
     .container{max-width:var(--maxw);margin:0 auto;padding:20px}
@@ -40,11 +51,7 @@
     .wrap{margin-top:24px}
 
     /* Nuova disposizione: stack verticale per coppie testo+diagramma */
-    .stack{
-      display:flex;
-      flex-direction:column;
-      gap:16px;
-    }
+    .stack{display:flex;flex-direction:column;gap:16px}
 
     .grid{display:grid;gap:16px}
     .cols-2{grid-template-columns:1fr 1fr}
@@ -53,6 +60,7 @@
     .figure{display:block}
     .figure .box-title{display:block;font-weight:600;margin:0 0 8px;color:#0f172a}
     .figure svg{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#fff}
+
     .kbd{display:inline-block;font:inherit;background:#f1f5f9;border:1px solid #cbd5e1;border-bottom-width:2px;border-radius:6px;padding:0 6px}
     .visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap}
     .cta-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
@@ -60,7 +68,7 @@
     .btn:hover{background:#0b3c86}
     .card h2{margin-top:0}
     .box-title{font-size:14px;color:var(--muted)}
-    
+
     /* Testo SVG più leggibile e adattivo */
     svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
     svg text.small{font-size:clamp(10px,1.5vw,14px)}
@@ -74,6 +82,9 @@
 
     /* Evita barre di scorrimento orizzontali globali */
     .container { overflow-x: hidden; }
+
+    /* Colori espliciti dei titoli per evitare bianco su bianco */
+    h1,h2,h3,h4,h5,h6{color:var(--text)}
   </style>
 
   <!-- Structured data: Breadcrumb + Article -->
