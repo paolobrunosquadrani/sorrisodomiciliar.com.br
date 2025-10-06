@@ -41,9 +41,15 @@
     .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
 
     .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
+    /* Mantieni il testo del brand sempre visibile e leggibile */
+    .brand,.brand:link,.brand:visited{color:var(--text)}
     .brand img{width:32px;height:32px}
     .brand .brand-text{font-weight:600}
-    @media (max-width:420px){.brand .brand-text{display:none}}
+    /* RIMOSSA la regola che nascondeva il testo su mobile; abilita il wrap */
+    @media (max-width:420px){
+      .brand{white-space:normal}
+      .brand .brand-text{display:inline}
+    }
 
     nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
     nav a:hover{background:#e8faf6}
