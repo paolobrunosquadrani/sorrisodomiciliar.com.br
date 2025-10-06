@@ -221,12 +221,28 @@
     </article>
 
     <figure class="figure card" aria-labelledby="fig-fases-title fig-fases-desc">
-      <figcaption id="fig-fases-title" class="box-title">Diagrama 1 — Fluxo em 3 fases</figcaption>
-      <p id="fig-fases-desc" class="visually-hidden">Triagem → Anamnese → Exame clínico → Decisão.</p>
-      <!-- SVG invariato (omesso qui per brevità se già presente sopra) -->
-      <!-- ... -->
-    </figure>
-  </section>
+          <figcaption id="fig-fases-title" class="box-title">Diagrama 1 — Fluxo em 3 fases</figcaption>
+          <p id="fig-fases-desc" class="visually-hidden">Triagem → Anamnese → Exame clínico → Decisão.</p>
+          <svg role="img" aria-labelledby="fases-title fases-desc" viewBox="0 0 960 340" xmlns="http://www.w3.org/2000/svg">
+            <title id="fases-title">Fluxo em três fases para avaliação de dor orofacial</title>
+            <desc id="fases-desc">Quatro blocos conectados por setas: Triagem, Anamnese, Exame clínico e Decisão.</desc>
+            <rect x="20" y="60" width="210" height="120" rx="12" fill="#E6F4FF" stroke="#1E88E5"/>
+            <text x="125" y="110" text-anchor="middle" class="large" fill="#0D47A1">Triagem</text>
+            <text x="125" y="135" text-anchor="middle" class="small" fill="#0D47A1">DDQ / CPS NAID / NCAPC</text>
+            <polygon points="250,120 290,120 290,110 320,130 290,150 290,140 250,140" fill="#90CAF9"/>
+            <rect x="320" y="60" width="210" height="120" rx="12" fill="#E8F5E9" stroke="#2E7D32"/>
+            <text x="425" y="110" text-anchor="middle" class="large" fill="#1B5E20">Anamnese</text>
+            <text x="425" y="135" text-anchor="middle" class="small" fill="#1B5E20">linha do tempo + fatores</text>
+            <polygon points="550,120 590,120 590,110 620,130 590,150 590,140 550,140" fill="#A5D6A7"/>
+            <rect x="620" y="60" width="210" height="120" rx="12" fill="#FFF8E1" stroke="#F9A825"/>
+            <text x="725" y="110" text-anchor="middle" class="large" fill="#E65100">Exame clínico</text>
+            <text x="725" y="135" text-anchor="middle" class="small" fill="#E65100">LED + observação + palpação</text>
+            <rect x="320" y="210" width="210" height="100" rx="12" fill="#F3E5F5" stroke="#6A1B9A"/>
+            <text x="425" y="260" text-anchor="middle" class="large" fill="#4A148C">Decisão</text>
+            <line x1="430" y1="180" x2="430" y2="210" stroke="#6A1B9A" stroke-width="3"/>
+          </svg>
+        </figure>
+      </section>
 
   <section class="wrap stack">
     <article class="card">
