@@ -265,13 +265,30 @@
       </details>
     </article>
 
-    <figure class="figure card" aria-labelledby="fig-decisao-title fig-decisao-desc">
-      <figcaption id="fig-decisao-title" class="box-title">Diagrama 2 — Algoritmo decisório</figcaption>
-      <p id="fig-decisao-desc" class="visually-hidden">Três colunas: alto risco, intermediário, inconclusivo, com respectivas condutas.</p>
-      <!-- SVG invariato (omesso qui per brevità se già presente sopra) -->
-      <!-- ... -->
-    </figure>
-  </section>
+           <figure class="figure card" aria-labelledby="fig-decisao-title fig-decisao-desc">
+          <figcaption id="fig-decisao-title" class="box-title">Diagrama 2 — Algoritmo decisório</figcaption>
+          <p id="fig-decisao-desc" class="visually-hidden">Três colunas: alto risco, intermediário, inconclusivo, com respectivas condutas.</p>
+          <svg role="img" aria-labelledby="sem-title sem-desc" viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg">
+            <title id="sem-title">Algoritmo decisório por nível de risco</title>
+            <desc id="sem-desc">Alto risco (analgesia + tratamento), Intermediário (reavaliar 24–48 h), Inconclusivo (imagem/especialista).</desc>
+            <rect x="30" y="40" width="260" height="200" rx="12" fill="#FFEBEE" stroke="#C62828"/>
+            <circle cx="160" cy="80" r="12" fill="#D32F2F"/>
+            <text x="160" y="110" text-anchor="middle" fill="#B71C1C">Alto risco</text>
+            <text x="160" y="140" text-anchor="middle" class="small" fill="#B71C1C">Analgesia + Tratamento</text>
+            <text x="160" y="155" text-anchor="middle" class="small" fill="#B71C1C">prioritário</text>
+            <rect x="350" y="40" width="260" height="200" rx="12" fill="#FFFDE7" stroke="#F9A825"/>
+            <circle cx="480" cy="80" r="12" fill="#FBC02D"/>
+            <text x="480" y="110" text-anchor="middle" fill="#E65100">Intermediário</text>
+            <text x="480" y="140" text-anchor="middle" class="small" fill="#E65100">Reavaliar</text>
+            <text x="480" y="155" text-anchor="middle" class="small" fill="#E65100">24–48 horas</text>
+            <rect x="670" y="40" width="260" height="200" rx="12" fill="#E8EAF6" stroke="#283593"/>
+            <circle cx="800" cy="80" r="12" fill="#3949AB"/>
+            <text x="800" y="110" text-anchor="middle" fill="#1A237E">Inconclusivo</text>
+            <text x="800" y="140" text-anchor="middle" class="small" fill="#1A237E">Imagem /</text>
+            <text x="800" y="155" text-anchor="middle" class="small" fill="#1A237E">Especialista</text>
+          </svg>
+        </figure>
+      </section>
 
   <section class="wrap stack">
     <article class="card">
@@ -338,12 +355,22 @@
     </article>
 
     <figure class="figure card" aria-labelledby="fig-matriz-title fig-matriz-desc">
-      <figcaption id="fig-matriz-title" class="box-title">Diagrama 3 — Matriz de escolha para pediatria vs. adultos</figcaption>
-      <p id="fig-matriz-desc" class="visually-hidden">Pediatria: DDQ principal com apoio NCCPC/R, m‑FLACC e PPP; Adultos: CPS‑NAID/NCAPC para presença, seguido de exame para localizar.</p>
-      <!-- SVG invariato (omesso qui per brevità se già presente sopra) -->
-      <!-- ... -->
-    </figure>
-  </section>
+          <figcaption id="fig-matriz-title" class="box-title">Diagrama 3 — Matriz de escolha para pediatria vs. adultos</figcaption>
+          <p id="fig-matriz-desc" class="visually-hidden">Pediatria: DDQ principal com apoio NCCPC/R, m FLACC e PPP; Adultos: CPS NAID/NCAPC para presença, seguido de exame para localização.</p>
+          <svg role="img" aria-labelledby="mat-title mat-desc" viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg">
+            <title id="mat-title">Matriz de escolha — pediatria vs adultos</title>
+            <desc id="mat-desc">Quadros para pediatria e adultos com instrumentos de primeira linha e apoio.</desc>
+            <rect x="40" y="60" width="380" height="200" rx="12" fill="#E3F2FD" stroke="#1976D2"/>
+            <text x="230" y="105" text-anchor="middle" class="large" fill="#0D47A1">Pediatria</text>
+            <text x="230" y="135" text-anchor="middle" class="small" fill="#0D47A1">1º DDQ (triagem dentária)</text>
+            <text x="230" y="155" text-anchor="middle" class="small" fill="#0D47A1">Apoio: NCCPC R/PV, m FLACC, PPP</text>
+            <rect x="540" y="60" width="380" height="200" rx="12" fill="#E8F5E9" stroke="#2E7D32"/>
+            <text x="730" y="105" text-anchor="middle" class="large" fill="#1B5E20">Adultos</text>
+            <text x="730" y="135" text-anchor="middle" class="small" fill="#1B5E20">1º CPS NAID / NCAPC (presença)</text>
+            <text x="730" y="155" text-anchor="middle" class="small" fill="#1B5E20">Depois: exame para localizar</text>
+          </svg>
+        </figure>
+      </section>
 
   <section class="wrap stack">
     <article class="card">
