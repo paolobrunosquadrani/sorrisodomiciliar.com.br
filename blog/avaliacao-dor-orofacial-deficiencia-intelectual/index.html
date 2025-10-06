@@ -8,79 +8,53 @@
   <meta name="author" content="Dr. Paolo Bruno Squadrani">
   <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <!-- Evita scuro automatico/inversione -->
   <meta name="color-scheme" content="only light">
   <link rel="stylesheet" href="/style.css">
   <style>
     :root{
-      /* Documento solo chiaro */
       color-scheme: light;
-
       --text:#1a1a1a;
       --muted:#5f6b7a;
       --border:#e5e7eb;
       --accent:#0d47a1;
       --maxw:980px
     }
-
     html,body{height:100%}
-    body{
-      margin:0;
-      background:#f7f9fb;
-      color:var(--text);
-      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial
-    }
-
-    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    body{margin:0;background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px;overflow-x:hidden}
     .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
-
     .topbar{background:#fff;border-bottom:1px solid var(--border)}
     .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
-
     .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
-    /* Mantieni il testo del brand sempre visibile e leggibile */
     .brand,.brand:link,.brand:visited{color:var(--text)}
     .brand img{width:32px;height:32px}
     .brand .brand-text{font-weight:600}
-    /* RIMOSSO: la regola che nascondeva il testo su mobile */
     @media (max-width:420px){
       .brand{white-space:normal}
       .brand .brand-text{display:inline}
     }
-
     nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
     nav a:hover{background:#e8faf6}
-
     .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
     .breadcrumb a{color:inherit;text-decoration:none}
     .breadcrumb a:hover{text-decoration:underline}
-
     .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
-    .hero h1{margin:0 0 8px}
-    .hero p{margin:0 0 10px}
-
     .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
     .post h1,.post h2{margin-top:0}
     .post .post-meta{color:var(--muted);font-size:14px;margin:6px 0 0}
     .meta{color:var(--muted);font-size:14px}
     .post a{color:var(--accent);text-decoration:none}
     .post a:hover{text-decoration:underline}
-
     footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
     .wrap{margin-top:24px}
-
-    /* Stack verticale per testo+diagramma */
     .stack{display:flex;flex-direction:column;gap:16px}
-
     .grid{display:grid;gap:16px}
     .cols-2{grid-template-columns:1fr 1fr}
     @media (max-width: 900px){.cols-2{grid-template-columns:1fr}}
-
     .figure{display:block}
     .figure .box-title{display:block;font-weight:600;margin:0 0 8px;color:#0f172a}
     .figure svg{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#fff}
-
     .kbd{display:inline-block;font:inherit;background:#f1f5f9;border:1px solid #cbd5e1;border-bottom-width:2px;border-radius:6px;padding:0 6px}
     .visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap}
     .cta-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
@@ -88,22 +62,11 @@
     .btn:hover{background:#0b3c86}
     .card h2{margin-top:0}
     .box-title{font-size:14px;color:var(--muted)}
-
-    /* Testo SVG adattivo */
     svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
     svg text.small{font-size:clamp(10px,1.5vw,14px)}
     svg text.large{font-size:clamp(18px,2.5vw,24px)}
-
-    /* Forza 1 colonna nelle griglie di questa pagina */
     .post .wrap.grid.cols-2 { grid-template-columns: 1fr !important; }
-
-    /* Neutralizza eventuale riga orizzontale */
     .wrap.row-nowrap { display: block !important; overflow: visible !important; }
-
-    /* Evita scroll orizzontale globale */
-    .container { overflow-x: hidden; }
-
-    /* Colori espliciti dei titoli */
     h1,h2,h3,h4,h5,h6{color:var(--text)}
   </style>
 
@@ -149,7 +112,7 @@
     </div>
   </div>
 
-  <main id="conteudo" class="container" role="main">
+  <main id="conteudo" class="container">
     <nav class="breadcrumb" aria-label="Você está aqui">
       <a href="/">Início</a> › <a href="/blog/">Blog</a> › <span>Avaliar a dor orofacial em pacientes com deficiência intelectual</span>
     </nav>
@@ -160,7 +123,7 @@
         <p class="post-meta">Guia prático com triagem estruturada, anamnese direcionada, exame gentil e critérios de decisão com instrumentos validados e tendências seriadas.</p>
       </header>
 
-      <section class="wrap stack">
+      <div class="wrap stack">
         <article class="card">
           <h2 style="margin-block-end:12px">Por que um método estruturado</h2>
           <p>A subestima da dor orofacial em pessoas com deficiência intelectual é frequente devido a barreiras comunicacionais e padrões comportamentais atípicos, resultando em diagnósticos tardios e piores desfechos clínicos, motivo pelo qual são necessários processos padronizados e reprodutíveis que aumentem a confiabilidade da avaliação em contextos reais com múltiplos cuidadores.</p>
@@ -171,7 +134,7 @@
           <p>Em síntese, um método simples e estruturado, executável em 15–30 minutos, acelera a identificação de casos prioritários, diminui atrasos diagnósticos e melhora a adequação das intervenções, com benefícios tangíveis para pessoas, famílias e equipes de cuidado.</p>
           <p>Em crianças com deficiência intelectual, medidas observacionais apresentam evidência mais consistente que autorrelato; em adultos com DI, listas observacionais estruturadas auxiliam a detectar dor quando a comunicação é limitada.</p>
         </article>
-      </section>
+      </div>
 
       <aside class="card" aria-labelledby="ferramentas-title">
         <h2 id="ferramentas-title">Ferramentas validadas e suas indicações</h2>
@@ -201,7 +164,7 @@
         </details>
       </aside>
 
-      <section class="wrap stack">
+      <div class="wrap stack">
         <article class="card">
           <h2 style="margin-block-end:12px">Protocolo prático em 3 fases (total 15–30 min)</h2>
           <p><span class="kbd">Fase 1</span> Triagem estruturada (5–10 min): usar DDQ em pediatria (preferencialmente DDQ‑B) e CPS‑NAID ou NCAPC em adultos, registrando escore basal e privilegiando versões validadas em PT‑BR quando disponíveis.</p>
@@ -242,9 +205,9 @@
             <line x1="430" y1="180" x2="430" y2="210" stroke="#6A1B9A" stroke-width="3"/>
           </svg>
         </figure>
-      </section>
+      </div>
 
-      <section class="wrap stack">
+      <div class="wrap stack">
         <article class="card">
           <h2 style="margin-block-end:12px">Critérios para decisão clínica</h2>
           <p>Um escore alto em escala validada, associado a sinais clínicos concordantes, indica prioridade elevada: instituir analgesia adequada e programar tratamento odontológico prioritário, considerando a confiabilidade do instrumento no público‑alvo.</p>
@@ -288,9 +251,9 @@
             <text x="800" y="155" text-anchor="middle" class="small" fill="#1A237E">Especialista</text>
           </svg>
         </figure>
-      </section>
+      </div>
 
-      <section class="wrap stack">
+      <div class="wrap stack">
         <article class="card">
           <h2 style="margin-block-end:12px">Follow‑up e responsividade</h2>
           <p>A comparação seriada com a mesma escala é fundamental: T0 define a base, T24–48 h confirma tendência e resposta à analgesia/intervenção, T7 revisa a eficácia terapêutica e T30 consolida o plano preventivo.</p>
@@ -308,9 +271,9 @@
             </ul>
           </details>
         </article>
-      </section>
+      </div>
 
-      <section class="wrap stack">
+      <div class="wrap stack">
         <article class="card">
           <h2>Implementação: o que ter sempre disponível</h2>
           <ul>
@@ -329,9 +292,9 @@
             </ul>
           </details>
         </article>
-      </section>
+      </div>
 
-      <section class="wrap stack">
+      <div class="wrap stack">
         <article class="card">
           <h2>Box prático — guia passo‑a‑passo</h2>
 
@@ -370,9 +333,9 @@
             <text x="730" y="155" text-anchor="middle" class="small" fill="#1B5E20">Depois: exame para localizar</text>
           </svg>
         </figure>
-      </section>
+      </div>
 
-      <section class="wrap stack">
+      <div class="wrap stack">
         <article class="card">
           <h2>Sinais universais de alerta</h2>
           <ul>
@@ -434,9 +397,9 @@
             </ul>
           </details>
         </article>
-      </section>
+      </div>
 
-      <section class="wrap">
+      <div class="wrap">
         <article class="card">
           <h2>Materiais para download</h2>
           <p>Padronize etapas‑chave e facilite auditorias com formulários e guias de consentimento, mantendo rastreabilidade de escores e decisões.</p>
@@ -449,9 +412,9 @@
             <a class="btn" href="/blog/ConsentimentoFotos_PT-BR.pdf" download aria-label="Baixar formulário de consentimento para fotos clínicas em PDF">Consentimento para fotos (PDF)</a>
           </div>
         </article>
-      </section>
+      </div>
 
-      <section class="wrap">
+      <div class="wrap">
         <article class="card">
           <h2>Treinamento e confiabilidade</h2>
           <ul>
@@ -470,9 +433,9 @@
             </ul>
           </details>
         </article>
-      </section>
+      </div>
 
-      <section class="wrap">
+      <div class="wrap">
         <article class="card">
           <h2 style="margin-block-end:12px">Considerações finais</h2>
           <p>Método simples, validado e reproduzível acelera o cuidado domiciliar e ambulatorial: triagem adequada, anamnese direcionada, exame gentil e decisões baseadas em escores com sinais clínicos e magnitude de mudança clinicamente importante.</p>
@@ -487,9 +450,9 @@
             </ul>
           </details>
         </article>
-      </section>
+      </div>
 
-      <section class="wrap">
+      <div class="wrap">
         <article class="card">
           <h2>Bibliografia</h2>
           <ol>
@@ -505,12 +468,11 @@
             <li>Peng T, et al. A Systematic Review of the Measurement Properties of FLACC for Pediatric Pain Assessment. <i>J Pain Res</i>. 2023;16:1185–1196. doi: 10.2147/JPR.S397064</li>
           </ol>
         </article>
-      </section>
+      </div>
     </article>
-
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
       <p class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</p>
