@@ -64,36 +64,52 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                  <img
-                    src="/Logo.ico"
-                    alt="Logo Dr. Paolo Bruno Squadrani"
-                    width="200" height="200"
-                    class="logo-img">
-                  <div class="logo-texts">
-                    <h1 class="logo-text">Dr. Paolo Bruno Squadrani</h1>
-                    <p class="logo-subtitle">Cirurgião-Dentista CRO SC-024565</p>
-                  </div>
-                </div>
-                <nav class="nav">
-                    <a href="#inicio" class="nav-link">Início</a>
-                    <a href="#sobre" class="nav-link">Sobre</a>
-                    <a href="#servicos" class="nav-link">Serviços</a>
-                    <a href="#vantagens" class="nav-link">Vantagens</a>
-                    <a href="#contato" class="nav-link">Contato</a>
-                    <!-- Nuova voce: Blog (rosso) -->
-                    <a href="/blog"
-                       class="nav-link nav-link--blog"
-                       aria-label="Blog Sorriso Domiciliar">
-                      Blog
-                    </a>
-                </nav>
-            </div>
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <img
+          src="/Logo.ico"
+          alt="Logo Dr. Paolo Bruno Squadrani"
+          width="200" height="200"
+          class="logo-img">
+        <div class="logo-texts">
+          <h1 class="logo-text">Dr. Paolo Bruno Squadrani</h1>
+          <p class="logo-subtitle">Cirurgião-Dentista CRO SC-024565</p>
         </div>
-    </header>
+      </div>
+
+      <!-- Navigazione -->
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#vantagens" class="nav-link">Vantagens</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <a href="/blog/" class="nav-link nav-link--blog" aria-label="Blog Sorriso Domiciliar">
+          Blog
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Limita lo smooth-scroll solo ai link con hash -->
+<script>
+  // Rimuovere eventuali listener generici che chiamano preventDefault
+  // e applicare lo scroll solo ai link ancora:
+  (function () {
+    var anchors = document.querySelectorAll('nav.nav a[href^="#"]');
+    anchors.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('href');
+        var el = document.querySelector(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  })();
+</script>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
