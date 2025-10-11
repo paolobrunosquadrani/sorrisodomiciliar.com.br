@@ -96,83 +96,35 @@
     </div>
   </header>
 
-<!-- Sblocco click e navigazione sicura -->
-<script>
-(function () {
-  // 0) Garantisci che la nav sia cliccabile
-  var header = document.querySelector('header.header');
-  if (header) {
-    header.style.position = 'relative';
-    header.style.zIndex = '10';
-  }
-  var nav = document.querySelector('nav.nav');
-  if (nav) {
-    nav.style.pointerEvents = 'auto';
-  }
+  <!-- Smooth scroll solo per i link ancora -->
+  <script>
+    (function () {
+      // Protezione: togli listener preesistenti che bloccano i click sui link di nav
+      document.querySelectorAll('nav.nav a').forEach(function (a) {
+        a.replaceWith(a.cloneNode(true)); // rimuove gli event listener attaccati direttamente
+      });
 
-  // 1) Rimuovi listener globali che bloccano il click (document/body)
-  //    Cloniamo body e documentElement per rimuovere gli handler registrati via addEventListener
-  function removeAllListeners(el) {
-    try {
-      el.replaceWith(el.cloneNode(true));
-    } catch (e) {}
-  }
-  removeAllListeners(document.body);
-  removeAllListeners(document.documentElement);
+      // Applica smooth scroll solo ai link con hash
+      document.querySelectorAll('nav.nav a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var target = document.querySelector(a.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
 
-  // 2) Scollega eventuali listener sui link della nav (già fatto anche prima, ma ripetiamo)
-  document.querySelectorAll('nav.nav a').forEach(function (a) {
-    try { a.replaceWith(a.cloneNode(true)); } catch(e) {}
-  });
-
-  // 3) Smooth scroll SOLO per ancore
-  document.querySelectorAll('nav.nav a[href^="#"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      var target = document.querySelector(a.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, { passive: true });
-  });
-
-  // 4) Blog: navigazione forzata robusta
-  var blog = document.getElementById('blog-link');
-  if (blog) {
-    // Evita che qualsiasi handler successivo blocchi il click
-    blog.addEventListener('click', function (e) {
-      // Intercetta prima di bubbling
-      if (e.defaultPrevented) {
-        e.stopImmediatePropagation();
+      // Safeguard: se qualche altro handler blocca il Blog, forziamo la navigazione
+      var blog = document.getElementById('blog-link');
+      if (blog) {
+        blog.addEventListener('click', function (e) {
+          if (e.defaultPrevented) {
+            e.stopImmediatePropagation();
+            window.location.assign('/blog/');
+          }
+        }, true); // in capture per precedere altri listener
       }
-      // Navigazione immediata
-      try {
-        window.location.href = '/blog/';
-      } catch (err) {
-        window.location.assign('/blog/');
-      }
-    }, true);
-
-    // Fallback: se per qualsiasi motivo la navigazione non parte, prova dopo il tick
-    blog.addEventListener('click', function () {
-      setTimeout(function () {
-        if (!/\/blog\/?$/i.test(window.location.pathname)) {
-          try { window.location.href = '/blog/'; } catch (e) { window.location.assign('/blog/'); }
-        }
-      }, 0);
-    });
-  }
-
-  // 5) Anti-overlay: se un elemento copre la nav, disabilita pointer-events su overlay noto
-  //    Adatta i selettori ai tuoi elementi se necessario.
-  var potentialOverlays = document.querySelectorAll('.hero-image, .modal, .drawer, .overlay, .backdrop');
-  potentialOverlays.forEach(function (el) {
-    var rect = el.getBoundingClientRect();
-    var navRect = nav ? nav.getBoundingClientRect() : null;
-    if (navRect && rect.top <= navRect.bottom && rect.left < navRect.right && rect.right > navRect.left) {
-      el.style.pointerEvents = 'none';
-    }
-  });
-})();
-</script>
+    })();
+  </script>
     <!-- Hero Section -->
     <section id="inicio" class="hero">
       <div class="container">
