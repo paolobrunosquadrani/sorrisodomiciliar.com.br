@@ -108,14 +108,15 @@ function closeSuccessModal() {
 
 // Smooth scroll for navigation links
 function initSmoothScrolling() {
-    const navLinks = document.querySelectorAll('.nav-link');
+    // Seleziona solo i link interni (hash)
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
     
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = link.getAttribute('href').substring(1);
             scrollToSection(targetId);
-        });
+        }, { passive: true });
     });
 }
 
