@@ -96,35 +96,19 @@
     </div>
   </header>
 
-  <!-- Smooth scroll solo per i link ancora -->
   <script>
-    (function () {
-      // Protezione: togli listener preesistenti che bloccano i click sui link di nav
-      document.querySelectorAll('nav.nav a').forEach(function (a) {
-        a.replaceWith(a.cloneNode(true)); // rimuove gli event listener attaccati direttamente
-      });
-
-      // Applica smooth scroll solo ai link con hash
-      document.querySelectorAll('nav.nav a[href^="#"]').forEach(function (a) {
-        a.addEventListener('click', function (e) {
-          e.preventDefault();
-          var target = document.querySelector(a.getAttribute('href'));
-          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      });
-
-      // Safeguard: se qualche altro handler blocca il Blog, forziamo la navigazione
-      var blog = document.getElementById('blog-link');
-      if (blog) {
-        blog.addEventListener('click', function (e) {
-          if (e.defaultPrevented) {
-            e.stopImmediatePropagation();
-            window.location.assign('/blog/');
-          }
-        }, true); // in capture per precedere altri listener
-      }
-    })();
-  </script>
+  window.addEventListener('DOMContentLoaded', function () {
+    // Smooth scroll SOLO per ancore interne
+    document.querySelectorAll('nav.nav a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, { passive: true });
+    });
+    // Nessun handler su link non-hash: /blog/ naviga da solo
+  });
+</script>
     <!-- Hero Section -->
     <section id="inicio" class="hero">
       <div class="container">
