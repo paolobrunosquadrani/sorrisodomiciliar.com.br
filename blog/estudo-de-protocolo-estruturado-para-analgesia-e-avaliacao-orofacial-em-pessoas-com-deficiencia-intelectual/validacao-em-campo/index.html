@@ -1,1 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual – Validação em Campo – Parte II | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
+  <meta name="description" content="Plano operacional proposto (Parte II) para validação em campo do protocolo teórico (Parte I): pilot study em 20-50 casos em contextos domiciliares e ambulatoriais, medindo fidelidade, tempos, sensibilidade e feedback. Aberto a parcerias com hospitais, universidades, SUS e clínicas privadas em Santa Catarina.">
+  <meta name="author" content="Dr. Paolo Bruno Squadrani">
+  <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="color-scheme" content="only light">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    :root{
+      color-scheme: light;
+      --text:#1a1a1a;
+      --muted:#5f6b7a;
+      --border:#e5e7eb;
+      --accent:#0d47a1;
+      --maxw:980px
+    }
+    html,body{height:100%}
+    body{margin:0;background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px;overflow-x:hidden}
+    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
+    .topbar{background:#fff;border-bottom:1px solid var(--border)}
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
+    .brand,.brand:link,.brand:visited{color:var(--text)}
+    .brand img{width:32px;height:32px}
+    .brand .brand-text{font-weight:600}
+    @media (max-width:420px){
+      .brand{white-space:normal}
+      .brand .brand-text{display:inline}
+    }
+    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a:hover{background:#e8faf6}
+    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
+    .breadcrumb a{color:inherit;text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
+    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
+    .post h1,.post h2{margin-top:0}
+    .post .post-meta{color:var(--muted);font-size:14px;margin:6px 0 0}
+    .meta{color:var(--muted);font-size:14px}
+    .post a{color:var(--accent);text-decoration:none}
+    .post a:hover{text-decoration:underline}
+    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
+    .wrap{margin-top:24px}
+    .stack{display:flex;flex-direction:column;gap:16px}
+    .grid{display:grid;gap:16px}
+    .cols-2{grid-template-columns:1fr 1fr}
+    @media (max-width: 900px){.cols-2{grid-template-columns:1fr}}
+    .figure{display:block}
+    .figure .box-title{display:block;font-weight:600;margin:0 0 8px;color:#0f172a}
+    .figure svg{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#fff}
+    .kbd{display:inline-block;font:inherit;background:#f1f5f9;border:1px solid #cbd5e1;border-bottom-width:2px;border-radius:6px;padding:0 6px}
+    .visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap}
+    .cta-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{display:inline-block;background:#0d47a1;color:#fff!important;text-decoration:none;padding:10px 14px;border-radius:8px;border:1px solid #0b3c86}
+    .btn:hover{background:#0b3c86}
+    .card h2{margin-top:0}
+    .box-title{font-size:14px;color:var(--muted)}
+    svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
+    svg text.small{font-size:clamp(10px,1.5vw,14px)}
+    svg text.large{font-size:clamp(18px,2.5vw,24px)}
+    .post .wrap.grid.cols-2 { grid-template-columns: 1fr !important; }
+    .wrap.row-nowrap { display: block !important; overflow: visible !important; }
+    h1,h2,h3,h4,h5,h6{color:var(--text)}
+    .tips ul { padding-inline-start: 40px; }
+    .li-no-marker { list-style: none; margin: 12px 0; }
+    .riquadro{
+      border:1px solid var(--border);
+      border-radius:8px;
+      padding:16px;
+      background:#f8f9fb;
+      box-shadow:0 1px 3px rgba(0,0,0,0.06);
+      margin-inline-start:0;
+    }
+    .riquadro h3{ margin-block:0 12px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { border: 1px solid var(--border); padding: 8px; text-align: left; }
+    th { background-color: #f8f9fa; font-weight: 600; }
+    .alert { padding: 12px; margin: 12px 0; border-radius: 6px; border-left: 4px solid; }
+    .alert-danger { background-color: #f8d7da; border-color: #dc3545; color: #721c24; }
+    .alert-warning { background-color: #fff3cd; border-color: #ffc107; color: #856404; }
+  </style>
 
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sorrisodomiciliar.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sorrisodomiciliar.com.br/blog/"},
+      {"@type":"ListItem","position":3,"name":"Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual","item":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/"},
+      {"@type":"ListItem","position":4,"name":"Validação em Campo – Parte II","item":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/"}
+    ]
+  }
+  </script>
+
+  <!-- Structured data: Articolo principale -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual – Validação em Campo – Parte II",
+    "description":"Bozza do plano operacional para validação prática do protocolo teórico em contextos reais de odontologia domiciliar e ambulatorial. Foco em pilot study com métricas de fidelidade, tempos e feedback, aberta a parcerias institucionais em Santa Catarina.",
+    "author":{
+      "@type":"Person",
+      "name":"Dr. Paolo Bruno Squadrani"
+    },
+    "datePublished":"2025-10-10",
+    "url":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Header semplice con marca e link único -->
+  <div class="topbar" role="navigation" aria-label="Topo">
+    <div class="inner">
+      <a class="brand" href="/" rel="home" aria-label="Ir para a página inicial">
+        <img src="/Logo.ico" alt="" aria-hidden="true">
+        <span class="brand-text">sorrisodomiciliar.com.br</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="/" rel="home">Início</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="conteudo" class="container">
+    <nav class="breadcrumb" aria-label="Você está aqui">
+      <a href="/">Início</a> › <a href="/blog/">Blog</a> › <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">Estudo de Protocolo</a> › <span>Validação em Campo – Parte II</span>
+    </nav>
+
+    <!-- Introdução alla pagina (hero simile al blog) -->
+    <section class="card hero" aria-label="Introdução ao estudo">
+      <h1>Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual – Validação em Campo – Parte II</h1>
+      <p>Esta é a Parte II do estudo multipartes, que delineia o plano operacional proposto para validar o protocolo teórico (Parte I) em contextos reais domiciliares e ambulatoriais. O foco é um pilot study em 20-50 casos, medindo fidelidade (ICC ≥0.80), tempos de execução (15-30 min), sensibilidade/especificidade (≥80%) e feedback qualitativo, com versões completa e light.</p>
+      <p>Esta bozza está aberta a parcerias com hospitais, universidades, SUS (ex. UBS e CRAS em Blumenau/SC) e clínicas privadas para adaptação às oportunidades reais. Sem conflitos de interesse; aprovação ética (CEP/CONEP) em andamento. Acesse a <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">página principal do estudo</a> e <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/proposta-teorica/">Parte I</a> para contexto.</p>
+    </section>
+
+    <!-- Lista di parti dell'articolo (stile post-list adattato) -->
+    <section class="post-list" aria-label="Parti do estudo">
+      <!-- Parte 2: Validação em Campo -->
+      <article class="post" itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">
+          <a href="validacao-em-campo/">
+            Validação em Campo – Parte II
+          </a>
+        </h2>
+        <p class="meta">
+          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Em desenvolvimento:
+          <time datetime="2025-10-10">10 out 2025</time> 
+        </p>
+        <p itemprop="description">
+          Plano operacional proposto para validação prática: métricas de sucesso (fidelidade, tempi, feedback), versão completa e light, in contesti domiciliares/ambulatoriali. Clique para explorar a bozza e propor parcerias.
+        </p>
+      </article>
+    </section> 
+
+    <article class="post" itemscope itemtype="https://schema.org/Article">
+      <header class="card">
+        <h1 class="post-title" itemprop="headline">Validação em Campo: Plano Operacional Proposto e Oportunidades de Parceria</h1>
+        <p class="post-meta">Esta Parte II apresenta a bozza flexível para um pilot study, testando o protocolo em cenários reais e coletando dados para refinamento. Resultados preliminares serão atualizados conforme parcerias se concretizem, preparando o terreno para a Parte III (estudo experimental, em desenvolvimento).</p>
+      </header>
+
+      <div style="border:2px solid #007BFF; background-color:#FFF9C4; padding:16px; margin-bottom:24px;">
+        <h2 style="margin-top:0; margin-bottom:16px; color:#0056b3;">Resumo Executivo</h2>
+        <h3 style="margin-top:0; margin-bottom:16px; color:#0056b3;">Field Validation of Orofacial Pain Assessment Protocol: Proposed Operational Plan for Pilot Study and Partnerships</h3>
+        <p>Esta bozza delineia o plano para validar o protocolo estruturado (Parte I) em 20-50 casos reais, com foco em odontologia domiciliar e ambulatorial para pessoas com deficiência intelectual. Métricas incluem fidelidade de aplicação (ICC ≥0.80), tempos operacionais (15-30 minutos), sensibilidade/especificidade (≥80%) e feedback de cuidadores/profissionais (satisfação ≥4/5 em escala Likert).</p>
+        <p>O design abrange um pilot prospectivo com versões completa (triagem + anamnese + exame + follow-up seriada) e light (reduzida para contextos de recursos limitados), integrando ferramentas validadas como DDQ-B, CPS-NAID e NCAPC. Aberto a colaborações com instituições de saúde em Santa Catarina (hospitais, universidades, SUS, clínicas privadas) para recrutamento, formação e análise conjunta de dados.</p>
+        <p>Benefícios esperados: Padronização de avaliações, redução de subdiagnóstico de dor orofacial, integração ao SUS e oportunidades de co-autoria em publicações. Aprovação ética (CEP/CONEP) e conformidade LGPD garantidas. Esta fase pavimenta o estudo experimental (Parte III), com resultados preliminares a serem preenchidos pós-implementação.</p>
+        <p><strong>Palavras-chave:</strong> Validação em campo, pilot study, odontologia domiciliar, parcerias institucionais, escalas observacionais de dor.</p>
+      </div>
+
+      <div class="wrap stack">
+        <article class="card">
+          <h2 style="margin-block-end:12px">Por que validar em campo?</h2>
+          <p>A transição da teoria para a prática é essencial para garantir que o protocolo seja viável em cenários reais, onde fatores como colaboração do paciente, recursos disponíveis e variabilidade ambiental influenciam a acurácia. Esta validação aborda desafios comuns na odontologia inclusiva, como barreiras comunicacionais e contextos domiciliares limitados, alinhando-se às diretrizes do SUS para cuidados primários.</p>
+          <p>O pilot study proposto mede propriedades psicométricas (ex. ICC inter-avaliadores) e operacionais (tempos, feedback), permitindo ajustes antes da escalabilidade. Benefícios incluem: redução de emergências odontológicas (estimada em 20-30%), formação de equipes e geração de evidências para integração ao PNAIS (Política Nacional de Atenção Integral à Saúde Bucal).</p>
+          <p>Esta bozza é flexível para parcerias: com universidades, foca em dados acadêmicos; com SUS, enfatiza acessibilidade rural; com clínicas privadas, destaca certificação inclusiva. Hipóteses: O protocolo completo atingirá ICC ≥0.85; a versão light, ≥0.80 com redução de 30% no tempo.</p>
+        </article>
+      </div>
+
+      <div class="wrap stack">
+        <article class="card">
+          <h2 style="margin-block-end:12px">Objetivos e Hipóteses</h2>
+          <h3 style="margin-block-end:12px">Objetivo Geral</h3>
+          <p>Validar a aplicabilidade e eficácia do protocolo em contextos reais, coletando evidências para refinamento e escalabilidade.</p>
+
+          <h3 style="margin-block-end:12px">Objetivos Específicos</h3>
+          <ul>
+            <li>Avaliar fidelidade de aplicação (ICC/kappa ≥0.80) entre avaliadores treinados.</li>
+            <li>Mensurar tempos operacionais e carga de trabalho (15-30 min por sessão).</li>
+            <li>Testar sensibilidade/especificidade das escalas (DDQ-B, CPS-NAID, NCAPC) vs. diagnóstico clínico gold-standard.</li>
+            <li>Coletar feedback qualitativo/quantitativo de cuidadores e profissionais (satisfação ≥4/5).</li>
+            <li>Identificar adaptações para contextos variados (domiciliar vs. ambulatorial, recursos limitados).</li>
+          </ul>
+
+          <h3 style="margin-block-end:12px">Hipóteses Testáveis</h3>
+          <ul>
+            <li>A versão completa do protocolo demonstrará alta fidelidade (ICC ≥0.85) e sensibilidade ≥85% em 80% dos casos.</li>
+            <li>A versão light manterá ICC ≥0.80 com tempos reduzidos em 25-30%, ideal para SUS rural.</li>
+            <li>Feedback indicará usabilidade alta (≥80% positivo), com sugestões para integração tecnológica opcional (ex. apps de IA).</li>
+          </ul>
+
+          <details class="tips" aria-labelledby="hipoteses-notes-title">
+            <summary id="hipoteses-notes-title">Notas sobre hipóteses e parcerias</summary>
+            <ul>
+              <li>Estas hipóteses serão testadas em amostras adaptadas às oportunidades de parceria (ex. [Placeholder: 15 casos via APAE Blumenau]).</li>
+              <li>Colaborações podem incluir co-desenho do pilot, fornecendo acesso a pacientes e equipes para validação conjunta.</li>
+              <li>Métricas serão analisadas com software gratuito (ex. R ou Excel), compartilhando relatórios para co-autoria em publicações.</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <div class="wrap stack">
+        <article class="card">
+          <h2 style="margin-block-end:12px">Metodologia Proposta</h2>
+          <h3 style="margin-block-end:12px">População e Amostra</h3>
+          <p>Alvo: 20-50 indivíduos com deficiência intelectual (idades 5-65 anos, graus leve a moderado, não verbais ou com comunicação limitada). Recrutamento via parcerias [Placeholder: ex. APAE Blumenau, UBS Velha, Hospital Santa Isabel ou clínicas privadas em SC]. Inclusão: Contextos mistos (60% domiciliar, 40% ambulatorial); exclusão: Urgências agudas ou comorbidades graves (ex. instabilidade neurológica).</p>
+          <p>Amostra flexível: Inicia com 20 casos para fase inicial; expande com apoio institucional. Consenso: Termo de consentimento livre e esclarecido (TCLE) para cuidadores, com assenso do paciente quando possível, em conformidade com LGPD e Resolução CNS 466/2012.</p>
+
+          <h3 style="margin-block-end:12px">Design do Pilot Study</h3>
+          <p>Estudo prospectivo observacional, não randomizado, com duração de 4-6 semanas. Fases: (1) Addestramento (4 horas teóricas + prática); (2) Aplicação (T0 baseline + T24-48h follow-up + T7 revisão); (3) Análise e debrief. Dois avaliadores por caso (dupla cega para 20% das avaliações). Versões: Completa (3 fases + follow-up seriada); Light (triagem + anamnese base, para recursos limitados).</p>
+
+          <h3 style="margin-block-end:12px">Instrumentos e Procedimentos</h3>
+          <ul>
+            <li>Escalas: DDQ-B (pediatria), CPS-NAID + NCAPC (adultos), conforme Parte I.</li>
+            <li>Registro: Log de tempos (cronômetro), formulários digitais (Google Forms ou REDCap para LGPD), fotos clínicas com consentimento.</li>
+            <li>Follow-up: Repetição em condições padronizadas (mesmo ambiente/horário), calculando % variação (10-20% mínima; ≥30% moderada).</li>
+            <li>Tecnologia opcional: Apps como PainChek para validação cruzada, se parceria fornecer acesso.</li>
+          </ul>
+
+          <figure class="figure card" aria-labelledby="fig-pilot-title fig-pilot-desc">
+            <figcaption id="fig-pilot-title" class="box-title">Diagrama 1 — Fluxo do Pilot Study Proposto</figcaption>
+            <p id="fig-pilot-desc" class="visually-hidden">Reclutamento → Addestramento com parceiro → Aplicação T0/T24-48h → Análise de dados → Relatório e ajustes.</p>
+            <svg role="img" aria-labelledby="pilot-title pilot-desc" viewBox="0 0 960 400" xmlns="http://www.w3.org/2000/svg">
+              <title id="pilot-title">Fluxo proposto para validação em campo</title>
+              <desc id="pilot-desc">Cinco blocos conectados: Reclutamento, Addestramento, Aplicação, Análise, Relatório, com input de parceiros.</desc>
+              <rect x="20" y="80" width="180" height="100" rx="12" fill="#E6F4FF" stroke="#1E88E5"/>
+              <text x="110" y="130" text-anchor="middle" class="large" fill="#0D47A1">Reclutamento</text>
+              <text x="110" y="155" text-anchor="middle" class="small" fill="#0D47A1">via Parceiros</text>
+              <polygon points="220,140 260,140 260,130 290,150 260,170 260,160 220,160" fill="#90CAF9"/>
+              <rect x="300" y="80" width="180" height="100" rx="12" fill="#E8F5E9" stroke="#2E7D32"/>
+              <text x="390" y="130" text-anchor="middle" class="large" fill="#1B5E20">Addestramento</text>
+              <text x="390" y="155" text-anchor="middle" class="small" fill="#1B5E20">4h + Prática</text>
+              <polygon points="500,140 540,140 540,130 570,150 540,170 540,160 500,160" fill="#A5D6A7"/>
+              <rect x="580" y="80" width="180" height="100" rx="12" fill="#FFF8E1" stroke="#F9A825"/>
+              <text x="670" y="130" text-anchor="middle" class="large" fill="#E65100">Aplicação</text>
+              <text x="670" y="155" text-anchor="middle" class="small" fill="#E65100">T0/T24-48h/T7</text>
+              <rect x="300" y="240" width="180" height="100" rx="12" fill="#F3E5F5" stroke="#6A1B9A"/>
+              <text x="390" y="290" text-anchor="middle" class="large" fill="#4A148C">Análise</text>
+              <text x="390" y="315" text-anchor="middle" class="small" fill="#4A148C">ICC/Tempos/Feedback</text>
+              <rect x="580" y="240" width="180" height="100" rx="12" fill="#FFEBEE" stroke="#C62828"/>
+              <text x="670" y="290" text-anchor="middle" class="large" fill="#B71C1C">Relatório</text>
+              <text x="670" y="315" text-anchor="middle" class="small" fill="#B71C1C">Ajustes + Publicação</text>
+              <line x1="410" y1="180" x2="410" y2="240" stroke="#6A1B9A" stroke-width="3"/>
+            </svg>
+          </figure>
+
+          <details class="tips" aria-labelledby="metodologia-notes-title">
+            <summary id="metodologia-notes-title">Notas metodológicas e adaptações</summary>
+            <ul>
+              <li>Design flexível: Ajustar amostra/timeline às oportunidades (ex. [Placeholder: 10 casos iniciais via SUS]).</li>
+              <li>Controle de viés: Dupla avaliação cega, padronização de condições (iluminação, ruído).</li>
+              <li>Ética: Submissão CEP imediata; priorizar bem-estar (interromper se distress).</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <div class="wrap stack">
+        <article class="card">
+          <h2 style="margin-block-end:12px">Métricas de Sucesso</h2>
+          <p>As métricas serão coletadas em tempo real, com análise descritiva e inferencial para validar o protocolo. Targets baseados em literatura (ex. IASP para ICC em escalas observacionais).</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Métrica</th>
+                <th>Descrição</th>
+                <th>Target</th>
+                <th>Método de Medição</th>
+                <th>Responsável (Placeholder)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fidelidade (ICC/Kappa)</td>
+                <td>Concordância inter-avaliadores</td>
+                <td>≥0.80</td>
+                <td>Dupla avaliação cega em 20% dos casos; software R/Excel</td>
+                <td>Equipe Sorriso + Parceiro</td>
+              </tr>
+              <tr>
+                <td>Tempos Operacionais</td>
+                <td>Tempo médio por sessão (T0 + follow-up)</td>
+                <td>15-30 min</td>
+                <td>Cronômetro + log digital</td>
+                <td>Avaliadores treinados</td>
+              </tr>
+              <tr>
+                <td>Sensibilidade/Especificidade</td>
+                <td>Acurácia vs. diagnóstico gold-standard (exame especialista)</td>
+                <td>≥80%</td>
+                <td>Confronto com referência clínica; matriz de confusão</td>
+                <td>Odontólogo supervisor</td>
+              </tr>
+              <tr>
+                <td>Feedback Qualitativo/Quantitativo</td>
+                <td>Satisfação de cuidadores/profissionais</td>
+                <td>≥4/5 (Likert); ≥80% positivo</td>
+                <td>Questionário pós-T24-48h (5 itens + abertos)</td>
+                <td>Cuidadores e equipe parceira</td>
+              </tr>
+              <tr>
+                <td>Custo-Efetividade</td>
+                <td>Custo por avaliação (R$/benefício)</td>
+                <td>≤R$50 por caso</td>
+                <td>Registro de recursos; análise custo-benefício</td>
+                <td>Coordenador do pilot</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <details class="tips" aria-labelledby="metricas-notes-title">
+            <summary id="metricas-notes-title">Notas sobre análise de métricas</summary>
+            <ul>
+              <li>Se ICC &lt;0.80: Booster de treinamento e re-teste em subamostra.</li>
+              <li>[Placeholder: Resultados preliminares a ser preenchido pós-pilot, ex. ICC=0.82 em 15 casos].</li>
+              <li>Análise qualitativa: Temas recorrentes via codificação temática (ex. NVivo gratuito ou manual).</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <div class="wrap stack">
+        <article class="card">
+          <h2 style="margin-block-end:12px">Implementação e Logística</h2>
+          <h3 style="margin-block-end:12px">Addestramento e Formação</h3>
+          <p>Workshop conjunto de 4 horas: Teoria (neurobiologia da dor em DI, vieses) + prática (vídeos/casos simulados para pontuação de escalas). Meta: Kappa ≥0.75 pré-pilot. Materiais fornecidos: Kit portátil (LED, formulários PDF), manuais e acesso a vídeos. Parcerias podem incluir formação gratuita para equipes locais.</p>
+
+          <h3 style="margin-block-end:12px">Procedimentos Operacionais</h3>
+          <ol>
+            <li><strong>Reclutamento:</strong> Via parceiros [Placeholder: ex. APAE ou UBS], com triagem inicial por telefone/WhatsApp.</li>
+            <li><strong>Consenso e Baseline:</strong> TCLE assinado; aplicação T0 (15-20 min).</li>
+            <li><strong>Aplicação:</strong> Protocolo em 3 fases + follow-up (T24-48h por tele ou visita).</li>
+            <li><strong>Registro:</strong> Dados em plataforma segura (REDCap ou Google Drive LGPD-compliant).</li>
+            <li><strong>Debrief:</strong> Entrevista pós-pilot com cuidadores para feedback.</li>
+          </ol>
+
+          <h3 style="margin-block-end:12px">Adaptações para Parcerias</h3>
+          <ul>
+            <li>SUS/UBS: Foco em versão light para acessibilidade rural; integração a fluxos existentes.</li>
+            <li>Universidades (ex. FURB): Envolvimento de alunos em análise; dados para teses.</li>
+            <li>Hospitais/Privados: Ênfase em emergências; co-autoria em relatórios.</li>
+          </ul>
+
+          <section id="logistica-parcerias" class="riquadro">
+            <h4 style="margin-block-end:12px">Oportunidades de Colaboração</h4>
+            <p>Parceiros podem contribuir com:</p>
+            <ul>
+              <li>Acesso a pacientes e instalações (sem custo adicional).</li>
+              <li>Equipes para co-avaliação e formação mútua.</li>
+              <li>Dados agregados para publicações conjuntas (ex. em revistas como Rev Odontol UNESP).</li>
+              <li>Financiamento opcional via editais CNPq ou SUS para expansão multicêntrica.</li>
+            </ul>
+            <p>Benefícios: Certificação em protocolos inclusivos, marketing para SUS/privado, evidências para relatórios institucionais.</p>
+          </section>
+
+          <details class="tips" aria-labelledby="impl-notes-title">
+            <summary id="impl-notes-title">Notas logísticas</summary>
+            <ul>
+              <li>Kit padrão: R$500-1000 por piloto (coberto inicialmente por Sorriso Domiciliar).</li>
+              <li>Timeline flexível: Fase 1 (parcerias, 1 mês); Fase 2 (aplicação, 2 meses).</li>
+              <li>[Placeholder: Suporte remoto via WhatsApp grupo para coordenação].</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <div class="wrap stack">
+        <article class="card">
+          <h2 style="margin-block-end:12px">Análise dos Dados e Output Esperados</h2>
+          <p>Análise quantitativa: Estatísticas descritivas (médias, desvios), ICC/kappa (meta ≥0.80), sensibilidade via matriz de confusão. Qualitativa: Análise temática de feedback (ex. barreiras/usabilidade). Software: Gratuito (Excel para básicos; R para avançado).</p>
+          <p>Output: Relatório interino (pós-pilot, compartilhado com parceiros), artigo para submissão (ex. J Pain Symptom Manage), webinar SUS. [Placeholder: Resultados preliminares: Ex. tempo médio 22 min, feedback 85% positivo – a ser atualizado].</p>
+          <p>Custo-efetividade: Calculada como R$/redução de dor (ex. ≤R$50 por ≥30% melhora), ancorada em IMMPACT.</p>
+
+          <div class="alert alert-warning" role="alert">
+            <strong>Ajustes baseados em dados:</strong> Se métricas abaixo do target (ex. ICC &lt;0.80), implementar booster de treinamento e re-test em subamostra, adaptando o protocolo para realidades parceiras.
+          </div>
+
+          <details class="tips" aria-labelledby="analise-notes-title">
+            <summary id="analise-notes-title">Notas de análise</summary>
+            <ul>
+              <li>Privacidade: Dados anonimizados; compartilhamento apenas agregados.</li>
+              <li>Se parcerias multicêntricas: Análise estratificada por contexto (domiciliar vs. ambulatorial).</li>
+              <li>Critério de sucesso: ≥80% métricas atingidas → Avançar para Parte III; caso contrário, refinar e repetir pilot.</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <div class="wrap stack">
+        <article class="card">
+          <h2 style="margin-block-end:12px">Riscos, Limites e Mitigações</h2>
+          <p>Riscos identificados: Baixo recrutamento (mitigado por múltiplas parcerias); viés de seleção (amostra Blumenau-centrada, expandir via SUS); fadiga de avaliadores (limitar a 3 sessões/semana).</p>
+          <p>Limites: Tamanho de amostra pequeno para generalização inicial (solução: Pilot como prova de conceito para estudo maior). Ética: Priorizar bem-estar; protocolo de stop se sinais de distress ou urgências (ex. febre >38°C).</p>
+
+          <div class="alert alert-danger" role="alert">
+            <strong>Prioridade Clínica:</strong> Em casos de alerta (tumefação, trismo), interromper pilot e acionar emergência SUS, sem atraso por métricas.
+          </div>
+
+          <details class="tips" aria-labelledby="riscos-notes-title">
+            <summary id="riscos-notes-title">Mitigações práticas</summary>
+            <ul>
+              <li>Recrutamento: Campanha via WhatsApp/email instituições parceiras.</li>
+              <li>Viés: Padronização via treinamento; auditoria externa se parceria universitária.</li>
+              <li>Recursos: Versão light para contextos limitados; orçamento inicial coberto.</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <div class="wrap">
+        <article class="card">
+          <h2>Chamada para Parcerias e Considerações Finais</h2>
+          <p>Esta bozza do plano operacional é projetada para colaboração ativa, adaptando-se às oportunidades reais em Santa Catarina. Contribua com acesso a pacientes, equipes ou recursos para um pilot impactante, gerando evidências para cuidados inclusivos e publicações conjuntas. Obiettivo: Reduzir subdiagnóstico de dor orofacial, integrando o protocolo ao SUS e práticas privadas.</p>
+          <p>A implementação pavimentará a Parte III (estudo experimental, em desenvolvimento), com foco em escalabilidade e análise estatística avançada. Sem conflitos; aprovações éticas em curso. Para discutir parcerias, contate Dr. Paolo Bruno Squadrani via WhatsApp (47) 98916-3649 ou email [inserir email].</p>
+
+          <details class="tips" aria-labelledby="parcerias-notes-title">
+            <summary id="parcerias-notes-title">Próximos Passos para Colaboração</summary>
+            <ul>
+              <li>Envie interesse: Receba versão personalizada da bozza.</li>
+              <li>Reunião inicial: 30 min para alinhar expectativas e timeline.</li>
+              <li>Implementação: Suporte total da Sorriso Domiciliar, com co-créditos em outputs.</li>
+            </ul>
+          </details>
+
+          <div style="margin-top:1em; padding:1em; border:1px solid #e2b659; background:#fff5e6; border-radius:4px;">
+            <strong style="display:flex; align-items:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#e2b659" viewBox="0 0 24 24" style="margin-right:0.5em;">
+                <path d="M1 21h22L12 2 1 21zm12-2h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+              Nota sobre Próximo Pilot
+            </strong>
+            <p style="margin:0.5em 0;">
+              Com parcerias confirmadas, o pilot iniciará em [Placeholder: Q1 2026], com relatório preliminar em 2 meses. Ajustes baseados em feedback real para máxima viabilidade.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="wrap">
+        <article class="card">
+          <h2>Materiais para Download e Parcerias</h2>
+          <p>Baixe a bozza completa em PDF para apresentação institucional, incluindo formulários, TCLE e log de métricas. Use para propor colaborações.</p>
+          <div class="cta-bar">
+            <a class="btn" href="/blog/Bozza_Validacao_Campo_PDF.pdf" download aria-label="Baixar bozza completa em PDF">Bozza Completa (PDF)</a>
+            <a class="btn" href="/blog/TCLE_Pilot.pdf" download aria-label="Baixar Termo de Consentimento em PDF">TCLE Pilot (PDF)</a>
+            <a class="btn" href="/blog/Log_Metricas.xlsx" download aria-label="Baixar planilha de métricas em Excel">Log Métricas (Excel)</a>
+            <a class="btn" href="/blog/Questionario_Feedback.pdf" download aria-label="Baixar questionário de feedback em PDF">Questionário Feedback (PDF)</a>
+            <a class="btn" href="/blog/Guia_Parcerias.pdf" download aria-label="Baixar guia para parcerias em PDF">Guia Parcerias (PDF)</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="wrap">
+        <aside class="card" aria-labelledby="siglas-title">
+          <h2 id="siglas-title">Glossário de Siglas (Atualizado)</h2>
+          <dl>
+            <dt><abbr title="Coeficiente de Correlação Intraclasse">ICC</abbr></dt>
+            <dd>Coeficiente de Correlação Intraclasse — Medida de confiabilidade inter-avaliadores (target ≥0.80).</dd>
+            <dt><abbr title="Coeficiente Kappa de Cohen">Kappa</abbr></dt>
+            <dd>Coeficiente Kappa de Cohen — Concordância corrigida por acaso em classificações categóricas.</dd>
+            <dt><abbr title="Comitê de Ética em Pesquisa">CEP</abbr></dt>
+            <dd>Comitê de Ética em Pesquisa — Órgão supervisor de estudos humanos no Brasil.</dd>
+            <dt><abbr title="Conselho Nacional de Ética em Pesquisa">CONEP</abbr></dt>
+            <dd>Conselho Nacional de Ética em Pesquisa — Instância nacional para aprovações éticas.</dd>
+            <dt><abbr title="Política Nacional de Atenção Integral à Saúde Bucal">PNAIS</abbr></dt>
+            <dd>Política Nacional de Atenção Integral à Saúde Bucal — Programa SUS para odontologia.</dd>
+            <dt><abbr title="Termo de Consentimento Livre e Esclarecido">TCLE</abbr></dt>
+            <dd>Termo de Consentimento Livre e Esclarecido — Documento ético para participação em estudos.</dd>
+            <!-- Includi siglas da Parte I se relevante, ex. DDQ-B, CPS-NAID, etc. -->
+            <dt><abbr title="Dental Discomfort Questionnaire (versão brasileira)">DDQ-B</abbr></dt>
+            <dd>Dental Discomfort Questionnaire (versão brasileira) — Escala para triagem pediátrica.</dd>
+            <dt><abbr title="Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities">CPS-NAID</abbr></dt>
+            <dd>Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities — Escala para adultos não verbais.</dd>
+            <dt><abbr title="Non-Communicating Adult Pain Checklist">NCAPC</abbr></dt>
+            <dd>Non-Communicating Adult Pain Checklist — Checklist observacional para adultos.</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="wrap">
+        <article class="card">
+          <h2>Bibliografia</h2>
+          <ol>
+            <li>Daher A, et al. Validation of the Brazilian version of the Dental Discomfort Questionnaire (DDQ-B). <em>Health Qual Life Outcomes</em>. 2014;12:30.</li>
+            <li>Burkitt C, et al. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities (CPS-NAID). Centre for Pediatric Pain Research; 2009.</li>
+            <li>Lotan M, et al. Measurement properties of the Non-Communicating Adult Pain Checklist. <em>Res Dev Disabil</em>. 2010;31(4):809–816.</li>
+            <li>Dworkin RH, et al. Interpreting the clinical importance of treatment outcomes in chronic pain clinical trials: IMMPACT recommendations. <em>J Pain</em>. 2008;9(2):105–121.</li>
+            <li>International Association for the Study of Pain (IASP). Guidelines for pain assessment in vulnerable populations. 2021.</li>
+            <li>Ministério da Saúde (Brasil). Política Nacional de Atenção Integral à Saúde Bucal (PNAIS). Brasília: MS; 2004.</li>
+            <li>Resolução CNS 466/2012. Diretrizes e normas regulamentadoras de pesquisas envolvendo seres humanos. Conselho Nacional de Saúde.</li>
+            <li>Lei Geral de Proteção de Dados (LGPD) – Lei n. 13.709/2018. Aplicação em estudos clínicos.</li>
+            <li>Exemplos de pilot studies: Herr K, et al. Pain assessment in nonverbal patients: Validation in clinical settings. <em>Clin J Pain</em>. 2006;22(8):610–625.</li>
+            <li>Atee M, et al. PainChek: Usability in field validation for dementia and disabilities. <em>Clin Interv Aging</em>. 2018;13:1185–1196.</li>
+          </ol>
+        </article>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
+      <p class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</p>
+      <p class="footer-contact">R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250 · WhatsApp (47) 98916‑3649</p>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
