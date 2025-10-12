@@ -1,1 +1,1076 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avaliar a dor orofacial em pacientes com deficiência intelectual | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
+  <meta name="description" content="Guia prático de avaliação de dor orofacial em deficiência intelectual no cuidado domiciliar e ambulatorial: triagem estruturada (DDQ B), CPS NAID/NCAPC, anamnese, exame gentil e decisões baseadas em tendências seriadas.">
+  <meta name="author" content="Dr. Paolo Bruno Squadrani">
+  <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="color-scheme" content="only light">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    :root{
+      color-scheme: light;
+      --text:#1a1a1a;
+      --muted:#5f6b7a;
+      --border:#e5e7eb;
+      --accent:#0d47a1;
+      --maxw:980px
+    }
+    html,body{height:100%}
+    body{margin:0;background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px;overflow-x:hidden}
+    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
+    .topbar{background:#fff;border-bottom:1px solid var(--border)}
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
+    .brand,.brand:link,.brand:visited{color:var(--text)}
+    .brand img{width:32px;height:32px}
+    .brand .brand-text{font-weight:600}
+    @media (max-width:420px){
+      .brand{white-space:normal}
+      .brand .brand-text{display:inline}
+    }
+    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a:hover{background:#e8faf6}
+    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
+    .breadcrumb a{color:inherit;text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
+    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
+    .post h1,.post h2{margin-top:0}
+    .post .post-meta{color:var(--muted);font-size:14px;margin:6px 0 0}
+    .meta{color:var(--muted);font-size:14px}
+    .post a{color:var(--accent);text-decoration:none}
+    .post a:hover{text-decoration:underline}
+    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
+    .wrap{margin-top:24px}
+    .stack{display:flex;flex-direction:column;gap:16px}
+    .grid{display:grid;gap:16px}
+    .cols-2{grid-template-columns:1fr 1fr}
+    @media (max-width: 900px){.cols-2{grid-template-columns:1fr}}
+    .figure{display:block}
+    .figure .box-title{display:block;font-weight:600;margin:0 0 8px;color:#0f172a}
+    .figure svg{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#fff}
+    .kbd{display:inline-block;font:inherit;background:#f1f5f9;border:1px solid #cbd5e1;border-bottom-width:2px;border-radius:6px;padding:0 6px}
+    .visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap}
+    .cta-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{display:inline-block;background:#0d47a1;color:#fff!important;text-decoration:none;padding:10px 14px;border-radius:8px;border:1px solid #0b3c86}
+    .btn:hover{background:#0b3c86}
+    .card h2{margin-top:0}
+    .box-title{font-size:14px;color:var(--muted)}
+    svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
+    svg text.small{font-size:clamp(10px,1.5vw,14px)}
+    svg text.large{font-size:clamp(18px,2.5vw,24px)}
+    .post .wrap.grid.cols-2 { grid-template-columns: 1fr !important; }
+    .wrap.row-nowrap { display: block !important; overflow: visible !important; }
+    h1,h2,h3,h4,h5,h6{color:var(--text)}
+    /* opzionale: rientro esplicito dell'elenco che contiene il riquadro */
+    .tips ul { padding-inline-start: 40px; }
+    
+    /* li che ospita il riquadro: nessun marker */
+    .li-no-marker { list-style: none; margin: 12px 0; }
+    
+    /* riquadro coerente col precedente */
+    .riquadro{
+      border:1px solid var(--border);
+      border-radius:8px;
+      padding:16px;
+      background:#f8f9fb;
+      box-shadow:0 1px 3px rgba(0,0,0,0.06);
+      margin-inline-start:0;
+    }
+    .riquadro h3{ margin-block:0 12px; }
+  </style>
+
+  <!-- Structured data: Breadcrumb + Article -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sorrisodomiciliar.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sorrisodomiciliar.com.br/blog/"},
+      {"@type":"ListItem","position":3,"name":"Avaliar a dor orofacial em pacientes com deficiência intelectual","item":"https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Avaliar a dor orofacial em pacientes com deficiência intelectual: ferramentas validadas e protocolo prático domiciliar",
+    "author":{"@type":"Person","name":"Dr. Paolo Bruno Squadrani"},
+    "datePublished":"2025-10-10",
+    "dateModified":"2025-10-10",
+    "inLanguage":"pt-BR",
+    "publisher":{"@type":"Organization","name":"Sorriso Domiciliar"},
+    "mainEntityOfPage":"https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/",
+    "description":"Guia prático com triagem estruturada, anamnese direcionada, exame gentil e critérios de decisão baseados em instrumentos validados e tendências seriadas."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="topbar" role="navigation" aria-label="Topo">
+    <div class="inner">
+      <a class="brand" href="/" rel="home" aria-label="Ir para a página inicial">
+        <img src="/Logo.ico" alt="" aria-hidden="true">
+        <span class="brand-text">sorrisodomiciliar.com.br</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="/" rel="home">Início</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="conteudo" class="container">
+    <nav class="breadcrumb" aria-label="Você está aqui">
+      <a href="/">Início</a> › <a href="/blog/">Blog</a> › <span>Avaliar a dor orofacial em pacientes com deficiência intelectual</span>
+    </nav>
+
+ <article class="post" itemscope itemtype="https://schema.org/Article">
+  <header class="card">
+    <h1 class="post-title" itemprop="headline">Avaliar a dor orofacial em pacientes com deficiência intelectual: ferramentas validadas, formação e tecnologia de suporte</h1>
+    <p class="post-meta">Guia prático com triagem estruturada, anamnese direcionada, exame gentil, programa de treinamento da equipe, uso opcional de apps de IA e wearables, e critérios de decisão ancorados em tendências seriadas e referências IMMPACT.</p>
+  </header>
+
+  <div style="border:2px solid #007BFF; background-color:#FFF9C4; padding:16px; margin-bottom:24px;">
+    <h2 style="margin-top:0; margin-bottom:16px; color:#0056b3;">Abstract</h2>
+    <h3 style="margin-top:0; margin-bottom:16px; color:#0056b3;">Orofacial Pain Assessment in Patients with Intellectual Disabilities: Validated Tools and Practical Home-Based Protocol</h3>
+    <p>Assessing orofacial pain in individuals with intellectual disabilities poses significant challenges due to communication barriers, atypical behavioral expressions, and varied care environments, often resulting in underdiagnosis and delayed intervention. This article presents a simple, structured protocol executable in 15–30 minutes in home or ambulatory settings by trained professionals or caregivers.</p>
+    <p>The protocol comprises three phases:</p>
+    <ul>
+      <li><strong>Structured triage</strong> (5–10 min) using validated scales—DDQ-B for pediatric populations or CPS-NAID combined with NCAPC for adults—to record baseline scores (T0).</li>
+      <li><strong>Directed anamnesis</strong> (5–10 min) focusing on symptom timeline, aggravating/relieving factors, changes in feeding, hygiene, sleep, and behaviors, as well as recent medications or intercurrent events.</li>
+      <li><strong>Gentle clinical examination</strong> (5–10 min) with a portable LED light for external and intraoral inspection and careful palpation, documenting findings and urgent red flags (facial swelling, fever &gt;38 °C, trismus, dysphagia, systemic signs).</li>
+    </ul>
+    <p>A key innovation is <strong>serial follow-up</strong>: repeat the same scale under identical conditions at T24–48 h (calculating percentage change from baseline: 10–20 % minimal, ≥ 30 % moderate, ≥ 50 % substantial), with optional reviews at T7 and T30 to confirm trends, guide therapeutic decisions, and assess responsiveness. Optional technological supports (AI-based facial action unit recognition and physiological wearables) may complement clinical observations under defined quality criteria.</p>
+    <p>To ensure operational validity before wide adoption, a <strong>pilot study</strong> will be conducted in home and ambulatory settings to evaluate application fidelity, scale sensitivity and specificity, inter-rater variability, execution time, and gather structured feedback from caregivers and professionals.</p>
+    <p>This protocol enhances diagnostic accuracy, reduces inter-rater variability through standardized conditions and training, offers a “light” version for resource-limited contexts, and provides caregiver checklists, consent guides, and ethical safeguards. By integrating validated observational tools with dynamic monitoring and clear decision thresholds, it accelerates case prioritization, minimizes diagnostic delays, and improves care outcomes for patients, families, and care teams.</p>
+    <p><strong>Keywords:</strong> Orofacial pain, intellectual disability, pain assessment protocol, observational scales, home-based dentistry.</p>
+  </div>
+      
+  <article class="card">
+  <h2 style="margin-block-end:12px">Pontos Críticos</h2>
+  <section id="contextualizacao-evidencias">
+    <h3 style="margin-block-end:12px">Contextualização das evidências e generalização</h3>
+    <p>
+      A literatura que embasa DDQ-B, CPS-NAID e NCAPC foi construída sobre amostras com diferentes idades, graus de deficiência e ambientes de cuidado (domicílio versus instituições), o que pode limitar a generalização direta dos resultados para todos os cenários de prática.
+    </p>
+    <p>
+      Variações no perfil amostral e no contexto de aplicação influenciam sensibilidade, especificidade e pontos de corte operacionais, de modo que a mesma escala pode ter desempenho distinto em subgrupos com comorbidades neurológicas, diferentes níveis de suporte funcional ou uso de sedativos/ansiolíticos.
+    </p>
+    <p>
+      Para fortalecer a validade ecológica, recomenda-se combinar análises de reprodutibilidade (ICC/kappa), investigação de invariância entre avaliadores e test–retest com validação convergente, além de séries temporais padronizadas (T0, T24–48 h, T7, T30) para estimar responsividade e ajustar limiares de decisão ao contexto real de atendimento.
+    </p>
+  </section>
+</article>
+
+  <div class="wrap stack">
+    <article class="card">
+      <h2 style="margin-block-end:12px">Por que um método estruturado</h2>
+      <p>A subestima da dor orofacial em pessoas com deficiência intelectual é frequente devido a barreiras comunicacionais e padrões comportamentais atípicos, resultando em diagnósticos tardios e piores desfechos clínicos. Por isso, são necessários processos padronizados e reprodutíveis que aumentem a confiabilidade da avaliação em contextos reais com múltiplos cuidadores.</p>
+      <p>Nenhuma escala isolada é suficiente: a acurácia emerge da integração entre triagem com instrumentos validados, entrevista estruturada com o(a) cuidador(a) e exame orofacial com técnica gradual, além de reavaliações seriadas para confirmar tendência e resposta terapêutica.</p>
+      <p>Na pediatria, o uso do DDQ/DDQ B como triagem é respaldado por validações que demonstram boas propriedades psicométricas e utilidade para reconhecer crianças que necessitam de tratamento por cárie.</p>
+      <p>Em adultos com deficiência intelectual, listas observacionais como CPS NAID e NCAPC oferecem suporte decisório estruturado. O ponto de corte do CPS NAID deve ser sempre interpretado junto aos achados clínicos e ao contexto, evitando decisões baseadas apenas no escore.</p>
+      <p>A padronização da linha de base e das condições de observação, com comparações seriadas em 24–48 horas e nas semanas subsequentes com a mesma escala, reduz a variabilidade interavaliadores e permite interpretar de forma robusta variações percentuais em relação ao basal para orientar decisões terapêuticas.</p>
+      <p>Em síntese, um método simples e estruturado, executável em 15–30 minutos, acelera a identificação de casos prioritários, diminui atrasos diagnósticos e melhora a adequação das intervenções, com benefícios para pessoas, famílias e equipes de cuidado.</p>
+    </article>
+  </div>
+
+ <aside class="card" aria-labelledby="ferramentas-title">
+  <h2 id="ferramentas-title" style="margin-block-end:12px">
+    Ferramentas validadas e suas indicações
+  </h2>
+
+  <h3>Pediatria e adolescentes (0–18 anos)</h3>
+  <ul>
+    <li><strong>DDQ</strong> (Dental Discomfort Questionnaire): triagem comportamental focada em alimentação, higiene, sono e autotoque; a versão brasileira validada (DDQ B, 7 itens) apresenta bom desempenho psicométrico e utilidade clínica.</li>
+    <li><strong>NCCPC R/PV</strong> (Non Communicating Children’s Pain Checklist – Revised / Postoperative Version): indicado para dor aguda em não comunicantes; a versão brasileira (Br NCCPC PV) dispõe de tradução/adaptação transcultural com validação semântica para uso clínico.</li>
+    <li><strong>m FLACC</strong> (modified FLACC): mensuração observacional rápida de dor aguda pediátrica e monitoramento pré/pós; atua como escala adjunta, não específica para dor orofacial.</li>
+    <li><strong>PPP</strong> (Paediatric Pain Profile): observacional de 20 itens para crianças com deficiência neurológica grave; verificar disponibilidade/validação local.</li>
+  </ul>
+
+  <h3>Adultos com deficiência intelectual</h3>
+  <ul>
+    <li><strong>CPS NAID</strong> (Chronic Pain Scale for Nonverbal Adults with Intellectual Disability): triagem de dor crônica com observação multimodal; utilizar os pontos de corte operacionais do manual e sempre integrar ao exame orofacial e ao contexto clínico.</li>
+    <li><strong>NCAPC</strong> (Non Communicating Adult Pain Checklist): checklist observacional com evidências de validade e boa confiabilidade, útil para diferenciar condições dolorosas de não dolorosas.</li>
+    <li><strong>Uso combinado recomendado</strong>: aplicar CPS NAID e NCAPC para aumentar a sensibilidade e a especificidade, registrando ambos os escores como linha de base e para follow up.</li>
+    <li><strong>Registro padronizado:</strong> documentar ambiente, estado comportamental e avaliador em cada medição; registrar “não aplicável” ou “baixa qualidade do dado” para auditoria e melhoria contínua.</li>
+    <li><strong>Combinação preferencial:</strong> utilizar CPS NAID + NCAPC quando possível e interpretar em conjunto com exame orofacial e contexto clínico.</li>
+  </ul>
+
+  <details class="tips" aria-labelledby="ferramentas-notas-title">
+    <summary id="ferramentas-notas-title">Notas de uso</summary>
+    <ul>
+      <li>Priorizar versões em português do Brasil quando disponíveis (DDQ B; Br NCCPC PV; FLACC r) e, na ausência, documentar limitações linguísticas e reforçar treinamento e padronização interavaliadores.</li>
+      <li>Considerar validação convergente (ex.: com medidas objetivas ou avaliações independentes) em adultos para fortalecer a interpretação de CPS NAID/NCAPC na dor orofacial.</li>
+      <li>Padronizar condições e registrar escore basal; reavaliar em 24–48 h com a mesma escala para confirmar tendência e resposta à analgesia/intervenção.</li>
+    </ul>
+  </details>
+</aside>
+    
+    <div class="wrap stack">
+      <article class="card">
+        <h2 style="margin-block-end:12px">Protocolo prático em 3 fases (total 15–30 min)</h2>
+        <p><span class="kbd">Fase 1</span> Triagem estruturada (5–10 min): DDQ em pediatria (preferencialmente DDQ B) e combinação CPS NAID + NCAPC em adultos; registrar escores basais e privilegiar versões validadas em PT BR quando disponíveis.</p>
+        <!-- Riquadro: Validação transcultural -->
+        <section id="validacao-transcultural" class="riquadro" style="margin-block:16px; margin-inline-start:32px">
+          <h4 style="margin-block-end:12px">Validação transcultural</h4>
+          <p>
+            Ao privilegiar versões validadas em PT-BR, detalhar também o processo de adaptação linguística e cultural:
+          </p>
+          <ol>
+            <li>
+              Tradução direta por dois tradutores independentes e retrotradução às cegas por equipe distinta.
+            </li>
+            <li>
+              Revisão por comitê interdisciplinar (odontologia, psicologia, linguística) para ajustar semântica e termos clínicos.
+            </li>
+            <li>
+              Pilotagem em amostra de 20–30 pacientes para feedback de clareza e relevância cultural.
+            </li>
+            <li>
+              Análise fatorial confirmatória (CFA) em amostra ampliada (&gt;200) para verificar equivalência configuracional, métrico-scalar e índices de ajuste (CFI ≥ 0,95; RMSEA ≤ 0,06).
+            </li>
+            <li>
+              Test–retest em subamostra (50–100) com intervalo de 7–14 dias, buscando ICC ≥ 0,80 em cada domínio.
+            </li>
+          </ol>
+          <p>
+            Estudos multicêntricos em diferentes regiões (Europa, América Latina não Brasil, África lusófona) asseguram a validação de desempenho e adaptação de pontos de corte operacionais.
+          </p>
+        </section>
+        <p><span class="kbd">Fase 2</span> Anamnese direcionada (5–10 min): linha do tempo dos sintomas; fatores agravantes/atenuantes; mudanças em alimentação, higiene, sono e gestos; medicamentos e intercorrências recentes.</p>
+        <details class="tips" aria-labelledby="anam-conf-title">
+          <summary id="anam-conf-title">Confundidores a registrar</summary>
+          <ul>
+            <li>Sedação, ansiolíticos, antipsicóticos, anticolinérgicos, privação/fragmentação do sono.</li>
+            <li>Febre/intercorrências, mudanças de rotina/ambiente, ansiedade e dor em outros sítios.</li>
+          </ul>
+        </details>
+        <!-- Spazio aggiunto qui con margin-top -->
+        <p style="margin-top:16px"><span class="kbd">Fase 3</span> Exame clínico gentil (5–10 min): LED portátil, inspeção externa/intraoral e palpação cuidadosa; registrar achados e, se autorizado, fotografar (consentimento e privacidade ativos).</p>
+        <p><strong>Cuidado:</strong> registrar sinais de alerta urgentes (tumefação facial, febre &gt; 38 °C, trismo, disfagia, mal estar sistêmico, suspeita de infecção odontogênica agressiva).</p>
+
+        <details class="tips" aria-labelledby="notas-rapidas-title">
+          <summary id="notas-rapidas-title">Notas rápidas (uso e fontes)</summary>
+          <ul>
+            <li>DDQ B (7 itens) para triagem de dor odontogênica em crianças, com bom desempenho psicométrico e utilidade para priorização clínica.</li>
+            <li>CPS NAID/NCAPC em adultos: interpretar em conjunto com exame e contexto; considerar uso combinado e reavaliações seriadas.</li>
+            <li>Planejar follow up: repetir nas mesmas condições em 24–48 h para confirmar tendência e responsividade clínica.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Box “Passos Simples para a Triagem Diária” -->
+      <div class="caregiver-box" style="border: 2px solid #007BFF; background-color: #E9F7FE; padding: 16px; margin: 24px 0; border-radius: 8px;">
+        <h3 style="color: #0056b3; margin-top: 0;">📋 Passos Simples para a Triagem Diária</h3>
+        <p><strong>Para Cuidadores: Sua Observação Faz a Diferença</strong></p>
+        <p style="font-style: italic; margin: 8px 0;">Sabemos que cuidar pode ser desafiador, mas sua atenção faz toda a diferença!</p>
+        <ul style="margin: 8px 0 16px 20px; line-height: 1.5;">
+          <li><strong>Alimentação:</strong> recusa de alimentos duros ou mastigação unilateral</li>
+          <li><strong>Higiene Oral:</strong> irritabilidade ao tocar o rosto ou escovar dentes</li>
+          <li><strong>Gestos:</strong> mãos na boca, esfregar o rosto</li>
+          <li><strong>Sono:</strong> agitação noturna ou acordar várias vezes</li>
+          <li><strong>Salivação/Voz:</strong> salivação excessiva ou vocalizações incomuns</li>
+          <li><strong>Ambiente:</strong> iluminação uniforme e ambiente calmo para observação precisa</li>
+        </ul>
+        <p><strong>💡 O que anotar:</strong> horário, fatores que melhoram ou pioram, medicações recentes, mudanças na rotina.</p>
+        <p><strong>📝 Registro rápido:</strong> use um caderno ou app simples para anotar datas e horários de cada observação.</p>
+        <p><strong>⚠️ Sinais de alerta:</strong> inchaço facial, febre &gt;38°C, dificuldade para engolir, recusa total de alimentos.</p>
+        <p><em>Encontre um modelo de checklist imprimível no final deste post.</em></p>
+        <p style="margin-bottom: 0;"><em>Lembre-se: suas observações são valiosas! Anote tudo e compartilhe com o dentista.</em></p>
+      </div>
+
+    <figure class="figure card" aria-labelledby="fig-fases-title fig-fases-desc">
+      <figcaption id="fig-fases-title" class="box-title">Diagrama 1 — Fluxo em 3 fases</figcaption>
+      <p id="fig-fases-desc" class="visually-hidden">Triagem → Anamnese → Exame clínico → Decisão.</p>
+      <svg role="img" aria-labelledby="fases-title fases-desc" viewBox="0 0 960 340" xmlns="http://www.w3.org/2000/svg">
+        <title id="fases-title">Fluxo em três fases para avaliação de dor orofacial</title>
+        <desc id="fases-desc">Quatro blocos conectados por setas: Triagem, Anamnese, Exame clínico e Decisão.</desc>
+        <rect x="20" y="60" width="210" height="120" rx="12" fill="#E6F4FF" stroke="#1E88E5"/>
+        <text x="125" y="110" text-anchor="middle" class="large" fill="#0D47A1">Triagem</text>
+        <text x="125" y="135" text-anchor="middle" class="small" fill="#0D47A1">DDQ / CPS NAID + NCAPC</text>
+        <polygon points="250,120 290,120 290,110 320,130 290,150 290,140 250,140" fill="#90CAF9"/>
+        <rect x="320" y="60" width="210" height="120" rx="12" fill="#E8F5E9" stroke="#2E7D32"/>
+        <text x="425" y="110" text-anchor="middle" class="large" fill="#1B5E20">Anamnese</text>
+        <text x="425" y="135" text-anchor="middle" class="small" fill="#1B5E20">linha do tempo + fatores</text>
+        <polygon points="550,120 590,120 590,110 620,130 590,150 590,140 550,140" fill="#A5D6A7"/>
+        <rect x="620" y="60" width="210" height="120" rx="12" fill="#FFF8E1" stroke="#F9A825"/>
+        <text x="725" y="110" text-anchor="middle" class="large" fill="#E65100">Exame clínico</text>
+        <text x="725" y="135" text-anchor="middle" class="small" fill="#E65100">LED + observação + palpação</text>
+        <rect x="320" y="210" width="210" height="100" rx="12" fill="#F3E5F5" stroke="#6A1B9A"/>
+        <text x="425" y="260" text-anchor="middle" class="large" fill="#4A148C">Decisão</text>
+        <line x1="430" y1="180" x2="430" y2="210" stroke="#6A1B9A" stroke-width="3"/>
+      </svg>
+    </figure>
+  </div>
+
+  <div class="wrap stack">
+    <article class="card">
+      <h2 style="margin-block-end:12px">Critérios para decisão clínica</h2>
+      <p>Escore alto em escala validada, associado a sinais clínicos concordantes, indica prioridade elevada: instituir analgesia adequada e programar tratamento odontológico prioritário, considerando a confiabilidade do instrumento no público alvo.</p>
+      <p>Cenários intermediários ou incertos requerem reavaliação em 24–48 horas, utilizando a mesma escala para observar tendência e resposta à analgesia, minimizando vieses interavaliadores.</p>
+      <p>Para interpretar a magnitude da melhora, usar referências consolidadas: 10–20% = mudança mínima; ≥ 30% = moderadamente importante; ≥ 50% = substancial, sempre ancoradas ao escore basal e ao contexto clínico.</p>
+      <p class="note">Aviso: As faixas de variação de 10–20%, ≥ 30% e ≥ 50% derivam de estudos com medidas de intensidade de dor e, quando aplicadas a escalas observacionais, devem funcionar como âncoras operacionais confirmadas por função (alimentação, higiene e sono), sinais orofaciais e evolução clínica, evitando decisões baseadas apenas no número.</p>
+      <p>Exemplo: DDQ 8/12 → 4/12 em 48 h representa redução de 50% e melhora substancial, auxiliando na confirmação da resposta terapêutica e na priorização do cuidado.</p>
+      <p class="note">Evitar decisões baseadas apenas no escore do CPS NAID; requer se concordância entre escore, sinais clínicos orofaciais e variação percentual na reavaliação em 24–48 h antes de priorizações.</p>
+
+      <section id="carga-operacional">
+        <h3 style="margin-block-end:12px">Carga operacional e viabilidade</h3>
+      
+        <p>
+          A aplicação integral do protocolo, com triagem CPS-NAID + NCAPC em adultos e acompanhamento T0, T24–48 h, T7 e T30, garante alta acurácia diagnóstica mas exige recursos humanos e de tempo significativos. Em contextos com baixo efetivo, como distritos rurais ou casas de acolhimento, o tempo estimado de 25–35 min por paciente pode ser proibitivo, gerando atrasos e fadiga dos profissionais.
+        </p>
+      
+        <p>
+          Uma versão “light” propõe apenas CPS-NAID em adultos com comorbidades menores, reduzindo a aplicação para 8–10 min e mantendo confiabilidade ICC = 0,82–0,88, além de acompanhamento simplificado (T0 e T24–48 h), eliminando T7/T30 nas fases iniciais. Essa simplificação implica queda moderada da especificidade (cerca de −10%), mas melhora a sustentabilidade operacional.
+        </p>
+      
+        <p>Exemplos de aplicação:</p>
+        <ul>
+          <li>Distritos rurais: avaliações semanais “light” com apenas T0 e T24–48 h para 80% dos pacientes, enquanto casos limítrofes ou de alto risco recebem protocolo completo.</li>
+          <li>Casas de acolhimento: equipe dividida em 2 profissionais, total de 4 h de avaliação para 15 pacientes, mantendo o tempo médio por paciente abaixo de 15 min.</li>
+        </ul>
+      </section>
+
+      <section id="equilibrio-rapidez-completude">
+        <h3 style="margin-block-end:12px">Equilíbrio entre rapidez e completude</h3>
+        <p>
+          A estimativa de 15–30 min para o protocolo completo pode variar conforme competências da equipe, colaboração do paciente e complexidade comportamental. Estudos qualitativos com grupos focais identificaram tempos médios de 35 ± 8 min em pacientes mais complexos e 22 ± 5 min em pacientes colaborativos.
+        </p>
+        <p>
+          Recomenda-se adotar estudos de tempos e movimentos (time-motion) com cronoprogramas simplificados, por exemplo:
+        </p>
+        <ul>
+          <li>5 min de acolhimento e preparação do material</li>
+          <li>8 min para triagem e registro de dados do cuidador</li>
+          <li>7 min para exame orofacial gradual</li>
+          <li>5 min para discussão e planejamento do acompanhamento</li>
+        </ul>
+        <p>
+          Esses estudos ajudam a identificar gargalos, como transições entre instrumentos ou espera por caregiver, possibilitando otimizações que podem reduzir o tempo total em cerca de 15% sem comprometer a concordância clínica.
+        </p>
+      </section>
+      
+      <details class="tips" aria-labelledby="decisao-notas-title">
+        <summary id="decisao-notas-title">Notas operacionais (ação rápida)</summary>
+        <ul>
+          <li>Escore alto + sinais clínicos concordantes = prioridade elevada: analgesia adequada e programação de tratamento.</li>
+          <li>Quadros limítrofes/incertos: reavaliar em 24–48 h com a MESMA escala e condições semelhantes.</li>
+          <li>Interpretação da melhora: 10–20% mínima; ≥ 30% moderada; ≥ 50% substancial.</li>
+        </ul>
+      </details>
+    </article>
+
+    <figure class="figure card" aria-labelledby="fig-decisao-title fig-decisao-desc">
+      <figcaption id="fig-decisao-title" class="box-title">Diagrama 2 — Algoritmo decisório</figcaption>
+      <p id="fig-decisao-desc" class="visually-hidden">Três colunas: alto risco, intermediário, inconclusivo, com respectivas condutas.</p>
+      <svg role="img" aria-labelledby="sem-title sem-desc" viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg">
+        <title id="sem-title">Algoritmo decisório por nível de risco</title>
+        <desc id="sem-desc">Alto risco (analgesia + tratamento), Intermediário (reavaliar 24–48 h), Inconclusivo (imagem/especialista).</desc>
+        <rect x="30" y="40" width="260" height="200" rx="12" fill="#FFEBEE" stroke="#C62828"/>
+        <circle cx="160" cy="80" r="12" fill="#D32F2F"/>
+        <text x="160" y="110" text-anchor="middle" fill="#B71C1C">Alto risco</text>
+        <text x="160" y="140" text-anchor="middle" class="small" fill="#B71C1C">Analgesia + Tratamento</text>
+        <text x="160" y="155" text-anchor="middle" class="small" fill="#B71C1C">prioritário</text>
+        <rect x="350" y="40" width="260" height="200" rx="12" fill="#FFFDE7" stroke="#F9A825"/>
+        <circle cx="480" cy="80" r="12" fill="#FBC02D"/>
+        <text x="480" y="110" text-anchor="middle" fill="#E65100">Intermediário</text>
+        <text x="480" y="140" text-anchor="middle" class="small" fill="#E65100">Reavaliar</text>
+        <text x="480" y="155" text-anchor="middle" class="small" fill="#E65100">24–48 horas</text>
+        <rect x="670" y="40" width="260" height="200" rx="12" fill="#E8EAF6" stroke="#283593"/>
+        <circle cx="800" cy="80" r="12" fill="#3949AB"/>
+        <text x="800" y="110" text-anchor="middle" fill="#1A237E">Inconclusivo</text>
+        <text x="800" y="140" text-anchor="middle" class="small" fill="#1A237E">Imagem /</text>
+        <text x="800" y="155" text-anchor="middle" class="small" fill="#1A237E">Especialista</text>
+      </svg>
+    </figure>
+  </div>
+
+  <div class="wrap stack">
+    <article class="card">
+      <h2 style="margin-block-end:12px">Follow up, responsividade e suporte tecnológico</h2>
+      <p>Comparações seriadas com a mesma escala são fundamentais: T0 define a base; T24–48 h confirma tendência e resposta; T7 revisa eficácia; T30 consolida o plano preventivo.</p>
+      <p>Interpretação da variação: 10–20% = melhora mínima; ≥ 30% = melhora moderada; ≥ 50% = melhora substancial. Exemplo: DDQ 8/12 → 2/12 em 48 h = redução de 75% (melhora substancial).</p>
+      <p>Essas faixas de mudança (10–20%, ≥ 30%, ≥ 50%) devem ser usadas como âncoras operacionais e interpretadas junto à função, ao sono e aos sinais orofaciais, especialmente quando derivadas de escalas observacionais.</p>
+      
+      <details class="tips" aria-labelledby="follow-notes-title">
+        <summary id="follow-notes-title">Notas práticas de follow up (com tecnologia opcional)</summary>
+        <ul>
+          <li>T0: registrar escores basais (p. ex., DDQ B/CPS NAID/NCAPC) e condições da avaliação. Opcional: coletar 10 min de linha de base com wearable (atividade eletrodérmica/FC).</li>
+          <li>T24–48 h: repetir a mesma escala e condições; se disponível, comparar séries do wearable (tendência/alertas) e, quando possível, uma leitura por app de IA (ex.: reconhecimento facial) para validação cruzada.</li>
+          <li>T7/T30: revisar eficácia terapêutica, ajustar condutas conforme variação percentual e sinais clínicos; manter padronização e documentação.</li>
+        </ul>
+      </details>
+    </article>
+  </div>
+
+  <!-- Box “Calendário Fácil para o Controle” -->
+  <div class="caregiver-box-calendar" style="border: 2px solid #28A745; background-color: #E9F7EF; padding: 16px; margin: 24px 0; border-radius: 8px;">
+    <h3 style="color: #19692C; margin-top: 0;">📅 Calendário Fácil para o Controle</h3>
+    <p><strong>Registre as avaliações e acompanhe a evolução do paciente:</strong></p>
+    <table style="width:100%; border-collapse: collapse; margin: 12px 0;">
+      <tr>
+        <th style="border: 1px solid #28A745; padding: 8px; background-color: #D4EDDA;">Momento</th>
+        <th style="border: 1px solid #28A745; padding: 8px; background-color: #D4EDDA;">O que Registrar</th>
+        <th style="border: 1px solid #28A745; padding: 8px; background-color: #D4EDDA;">Interpretação</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #28A745; padding: 8px;">T0</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">Escore basal e condições de avaliação</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">Ponto de partida</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #28A745; padding: 8px;">T24–48 h</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">Novo escore e % de variação</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">≥ 30% = melhora moderada</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #28A745; padding: 8px;">T7</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">Comparar tendência e sinais clínicos</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">Avaliar necessidade de ajuste</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #28A745; padding: 8px;">T30</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">Consolidação do plano preventivo</td>
+        <td style="border: 1px solid #28A745; padding: 8px;">Acompanhamento de longo prazo</td>
+      </tr>
+    </table>
+    <p style="margin-bottom: 0;"><em>Use cores ou símbolos para destacar melhorias (verde) e alertas (vermelho).</em></p>
+  </div>
+
+  <div class="wrap stack">
+    <article class="card">
+      <h2>Tecnologia de suporte (opcional)</h2>
+      <ul>
+        <li><strong>Apps com IA (ex.: PainChek®)</strong>: reconhecimento automático de AUs faciais baseado em FACS combinado a checklists comportamentais, gerando escore de severidade categorizado por domínio.</li>
+        <li><strong>Wearables fisiológicos</strong>: medição curta de atividade eletrodérmica e frequência cardíaca para captar alterações autonômicas associadas à dor durante avaliação e reavaliação.</li>
+        <li><strong>Reconhecimento facial por deep learning</strong>: modelos treinados em datasets de dor (ex.: CP PAIN) mostram potencial para populações com comunicação limitada; usar como complemento à avaliação clínica.</li>
+      </ul>
+      <p>Essas ferramentas devem complementar, e não substituir, a entrevista com cuidador(a), a observação estruturada e o exame clínico, respeitando consentimento e privacidade.</p>
+      <p class="note">As tecnologias são complementares e não substituem entrevista, observação estruturada e exame; na presença de sinais de alarme, não aguardar saídas tecnológicas e acionar o percurso de urgência.</p>
+      <details class="tips" aria-labelledby="tec-qualidade-title">
+        <summary id="tec-qualidade-title">Critérios mínimos de qualidade do dado</summary>
+      
+        <p class="box-title">Requisitos mínimos</p>
+        <ul>
+          <li>Documentar versão do app/software e do dispositivo, configuração e consentimento; garantir coleta ≥ 3–5 minutos, iluminação frontal uniforme, posição estável do rosto e baixo ruído/artefatos.</li>
+          <li>Anotar ambiente, horário e estado comportamental para permitir comparações seriadas T0 vs T24–48 h com validade.</li>
+        </ul>
+      
+        <p class="box-title">Critérios de exclusão</p>
+        <ul>
+          <li>Rosto não frontal ≥ 30% do tempo útil ou oclusão persistente de boca/mandíbula.</li>
+          <li>Movimento excessivo com perda de rastreamento facial ou blur recorrente.</li>
+          <li>Iluminação insuficiente/saturada ou flicker que gere sombras duras.</li>
+          <li>Artefatos: óculos espelhados, máscaras, mãos cobrindo região orofacial.</li>
+          <li>Duração abaixo de 3–5 minutos para T0/T24–48 h.</li>
+          <li>Versões/parâmetros de software/hardware e consentimento não documentados.</li>
+          <li>Ruído/vozes concorrentes que invalidem observação padronizada.</li>
+          <li>Estado comportamental não padronizável (agitação extrema/choro inconsolável).</li>
+          <li>Intervenções recentes sem timestamp (analgésicos/sedativos).</li>
+        </ul>
+      </details>
+
+<details class="tips" aria-labelledby="tec-valor-title">
+  <summary id="tec-valor-title">Quando agrega valor</summary>
+  <ul>
+    <li>Quando a observação do cuidador é limitada ou a colaboração é variável, para objetivar tendências entre T0 e T24–48 h; o julgamento clínico e o exame permanecem prioritários.</li>
+  </ul>
+</details>
+    </article>
+  </div>
+
+<div class="wrap stack">
+  <article class="card">
+    <h2>Acessibilidade e alfabetização digital</h2>
+    
+    <ul>
+      <li><strong>Avaliação da alfabetização digital:</strong> aplicar um breve questionário (por exemplo, eHEALS) a profissionais e cuidadores para identificar lacunas de competências digitais.</li>
+      <li><strong>Formação específica:</strong> módulos online e presenciais sobre o uso de apps e wearables, com exercícios práticos e manuais passo a passo.</li>
+      <li><strong>Suporte contínuo:</strong> help desk dedicado e guias rápidos em PDF e impressos para contextos offline.</li>
+      <li><strong>Alternativas não digitais:</strong> versões em papel simplificadas das ferramentas e protocolos reduzidos para realidades sem conectividade ou dispositivos.</li>
+    </ul>
+  </article>
+</div>
+
+<div class="wrap stack">
+  <article class="card">
+    <h2>Implementação: o que ter sempre disponível</h2>
+
+      <ul>
+        <li>Lanterna LED recarregável, espelhos descartáveis, abaixadores de língua, luvas, brocas/bits monouso e gazes estéreis.</li>
+        <li>Formulários DDQ/DDQ-B; checklists CPS-NAID/NCAPC; ficha de reavaliação 24–48 h; lembrete de perguntas-chave.</li>
+        <li>Guia de consentimento para fotos clínicas, garantindo privacidade e armazenamento seguro.</li>
+        <li>Opcional (tecnologia): app de IA para dor e wearable (bracelete/smart sock) para monitoramento rápido durante avaliação e reavaliação.</li>
+      </ul>
+      
+      <details class="tips" aria-labelledby="impl-notes-title">
+        <summary id="impl-notes-title">Notas práticas de implementação</summary>
+        <ul>
+          <li class="li-no-marker">
+            <section id="aspectos-eticos-normativos" class="riquadro" style="margin-block:16px; margin-inline-start:32px">
+              <h3>Aspectos éticos e normativos</h3>
+              <p>Antes de qualquer registro ou foto clínica, garantir:</p>
+              <ul>
+                <li><strong>Consentimento informado:</strong> termos claros para o cuidador e, quando possível, para o paciente, descrevendo objetivos, coleta de dados e direito de revogação sem prejuízo.</li>
+                <li><strong>Proteção de dados:</strong> Proteção de dados: aplicar a LGPD (minimização, criptografia, registros de acesso) e/ou conformidade com normas locais.</li>
+                <li><strong>Comitê de ética:</strong> supervisão contínua de imagem, IA e wearable, com análise de privacidade e anonimização.</li>
+              </ul>
+            </section>
+          </li>
+          <li class="li-no-marker">
+            <section id="governanca-instrumentos" class="riquadro" style="margin-block:16px; margin-inline-start:32px">
+              <h3>Atualização e manutenção dos instrumentos</h3>
+              <p>Estabelecer um plano de governança com:</p>
+              <ul>
+                <li><strong>Monitoramento de versões:</strong> registro centralizado de releases, datas de validação e próxima revisão.</li>
+                <li><strong>Novas validações:</strong> integrar estudos emergentes e descontinuar escalas obsoletas conforme diretrizes IASP.</li>
+                <li><strong>Atualizações procedurais:</strong> envio trimestral de boletins operacionais por email e manutenção de changelog em repositório online.</li>
+              </ul>
+            </section>
+          </li>
+          <li>Padronizar um kit de triagem portátil para domicílio e ambulatório.</li>
+          <li>Manter formulários DDQ-B, CPS-NAID e NCAPC sempre atualizados e disponíveis.</li>
+          <li>Documentar ferramenta, versão, parâmetros e contexto (luminosidade, ruído) para reprodutibilidade.</li>
+          <li>Registrar versão/idioma dos instrumentos, data do último treinamento e indicadores de confiabilidade (ICC/kappa).</li>
+        </ul>
+      </details>
+  </article>
+</div>
+
+  <div class="wrap stack">
+    <article class="card">
+      <h2>Box prático — guia passo a passo</h2>
+
+      <h3>Protocolo pediátrico (0–18 anos)</h3>
+      <ul>
+        <li>Preparação: LED + espelhos + abaixadores; DDQ como triagem primária (usar DDQ B validado); apoio do Br NCCPC PV e FLACC/m FLACC conforme escopo.</li>
+        <li>Triagem (5–10 min): aplicar DDQ com cuidador(a); se não comunicante, observar 5–10 min e aplicar NCCPC R/PV/Br NCCPC PV; usar FLACC/m FLACC; registrar escore basal.</li>
+        <li>Anamnese (5–10 min): mudanças em alimentação/mastigação, reações na higiene, sono, gestos; medicamentos, infecções e rotina.</li>
+        <li>Exame (5–10 min): exame gradual com LED, observação clínica e palpação suave; fotos com consentimento.</li>
+        <li>Decisão: escore alto + sinais concordantes → prioridade, analgesia e tratamento; intermediário → reavaliar em 24–48 h; inconclusivo → imagem/especialista; interpretar magnitudes (≥ 30% moderada).</li>
+      </ul>
+
+      <h3>Protocolo adultos com deficiência intelectual</h3>
+      <ul>
+        <li>Preparação: kit padrão; preferir combinação CPS NAID + NCAPC quando possível; registrar versões/idiomas.</li>
+        <li>Triagem (10–15 min): aplicar CPS NAID e NCAPC e registrar escores basais, assegurando condições semelhantes entre avaliações.</li>
+        <li>Anamnese (5–10 min): mudanças em alimentação, higiene, sono, interação social; proteção/toque no rosto; fatores modulantes; linha do tempo.</li>
+        <li>Exame orofacial (5–10 min): inspeção/palpação de dentes, mucosas, gengivas, músculos mastigatórios e ATM; correlacionar achados e sintomas.</li>
+        <li>Decisão: dor sugerida pelos escores + sinais concordantes → analgesia e programação prioritária; limítrofe → reavaliar 24–48 h; dúvida de localização → exames complementares mantendo baseline.</li>
+        <li>Opcional (tecnologia): leitura por app de IA (reconhecimento facial) e curva curta de wearable para apoio objetivo; usar como complemento, não substituto.</li>
+      </ul>
+    </article>
+
+    <figure class="figure card" aria-labelledby="fig-matriz-title fig-matriz-desc">
+      <figcaption id="fig-matriz-title" class="box-title">Diagrama 3 — Matriz de escolha para pediatria vs. adultos</figcaption>
+      <p id="fig-matriz-desc" class="visualmente-hidden">Pediatria: DDQ principal com apoio NCCPC/R, m FLACC e PPP; Adultos: CPS NAID + NCAPC para presença, seguido de exame para localizar; tecnologia opcional como suporte.</p>
+      <svg role="img" aria-labelledby="mat-title mat-desc" viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg">
+        <title id="mat-title">Matriz de escolha — pediatria vs adultos</title>
+        <desc id="mat-desc">Quadros para pediatria e adultos com instrumentos de primeira linha e apoio tecnológico opcional.</desc>
+        <rect x="40" y="60" width="380" height="200" rx="12" fill="#E3F2FD" stroke="#1976D2"/>
+        <text x="230" y="105" text-anchor="middle" class="large" fill="#0D47A1">Pediatria</text>
+        <text x="230" y="135" text-anchor="middle" class="small" fill="#0D47A1">1º DDQ (triagem dentária)</text>
+        <text x="230" y="155" text-anchor="middle" class="small" fill="#0D47A1">Apoio: NCCPC R/PV, m FLACC, PPP</text>
+        <rect x="540" y="60" width="380" height="200" rx="12" fill="#E8F5E9" stroke="#2E7D32"/>
+        <text x="730" y="105" text-anchor="middle" class="large" fill="#1B5E20">Adultos</text>
+        <text x="730" y="135" text-anchor="middle" class="small" fill="#1B5E20">1º CPS NAID + NCAPC (presença)</text>
+        <text x="730" y="155" text-anchor="middle" class="small" fill="#1B5E20">Depois: exame para localizar</text>
+      </svg>
+    </figure>
+  </div>
+
+  <div class="wrap stack">
+    <article class="card">
+      <h2>Sinais universais de alerta</h2>
+      <ul>
+        <li>Alimentação: recusa a alimentos duros, preferência por macios, mastigação unilateral persistente.</li>
+        <li>Higiene oral: defesa/irritabilidade intensa à escovação e ao fio dental.</li>
+        <li>Comportamento: mãos na boca, esfregar o rosto, salivação aumentada, vocalizações incomuns.</li>
+        <li>Sono: despertares frequentes/novos e fragmentação do sono.</li>
+        <li>Urgência: tumefação facial/cervical, febre &gt; 38 °C, trismo, disfagia, disfonia, mal estar sistêmico, imunossupressão.</li>
+      </ul>
+      <p>Na presença desses sinais, priorizar encaminhamento e manejo urgente pelo risco de envolvimento de espaços profundos e comprometimento de via aérea.</p>
+
+      <div class="alert alert-danger" role="alert" style="margin-bottom:12px">
+        <strong>Ação imediata:</strong> priorizar analgesia adequada, minimizar manipulações orais desnecessárias, avaliar via aérea e sinais sistêmicos e acionar suporte de emergência se houver disfagia, disfonia, febre alta ou trismo.
+      </div>
+
+     <details class="tips" aria-labelledby="alerta-proceder-title">
+        <summary id="alerta-proceder-title">Como proceder diante de alerta</summary>
+        <ul>
+          <li>Estabelecer prioridade alta e programar avaliação especializada e/ou imagem conforme suspeita clínica.</li>
+          <li>Documentar achados com data/hora, escala utilizada e condições da avaliação, preservando privacidade.</li>
+          <li>Comunicar o plano ao cuidador e registrar sinais de deterioração que exijam reavaliação antecipada.</li>
+        </ul>
+        <p>Na presença de sinais de alerta, as escalas e a tecnologia não devem atrasar o encaminhamento e o manejo de urgência; priorizar via aérea e controle de infecção.</p>
+      </details>
+    </article>
+
+    <div class="caregiver-box-alert" style="border: 2px solid #DC3545; background-color: #F8D7DA; padding: 16px; margin: 24px 0; border-radius: 8px;">
+      <h3 style="color: #C82333; margin-top: 0;">⚠️ Reconheça os Sinais de Dor</h3>
+      <p><strong>Se perceber algum destes sinais, procure ajuda imediatamente:</strong></p>
+      <ul style="margin: 8px 0 16px 20px; line-height: 1.5;">
+        <li><strong>Inchaço:</strong> rosto ou pescoço visivelmente inchados</li>
+        <li><strong>Febre alta:</strong> temperatura acima de 38°C</li>
+        <li><strong>Dificuldade para engolir:</strong> engasgos ou recusa de líquidos</li>
+        <li><strong>Recusa total de alimentos:</strong> sem ingestão de alimentos sólidos ou líquidos</li>
+        <li><strong>Trismo ou dor na mastigação:</strong> dificuldade em abrir completamente a boca</li>
+      </ul>
+      <p><em>Em caso de emergência, entre em contato com o dentista ou serviço de urgência.</em></p>
+    </div>
+    
+    <article class="card">
+      <h2>Erros comuns a evitar</h2>
+      <ul>
+        <li>Alternar instrumentos entre avaliações, comprometendo comparabilidade seriada e leitura de tendência.</li>
+        <li>Basear decisões apenas em cut off, sem exame orofacial detalhado.</li>
+        <li>Usar escala pediátrica em adultos ou checklists sem adaptação/validação para o público alvo.</li>
+        <li>Não treinar avaliadores e não monitorar confiabilidade interavaliadores.</li>
+        <li>Usar tecnologia como substituto de exame/anamnese (deve ser complemento).</li>
+        <li>Interpretar cut offs ou escores sem contextualizar fatores de estado (sedação, ansiolíticos, antipsicóticos), privação de sono, ansiedade ou infecção, que podem alterar comportamentos observados.</li>
+      </ul>
+
+      <details class="tips" aria-labelledby="como-evitar-title">
+        <summary id="como-evitar-title">Como evitar na prática</summary>
+        <ul>
+          <li>Fixar e manter a mesma escala entre T0 e T24–48 h, sob condições semelhantes de ambiente e estado comportamental.</li>
+          <li>Integrar sempre escore, anamnese dirigida e exame orofacial gentil antes de decidir conduta.</li>
+          <li>Se utilizar app de IA/wearable, padronizar uso (versão, duração, ambiente) e registrar junto aos escores.</li>
+          <li>Usar sempre a mesma escala e condições entre T0 e T24–48 h, registrando ambiente/estado para leitura robusta de tendência.</li>
+          <li>Documentar motivos de “não aplicável” ou “qualidade sub ótima” para cada medição, permitindo auditoria e melhoria contínua.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="card">
+      <h2 style="margin-block-end:12px">Limites e riscos</h2>
+      <p>O ponto de corte do CPS NAID provém de amostras específicas e deve permanecer como apoio, não determinístico; integrar exame orofacial, NCAPC e tendência em 24–48 h antes de decisões críticas.</p>
+      <p>Há heterogeneidade e diferenças de factibilidade entre instrumentos observacionais em adultos dependentes; requerem formação estruturada, padronização de coleta e auditoria de confiabilidade.</p>
+      <p>Apps de IA e wearables apresentam evidência emergente e heterogênea; usar apenas como complemento com critérios mínimos de qualidade e exclusão de dados, sem atrasar manejo de urgência.</p>
+    </article>
+
+    <article class="card">
+      <h2 style="margin-block-end:12px">Casos exemplificativos (anonimizados)</h2>
+      <p>Criança de 8 anos com recusa a alimentos duros e irritabilidade na higiene: DDQ basal 8/12; exame revela cárie profunda; após analgesia e restauração, 2/12 em 48 h (−75%).</p>
+      <p>Mulher de 32 anos, não verbal, com gesto de esfregar o rosto e sono fragmentado: NCAPC elevado; exame detecta gengivite ulcerativa; após raspagem e terapia tópica, sinais e sono melhoram.</p>
+      
+      <details class="tips" aria-labelledby="como-documentar-title">
+        <summary id="como-documentar-title">Como documentar o caso</summary>
+        <ul>
+          <li>Registrar escore basal (T0), instrumento e condições da avaliação (ambiente/horário/estado).</li>
+          <li>Descrever intervenção (analgesia/procedimento) e repetir a escala em T24–48 h nas mesmas condições.</li>
+          <li>Calcular a variação percentual: 10–20% mínima; ≥ 30% moderada; ≥ 50% substancial; ancorar ao basal.</li>
+          <li>Definir próximos passos e janelas T7/T30 conforme resposta e sinais clínicos.</li>
+        </ul>
+      </details>
+    </article>
+  </div>
+
+  <div class="wrap">
+    <article class="card">
+      <h2>Materiais para download</h2>
+      <p>Padronize etapas chave e facilite auditorias com formulários e guias de consentimento, mantendo rastreabilidade de escores, tecnologia utilizada (quando houver) e decisões.</p>
+      <div class="cta-bar">
+        <a class="btn" href="/blog/DDQ_PT-BR.pdf" download aria-label="Baixar formulário DDQ em PDF">Baixar DDQ (PDF)</a>
+        <a class="btn" href="/blog/NCCPC-mFLACC_PT-BR.pdf" download aria-label="Baixar formulários NCCPC-R/PV e m-FLACC em PDF">NCCPC R/PV &amp; m FLACC (PDF)</a>
+        <a class="btn" href="/blog/CPSNAID_NCAPC_PT-BR.pdf" download aria-label="Baixar formulários CPS-NAID e NCAPC em PDF">CPS NAID &amp; NCAPC (PDF)</a>
+        <a class="btn" href="/blog/Reavaliacao_PT-BR.pdf" download aria-label="Baixar formulário de reavaliação em 24 a 48 horas em PDF">Reavaliação 24–48 h (PDF)</a>
+        <a class="btn" href="/blog/GuiaRapido_PT-BR.pdf" download aria-label="Baixar guia rápido para avaliação de dor orofacial em PDF">Guia rápido (PDF)</a>
+        <a class="btn" href="/blog/ConsentimentoFotos_PT-BR.pdf" download aria-label="Baixar formulário de consentimento para fotos clínicas em PDF">Consentimento para fotos (PDF)</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="wrap">
+  <article class="card">
+    <h2>Treinamento e confiabilidade</h2>
+
+    <ul>
+      <li><strong>Curso básico (4 horas)</strong>: teoria (neurobiologia da dor em DI, vieses na avaliação) + prática (vídeos e pontuação DDQ B, CPS NAID, NCAPC) com meta de concordância ≥ 80% ao final.</li>
+      <li><strong>Módulo avançado (2 horas trimestrais)</strong>: auditoria de ICC/kappa, atualização científica/tecnológica e supervisão peer to peer.</li>
+    </ul>
+
+    <!-- Riquadro 1 -->
+    <section id="formacao-profissionais" class="riquadro" style="margin-block:16px; margin-inline-start:32px">
+      <h4 style="margin-block-end:12px">Formação dos profissionais</h4>
+      <p>Para garantir uniformidade e alta confiabilidade nas avaliações, implantar um programa formativo modular:</p>
+      <ul>
+        <li><strong>Materiais didáticos:</strong> manuais ilustrados, vídeos de casos reais, quizzes interativos e sessões de role play para simular entrevistas e exames.</li>
+        <li><strong>Avaliação pós-curso:</strong> teste teórico de múltipla escolha e prática em 8 video cases com meta de ICC ≥ 0,85 na correlação com o padrão ouro.</li>
+        <li><strong>Certificação e recertificação:</strong> certificado válido por 12 meses, seguido de recertificação on line (1–2 horas) e prática em novos video cases.</li>
+        <li><strong>Orçamento:</strong> estimar R$ 500–800 por participante, incluindo plataforma de e learning, produção de vídeos e horas de tutoria em turmas de 10–15 profissionais.</li>
+      </ul>
+    </section>
+
+    <!-- Riquadro 2 -->
+    <section id="avaliacao-custo-efetividade" class="riquadro" style="margin-block:16px; margin-inline-start:32px">
+      <h4 style="margin-block-end:12px">Avaliação de custo-efetividade</h4>
+      <p>Para orientar decisões gerenciais, sugerimos um framework econômico em reais (R$):</p>
+      <ul>
+        <li><strong>Custos diretos:</strong> tempo do profissional (R$ 120/h odontólogo; R$ 60/h assistente), materiais (formulários, kits) e licenças de apps (R$ 1.200/ano por dispositivo).</li>
+        <li><strong>Custos indiretos:</strong> formação (R$ 3.000 para 10 profissionais) e manutenção de dispositivos (R$ 500/ano por equipamento).</li>
+        <li><strong>Benefícios clínicos:</strong> redução de 20% em emergências odontológicas e economia média de R$ 50 por avaliação se houver ≥ 30% de redução da dor.</li>
+      </ul>
+      <p>Utilizar modelo de árvore de decisão com horizonte de 12 meses (cenários base, otimista e pessimista) ou estudo de coorte prospectivo para calcular o custo por ponto de DDQ B reduzido e validar o retorno sobre o investimento.</p>
+    </section>
+
+    <ul>
+      <li><strong>Framework de competências</strong>: Nível 1 (sensibilidade ≥80%); Nível 2 (especificidade ≥85%); Nível 3 (ICC ≥0,85) para responsividade terapêutica.</li>
+    </ul>
+
+    <!-- Riquadro 3 (nuovo) -->
+    <section id="feedback-pacientes-cuidadores" class="riquadro" style="margin-block:16px; margin-inline-start:32px">
+      <h4 style="margin-block-end:12px">Feedback de pacientes e cuidadores</h4>
+      <p>Coletar impressões sobre o protocolo e sua usabilidade para aprimorar aceitação e eficácia.</p>
+      <ul>
+        <li><strong>Questionário de satisfação:</strong> survey Likert 1–5 após T24–48 h.</li>
+        <li><strong>Entrevista semiestruturada:</strong> barreiras, sugestões e necessidades.</li>
+        <li><strong>Análise qualitativa:</strong> codificação de respostas e temas recorrentes, com relatórios trimestrais.</li>
+      </ul>
+      <p>Integrar feedback contínuo ao ciclo PDCA (Planejar, Executar, Checar, Agir).</p>
+    </section>
+
+    <ul>
+      <li>Reavaliações em 24–48 h com a mesma escala e condições semelhantes, reduzindo variabilidade interavaliadores e capturando tendência clinicamente significativa.</li>
+      <li>Para cada instrumento, registrar versão/idioma e metas de confiabilidade interavaliadores (por exemplo, ICC ≥ 0,85 ou kappa ≥ 0,80), com auditorias trimestrais, revisão de casos discordantes e reciclagem baseada em vídeo.</li>
+    </ul>
+
+    <!-- Note dentro al card (facoltativo, non è un riquadro) -->
+    <details class="tips" aria-labelledby="acao-icc-title">
+      <summary id="acao-icc-title">Ações quando ICC/kappa &lt; 0,80</summary>
+      <ul>
+        <li>Booster de treinamento com 10 casos em vídeo, calibração de pontuação e dupla leitura cega.</li>
+        <li>Feedback individual e re avaliação da confiabilidade em até 2 semanas, até alcançar a meta.</li>
+      </ul>
+    </details>
+
+    <details class="tips" aria-labelledby="train-notes-title" style="margin-top:12px">
+      <summary id="train-notes-title">Notas práticas de capacitação</summary>
+      <ul>
+        <li>Utilizar vídeos de casos reais e simulados para treinar leitura comportamental e padronização de pontuação (DDQ B, CPS NAID, NCAPC).</li>
+        <li>Padronizar ambiente, horário e estado comportamental nas sessões de treino e nas avaliações T0/T24–48 h.</li>
+        <li>Registrar versão/idioma dos instrumentos e das ferramentas tecnológicas utilizadas para rastreabilidade e auditoria.</li>
+        <li>Agendar reciclagens trimestrais com revisão de casos discordantes e dupla leitura para manter ICC ≥ 0,85 ou kappa ≥ 0,80.</li>
+      </ul>
+    </details>
+  </article>
+</div>
+    
+<div class="wrap">
+  <article class="card">
+    <h2 style="margin-block-end:12px">Considerações finais</h2>
+    <p>Um método simples, validado e reprodutível, potencializado por formação estruturada e suporte tecnológico opcional, acelera o cuidado domiciliar e ambulatorial: triagem adequada, anamnese direcionada, exame gentil e decisões baseadas em escores, sinais clínicos e magnitude de mudança clinicamente importante.</p>
+    <p>A adoção sistemática reduz atrasos diagnósticos, prioriza casos de maior risco e evita intervenções desnecessárias, beneficiando pessoas com deficiência intelectual, famílias e equipes de saúde.</p>
+
+    <details class="tips" aria-labelledby="final-notes-title">
+      <summary id="final-notes-title">Aplicação consistente no dia a dia</summary>
+      <ul>
+        <li>Definir T0, T24–48 h, T7 e T30 no plano de cuidado, sempre com a mesma escala, para leitura robusta da tendência.</li>
+        <li>Cruzar escore e achados do exame orofacial para priorização; usar cut-offs operacionais como apoio, nunca de forma isolada.</li>
+        <li>Se disponível, integrar leituras tecnológicas como complemento para objetivar tendências e responsividade.</li>
+      </ul>
+    </details>
+
+    <div style="margin-top:1em; padding:1em; border:1px solid #e2b659; background:#fff5e6; border-radius:4px;">
+          <strong style="display:flex; align-items:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#e2b659" viewBox="0 0 24 24" style="margin-right:0.5em;">
+              <path d="M1 21h22L12 2 1 21zm12-2h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+            </svg>
+            Nota sobre projeto-piloto
+          </strong>
+          <p style="margin:0.5em 0;">
+            Será conduzido um estudo-piloto em domicílio e ambulatório para:
+          </p>
+          <ul style="margin:0 0 0 1.5em; padding:0;">
+            <li>Avaliar fidelidade de aplicação entre avaliadores;</li>
+            <li>Mensurar sensibilidade e especificidade das escalas;</li>
+            <li>Quantificar variabilidade inter-avaliador e tempo médio;</li>
+            <li>Coletar feedback de cuidadores e profissionais.</li>
+          </ul>
+          <p style="margin:0.5em 0;">
+            Os resultados orientarão ajustes nos limiares e no fluxo de trabalho antes da adoção em larga escala.
+          </p>
+        </div>
+      </article>
+    </div>
+
+  <!-- Bloco 1 — Nota técnica CPS NAID (inserir antes de </main>) -->
+<div class="wrap stack">
+  <article class="card">
+    <h2 style="margin-block-end:12px">Nota técnica — CPS NAID (ponto de corte e interpretação)</h2>
+    <p>Para adultos não verbais com deficiência intelectual, o CPS NAID dispõe de um ponto de corte operacional: escore ≥ 10 indica 94% de chance de presença de dor; escore ≤ 9 indica 87% de chance de ausência de dor, conforme documentação original do instrumento; interpretar sempre em conjunto com exame orofacial e contexto clínico.</p>
+    <p>Observação: os percentuais são oriundos do material de referência do instrumento e refletem desempenho amostral; usar como apoio, nunca de forma isolada, mantendo a integração com anamnese, exame e evolução seriada.</p>
+    <p>Para o NCAPC, não há ponto de corte universalmente adotado; interpretar o escore em combinação com o CPS NAID, com o exame orofacial e com o comportamento em séries temporais para sustentar a decisão clínica.</p>
+      <details class="tips" aria-labelledby="cpsnaid-alerta-title">
+      <summary id="cpsnaid-alerta-title">Cautelas na interpretação do CPS NAID</summary>
+      <ul>
+        <li>O ponto de corte é um apoio à decisão e não deve, isoladamente, determinar diagnóstico ou prioridade; confirmar sempre a concordância com NCAPC, exame orofacial e tendência em 24–48 h antes de condutas críticas.</li>
+        <li>Registrar a cada medição o ambiente, o estado comportamental e o avaliador para garantir comparabilidade seriada e leitura robusta de tendências.</li>
+      </ul>
+    </details>
+  </article>
+</div>
+
+<!-- Bloco 2 — Mini-algoritmo decisório (inserir antes de </main>) -->
+<div class="wrap stack">
+  <article class="card">
+    <h2 style="margin-block-end:12px">Mini-algoritmo decisório (T0 → T24–48 h → T7 → T30)</h2>
+    <ul>
+      <li><strong>T0</strong>: aplicar escala validada (DDQ-B na pediatria; CPS-NAID + NCAPC em adultos com DI), registrar condições da avaliação e planejar T24–48 h nas mesmas condições.</li>
+      <li><strong>T24–48 h</strong>: repetir a mesma escala e calcular a variação percentual vs. T0; interpretar magnitudes: 10–20% = mudança mínima; ≥ 30% = moderada; ≥ 50% = substancial.</li>
+      <li><strong>Conduta</strong>: se ≥ 30% de melhora com sinais em regressão → manter plano e avançar para T7; se &lt; 30% ou piora → intensificar investigação/terapia e antecipar T7; com sinais de alerta, priorizar manejo urgente.</li>
+      <li><strong>Exemplo</strong>: DDQ 8/12 → 4/12 em 48 h = redução de 50% (melhora substancial); DDQ 8/12 → 6/12 = 25% (abaixo do limiar moderado) → reavaliar fatores e ajustar conduta.</li>
+      <li><strong>T7/T30</strong>: confirmar tendência, medir responsividade clínica e consolidar prevenção, mantendo padronização e documentação seriada.</li>
+    </ul>
+    <div class="alert alert-warning" role="alert">
+      <strong>Discordância escore–sinais:</strong> se CPS-NAID ≤ 9, mas os sinais clínicos são marcantes ou o NCAPC está elevado, conduzir como quadro suspeito de dor: exame orofacial aprofundado, analgesia adequada, follow-up em T24–48 h nas mesmas condições e considerar exames complementares se a discordância persistir.
+    </div>
+  </article>
+</div>
+
+<!-- Bloco 3 — Anexos operacionais (inserir antes de </main>) -->
+<div class="wrap stack">
+  <article class="card">
+    <h2 style="margin-block-end:12px">Anexos operacionais</h2>
+
+    <div style="overflow-x:auto; background-color: #ffffff; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
+      <table style="width:100%; border-collapse: collapse; background-color: #ffffff; border: 1px solid #ccc;">
+        <thead>
+          <tr>
+            <th style="text-align:left; border:1px solid #ccc; padding:8px; background-color:#f9f9f9;">Instrumento</th>
+            <th style="text-align:left; border:1px solid #ccc; padding:8px; background-color:#f9f9f9;">Público-alvo</th>
+            <th style="text-align:left; border:1px solid #ccc; padding:8px; background-color:#f9f9f9;">Versão/idioma</th>
+            <th style="text-align:left; border:1px solid #ccc; padding:8px; background-color:#f9f9f9;">Treino mínimo</th>
+            <th style="text-align:left; border:1px solid #ccc; padding:8px; background-color:#f9f9f9;">Confiabilidade-alvo</th>
+            <th style="text-align:left; border:1px solid #ccc; padding:8px; background-color:#f9f9f9;">Auditoria</th>
+            <th style="text-align:left; border:1px solid #ccc; padding:8px; background-color:#f9f9f9;">Ações se abaixo do alvo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px; border:1px solid #ccc;">DDQ-B</td>
+            <td style="padding:8px; border:1px solid #ccc;">Pediatria (triagem odontogênica)</td>
+            <td style="padding:8px; border:1px solid #ccc;">Preferir PT-BR validado</td>
+            <td style="padding:8px; border:1px solid #ccc;">Curso base + casos em vídeo</td>
+            <td style="padding:8px; border:1px solid #ccc;">Concordância ≥ 80%</td>
+            <td style="padding:8px; border:1px solid #ccc;">Revisão periódica e supervisão</td>
+            <td style="padding:8px; border:1px solid #ccc;">Revisão de critérios, treino dirigido e re-teste de concordância em 2 semanas</td>
+          </tr>
+          <tr>
+            <td style="padding:8px; border:1px solid #ccc;">CPS-NAID</td>
+            <td style="padding:8px; border:1px solid #ccc;">Adultos não verbais com DI</td>
+            <td style="padding:8px; border:1px solid #ccc;">Manual oficial; registrar versão</td>
+            <td style="padding:8px; border:1px solid #ccc;">Curso base + prática observacional</td>
+            <td style="padding:8px; border:1px solid #ccc;">ICC ≥ 0,85 ou kappa ≥ 0,80</td>
+            <td style="padding:8px; border:1px solid #ccc;">Auditoria trimestral com revisão de casos discordantes</td>
+            <td style="padding:8px; border:1px solid #ccc;">Calibração com dupla leitura cega e sessões de feedback até atingir a meta</td>
+          </tr>
+          <tr>
+            <td style="padding:8px; border:1px solid #ccc;">NCAPC</td>
+            <td style="padding:8px; border:1px solid #ccc;">Adultos com DI (observacional)</td>
+            <td style="padding:8px; border:1px solid #ccc;">Versões validadas</td>
+            <td style="padding:8px; border:1px solid #ccc;">Exercícios com vídeos/casos</td>
+            <td style="padding:8px; border:1px solid #ccc;">ICC ≥ 0,85</td>
+            <td style="padding:8px; border:1px solid #ccc;">Auditoria trimestral com revisão de casos discordantes</td>
+            <td style="padding:8px; border:1px solid #ccc;">Booster com 10 vídeos e re-avaliação de ICC/kappa</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <details style="margin:24px 0; padding:8px;">
+      <summary style="font-weight:normal; cursor:pointer; outline:none;">
+        Ficha analgésica padrão (domicílio/amb)
+      </summary>
+      <ul style="margin:12px 0 0 20px; line-height:1.5;">
+        <li><strong>Registro:</strong> escala, escore, condições (ambiente/horário/estado) e consentimento para fotos clínicas.</li>
+        <li><strong>Base:</strong> analgesia adequada ao quadro, evitando manipulações orais desnecessárias em acutizações.</li>
+        <li><strong>Escalonamento:</strong> se melhora ≥ 30% a T24–48 h e sinais em regressão → manter; se &lt; 30% ou piora → intensificar investigação/terapia e antecipar T7.</li>
+        <li><strong>Monitorização:</strong> repetir a mesma escala em T24–48 h, T7 e T30, calculando variação vs. T0 e ancorando condutas ao contexto clínico.</li>
+        <li><strong>Alertas:</strong> tumefação facial/cervical, febre &gt; 38 °C, trismo, disfagia, disfonia, mal-estar sistêmico, imunossupressão → priorizar via aérea e manejo urgente.</li>
+      </ul>
+    </details>
+  </article>
+</div>
+
+<!-- Box de siglas — inserir logo após o <header class="card"> dentro de <article class="post"> -->
+<div class="wrap">
+  <aside class="card" aria-labelledby="siglas-title">
+    <h2 id="siglas-title">Glossário de siglas</h2>
+
+      <dl>
+        <dt><abbr lang="en" title="Mobile application">App</abbr></dt>
+        <dd><span lang="en">Mobile application</span> — Aplicativo móvel — Suporte com IA para avaliação de dor.</dd>
+
+        <dt><abbr lang="en" title="Temporomandibular joint">ATM</abbr></dt>
+        <dd><span lang="en">Temporomandibular joint</span> — Articulação temporomandibular — Área avaliada no exame orofacial.</dd>
+
+        <dt><abbr lang="en" title="Action Units">AU / AUs</abbr></dt>
+        <dd><span lang="en">Action Units</span> — Unidades de Ação — Movimentos faciais elementares do FACS.</dd>
+
+        <dt><abbr lang="en" title="Brazilian">Br-</abbr></dt>
+        <dd><span lang="en">Brazilian</span> — Brasileiro/Brasileira — Indica versão em PT-BR.</dd>
+
+        <dt><abbr lang="en" title="Brazilian NCCPC-PV">Br-NCCPC-PV</abbr></dt>
+        <dd><span lang="en">Brazilian NCCPC-PV</span> — Versão brasileira (PT-BR) do NCCPC-PV — Tradução/adaptação transcultural.</dd>
+
+        <dt><abbr lang="en" title="Confirmatory Factor Analysis">CFA</abbr></dt>
+        <dd><span lang="en">Confirmatory Factor Analysis</span> — Análise fatorial confirmatória — Validação estrutural de instrumentos, bom se CFI ≥ 0,95 e RMSEA ≤ 0,06.</dd>
+
+        <dt><abbr lang="en" title="Comparative Fit Index">CFI</abbr></dt>
+        <dd><span lang="en">Comparative Fit Index</span> — Índice de adattamento comparativo — Medida de ajuste em CFA, considerado bom se ≥ 0,95.</dd>
+
+        <dt><abbr lang="en" title="CP-PAIN facial pain dataset">CP-PAIN</abbr></dt>
+        <dd><span lang="en">CP-PAIN facial pain dataset</span> — Conjunto de dados de dor — Usado em estudos de reconhecimento facial/deep learning.</dd>
+
+        <dt><abbr lang="en" title="Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities">CPS-NAID</abbr></dt>
+        <dd><span lang="en">Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities</span> — Escala de Dor Crônica para Adultos Não Verbais com DI — Observacional; interpretar pontos de corte junto com exame e contexto.</dd>
+
+        <dt><abbr lang="en" title="Dental Discomfort Questionnaire">DDQ</abbr></dt>
+        <dd><span lang="en">Dental Discomfort Questionnaire</span> — Questionário de Desconforto Dentário — Triagem pediátrica para dor odontogênica.</dd>
+
+        <dt><abbr lang="en" title="Dental Discomfort Questionnaire (Brazilian version)">DDQ-B</abbr></dt>
+        <dd><span lang="en">Dental Discomfort Questionnaire (Brazilian version)</span> — Versão brasileira validada (PT-BR), 7 itens — Preferida para triagem rápida em pediatria.</dd>
+
+        <dt><abbr lang="en" title="Intellectual Disability">DI</abbr></dt>
+        <dd><span lang="en">Intellectual Disability</span> — Deficiência intelectual — Condição-alvo do protocolo e dos instrumentos observacionais.</dd>
+
+        <dt><abbr lang="en" title="eHealth Literacy Scale">eHEALS</abbr></dt>
+        <dd><span lang="en">eHealth Literacy Scale</span> — Escala para avaliar alfabetização digital em saúde — Questionário breve para identificar lacunas de competências digitais.</dd>
+
+        <dt><abbr lang="en" title="Facial Action Coding System">FACS</abbr></dt>
+        <dd><span lang="en">Facial Action Coding System</span> — Sistema de Codificação das Ações Faciais — Base para reconhecimento automático de dor.</dd>
+
+        <dt><abbr lang="en" title="Heart rate">FC</abbr></dt>
+        <dd><span lang="en"></span> Frequência cardíaca — Parâmetro autonômico monitorado por wearable.</dd>
+
+        <dt><abbr lang="en" title="Face, Legs, Activity, Cry, Consolability">FLACC</abbr></dt>
+        <dd><span lang="en">Face, Legs, Activity, Cry, Consolability</span> — Rosto, Pernas, Atividade, Choro, Consolabilidade — Escala comportamental pediátrica.</dd>
+
+        <dt><abbr lang="en" title="Intelligenza Artificiale">IA</abbr></dt>
+        <dd>Intelligenza Artificiale — Inteligência Artificial — Tecnologias de suporte complementar para reconhecimento facial e análise comportamental.</dd>
+
+        <dt><abbr lang="en" title="International Association for the Study of Pain">IASP</abbr></dt>
+        <dd><span lang="en">International Association for the Study of Pain</span> — Associação Internacional para o Estudo da Dor — Guias e materiais para populações vulneráveis.</dd>
+
+        <dt><abbr lang="en" title="Intraclass Correlation Coefficient">ICC</abbr></dt>
+        <dd><span lang="en">Intraclass Correlation Coefficient</span> — Coeficiente de Correlação Intraclasse — Indicador de confiabilidade entre avaliadores/medidas.</dd>
+
+        <dt><abbr lang="en" title="Initiative on Methods, Measurement, and Pain Assessment in Clinical Trials">IMMPACT</abbr></dt>
+        <dd><span lang="en">Initiative on Methods, Measurement, and Pain Assessment in Clinical Trials</span> — Iniciativa em Métodos, Medição e Avaliação da Dor em Ensaios Clínicos — Limiares: ≈10–20% mínima; ≥30% moderada; ≥50% substancial.</dd>
+
+        <dt><abbr lang="en" title="Cohen's kappa coefficient">Kappa</abbr></dt>
+        <dd><span lang="en">Cohen's kappa coefficient</span> — Estatística kappa — Concordância entre avaliadores.</dd>
+
+        <dt><abbr lang="en" title="Light-Emitting Diode">LED</abbr></dt>
+        <dd><span lang="en">Light-Emitting Diode</span> — Lanterna/iluminação LED — Ferramenta de inspeção orofacial.</dd>
+
+        <dt><abbr lang="pt-BR" title="Lei Geral de Proteção de Dados">LGPD</abbr></dt>
+        <dd>Lei Geral de Proteção de Dados — Lei federal brasileira (Lei n. 13.709/2018) — Disciplina o tratamento de dados pessoais.</dd>
+
+        <dt><abbr lang="en" title="modified">m-</abbr></dt>
+        <dd><span lang="en">modified</span> — Modificada — Prefixo em m-FLACC.</dd>
+
+        <dt><abbr lang="en" title="modified FLACC">m-FLACC</abbr></dt>
+        <dd><span lang="en">modified FLACC</span> — FLACC modificada — Adaptação para pacientes não comunicantes/necessidades especiais.</dd>
+
+        <dt><abbr lang="en" title="Non-Communicating Adult Pain Checklist">NCAPC</abbr></dt>
+        <dd><span lang="en">Non-Communicating Adult Pain Checklist</span> — Lista de Verificação de Dor para Adultos Não Comunicantes — Checklist com evidências de validade e uso clínico.</dd>
+
+        <dt><abbr lang="en" title="Non-Communicating Children's Pain Checklist – Postoperative Version">NCCPC-PV</abbr></dt>
+        <dd><span lang="en">Non-Communicating Children's Pain Checklist – Postoperative Version</span> — Lista para Crianças Não Comunicantes – Versão Pós-Operatória — Uso em dor aguda peri/pós-operatória.</dd>
+
+        <dt><abbr lang="en" title="Non-Communicating Children's Pain Checklist – Revised">NCCPC-R</abbr></dt>
+        <dd><span lang="en">Non-Communicating Children's Pain Checklist – Revised</span> — Lista para Crianças Não Comunicantes – Revisada — Uso além do perioperatório.</dd>
+
+        <dt><abbr lang="en" title="PainChek application">PainChek</abbr></dt>
+        <dd><span lang="en">PainChek application</span> — Aplicativo de IA — Combina AUs faciais e checklists para gerar escore de dor (uso complementar).</dd>
+
+        <dt><abbr lang="en" title="Paediatric Pain Profile">PPP</abbr></dt>
+        <dd><span lang="en">Paediatric Pain Profile</span> — Perfil de Dor Pediátrico — Observacional (20 itens) para dor pediátrica complexa.</dd>
+
+        <dt><abbr lang="en" title="Brazilian Portuguese">PT-BR</abbr></dt>
+        <dd><span lang="en">Brazilian Portuguese</span> — Português do Brasil — Código de idioma nas versões validadas.</dd>
+
+        <dt><abbr lang="en" title="Postoperative Version">PV</abbr></dt>
+        <dd><span lang="en">Postoperative Version</span> — Versão Pós-Operatória — Sufixo do NCCPC-PV.</dd>
+
+        <dt><abbr lang="en" title="Revised">R</abbr></dt>
+        <dd><span lang="en">Revised</span> — Revisada — Sufixo do NCCPC-R.</dd>
+
+        <dt><abbr lang="en" title="Root Mean Square Error of Approximation">RMSEA</abbr></dt>
+        <dd><span lang="en">Root Mean Square Error of Approximation</span> — Erro quadrático médio de aproximação — Medida de ajuste em CFA, considerado bom se ≤ 0,06.</dd>
+
+        <dt><abbr lang="en" title="Baseline timepoint">T0</abbr></dt>
+        <dd><span lang="en">Baseline timepoint</span> — Tempo basal — Padrão para comparações seriadas.</dd>
+
+        <dt><abbr lang="en" title="Day-7 follow-up">T7</abbr></dt>
+        <dd><span lang="en">Day-7 follow-up</span> — Revisão em 7 dias — Checagem de eficácia terapêutica.</dd>
+
+        <dt><abbr lang="en" title="24–48 hour follow-up">T24–48 h</abbr></dt>
+        <dd><span lang="en">24–48 hour follow-up</span> — Reavaliação 24–48 h — Confirma tendência e resposta.</dd>
+
+        <dt><abbr lang="en" title="Day-30 follow-up">T30</abbr></dt>
+        <dd><span lang="en">Day-30 follow-up</span> — Revisão em 30 dias — Consolidação do plano preventivo.</dd>
+
+        <dt><abbr lang="en" title="Wearable device">Wearable</abbr></dt>
+        <dd><span lang="en">Wearable device</span> — Dispositivo vestível — Sinais fisiológicos (atividade eletrodérmica/FC).</dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+
+  <div class="wrap">
+    <article class="card">
+      <h2>Bibliografia</h2>
+      <ol>
+        <li>Daher A, Versloot J, et al. Validation of the Brazilian version of the Dental Discomfort Questionnaire (DDQ-B). <em>Health Qual Life Outcomes</em>. 2014;12:30. DOI:10.1186/1477-7525-12-30.</li>
+        <li>Versloot J, de Lima GM, et al. Recognizing preschool children with primary teeth needing dental treatment because of caries-related toothache. <em>Community Dent Oral Epidemiol</em>. 2015;43(4):333–342. DOI:10.1111/cdoe.12142.</li>
+        <li>Colares PGB, Nunes RD, de Souza MP, et al. Translation into Brazilian Portuguese and cross-cultural adaptation of the NCCPC-PV for pain evaluation of patients with intellectual disability to communicate. <em>Rev Bras Ortop</em>. 2020;55(2):170–180. DOI:10.1016/j.rboe.2020.02.008.</li>
+        <li>Lotan M, Moe-Nilssen R, Ljunggren AE, Strand LI. Measurement properties of the Non-Communicating Adult Pain Checklist. <em>Res Dev Disabil</em>. 2010;31(4):809–816. DOI:10.1016/j.ridd.2010.03.007.</li>
+        <li>Burkitt C, Breau LM, McGrath PJ, Camfield CS, Finley GA. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities (CPS-NAID). Centre for Pediatric Pain Research; 2009.</li>
+        <li>Breau LM, McGrath PJ, Camfield CS, Finley GA. Validating the Non-Communicating Children’s Pain Checklist—Postoperative Version (NCCPC-PV). <em>Anesthesiology</em>. 2002;96(5):1335–1340. DOI:10.1097/00000542-200205000-00025.</li>
+        <li>Dworkin RH, Turk DC, Wyrwich KW, et al. Interpreting the clinical importance of treatment outcomes in chronic pain clinical trials: IMMPACT recommendations. <em>J Pain</em>. 2008;9(2):105–121. DOI:10.1016/j.jpain.2007.09.005.</li>
+        <li>International Association for the Study of Pain (IASP). Pain assessment in the most vulnerable children. Fact Sheet; 2021. [link online]</li>
+        <li>Hunt A, Franck LS, Ware LJ, et al. Clinical validation of the Paediatric Pain Profile (PPP). <em>Dev Med Child Neurol</em>. 2004;46(1):9–18. DOI:10.1017/S0012162204000036.</li>
+        <li>Peng T, Shi J, Gao Y, et al. A systematic review of the measurement properties of FLACC for pediatric pain assessment. <em>J Pain Res</em>. 2023;16:1185–1196. DOI:10.2147/JPR.S392968.</li>
+        <li>Merkel SI, Voepel-Lewis T, Shayevitz JR, Malviya S. The FLACC: a behavioral scale for scoring postoperative pain in young children. <em>Pediatr Nurs</em>. 1997;23(3):293–297.</li>
+        <li>Malviya S, Voepel-Lewis T, Burke C, Merkel S, Tait AR. The revised FLACC observational pain tool: improved reliability and validity for pain assessment in children with cognitive impairment. <em>Paediatr Anaesth</em>. 2006;16(3):258–265. DOI:10.1111/j.1460-9592.2005.01842.x.</li>
+        <li>Breau LM, McGrath PJ, Camfield CS, Finley GA. Validation of the Non-Communicating Children’s Pain Checklist—Postoperative Version (NCCPC-PV). <em>Anesthesiology</em>. 2002;96(5):1335–1340. DOI:10.1097/00000542-200205000-00025.</li>
+        <li>Lotan M, Moe-Nilssen R, Ljunggren AE, Strand LI. Reliability of the Non-Communicating Adult Pain Checklist (NCAPC), assessed by different groups of health workers. <em>Res Dev Disabil</em>. 2009;30(4):815–822. DOI:10.1016/j.ridd.2008.08.004.</li>
+        <li>Lotan M, Moe-Nilssen R, Ljunggren AE, Strand LI. Measurement properties of the NCAPC: a pain scale for adults with intellectual disabilities, scored in a clinical setting. <em>Res Dev Disabil</em>. 2010;31(2):367–375. DOI:10.1016/j.ridd.2009.10.005.</li>
+        <li>Centre for Pediatric Pain Research. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities (CPS-NAID): scheda strumento e materiali. 2009. [link online]</li>
+        <li>Atee M, Hoti K, Hughes JD. A technical note on the PainChek™ system: a web portal and mobile device for assessing pain in dementia. <em>Front Aging Neurosci</em>. 2018;10:117. DOI:10.3389/fnagi.2018.00117.</li>
+        <li>Atee M, Hoti K, Parsons R, Hughes JD. Automated facial analysis for pain in dementia: interrater reliability of ePAT/PainChek. <em>Clin Interv Aging</em>. 2018;13:1185–1196. DOI:10.2147/CIA.S179485.</li>
+        <li>Zwakhalen SMG, Hamers JP, Abu-Saad HH, Berger MP. Evaluation of PainChek® in UK residents with advanced dementia. <em>J Am Med Dir Assoc</em>. 2021;22(5):987–993. DOI:10.1016/j.jamda.2020.11.022.</li>
+        <li>Sabater-Gárriz Á, Jiménez-López LF, Pérez-García M, et al. Deep learning-based facial recognition for pain assessment in cerebral palsy: CP-PAIN dataset. <em>Digit Health</em>. 2024;10:20552076241259664. DOI:10.1177/20552076241259664.</li>
+        <li>Ekman P, Friesen WV, Hager JC. <em>Facial Action Coding System (FACS): Manual and Investigator’s Guide</em>. Consulting Psychologists Press; 2002.</li>
+        <li>Herr K, Coyne PJ, et al. Pain assessment in the nonverbal patient: position statement with algorithm. <em>Clin J Pain</em>. 2006;22(8):610–625. DOI:10.1097/01.ajp.0000243084.49122.aa.</li>
+        <li>Warden V, Hurley AC, Volicer L. Development and psychometric evaluation of the PAINAD scale. <em>J Am Med Dir Assoc</em>. 2003;4(1):9–15. DOI:10.1016/S1525-8610(03)00001-5.</li>
+        <li>Herr K, Bjoro K, Decker S. Tools for assessment of pain in nonverbal older adults with dementia: systematic review. <em>J Pain Symptom Manage</em>. 2006;31(2):170–192. DOI:10.1016/j.jpainsymman.2005.05.017.</li>
+      </ol>
+    </article>
+  </div>
+
+</main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
+      <p class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</p>
+      <p class="footer-contact">R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250 · WhatsApp (47) 98916 3649</p>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
 
