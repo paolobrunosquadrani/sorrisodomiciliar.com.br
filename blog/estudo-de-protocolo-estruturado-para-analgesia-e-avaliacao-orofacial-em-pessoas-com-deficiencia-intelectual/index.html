@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
+  <meta name="description" content="Página principal do estudo em três partes: proposta teórica, validação em campo e estudo experimental para avaliação da dor orofacial em pessoas com deficiência intelectual. Explore o protocolo estruturado com ferramentas validadas como DDQ-B, CPS-NAID e NCAPC.">
+  <meta name="author" content="Dr. Paolo Bruno Squadrani">
+  <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Evita dark mode forzato/autogenerato -->
+  <meta name="color-scheme" content="only light">
 
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    :root{
+      /* Comunica agli UA che il documento è solo “light” */
+      color-scheme: light;
+
+      --text:#1a1a1a;
+      --muted:#5f6b7a;
+      --border:#e5e7eb;
+      --accent:#0d47a1;
+      --maxw:980px
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:#f7f9fb; /* sfondo chiaro esplicito */
+      color:var(--text);  /* testo scuro esplicito */
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial
+    }
+
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
+
+    .topbar{background:#fff;border-bottom:1px solid var(--border)}
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
+
+    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
+    /* Mantieni il testo del brand sempre visibile e leggibile */
+    .brand,.brand:link,.brand:visited{color:var(--text)}
+    .brand img{width:32px;height:32px}
+    .brand .brand-text{font-weight:600}
+    /* RIMOSSA la regola che nascondeva il testo su mobile; abilita il wrap */
+    @media (max-width:420px){
+      .brand{white-space:normal}
+      .brand .brand-text{display:inline}
+    }
+
+    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a:hover{background:#e8faf6}
+
+    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
+    .breadcrumb a{color:inherit;text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
+
+    /* Titoli con colore esplicito per evitare “bianco su bianco” */
+    h1,h2,h3,h4,h5,h6{color:var(--text);margin-top:0}
+
+    .hero h1{margin:0 0 8px}
+    .hero p{margin:0 0 10px}
+
+    .post-list{margin-top:24px;display:grid;gap:16px}
+    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
+    .post h2{margin:0 0 6px;font-size:22px}
+    .meta{color:var(--muted);font-size:14px}
+    .post a{color:var(--accent);text-decoration:none}
+    .post a:hover{text-decoration:underline}
+
+    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
+  </style>
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sorrisodomiciliar.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sorrisodomiciliar.com.br/blog/"},
+      {"@type":"ListItem","position":3,"name":"Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual","item":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/"}
+    ]
+  }
+  </script>
+
+  <!-- Structured data: Articolo principale -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual",
+    "description":"Página principal do estudo em três partes: proposta teórica, validação em campo e estudo experimental. Protocolo para avaliação da dor orofacial em contextos domiciliares e ambulatoriais, com ferramentas validadas.",
+    "author":{
+      "@type":"Person",
+      "name":"Dr. Paolo Bruno Squadrani"
+    },
+    "datePublished":"2025-10-10",
+    "url":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Header semplice con marca e link único -->
+  <div class="topbar" role="navigation" aria-label="Topo">
+    <div class="inner">
+      <a class="brand" href="/" rel="home" aria-label="Ir para a página inicial">
+        <img src="/Logo.ico" alt="" aria-hidden="true">
+        <span class="brand-text">sorrisodomiciliar.com.br</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="/" rel="home">Início</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="conteudo" class="container">
+    <nav class="breadcrumb" aria-label="Você está aqui">
+      <a href="/">Início</a> › <a href="/blog/">Blog</a> › <span>Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual</span>
+    </nav>
+
+    <!-- Introdução alla pagina (hero simile al blog) -->
+    <section class="card hero" aria-label="Introdução ao estudo">
+      <h1>Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual</h1>
+      <p>Este estudo multipartes explora desafios na avaliação da dor orofacial em indivíduos com deficiência intelectual, propondo um protocolo estruturado baseado em ferramentas validadas (como DDQ-B, CPS-NAID e NCAPC). O foco é padronizar o processo em contextos domiciliares e ambulatoriais, com duração de 15-30 minutos, integrando triagem, anamnese e follow-up seriado.</p>
+      <p>Sem conflitos de interesse; o projeto está em fase de desenvolvimento para validação clínica e publicação peer-reviewed. Acesse as três partes abaixo para detalhes completos.</p>
+    </section>
+
+    <!-- Lista di parti dell'articolo (stile post-list adattato) -->
+    <section class="post-list" aria-label="Parti do estudo">
+      <!-- Parte 1: Proposta Teórica -->
+      <article class="post" itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">
+          <a href="proposta-teorica/">
+            Proposta Teórica – Parte I
+          </a>
+        </h2>
+        <p class="meta">
+          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
+          <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> 
+        </p>
+        <p itemprop="description">
+          Base conceitual do protocolo: fases de triagem estruturada, anamnese mirata e exame clínico gentil, com hipóteses, instrumentos envolvidos e considerações éticas. Clique para ler a proposta teórica completa.
+        </p>
+      </article>
+
+      <!-- Parte 2: Validação em Campo -->
+      <article class="post" itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">
+          <a href="validacao-em-campo/">
+            Validação em Campo – Parte II
+          </a>
+        </h2>
+        <p class="meta">
+          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
+          <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> 
+        </p>
+        <p itemprop="description">
+          Plano operacional para validação prática: métricas de sucesso (fidelidade, tempi, feedback), versão completa e light, in contesti domiciliares/ambulatoriali. Clique para explorar o plano de validação.
+        </p>
+      </article>
+
+      <!-- Parte 3: Estudo Experimental -->
+      <article class="post" itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">
+          <a href="estudo-experimental/">
+            Estudo Experimental – Parte III
+          </a>
+        </h2>
+        <p class="meta">
+          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
+          <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> 
+        </p>
+        <p itemprop="description">
+          Design do estudo experimental: população, análise estatística, controle de bias e resultados attesi per scalabilità e pubblicazione. Clique para dettagli dello studio sperimentale.
+        </p>
+      </article>
+    </section> 
+  </main>
+
+  <!-- Footer igual ao do site -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
+      <p class="footer-legal">Atendimento conforme a legislação brasileira para odontologia domiciliar</p>
+      <p class="footer-contact">R. Jacó Brueckheimer, 425 - Sala 402 - Velha, Blumenau - SC, 89036-250 · WhatsApp (47) 98916‑3649</p>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
