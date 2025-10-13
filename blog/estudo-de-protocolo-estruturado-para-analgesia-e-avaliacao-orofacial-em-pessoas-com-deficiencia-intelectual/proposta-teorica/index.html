@@ -194,30 +194,51 @@
     </article>
   </div>
 
-  <proposta_teorica>
-    <modulo id="1.1.4" titulo="Indicadores Fisiológicos de Dor">
-      <descricao>Antes de descrever o uso de DDQ-B, CPS-NAID e NCAPC, acrescenta-se um novo módulo:</descricao>
-      <submodulo id="1.1.4.1" titulo="Parâmetros Monitorados">
-        <parametro sigla="FC" nome="Frequência Cardíaca">variações sistêmicas associadas a episódios de dor aguda</parametro>
-        <parametro sigla="CC" nome="Condutância Cutânea">alterações na resposta autonômica, medida via eletrodos de superfície</parametro>
-      </submodulo>
-      <submodulo id="1.1.4.2" titulo="Procedimentos e Equipamentos">
-        <item>
-          <nome>Sensores</nome>
-          <detalhes>cintas torácicas ou oxímetro de dedo para FC; eletrodos de condutância na palma da mão para CC</detalhes>
-        </item>
-        <item>
-          <nome>Registro</nome>
-          <detalhes>coleta contínua durante 5 minutos antes e 5 minutos após estímulo clínico; amostragem mínima de 1 Hz</detalhes>
-        </item>
-        <item>
-          <nome>Critérios de Interpretação</nome>
-          <detalhes>aumento ≥ 15 bpm na FC ou elevação de 20 % na CC indicam provável resposta dolorosa</detalhes>
-        </item>
-      </submodulo>
-      <justificativa>Define antecipadamente métodos e instrumentos, garantindo viabilidade técnica e comparabilidade com padrões biomédicos.</justificativa>
-    </modulo>
-  </proposta_teorica>
+  <div class="wrap">
+    <article class="card post">
+      <header class="card">
+        <h2>Proposta Teórica – Parte I</h2>
+      </header>
+      <section class="module" id="modulo-1-1-4">
+        <h3>1.1.4 Indicadores Fisiológicos de Dor</h3>
+        <p>Antes de descrever o uso de DDQ-B, CPS-NAID e NCAPC, acrescenta-se um novo módulo:</p>
+  
+        <section class="submodule" id="submodulo-1-1-4-1">
+          <h4>1.1.4.1 Parâmetros Monitorados</h4>
+          <dl>
+            <dt><abbr title="Frequência Cardíaca">FC</abbr></dt>
+            <dd>variações sistêmicas associadas a episódios de dor aguda</dd>
+            <dt><abbr title="Condutância Cutânea">CC</abbr></dt>
+            <dd>alterações na resposta autonômica, medida via eletrodos de superfície</dd>
+          </dl>
+        </section>
+  
+        <section class="submodule" id="submodulo-1-1-4-2">
+          <h4>1.1.4.2 Procedimentos e Equipamentos</h4>
+          <ul>
+            <li><strong>Sensores:</strong> cintas torácicas ou oxímetro de dedo para FC; eletrodos de condutância na palma da mão para CC.</li>
+            <li><strong>Registro:</strong> coleta contínua durante 5 minutos antes e 5 minutos após estímulo clínico; amostragem mínima de 1 Hz.</li>
+            <li><strong>Critérios de Interpretação:</strong> aumento ≥ 15 bpm na FC ou elevação de 20 % na CC indicam provável resposta dolorosa.</li>
+          </ul>
+        </section>
+  
+        <section class="submodule" id="submodulo-1-1-4-3">
+          <h4>1.1.4.3 Calibração e Gerenciamento de Dados</h4>
+          <ul>
+            <li><strong>Calibração de Sensores:</strong> procedimento padrão diário, com checagem de linha de base em voluntário saudável antes de cada coleta.</li>
+            <li><strong>Validação Cruzada:</strong> comparação dos valores de FC e CC obtidos por diferentes dispositivos para garantir consistência (<em>inter-device reliability</em>).</li>
+            <li><strong>Armazenamento Seguro:</strong> criptografia de dados em repouso e em trânsito, conforme LGPD, com controle de acesso restrito à equipe de pesquisa.</li>
+            <li><strong>Pré-processamento:</strong> filtragem de artefatos (movimentação, interferências elétricas) usando filtros passa-baixa com cutoff de 0,5 Hz.</li>
+            <li><strong>Análise Estatística:</strong> cálculo de média móvel (janela de 10 s) para suavizar o sinal e identificar picos de resposta dolorosa.</li>
+          </ul>
+        </section>
+  
+        <footer class="justification">
+          <p><strong>Justificativa:</strong> Define antecipadamente métodos e instrumentos, garantindo viabilidade técnica e comparabilidade com padrões biomédicos.</p>
+        </footer>
+      </section>
+    </article>
+  </div>
       
   <aside class="card" aria-labelledby="ferramentas-title">
   <h2 id="ferramentas-title" style="margin-block-end:12px">
@@ -1049,7 +1070,7 @@
   </aside>
 </div>
 
-  <div class="wrap">
+ <div class="wrap">
   <article class="card">
     <h2>Bibliografia</h2>
     <ol>
@@ -1060,15 +1081,14 @@
       <li>Burkitt C, Breau LM, McGrath PJ, Camfield CS, Finley GA. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities (CPS-NAID). Centre for Pediatric Pain Research; 2009.</li>
       <li>Breau LM, McGrath PJ, Camfield CS, Finley GA. Validating the Non-Communicating Children’s Pain Checklist—Postoperative Version (NCCPC-PV). <em>Anesthesiology</em>. 2002;96(5):1335–1340. DOI:10.1097/00000542-200205000-00025.</li>
       <li>Dworkin RH, Turk DC, Wyrwich KW, et al. Interpreting the clinical importance of treatment outcomes in chronic pain clinical trials: IMMPACT recommendations. <em>J Pain</em>. 2008;9(2):105–121. DOI:10.1016/j.jpain.2007.09.005.</li>
-      <li>International Association for the Study of Pain (IASP). Pain assessment in the most vulnerable children. Fact Sheet; 2021. [link online]</li>
+      <li>International Association for the Study of Pain (IASP). Pain assessment in the most vulnerable children. Fact Sheet; 2021.</li>
       <li>Hunt A, Franck LS, Ware LJ, et al. Clinical validation of the Paediatric Pain Profile (PPP). <em>Dev Med Child Neurol</em>. 2004;46(1):9–18. DOI:10.1017/S0012162204000036.</li>
       <li>Peng T, Shi J, Gao Y, et al. A systematic review of the measurement properties of FLACC for pediatric pain assessment. <em>J Pain Res</em>. 2023;16:1185–1196. DOI:10.2147/JPR.S392968.</li>
       <li>Merkel SI, Voepel-Lewis T, Shayevitz JR, Malviya S. The FLACC: a behavioral scale for scoring postoperative pain in young children. <em>Pediatr Nurs</em>. 1997;23(3):293–297.</li>
       <li>Malviya S, Voepel-Lewis T, Burke C, Merkel S, Tait AR. The revised FLACC observational pain tool: improved reliability and validity for pain assessment in children with cognitive impairment. <em>Paediatr Anaesth</em>. 2006;16(3):258–265. DOI:10.1111/j.1460-9592.2005.01842.x.</li>
-      <li>Breau LM, McGrath PJ, Camfield CS, Finley GA. Validation of the Non-Communicating Children’s Pain Checklist—Postoperative Version (NCCPC-PV). <em>Anesthesiology</em>. 2002;96(5):1335–1340. DOI:10.1097/00000542-200205000-00025.</li>
       <li>Lotan M, Moe-Nilssen R, Ljunggren AE, Strand LI. Reliability of the Non-Communicating Adult Pain Checklist (NCAPC), assessed by different groups of health workers. <em>Res Dev Disabil</em>. 2009;30(4):815–822. DOI:10.1016/j.ridd.2008.08.004.</li>
       <li>Lotan M, Moe-Nilssen R, Ljunggren AE, Strand LI. Measurement properties of the NCAPC: a pain scale for adults with intellectual disabilities, scored in a clinical setting. <em>Res Dev Disabil</em>. 2010;31(2):367–375. DOI:10.1016/j.ridd.2009.10.005.</li>
-      <li>Centre for Pediatric Pain Research. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities (CPS-NAID): scheda strumento e materiali. 2009. [link online]</li>
+      <li>Centre for Pediatric Pain Research. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities (CPS-NAID): scheda strumento e materiali. 2009.</li>
       <li>Atee M, Hoti K, Hughes JD. A technical note on the PainChek™ system: a web portal and mobile device for assessing pain in dementia. <em>Front Aging Neurosci</em>. 2018;10:117. DOI:10.3389/fnagi.2018.00117.</li>
       <li>Atee M, Hoti K, Parsons R, Hughes JD. Automated facial analysis for pain in dementia: interrater reliability of ePAT/PainChek. <em>Clin Interv Aging</em>. 2018;13:1185–1196. DOI:10.2147/CIA.S179485.</li>
       <li>Zwakhalen SMG, Hamers JP, Abu-Saad HH, Berger MP. Evaluation of PainChek® in UK residents with advanced dementia. <em>J Am Med Dir Assoc</em>. 2021;22(5):987–993. DOI:10.1016/j.jamda.2020.11.022.</li>
@@ -1076,11 +1096,13 @@
       <li>Ekman P, Friesen WV, Hager JC. <em>Facial Action Coding System (FACS): Manual and Investigator’s Guide</em>. Consulting Psychologists Press; 2002.</li>
       <li>Herr K, Coyne PJ, et al. Pain assessment in the nonverbal patient: position statement with algorithm. <em>Clin J Pain</em>. 2006;22(8):610–625. DOI:10.1097/01.ajp.0000243084.49122.aa.</li>
       <li>Warden V, Hurley AC, Volicer L. Development and psychometric evaluation of the PAINAD scale. <em>J Am Med Dir Assoc</em>. 2003;4(1):9–15. DOI:10.1016/S1525-8610(03)00001-5.</li>
-      <li>Herr K, Bjoro K, Decker S. “Tools for Assessment of Pain in Nonverbal Older Adults with Dementia: A State-of-the-Science Review.” <em>J Pain Symptom Manage</em>. 2006;31(2):170–192.</li>
-      <li>Craig KD, Prkachin KM, Grunau RVE. “The facial action coding system for coding pain expression in infants: first manual.” 2010.</li>
-      <li>Kunz M, Mylius V, Schepelmann K, Lautenbacher S. “The reliability of the pain behavior scale.” <em>Eur J Pain</em>. 2004;8(3):161–167. DOI:10.1016/j.ejpain.2003.09.001.</li>
+      <li>Herr K, Bjoro K, Decker S. Tools for Assessment of Pain in Nonverbal Older Adults with Dementia: A State-of-the-Science Review. <em>J Pain Symptom Manage</em>. 2006;31(2):170–192.</li>
+      <li>Craig KD, Prkachin KM, Grunau RVE. The facial action coding system for coding pain expression in infants: first manual. 2010.</li>
+      <li>Kunz M, Mylius V, Schepelmann K, Lautenbacher S. The reliability of the pain behavior scale. <em>Eur J Pain</em>. 2004;8(3):161–167. DOI:10.1016/j.ejpain.2003.09.001.</li>
       <li>Boucsein W. <em>Electrodermal Activity</em>. Springer; 2012.</li>
-      <li>Berntson GG, Quigley KS. “Integration and validation of physiological measures in psychophysiology.” In: Cacioppo JT, Tassinary LG, Berntson GG, editors. <em>Handbook of Psychophysiology</em>. Cambridge University Press; 2007.</li>
+      <li>Berntson GG, Quigley KS. Integration and validation of physiological measures in psychophysiology. In: Cacioppo JT, Tassinary LG, Berntson GG, editors. <em>Handbook of Psychophysiology</em>. Cambridge University Press; 2007.</li>
+      <li>Tarvainen MP, Niskanen JP, Lipponen JA, Ranta-Aho PO, Karjalainen PA. Kubios HRV–Heart rate variability analysis software. <em>Comput Methods Programs Biomed</em>. 2014;113(1):210–220. DOI:10.1016/j.cmpb.2013.07.024.</li>
+      <li>van Gent P, Farah H, van Nes N, van Arem B. HeartPy: A novel heart rate algorithm for the analysis of noisy signals. <em>Transp Res Part F Traffic Psychol Behav</em>. 2019;66:368–378. DOI:10.1016/j.trf.2019.09.015.</li>
     </ol>
   </article>
 </div>
