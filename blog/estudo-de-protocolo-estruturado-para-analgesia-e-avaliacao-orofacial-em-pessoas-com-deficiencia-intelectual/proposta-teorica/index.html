@@ -306,27 +306,27 @@
         </details>
       </article>
 
-      <!-- FLUXOGRAMA REDESIGN v3.0 - DESIGN MODERNO E PULITO -->
+      <!-- FLUXOGRAMA v4.0 - DESIGN OTTIMIZZATO E PROFESSIONALE -->
       <figure class="figure wrap stack" aria-labelledby="fluxograma-caption" role="group">
         <figcaption id="fluxograma-caption" class="figure-caption">
           <strong>Figura 1.</strong> Fluxograma decisório do protocolo de avaliação de dor orofacial em pessoas com deficiência intelectual
         </figcaption>
         
-        <div class="card" style="padding: 1.5em; overflow-x: auto; background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" aria-describedby="fluxograma-desc">
+        <div class="card" style="padding: 2em; overflow-x: auto; background: #fafbfc;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 1200" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" aria-describedby="fluxograma-desc">
             <title>Protocolo de Avaliação de Dor Orofacial</title>
             <desc id="fluxograma-desc">
-              Fluxograma visual do protocolo estruturado para triagem, avaliação e acompanhamento da dor orofacial
+              Fluxograma visual do protocolo estruturado para triagem, avaliação e acompanhamento da dor orofacial em pessoas com deficiência intelectual
             </desc>
             
-            <!-- DEFINIÇÕES: Sombras, Gradienti suaves e Marcadores -->
+            <!-- ========== DEFINIÇÕES ========== -->
             <defs>
-              <!-- Sombra suave -->
-              <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-                <feOffset dx="0" dy="2" result="offsetblur"/>
+              <!-- Sombra moderna -->
+              <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+                <feOffset dx="0" dy="3" result="offsetblur"/>
                 <feComponentTransfer>
-                  <feFuncA type="linear" slope="0.2"/>
+                  <feFuncA type="linear" slope="0.15"/>
                 </feComponentTransfer>
                 <feMerge>
                   <feMergeNode/>
@@ -334,186 +334,203 @@
                 </feMerge>
               </filter>
               
-              <!-- Gradientes suaves e modernos -->
+              <!-- Gradientes suaves -->
               <linearGradient id="grad-blue" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#90caf9;stop-opacity:1" />
               </linearGradient>
               
               <linearGradient id="grad-green" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
               </linearGradient>
               
               <linearGradient id="grad-orange" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#ffb74d;stop-opacity:1" />
               </linearGradient>
               
               <linearGradient id="grad-purple" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#ba68c8;stop-opacity:1" />
               </linearGradient>
               
               <linearGradient id="grad-red" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" style="stop-color:#ffebee;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#ffcdd2;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#e57373;stop-opacity:1" />
               </linearGradient>
               
-              <!-- Marcatore freccia moderna -->
-              <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="strokeWidth">
-                <path d="M0,0 L0,8 L8,4 z" fill="#546e7a" />
+              <linearGradient id="grad-gray" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#eceff1;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#b0bec5;stop-opacity:1" />
+              </linearGradient>
+              
+              <!-- Marcatori freccia -->
+              <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L0,10 L10,5 z" fill="#1976d2" />
+              </marker>
+              <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L0,10 L10,5 z" fill="#388e3c" />
+              </marker>
+              <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L0,10 L10,5 z" fill="#d32f2f" />
+              </marker>
+              <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <path d="M0,0 L0,10 L10,5 z" fill="#607d8b" />
               </marker>
             </defs>
       
-            <!-- LEGENDA compatta in alto a destra -->
-            <g transform="translate(650, 20)">
-              <rect x="0" y="0" width="230" height="95" rx="8" ry="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)"/>
-              <text x="115" y="20" text-anchor="middle" font-size="12" font-weight="600" fill="#37474f">Variação % da Dor</text>
-              <line x1="15" y1="25" x2="215" y2="25" stroke="#e0e0e0" stroke-width="1"/>
-              <circle cx="20" cy="40" r="5" fill="#4caf50"/>
-              <text x="35" y="44" font-size="11" fill="#37474f">≥ 50%: Excelente</text>
-              <circle cx="20" cy="60" r="5" fill="#ff9800"/>
-              <text x="35" y="64" font-size="11" fill="#37474f">30-49%: Boa</text>
-              <circle cx="20" cy="80" r="5" fill="#ef5350"/>
-              <text x="35" y="84" font-size="11" fill="#37474f">&lt; 30%: Insuficiente</text>
+            <!-- ========== LEGENDA ========== -->
+            <g transform="translate(690, 25)">
+              <rect x="0" y="0" width="240" height="110" rx="10" ry="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5" filter="url(#shadow)"/>
+              <text x="120" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#263238">Variação % da Dor</text>
+              <line x1="20" y1="32" x2="220" y2="32" stroke="#cfd8dc" stroke-width="1"/>
+              
+              <circle cx="25" cy="50" r="6" fill="#4caf50"/>
+              <text x="40" y="54" font-size="11.5" fill="#263238">≥ 50%: Excelente</text>
+              
+              <circle cx="25" cy="72" r="6" fill="#ff9800"/>
+              <text x="40" y="76" font-size="11.5" fill="#263238">30-49%: Boa</text>
+              
+              <circle cx="25" cy="94" r="6" fill="#f44336"/>
+              <text x="40" y="98" font-size="11.5" fill="#263238">&lt; 30%: Insuficiente</text>
             </g>
             
-            <!-- ========== FASE 1: INÍCIO ========== -->
+            <!-- ========== INÍCIO ========== -->
             <g id="inicio">
-              <rect x="300" y="30" width="300" height="55" rx="27.5" ry="27.5" fill="url(#grad-blue)" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
-              <text x="450" y="55" text-anchor="middle" font-size="14" font-weight="600" fill="#1565c0">INÍCIO</text>
-              <text x="450" y="72" text-anchor="middle" font-size="11" fill="#1976d2">Queixa / Mudança Comportamental</text>
+              <rect x="310" y="40" width="330" height="65" rx="32" ry="32" fill="url(#grad-blue)" stroke="#1e88e5" stroke-width="2.5" filter="url(#shadow)"/>
+              <text x="475" y="68" text-anchor="middle" font-size="15" font-weight="700" fill="#0d47a1">INÍCIO</text>
+              <text x="475" y="88" text-anchor="middle" font-size="11.5" fill="#1565c0">Queixa / Mudança Comportamental</text>
             </g>
             
-            <path d="M 450 85 L 450 130" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+            <path d="M 475 105 L 475 160" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
             
             <!-- ========== T0: TRIAGEM ========== -->
             <g id="triagem">
-              <rect x="275" y="130" width="350" height="65" rx="12" ry="12" fill="url(#grad-green)" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
-              <text x="450" y="155" text-anchor="middle" font-size="13" font-weight="600" fill="#2e7d32">T0: TRIAGEM INICIAL (5-10 min)</text>
-              <text x="450" y="173" text-anchor="middle" font-size="10" fill="#388e3c">DDQ-B (pediatria) ou CPS-NAID + NCAPC (adultos)</text>
-              <text x="450" y="186" text-anchor="middle" font-size="10" fill="#388e3c">Anamnese + Exame clínico gentile</text>
+              <rect x="275" y="160" width="400" height="75" rx="15" ry="15" fill="url(#grad-green)" stroke="#43a047" stroke-width="2.5" filter="url(#shadow)"/>
+              <text x="475" y="188" text-anchor="middle" font-size="14" font-weight="700" fill="#1b5e20">T0: TRIAGEM INICIAL (5-10 min)</text>
+              <text x="475" y="207" text-anchor="middle" font-size="11" fill="#2e7d32">DDQ-B (pediatria) ou CPS-NAID + NCAPC (adultos)</text>
+              <text x="475" y="223" text-anchor="middle" font-size="11" fill="#2e7d32">Anamnese direcionada + Exame clínico gentile</text>
             </g>
             
-            <path d="M 450 195 L 450 240" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+            <path d="M 475 235 L 475 290" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
             
-            <!-- ========== DECISÃO 1: Score alto? ========== -->
+            <!-- ========== DECISÃO 1 ========== -->
             <g id="decisao-score">
-              <rect x="300" y="240" width="300" height="60" rx="15" ry="15" fill="url(#grad-orange)" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
-              <text x="450" y="262" text-anchor="middle" font-size="12" font-weight="600" fill="#e65100">Score alto +</text>
-              <text x="450" y="278" text-anchor="middle" font-size="12" font-weight="600" fill="#e65100">segni clinici concordanti?</text>
-              <text x="450" y="292" text-anchor="middle" font-size="9" font-style="italic" fill="#ef6c00">(CPS-NAID ≥10 ou DDQ-B ≥5)</text>
+              <rect x="310" y="290" width="330" height="70" rx="18" ry="18" fill="url(#grad-orange)" stroke="#fb8c00" stroke-width="2.5" filter="url(#shadow)"/>
+              <text x="475" y="315" text-anchor="middle" font-size="13" font-weight="700" fill="#e65100">Score alto +</text>
+              <text x="475" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#e65100">segni clinici concordanti?</text>
+              <text x="475" y="352" text-anchor="middle" font-size="10" font-style="italic" fill="#ef6c00">(CPS-NAID ≥10 ou DDQ-B ≥5)</text>
             </g>
             
-            <!-- Ramo SÌ - Analgesia -->
-            <path d="M 300 270 L 140 270" stroke="#4caf50" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
-            <text x="220" y="265" fill="#2e7d32" font-size="11" font-weight="600">SÌ</text>
+            <!-- Ramo SÌ -->
+            <path d="M 310 325 L 150 325" stroke="#388e3c" stroke-width="3" fill="none" marker-end="url(#arrow-green)" />
+            <text x="230" y="318" fill="#1b5e20" font-size="12" font-weight="700">SÌ</text>
             
-            <rect x="40" y="245" width="190" height="50" rx="10" ry="10" fill="url(#grad-green)" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
-            <text x="135" y="265" text-anchor="middle" font-size="11" font-weight="600" fill="#2e7d32">Analgesia adequada +</text>
-            <text x="135" y="282" text-anchor="middle" font-size="11" font-weight="600" fill="#2e7d32">Tratamento prioritário</text>
+            <rect x="40" y="295" width="200" height="60" rx="12" ry="12" fill="url(#grad-green)" stroke="#43a047" stroke-width="2.5" filter="url(#shadow)"/>
+            <text x="140" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#1b5e20">Analgesia adequada +</text>
+            <text x="140" y="340" text-anchor="middle" font-size="12" font-weight="700" fill="#1b5e20">Tratamento prioritário</text>
             
-            <!-- Freccia corretta verso T24-48h -->
-            <path d="M 135 295 L 135 650 L 450 650" stroke="#4caf50" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+            <!-- Freccia corretta -->
+            <path d="M 140 355 L 140 730 L 475 730" stroke="#388e3c" stroke-width="2.5" fill="none" marker-end="url(#arrow-green)" />
             
             <!-- Ramo NO/INCERTO -->
-            <path d="M 450 300 L 450 345" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
-            <text x="470" y="325" fill="#546e7a" font-size="11" font-weight="600">NO/INCERTO</text>
+            <path d="M 475 360 L 475 415" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
+            <text x="495" y="392" fill="#546e7a" font-size="12" font-weight="700">NO/INCERTO</text>
             
-            <!-- ========== DECISÃO 2: Segni di allarme? ========== -->
+            <!-- ========== DECISÃO 2 ========== -->
             <g id="decisao-allarme">
-              <rect x="275" y="345" width="350" height="70" rx="15" ry="15" fill="url(#grad-orange)" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
-              <text x="450" y="368" text-anchor="middle" font-size="12" font-weight="600" fill="#e65100">Segni di allarme urgenti?</text>
-              <text x="450" y="390" text-anchor="middle" font-size="10" fill="#ef6c00">Tumefazione faciale, febbre &gt;38°C,</text>
-              <text x="450" y="405" text-anchor="middle" font-size="10" fill="#ef6c00">trismo, disfagia, dispnea</text>
+              <rect x="275" y="415" width="400" height="80" rx="18" ry="18" fill="url(#grad-orange)" stroke="#fb8c00" stroke-width="2.5" filter="url(#shadow)"/>
+              <text x="475" y="442" text-anchor="middle" font-size="13" font-weight="700" fill="#e65100">Segni di allarme urgenti?</text>
+              <text x="475" y="465" text-anchor="middle" font-size="11" fill="#ef6c00">Tumefazione faciale, febbre &gt;38°C,</text>
+              <text x="475" y="483" text-anchor="middle" font-size="11" fill="#ef6c00">trismo, disfagia, dispnea</text>
             </g>
             
-            <!-- Ramo SÌ - Urgenza -->
-            <path d="M 275 380 L 140 380" stroke="#ef5350" stroke-width="3" fill="none" marker-end="url(#arrow)" />
-            <text x="205" y="375" fill="#c62828" font-size="11" font-weight="700">SÌ</text>
+            <!-- Ramo SÌ URGENZA -->
+            <path d="M 275 455 L 150 455" stroke="#d32f2f" stroke-width="3.5" fill="none" marker-end="url(#arrow-red)" />
+            <text x="210" y="448" fill="#b71c1c" font-size="12" font-weight="700">SÌ</text>
             
-            <rect x="40" y="355" width="190" height="50" rx="10" ry="10" fill="url(#grad-red)" stroke="#e57373" stroke-width="2" filter="url(#shadow)"/>
-            <text x="135" y="375" text-anchor="middle" font-size="11" font-weight="700" fill="#c62828">URGÊNCIA</text>
-            <text x="135" y="392" text-anchor="middle" font-size="10" fill="#d32f2f">Referência imediata</text>
+            <rect x="40" y="425" width="200" height="60" rx="12" ry="12" fill="url(#grad-red)" stroke="#e53935" stroke-width="2.5" filter="url(#shadow)"/>
+            <text x="140" y="448" text-anchor="middle" font-size="13" font-weight="700" fill="#b71c1c">URGÊNCIA</text>
+            <text x="140" y="468" text-anchor="middle" font-size="11" fill="#c62828">Referência Imediata</text>
             
             <!-- Ramo NO -->
-            <path d="M 450 415 L 450 465" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
-            <text x="470" y="442" fill="#546e7a" font-size="11" font-weight="600">NO</text>
+            <path d="M 475 495 L 475 555" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
+            <text x="495" y="530" fill="#546e7a" font-size="12" font-weight="700">NO</text>
             
             <!-- Analgesia de Prova -->
-            <rect x="300" y="465" width="300" height="55" rx="12" ry="12" fill="url(#grad-green)" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
-            <text x="450" y="488" text-anchor="middle" font-size="12" font-weight="600" fill="#2e7d32">Analgesia de Prova</text>
-            <text x="450" y="505" text-anchor="middle" font-size="10" fill="#388e3c">Paracetamol 500-1000mg ou Dipirona 500mg</text>
+            <rect x="310" y="555" width="330" height="65" rx="15" ry="15" fill="url(#grad-green)" stroke="#43a047" stroke-width="2.5" filter="url(#shadow)"/>
+            <text x="475" y="582" text-anchor="middle" font-size="13" font-weight="700" fill="#1b5e20">Analgesia de Prova</text>
+            <text x="475" y="602" text-anchor="middle" font-size="11" fill="#2e7d32">Paracetamol 500-1000mg ou Dipirona 500mg</text>
             
-            <path d="M 450 520 L 450 650" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+            <path d="M 475 620 L 475 730" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
             
-            <!-- ========== T24-48h: REAVALIAÇÃO ========== -->
+            <!-- ========== T24-48h ========== -->
             <g id="reavaliacao">
-              <rect x="275" y="650" width="350" height="70" rx="12" ry="12" fill="url(#grad-purple)" stroke="#ab47bc" stroke-width="2" filter="url(#shadow)"/>
-              <text x="450" y="675" text-anchor="middle" font-size="13" font-weight="600" fill="#6a1b9a">T24-48h: REAVALIAÇÃO (5-10 min)</text>
-              <text x="450" y="693" text-anchor="middle" font-size="10" fill="#7b1fa2">Mesma escala, mesmas condições</text>
-              <text x="450" y="707" text-anchor="middle" font-size="10" fill="#7b1fa2">Calcular Variação % do score basal</text>
+              <rect x="275" y="730" width="400" height="80" rx="15" ry="15" fill="url(#grad-purple)" stroke="#8e24aa" stroke-width="2.5" filter="url(#shadow)"/>
+              <text x="475" y="758" text-anchor="middle" font-size="14" font-weight="700" fill="#4a148c">T24-48h: REAVALIAÇÃO (5-10 min)</text>
+              <text x="475" y="778" text-anchor="middle" font-size="11" fill="#6a1b9a">Mesma escala, mesmas condições</text>
+              <text x="475" y="796" text-anchor="middle" font-size="11" fill="#6a1b9a">Calcular Variação % do score basal</text>
             </g>
             
-            <path d="M 450 720 L 450 770" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+            <path d="M 475 810 L 475 870" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
             
-            <!-- ========== DECISÃO 3: Variação % ========== -->
+            <!-- ========== DECISÃO 3 ========== -->
             <g id="decisao-variacao">
-              <rect x="300" y="770" width="300" height="50" rx="15" ry="15" fill="url(#grad-orange)" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
-              <text x="450" y="790" text-anchor="middle" font-size="12" font-weight="600" fill="#e65100">Análise da Variação %</text>
-              <text x="450" y="806" text-anchor="middle" font-size="10" fill="#ef6c00">(comparado ao score T0)</text>
+              <rect x="310" y="870" width="330" height="60" rx="18" ry="18" fill="url(#grad-orange)" stroke="#fb8c00" stroke-width="2.5" filter="url(#shadow)"/>
+              <text x="475" y="895" text-anchor="middle" font-size="13" font-weight="700" fill="#e65100">Análise da Variação %</text>
+              <text x="475" y="915" text-anchor="middle" font-size="10.5" fill="#ef6c00">(comparado ao score T0)</text>
             </g>
             
-            <!-- ========== RAMOS DA VARIAÇÃO ========== -->
+            <!-- ========== RAMOS VARIAÇÃO ========== -->
             <!-- Ramo ≥50% -->
-            <path d="M 300 795 L 140 795" stroke="#4caf50" stroke-width="2" fill="none" marker-end="url(#arrow)" />
-            <text x="220" y="790" fill="#2e7d32" font-size="10" font-weight="600">≥50%</text>
+            <path d="M 310 900 L 150 900" stroke="#388e3c" stroke-width="2.5" fill="none" marker-end="url(#arrow-green)" />
+            <text x="230" y="893" fill="#1b5e20" font-size="11" font-weight="700">≥50%</text>
             
-            <rect x="40" y="820" width="190" height="55" rx="10" ry="10" fill="url(#grad-green)" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
-            <text x="135" y="843" text-anchor="middle" font-size="11" font-weight="600" fill="#2e7d32">Resposta Excelente</text>
-            <text x="135" y="860" text-anchor="middle" font-size="10" fill="#388e3c">Manter conduta → T7</text>
+            <rect x="40" y="935" width="200" height="65" rx="12" ry="12" fill="url(#grad-green)" stroke="#43a047" stroke-width="2.5" filter="url(#shadow)"/>
+            <text x="140" y="962" text-anchor="middle" font-size="12" font-weight="700" fill="#1b5e20">Resposta Excelente</text>
+            <text x="140" y="982" text-anchor="middle" font-size="11" fill="#2e7d32">Manter conduta → T7</text>
             
             <!-- Ramo 30-49% -->
-            <path d="M 600 795 L 760 795" stroke="#ff9800" stroke-width="2" fill="none" marker-end="url(#arrow)" />
-            <text x="680 " y="790" fill="#e65100" font-size="10" font-weight="600">30-49%</text>
+            <path d="M 640 900 L 800 900" stroke="#fb8c00" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
+            <text x="720" y="893" fill="#e65100" font-size="11" font-weight="700">30-49%</text>
             
-            <rect x="670" y="820" width="190" height="55" rx="10" ry="10" fill="url(#grad-orange)" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
-            <text x="765" y="843" text-anchor="middle" font-size="11" font-weight="600" fill="#e65100">Resposta Boa</text>
-            <text x="765" y="860" text-anchor="middle" font-size="10" fill="#ef6c00">Otimizar analgesia → T7</text>
+            <rect x="710" y="935" width="200" height="65" rx="12" ry="12" fill="url(#grad-orange)" stroke="#fb8c00" stroke-width="2.5" filter="url(#shadow)"/>
+            <text x="810" y="962" text-anchor="middle" font-size="12" font-weight="700" fill="#e65100">Resposta Boa</text>
+            <text x="810" y="982" text-anchor="middle" font-size="11" fill="#ef6c00">Otimizar analgesia → T7</text>
             
             <!-- Ramo <30% -->
-            <path d="M 450 820 L 450 890" stroke="#ef5350" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
-            <text x="470" y="860" fill="#c62828" font-size="10" font-weight="700">&lt;30%</text>
+            <path d="M 475 930 L 475 1005" stroke="#d32f2f" stroke-width="3" fill="none" marker-end="url(#arrow-red)" />
+            <text x="495" y="972" fill="#b71c1c" font-size="11" font-weight="700">&lt;30%</text>
             
-            <rect x="300" y="890" width="300" height="55" rx="10" ry="10" fill="url(#grad-red)" stroke="#e57373" stroke-width="2" filter="url(#shadow)"/>
-            <text x="450" y="913" text-anchor="middle" font-size="11" font-weight="700" fill="#c62828">Resposta Insuficiente</text>
-            <text x="450" y="930" text-anchor="middle" font-size="10" fill="#d32f2f">Reavaliação completa + Especialista</text>
+            <rect x="310" y="1005" width="330" height="65" rx="12" ry="12" fill="url(#grad-red)" stroke="#e53935" stroke-width="2.5" filter="url(#shadow)"/>
+            <text x="475" y="1032" text-anchor="middle" font-size="12" font-weight="700" fill="#b71c1c">Resposta Insuficiente</text>
+            <text x="475" y="1052" text-anchor="middle" font-size="11" fill="#c62828">Reavaliação completa + Especialista</text>
             
-            <!-- Convergenza verso T7 -->
-            <path d="M 135 875 L 135 980 L 450 980" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
-            <path d="M 765 875 L 765 980 L 450 980" stroke="#546e7a" stroke-width="2" fill="none" />
-            <path d="M 450 945 L 450 980" stroke="#546e7a" stroke-width="2" fill="none" />
+            <!-- Convergência T7 -->
+            <path d="M 140 1000 L 140 1100 L 475 1100" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
+            <path d="M 810 1000 L 810 1100 L 475 1100" stroke="#607d8b" stroke-width="2.5" fill="none" />
+            <path d="M 475 1070 L 475 1100" stroke="#607d8b" stroke-width="2.5" fill="none" />
             
-            <!-- ========== T7: CONSOLIDAÇÃO ========== -->
+            <!-- ========== T7 ========== -->
             <g id="consolidacao">
-              <rect x="275" y="980" width="350" height="55" rx="12" ry="12" fill="url(#grad-purple)" stroke="#ab47bc" stroke-width="2" filter="url(#shadow)"/>
-              <text x="450" y="1003" text-anchor="middle" font-size="13" font-weight="600" fill="#6a1b9a">T7: REAVALIAÇÃO DE SEGUIMENTO</text>
-              <text x="450" y="1020" text-anchor="middle" font-size="10" fill="#7b1fa2">Consolidar diagnóstico e plano terapêutico</text>
+              <rect x="275" y="1100" width="400" height="65" rx="15" ry="15" fill="url(#grad-purple)" stroke="#8e24aa" stroke-width="2.5" filter="url(#shadow)"/>
+              <text x="475" y="1128" text-anchor="middle" font-size="14" font-weight="700" fill="#4a148c">T7: REAVALIAÇÃO DE SEGUIMENTO</text>
+              <text x="475" y="1148" text-anchor="middle" font-size="11" fill="#6a1b9a">Consolidar diagnóstico e plano terapêutico</text>
             </g>
             
-            <path d="M 450 1035 L 450 1060" stroke="#546e7a" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+            <path d="M 475 1165 L 475 1190" stroke="#607d8b" stroke-width="2.5" fill="none" marker-end="url(#arrow-gray)" />
             
             <!-- ========== FIM ========== -->
-            <ellipse cx="450" cy="1080" rx="130" ry="25" fill="#eceff1" stroke="#90a4ae" stroke-width="2" filter="url(#shadow)"/>
-            <text x="450" y="1085" text-anchor="middle" font-size="12" font-weight="600" fill="#37474f">FIM DO PROTOCOLO</text>
+            <ellipse cx="475" cy="1210" rx="145" ry="28" fill="url(#grad-gray)" stroke="#78909c" stroke-width="2.5" filter="url(#shadow)"/>
+            <text x="475" y="1217" text-anchor="middle" font-size="13" font-weight="700" fill="#263238">FIM DO PROTOCOLO</text>
             
           </svg>
         </div>
         
-        <p class="figure-note" style="font-size: 0.9em; color: #546e7a; margin-top: 1em;">
+        <p class="figure-note" style="font-size: 0.9em; color: #546e7a; margin-top: 1.2em; line-height: 1.6;">
           <strong>Nota:</strong> O protocolo segue as diretrizes IASP para avaliação de dor em populações vulneráveis. 
-          Ajustar doses conforme peso e função renal/hepática. Em caso de dúvida, consultar especialista.
+          Ajustar doses conforme peso, idade e função renal/hepática. Em caso de dúvida ou sinais atípicos, consultar especialista.
         </p>
       </figure>
       
