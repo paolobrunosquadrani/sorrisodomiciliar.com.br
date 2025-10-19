@@ -306,6 +306,112 @@
         </details>
       </article>
 
+      <!-- Fluxograma -->
+      <figure class="figure wrap stack" aria-labelledby="flux-caption" role="group">
+      <figcaption id="flux-caption" class="figure-caption">
+        <strong>Figura 1.</strong> Fluxograma decisório do protocolo de avaliação de dor orofacial
+      </figcaption>
+      <div class="card" style="padding:1.5em; overflow-x:auto; background:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1150" font-family="Arial, sans-serif" font-size="11px">
+          <defs>
+            <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/></filter>
+            <marker id="arr-blue" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <polygon points="0,0 0,6 6,3" fill="#455A64"/>
+            </marker>
+            <marker id="arr-green" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <polygon points="0,0 0,6 6,3" fill="#388E3C"/>
+            </marker>
+            <marker id="arr-gray" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <polygon points="0,0 0,6 6,3" fill="#455A64"/>
+            </marker>
+          </defs>
+    
+          <!-- Legenda -->
+          <rect x="660" y="20" width="220" height="95" rx="8" fill="#F5F5F5" stroke="#BDBDBD"/>
+          <text x="770" y="40" text-anchor="middle" font-weight="700" fill="#263238">Variação % da Dor</text>
+          <circle cx="675" cy="60" r="5" fill="#4CAF50"/><text x="690" y="64">≥50% Excelente</text>
+          <circle cx="675" cy="78" r="5" fill="#FF9800"/><text x="690" y="82">30–49% Boa</text>
+          <circle cx="675" cy="96" r="5" fill="#F44336"/><text x="690" y="100">&lt;30% Insuficiente</text>
+    
+          <!-- Início -->
+          <rect x="300" y="50" width="300" height="60" rx="30" fill="#BBDEFB" stroke="#1976D2" filter="url(#shadow)"/>
+          <text x="450" y="75" text-anchor="middle" font-weight="700" fill="#0D47A1">INÍCIO</text>
+          <text x="450" y="92" text-anchor="middle" fill="#1565C0">Queixa / Mudança Comportamental</text>
+          <path d="M450,110 v50" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+    
+          <!-- T0 -->
+          <rect x="250" y="160" width="400" height="70" rx="12" fill="#C8E6C9" stroke="#388E3C" filter="url(#shadow)"/>
+          <text x="450" y="190" text-anchor="middle" font-weight="700" fill="#1B5E20">T0: TRIAGEM INICIAL</text>
+          <text x="450" y="207" text-anchor="middle" fill="#2E7D32">(5–10 min, DDQ-B / CPS-NAID + NCAPC)</text>
+          <path d="M450,230 v50" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+    
+          <!-- Decisão Score -->
+          <rect x="300" y="290" width="300" height="60" rx="15" fill="#FFE0B2" stroke="#FB8C00" filter="url(#shadow)"/>
+          <text x="450" y="315" text-anchor="middle" font-weight="700" fill="#E65100">Score alto +</text>
+          <text x="450" y="333" text-anchor="middle" font-weight="700" fill="#E65100">segni clinici?</text>
+    
+          <!-- SÌ Analgesia -->
+          <path d="M300,320 C200,400 200,600 450,650" stroke="#388E3C" stroke-width="2" fill="none" marker-end="url(#arr-green)"/>
+          <text x="250" y="310" fill="#1B5E20" font-weight="700">SÌ</text>
+          <rect x="30" y="630" width="200" height="60" rx="10" fill="#C8E6C9" stroke="#388E3C" filter="url(#shadow)"/>
+          <text x="130" y="655" text-anchor="middle" font-weight="700" fill="#1B5E20">Analgesia adequada +</text>
+          <text x="130" y="673" text-anchor="middle" fill="#1B5E20">Tratamento prioritário</text>
+    
+          <!-- NO/INCERTO -->
+          <path d="M450,350 v50" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+          <text x="470" y="385" fill="#546E7A" font-weight="700">NO/INCERTO</text>
+    
+          <!-- Decisão Alarme -->
+          <rect x="275" y="415" width="350" height="70" rx="15" fill="#FFE0B2" stroke="#FB8C00" filter="url(#shadow)"/>
+          <text x="450" y="440" text-anchor="middle" font-weight="700" fill="#E65100">Segni di allarme?</text>
+          <text x="450" y="458" text-anchor="middle" fill="#EF6C00">(tumefazione, febbre &gt;38°C, ...)</text>
+    
+          <!-- NO / Analgesia Prova -->
+          <path d="M450,485 v45" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+          <text x="470" y="510" fill="#546E7A" font-weight="700">NO</text>
+          <rect x="310" y="540" width="280" height="60" rx="12" fill="#C8E6C9" stroke="#388E3C" filter="url(#shadow)"/>
+          <text x="450" y="565" text-anchor="middle" font-weight="700" fill="#1B5E20">Analgesia de Prova</text>
+          <text x="450" y="583" text-anchor="middle" fill="#2E7D32">(Paracetamol 500–1000mg)</text>
+          <path d="M450,600 v50" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+    
+          <!-- T24-48h -->
+          <rect x="250" y="650" width="400" height="70" rx="12" fill="#E1BEE7" stroke="#7B1FA2" filter="url(#shadow)"/>
+          <text x="450" y="675" text-anchor="middle" font-weight="700" fill="#4A148C">T24-48h: REAVALIAÇÃO</text>
+          <text x="450" y="693" text-anchor="middle" fill="#6A1B9A">(calcular variação %)</text>
+          <path d="M450,715 v60" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+    
+          <!-- Decisão Variação -->
+          <rect x="310" y="785" width="280" height="60" rx="15" fill="#FFE0B2" stroke="#FB8C00" filter="url(#shadow)"/>
+          <text x="450" y="810" text-anchor="middle" font-weight="700" fill="#E65100">Análise da Variação %</text>
+    
+          <!-- ≥50% -->
+          <path d="M310,815 L150,815" stroke="#388E3C" stroke-width="2" marker-end="url(#arr-green)"/>
+          <text x="210" y="808" fill="#1B5E20" font-weight="700">≥50%</text>
+    
+          <!-- <30% -->
+          <path d="M450,845 L450,900" stroke="#F44336" stroke-width="2" marker-end="url(#arr-gray)"/>
+          <text x="470" y="880" fill="#B71C1C" font-weight="700">&lt;30%</text>
+    
+          <!-- 30-49% -->
+          <path d="M590,815 L750,815" stroke="#FB8C00" stroke-width="2" marker-end="url(#arr-gray)"/>
+          <text x="670" y="808" fill="#E65100" font-weight="700">30–49%</text>
+    
+          <!-- T7 & FIM -->
+          <path d="M450,915 v70" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+          <rect x="300" y="985" width="300" height="60" rx="12" fill="#E1BEE7" stroke="#7B1FA2" filter="url(#shadow)"/>
+          <text x="450" y="1010" text-anchor="middle" font-weight="700" fill="#4A148C">T7: SEGUIMENTO</text>
+          <path d="M450,1045 v60" stroke="#455A64" stroke-width="2" marker-end="url(#arr-gray)"/>
+          <ellipse cx="450" cy="1120" rx="130" ry="25" fill="#ECEFF1" stroke="#78909C"/>
+          <text x="450" y="1127" text-anchor="middle" font-weight="700" fill="#263238">FIM</text>
+        </svg>
+      </div>
+      
+      <p class="figure-note" style="font-size:0.9em; color:#546E7A; margin-top:1em;">
+        <strong>Nota:</strong> Ajustar doses conforme peso, idade e função renal/hepática. 
+        Em caso de dúvida ou sinais atípicos, consultar especialista.
+      </p>
+    </figure>
+
       <!-- Box “Passos Simples para a Triagem Diária” -->
       <div class="caregiver-box" style="border: 2px solid #007BFF; background-color: #E9F7FE; padding: 16px; margin: 24px 0; border-radius: 8px;">
         <h3 style="color: #0056b3; margin-top: 0;">📋 Passos Simples para a Triagem Diária</h3>
