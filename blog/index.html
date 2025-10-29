@@ -8,14 +8,14 @@
   <meta name="author" content="Dr. Paolo Bruno Squadrani">
   <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <!-- Evita dark mode forzato/autogenerado -->
+  <!-- Evita dark mode forzato/autogenerato -->
   <meta name="color-scheme" content="only light">
 
   <link rel="stylesheet" href="/style.css">
 
   <style>
     :root{
-      /* Comunica agli UA che il documento è solo "light" */
+      /* Comunica agli UA che il documento è solo “light” */
       color-scheme: light;
 
       --text:#1a1a1a;
@@ -60,7 +60,7 @@
 
     .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
 
-    /* Titoli con colore esplicito per evitare "bianco su bianco" */
+    /* Titoli con colore esplicito per evitare “bianco su bianco” */
     h1,h2,h3,h4,h5,h6{color:var(--text);margin-top:0}
 
     .hero h1{margin:0 0 8px}
@@ -106,132 +106,37 @@
 
   <main id="conteudo" class="container">
     <nav class="breadcrumb" aria-label="Você está aqui">
-      <a href="/">Início</a> › <a href="/blog/">Blog</a> › <span>Proposta Teórica</span>
+      <a href="/">Início</a> › <span>Blog</span>
     </nav>
 
     <!-- Introdução do blog -->
-    <section class="card hero" aria-label="Introdução do blog">
-      <h1>Blog de Odontologia Domiciliar</h1>
-      <p>Este espaço reúne sínteses claras e práticas da literatura odontológica, com foco em atendimento domiciliar, endodontia e cuidados para pessoas com necessidades especiais.</p>
-      <p>A proposta é transformar evidências em decisões do dia a dia: perguntas clínicas objetivas, pontos‑chave úteis, limites da evidência e quando encaminhar para avaliação em consultório ou serviço especializado.</p>
-    </section>
+<section class="card hero" aria-label="Introdução do blog">
+  <h1>Blog de Odontologia Domiciliar</h1>
+  <p>Este espaço reúne sínteses claras e práticas da literatura odontológica, com foco em atendimento domiciliar, endodontia e cuidados para pessoas com necessidades especiais.</p>
+  <p>A proposta é transformar evidências em decisões do dia a dia: perguntas clínicas objetivas, pontos‑chave úteis, limites da evidência e quando encaminhar para avaliação em consultório ou serviço especializado.</p>
+</section>
 
-    <!-- Artigo: Proposta Teórica (AGGIORNATO) -->
-    <section class="post-list" aria-label="Artigo">
-      <article class="post" itemscope itemtype="https://schema.org/Article">
-        <h2 itemprop="headline">
-          Proposta Teórica – Avaliação Estruturada de Dor Orofacial em Pessoas com Deficiência Intelectual
-        </h2>
-        <p class="meta">
-          Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
-          <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> 
-        </p>
-        
-        <p itemprop="description">
-          <strong>Contexto:</strong> A avaliação de dor orofacial em pessoas com deficiência intelectual permanece um desafio clínico significativo, impulsionado pelo fracasso sistêmico em adequadamente avaliar e tratar a dor nesta população vulnerável. Apesar de evidências epidemiológicas robustas (2,3 vezes maior chance de dor de dente; prevalência de 32% em transtornos temporomandibulares), indivíduos com deficiência intelectual são sistematicamente excluídos da pesquisa clínica, deixando esta população com a maior carga de dor e menor acesso ao cuidado baseado em evidência.
-        </p>
+<!-- Lista de artigos -->
+<section class="post-list" aria-label="Artigos recentes">
+  <!-- Artigo existente -->
+  <article class="post" itemscope itemtype="https://schema.org/Article">
+    <h2 itemprop="headline">
+      <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">
+        Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual
+      </a>
+    </h2>
+    <p class="meta">
+      Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
+      <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> 
+    </p>
+    <p itemprop="description">
+      Este estudo em três partes apresenta: (1) Proposta Teórica – fundamentação e método estruturado; (2) Estudo Piloto Randomizado – validação operacional em 75 participantes (duplo cego, três braços, métricas de dor, segurança e fidelity); (3) Estudo Experimental Completo – trial multicêntrico sequencial para gerar evidências definitivas. Todas as fases integram triagem, anamnese e follow-up seriado, com versões completa e light. Sem conflitos de interesse; aprovações éticas (CEP/CONEP) e LGPD em curso.
+    </p>
+  </article>
+</section>
+</main>
 
-        <h3>Fundamentação Teórica</h3>
-        <p>
-          Esta proposta teórica apresenta um **protocolo estruturado em 3 fases** (triagem, anamnese, exame clínico gentil) executável em 15–30 minutos em contextos domiciliares e ambulatoriais por profissionais treinados ou cuidadores. O protocolo integra:
-        </p>
-        <ul>
-          <li><strong>Escalas comportamentais validadas:</strong> [translate:DDQ-B] para pediatria; [translate:CPS-NAID + NCAPC] para adultos com deficiência intelectual não-verbal.</li>
-          <li><strong>Reavaliações seriadas:</strong> T0 (basal), T24–48h (resposta terapêutica inicial), T7 (tendência clínica), T30 (consolidação).</li>
-          <li><strong>Interpretação da mudança clinicamente significativa:</strong> 10–20% = mínima; ≥30% = moderada; ≥50% = substancial.</li>
-          <li><strong>Versões operacionais:</strong> protocolo completo para contextos bem-equipados; versão "light" para cenários com recursos limitados, mantendo confiabilidade (ICC ≥0,82).</li>
-          <li><strong>Tecnologias emergentes (opcionais):</strong> reconhecimento facial por IA e wearables fisiológicos para complementar observação clínica estruturada, sem substituir anamnese ou exame.</li>
-        </ul>
-
-        <h3>Objetivos desta Proposta Teórica</h3>
-        <p>
-          Esta fase estabelece:
-        </p>
-        <ol>
-          <li>A <strong>justificativa científica</strong> para um protocolo padronizado de avaliação de dor orofacial em deficiência intelectual.</li>
-          <li>A <strong>fundamentação neurobiológica</strong> integrando modelos de dor (básicos vs. avançados) e considerações sobre heterogeneidade genética da deficiência intelectual.</li>
-          <li>Os <strong>critérios de qualidade</strong> para dados comportamentais, incluindo padronização ambiental e confiabilidade inter-avaliadores.</li>
-          <li>Um <strong>framework operacional</strong> adaptável a diferentes contextos clínicos (domicílio, ambulatório, instituições).</li>
-          <li>A <strong>ponte para Fase 2</strong> (Estudo Piloto Randomizado): fornecendo o protocolo a ser testado prospectivamente em amostra controlada.</li>
-        </ol>
-
-        <h3>Estrutura de Implementação</h3>
-        <p>
-          O protocolo é dividido em:
-        </p>
-        <ul>
-          <li><strong>Fase 1 – Triagem Estruturada (5–10 min):</strong> Aplicar escala comportamental validada apropriada à idade (DDQ-B na pediatria; CPS-NAID + NCAPC em adultos); registrar escore basal (T0) em condições padronizadas.</li>
-          <li><strong>Fase 2 – Anamnese Dirigida (5–10 min):</strong> Linha do tempo dos sintomas; fatores agravantes/atenuantes; mudanças em alimentação, higiene, sono, comportamento; medicações e intercorrências recentes.</li>
-          <li><strong>Fase 3 – Exame Clínico Gentil (5–10 min):</strong> Inspeção externa/intraoral com lanterna LED portátil; palpação suave; registro de achados; identificação de sinais de alerta urgentes (inchaço facial, febre >38°C, trismo, disfagia).</li>
-        </ul>
-
-        <h3>Critérios de Decisão Clínica</h3>
-        <p>
-          Escore elevado em escala validada, associado a sinais clínicos concordantes, indica <strong>prioridade elevada</strong>: instituir analgesia adequada e programar tratamento odontológico prioritário. Cenários intermediários ou incertos requerem <strong>reavaliação em 24–48 horas</strong>, utilizando a mesma escala para observar tendência e resposta à analgesia, minimizando vieses interavaliadores.
-        </p>
-
-        <h3>Inovações e Contribuições</h3>
-        <p>
-          Esta proposta teórica inova ao:
-        </p>
-        <ul>
-          <li>Padronizar a avaliação de dor orofacial em pessoa com deficiência intelectual, reduzindo variabilidade inter-avaliadores e atrasos diagnósticos.</li>
-          <li>Integrar escalas comportamentais <strong>validadas especificamente para esta população</strong>, respeitando neurobiologia da deficiência intelectual.</li>
-          <li>Fornecer <strong>versão operacional escalável</strong> (completa + light) para diferentes contextos de cuidado.</li>
-          <li>Propor <strong>reavaliações seriadas</strong> para medir resposta terapêutica, alicerce para próxima fase (teste de intervenções multimodais).</li>
-          <li>Estabelecer <strong>critérios de qualidade</strong> e <strong>padronização ambiental</strong> críticos para pesquisa inclusiva em populações vulneráveis.</li>
-        </ul>
-
-        <h3>Ponte para Fase 2: Estudo Piloto Randomizado</h3>
-        <p>
-          Uma vez validada operacionalmente, esta proposta teórica fundamentará um <strong>[translate:estudo piloto randomizado duplo-cego com 3 braços]</strong> (N≤75) que testará:
-        </p>
-        <ul>
-          <li>A <strong>responsividade das escalas comportamentais</strong> a intervenções analgésicas reais (não apenas sua capacidade de detectar dor, mas de medir redução de dor pós-tratamento).</li>
-          <li>A <strong>viabilidade de protocolos multimodais</strong> (farmacológicos + comportamentais) em ambiente domiciliar/ambulatorial.</li>
-          <li>A <strong>segurança e tolerância</strong> em contextos de polypharmacy e comorbidades frequentes em deficiência intelectual.</li>
-          <li>Os <strong>dados de fidelidade</strong> necessários para design do RCT completo (Fase 3).</li>
-        </ul>
-
-        <h3>Considerações Éticas</h3>
-        <p>
-          Esta proposta é fundamentada em princípios éticos de:
-        </p>
-        <ul>
-          <li><strong>Inclusão responsável:</strong> reconhecer que pessoas com deficiência intelectual têm o direito de participar da pesquisa com devidas proteções, não serem sistematicamente excluídas.</li>
-          <li><strong>Consentimento informado:</strong> formas acessíveis de consentimento, respeitando comunicação individual e capacidade de cada participante.</li>
-          <li><strong>Proteção de dados:</strong> conformidade com LGPD e normas internacionais de privacidade.</li>
-          <li><strong>Transparência:</strong> documentação clara de todos os procedimentos, versões de instrumentos, ambiente de avaliação.</li>
-        </ul>
-
-        <h3>Status Atual</h3>
-        <p>
-          Esta <strong>Proposta Teórica</strong> foi finalizada em outubro de 2025. O protocolo está pronto para:
-        </p>
-        <ul>
-          <li>Submissão a comitês de ética (CEP/CONEP) como base para o Estudo Piloto.</li>
-          <li>Capacitação de profissionais e cuidadores antes do recrutamento de Fase 2.</li>
-          <li>Engajamento da comunidade de pessoas com deficiência intelectual para feedback e refinamento.</li>
-        </ul>
-
-        <p>
-          <strong>Próximos passos:</strong> Estudo Piloto Randomizado (Fase 2, planejado para 2026) e, após sucesso e adaptações, RCT Completo Multicêntrico Sequencial (Fase 3).
-        </p>
-
-        <hr style="border:none;border-top:1px solid var(--border);margin:24px 0;">
-        
-        <p style="font-size:13px;color:var(--muted);">
-          <strong>Conflitos de interesse:</strong> Nenhum declarado.<br>
-          <strong>Aprovações:</strong> Protocolo em submissão ao CEP/CONEP e conformidade LGPD em curso.<br>
-          <strong>Contato:</strong> <a href="mailto:contato@sorrisodomiciliar.com.br">contato@sorrisodomiciliar.com.br</a>
-        </p>
-
-      </article>
-    </section>
-
-  </main>
-
-  <!-- Footer igual ao do site -->
+ <!-- Footer igual ao do site -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
