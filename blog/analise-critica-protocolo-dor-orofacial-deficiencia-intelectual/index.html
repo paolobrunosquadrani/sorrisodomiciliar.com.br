@@ -3,84 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Análise crítica do protocolo para avaliação da dor orofacial em pessoas com deficiência intelectual | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
-  <meta name="description" content="Análise crítica do protocolo em 3 fases para dor orofacial na deficiência intelectual, com DDQ‑B (pediatria), CPS‑NAID/NCAPC (adultos), janelas T0–T24/48h–T7–T30 e decisões clínicas integrando escore, exame orofacial e contexto.">
+  <title>Análise Crítica: Limitações Metodológicas do Protocolo de Dor Orofacial em Deficiência Intelectual | Sorriso Domiciliar</title>
+  <meta name="description" content="Análise crítica detalhada do protocolo de manejo de dor orofacial em deficiência intelectual: heterogeneidade amostral, vieses de seleção, confiabilidade inter-avaliador, pontos de corte, responsividade, DIF, especificidade. Estratégias de mitigação: MGCFA, invariância, reavaliações seriadas, protocolos pré-especificados.">
   <meta name="author" content="Dr. Paolo Bruno Squadrani">
-  <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/">
+  <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/analise-critica-protocolo-dor-orofacial-deficiencia-intelectual/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <meta name="color-scheme" content="only light">
   <link rel="stylesheet" href="/style.css">
   <style>
-    :root{
-      color-scheme: light;
-      --text:#1a1a1a;
-      --muted:#5f6b7a;
-      --border:#e5e7eb;
-      --accent:#0d47a1;
-      --maxw:980px
-    }
-    html,body{height:100%}
-    body{margin:0;background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
-    .container{max-width:var(--maxw);margin:0 auto;padding:20px;overflow-x:hidden}
-    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
-    .topbar{background:#fff;border-bottom:1px solid var(--border)}
-    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
-    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
-    .brand,.brand:link,.brand:visited{color:var(--text)}
-    .brand img{width:32px;height:32px}
-    .brand .brand-text{font-weight:600}
-    @media (max-width:420px){
-      .brand{white-space:normal}
-      .brand .brand-text{display:inline}
-    }
-    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
-    nav a:hover{background:#e8faf6}
-    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
-    .breadcrumb a{color:inherit;text-decoration:none}
-    .breadcrumb a:hover{text-decoration:underline}
-    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
-    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
-    .post h1,.post h2{margin-top:0}
-    .post .post-meta{color:var(--muted);font-size:14px;margin:6px 0 0}
-    .meta{color:var(--muted);font-size:14px}
-    .post a{color:var(--accent);text-decoration:none}
-    .post a:hover{text-decoration:underline}
-    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
-    .wrap{margin-top:24px}
-    .stack{display:flex;flex-direction:column;gap:16px}
-    .grid{display:grid;gap:16px}
-    .cols-2{grid-template-columns:1fr 1fr}
-    @media (max-width: 900px){.cols-2{grid-template-columns:1fr}}
-    .figure{display:block}
-    .figure .box-title{display:block;font-weight:600;margin:0 0 8px;color:#0f172a}
-    .figure svg{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#fff}
-    .kbd{display:inline-block;font:inherit;background:#f1f5f9;border:1px solid #cbd5e1;border-bottom-width:2px;border-radius:6px;padding:0 6px}
-    .visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap}
-    .cta-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .btn{display:inline-block;background:#0d47a1;color:#fff!important;text-decoration:none;padding:10px 14px;border-radius:8px;border:1px solid #0b3c86}
-    .btn:hover{background:#0b3c86}
-    .card h2{margin-top:0}
-    .box-title{font-size:14px;color:var(--muted)}
-    svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
-    svg text.small{font-size:clamp(10px,1.5vw,14px)}
-    svg text.large{font-size:clamp(18px,2.5vw,24px)}
-    .post .wrap.grid.cols-2 { grid-template-columns: 1fr !important; }
-    .wrap.row-nowrap { display: block !important; overflow: visible !important; }
-    h1,h2,h3,h4,h5,h6{color:var(--text)}
-    .tips ul { padding-inline-start: 40px; }
-    .li-no-marker { list-style: none; margin: 12px 0; }
-    .riquadro{
-      border:1px solid var(--border);
-      border-radius:8px;
-      padding:16px;
-      background:#f8f9fb;
-      box-shadow:0 1px 3px rgba(0,0,0,0.06);
-      margin-inline-start:0;
-    }
-    .riquadro h3{ margin-block:0 12px; }
+    :root{color-scheme:light;--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--accent:#0d47a1;--danger:#d32f2f;--warning:#f57c00;--success:#2e7d32;--maxw:980px}
+    html,body{height:100%;margin:0}body{background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.6}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
+    .topbar{background:#fff;border-bottom:1px solid var(--border)}.topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:10px}.brand,.brand:link,.brand:visited{color:var(--text);text-decoration:none}.brand img{width:32px;height:32px}.brand .brand-text{font-weight:600}
+    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}nav a:hover{background:#e8faf6}
+    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}.breadcrumb a{color:inherit;text-decoration:none}.breadcrumb a:hover{text-decoration:underline}
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px;margin:16px 0}
+    h1,h2,h3,h4,h5,h6{color:var(--text);margin-top:24px;margin-bottom:12px}h1{border-bottom:2px solid var(--danger);padding-bottom:12px;margin-top:0}h2{border-left:4px solid var(--danger);padding-left:12px}
+    .hero h1{border:none;margin:0 0 16px}.hero .meta{color:var(--muted);font-size:14px;margin:12px 0}
+    .alert-box{background:#ffebee;border-left:4px solid var(--danger);padding:16px;border-radius:6px;margin:16px 0}.alert-box h4{color:var(--danger);margin-top:0}
+    .warning-box{background:#fff3e0;border-left:4px solid var(--warning);padding:16px;border-radius:6px;margin:16px 0}.warning-box h4{color:var(--warning);margin-top:0}
+    .success-box{background:#e8f5e9;border-left:4px solid var(--success);padding:16px;border-radius:6px;margin:16px 0}.success-box h4{color:var(--success);margin-top:0}
+    table{width:100%;border-collapse:collapse;margin:16px 0}table th,table td{border:1px solid var(--border);padding:12px;text-align:left}table th{background:#f5f5f5;font-weight:600}table tbody tr:hover{background:#fafafa}
+    .toc{background:#f9f9f9;border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0}.toc h3{margin-top:0}.toc ul{list-style:none;padding:0}.toc li{margin:8px 0}.toc a{color:var(--accent);text-decoration:none}.toc a:hover{text-decoration:underline}
+    .case-study{background:#f0f4ff;border-left:4px solid #2196F3;padding:16px;border-radius:6px;margin:16px 0}.case-study h5{color:#1565c0;margin-top:0}
+    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center;border-top:1px solid var(--border)}
+    @media (max-width:768px){h2{border-left:3px solid}}
   </style>
-
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -88,7 +38,7 @@
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sorrisodomiciliar.com.br/"},
       {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sorrisodomiciliar.com.br/blog/"},
-      {"@type":"ListItem","position":3,"name":"Análise crítica do protocolo para avaliação da dor orofacial em pessoas com deficiência intelectual","item":"https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/"}
+      {"@type":"ListItem","position":3,"name":"Análise Crítica","item":"https://www.sorrisodomiciliar.com.br/blog/analise-critica-protocolo-dor-orofacial-deficiencia-intelectual/"}
     ]
   }
   </script>
@@ -96,20 +46,17 @@
   {
     "@context":"https://schema.org",
     "@type":"Article",
-    "headline":"Análise crítica do protocolo para avaliação da dor orofacial em pessoas com deficiência intelectual",
+    "headline":"Análise Crítica: Limitações Metodológicas e Estratégias de Mitigação do Protocolo de Dor Orofacial em Deficiência Intelectual",
+    "description":"Exame rigoroso e estruturado de 7 limitações críticas do protocolo (heterogeneidade, vieses, confiabilidade, pontos de corte, responsividade, especificidade, confirmação), com estratégias de mitigação baseadas em MGCFA, DIF, invariância, reavaliações seriadas, protocolos pré-especificados, cegamento parcial.",
     "author":{"@type":"Person","name":"Dr. Paolo Bruno Squadrani"},
-    "datePublished":"2025-10-09",
-    "dateModified":"2025-10-09",
-    "inLanguage":"pt-BR",
-    "publisher":{"@type":"Organization","name":"Sorriso Domiciliar"},
-    "mainEntityOfPage":"https://www.sorrisodomiciliar.com.br/blog/avaliacao-dor-orofacial-deficiencia-intelectual/",
-    "description":"Revisão analítica do protocolo em 3 fases para dor orofacial na deficiência intelectual, com foco em DDQ‑B (pediatria), CPS‑NAID e NCAPC (adultos), padronização de T0–T24/48h–T7–T30 e critérios de decisão clínica integrando escore, exame orofacial e contexto."
+    "datePublished":"2025-10-30",
+    "url":"https://www.sorrisodomiciliar.com.br/blog/analise-critica-protocolo-dor-orofacial-deficiencia-intelectual/",
+    "keywords":"metodologia científica, limitações, bias, confiabilidade, responsividade, DIF, MGCFA, invariância, escalas comportamentais"
   }
   </script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-
   <div class="topbar" role="navigation" aria-label="Topo">
     <div class="inner">
       <a class="brand" href="/" rel="home" aria-label="Ir para a página inicial">
@@ -123,192 +70,615 @@
   </div>
 
   <main id="conteudo" class="container">
-  <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="/">Início</a> › <a href="/blog/">Blog</a> ›
-    <span aria-current="page">Análise crítica do protocolo para avaliação da dor orofacial em pessoas com deficiência intelectual</span>
-  </nav>
+    <nav class="breadcrumb" aria-label="Você está aqui">
+      <a href="/">Início</a> › <a href="/blog/">Blog</a> › <span>Análise Crítica: Limitações Metodológicas do Protocolo</span>
+    </nav>
 
-  <article class="post" itemscope itemtype="https://schema.org/Article">
-    <header class="card">
-      <h1 class="post-title" itemprop="headline">Análise crítica do protocolo para avaliação da dor orofacial em pessoas com deficiência intelectual</h1>
-      <p class="post-meta">Revisão analítica do protocolo em 3 fases para dor orofacial na deficiência intelectual, com foco em DDQ‑B (pediatria), CPS‑NAID e NCAPC (adultos), padronização de T0–T24/48h–T7–T30 e critérios de decisão clínica integrando escore, exame orofacial e contexto.</p>
-    </header>
+    <!-- HEADER -->
+    <section class="card hero">
+      <h1>Análise Crítica: Limitações Metodológicas e Estratégias de Mitigação</h1>
+      <p class="meta">
+        <strong>Autor:</strong> Dr. Paolo Bruno Squadrani · 
+        <strong>Data:</strong> <time datetime="2025-10-30">30 out 2025</time> · 
+        <strong>Categoria:</strong> <em>Transparência Científica & Rigor Metodológico</em>
+      </p>
+      
+      <div class="alert-box">
+        <h4>⚠️ Proposito desta Análise</h4>
+        <p>Transparência científica exige que reconheçamos, de forma explícita e estruturada, as limitações e riscos metodológicos do nosso protocolo, bem como as estratégias concretas que implementaremos para mitigá-los. Esta seção não busca esconder vulnerabilidades, mas convertê-las em oportunidades para desenho robusto e pesquisa de alta qualidade.</p>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2 style="margin-block-end:12px">Problema metodológico fundamental</h2>
-
-      <section id="objetivo-questoes">
-        <h3 style="margin-block-end:12px">Objetivo e questões‑chave</h3>
-        <p>
-          Esta seção desenvolve, com rigor científico, a “Contextualização das evidências e generalização”, convertendo os riscos metodológicos em implicações psicométricas e em um plano operativo para calibrar instrumentos, pontos de corte e decisões clínicas em contextos reais heterogêneos. O objetivo principal é estimar em que medida a heterogeneidade amostral (idade, gravidade da deficiência, ambiente domiciliar vs institucional) limita a validade externa das escalas DDQ‑B, CPS‑NAID e NCAPC, e como mitigar esse limite com procedimentos de invariância e séries temporais padronizadas. Perguntas operacionais: a) em quais subgrupos variam sensibilidade/especificidade e limiares operacionais; b) quais testes psicométricos e desenhos de estudo sustentam uma generalização robusta; c) como integrar a tendência T0–T24/48h–T7–T30 na decisão clínica.
-        </p>
-      </section>
-
-      <section id="heterogeneidade-validade">
-        <h3 style="margin-block-end:12px">Heterogeneidade e validade externa</h3>
-        <p>
-          Os estudos fundacionais das escalas citadas derivam de amostras não homogêneas em perfil clínico e contexto assistencial, com risco de transposição indevida de pontos de corte e métricas diagnósticas entre populações distintas. Essa heterogeneidade impacta sobretudo na presença de polifarmácia, comorbidades neurológicas e diferentes níveis de suporte funcional, quando os comportamentos observáveis podem divergir das premissas da escala.
-        </p>
-      </section>
-
-      <section id="implicacoes-psicom">
-        <h3 style="margin-block-end:12px">Implicações psicométricas</h3>
-        <p>
-          A heterogeneidade induz variações mensuráveis em sensibilidade, especificidade e probabilidades pós‑teste, tornando instáveis pontos de corte definidos em coortes “originais” quando aplicados a novos alvos. Na ausência de testes de invariância, a comparabilidade de escores entre grupos é incerta, com risco de erros de interpretação clínica e vieses na priorização.
-        </p>
-      </section>
-
-      <section id="vieses-confundidores">
-        <h3 style="margin-block-end:12px">Vieses de seleção e confundidores</h3>
-        <p>
-          Comorbidades neurológicas, sedativos/ansiolíticos/antipsicóticos, ansiedade, privação de sono e mudanças de rotina alteram a expressividade comportamental da nocicepção, gerando falsos positivos/negativos se não forem controlados analítica e documentalmente. O viés de seleção emerge quando subgrupos mais complexos ficam sub-representados na validação, reduzindo a transferibilidade dos resultados.
-        </p>
-      </section>
-
-      <section id="recomendacoes-metodologicas">
-        <h3 style="margin-block-end:12px">Recomendações metodológicas</h3>
+    <!-- TOC -->
+    <section class="card">
+      <div class="toc">
+        <h3>Índice de Conteúdos</h3>
         <ul>
-          <li><strong>Invariância multigrupo:</strong> Executar MGCFA para testar invariância configuracional, métrica e escalar em estratos por idade, setting, gravidade da deficiência e classe farmacológica, com índices de ajuste estritos (por exemplo, CFI ≥ 0,95; RMSEA ≤ 0,06) para garantir comparabilidade.</li>
-          <li><strong>DIF (Differential Item Functioning):</strong> Avaliar viés de item com IRT ou Mantel–Haenszel, identificar itens que funcionam de modo diferente entre subgrupos e implementar correções ou versões “equated”.</li>
-          <li><strong>Reprodutibilidade:</strong> Estimar ICC/kappa intra‑ e interavaliador com meta ≥ 0,80 por domínio, incluir teste–reteste em 7–14 dias e auditorias trimestrais com dupla leitura cega quando a concordância cair abaixo da meta.</li>
+          <li><a href="#intro">Introdução: Por Que Análise Crítica?</a></li>
+          <li><a href="#heterogeneidade">1. Heterogeneidade Amostral e Validade Externa</a></li>
+          <li><a href="#vieses">2. Vieses de Seleção e Confundidores Não Controlados</a></li>
+          <li><a href="#confiabilidade">3. Confiabilidade Inter-Avaliador e Reprodutibilidade</a></li>
+          <li><a href="#corte">4. Pontos de Corte Determinísticos sem Contexto Clínico</a></li>
+          <li><a href="#responsividade">5. Responsividade Não Testada em Amostra Real</a></li>
+          <li><a href="#especificidade">6. Especificidade Orofacial Limitada do DDQ-B</a></li>
+          <li><a href="#confirmacao">7. Viés de Confirmação em Interpretação Multimodal</a></li>
+          <li><a href="#sintese">Síntese: Reconhecer Limites, Implementar Rigor</a></li>
+          <li><a href="#referencias">Referências</a></li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section id="series-temporais">
-        <h3 style="margin-block-end:12px">Séries temporais e validade ecológica</h3>
-        <p>
-          Integrar avaliações seriadas T0, T24–48h, T7 e T30 sob condições ambientais e comportamentais padronizadas permite distinguir variações clinicamente significativas do erro de medida, aumentando a validade ecológica das decisões. O ancoramento em variações percentuais (10–20% mínima; ≥ 30% moderada; ≥ 50% substancial) deve ser confirmado por função (alimentação, higiene, sono) e sinais orofaciais, evitando decisões apenas numéricas.
-        </p>
-      </section>
+    <!-- INTRODUÇÃO -->
+    <section class="card" id="intro">
+      <h2>Introdução: Por Que Análise Crítica?</h2>
+      
+      <p>A maioria dos protocolos de pesquisa publica "Limitações" como seção cursória no Discussion final. Aqui, invertemos essa abordagem: colocamos análise crítica no centro, como documento independente, <strong>antes</strong> da implementação completa da Parte III.</p>
 
-      <section id="calibracao-corte-decisoes">
-        <h3 style="margin-block-end:12px">Calibração dos pontos de corte e decisões contextualizadas</h3>
-        <p>
-          Pontos de corte (por exemplo, CPS‑NAID) devem ser recalibrados para subgrupos locais via curvas ROC e razões de verossimilhança, incorporando a prevalência pré‑teste do serviço e a matriz de custos/benefícios de falsos positivos/negativos. O uso combinado de CPS‑NAID e NCAPC, integrado ao exame orofacial e ao trend em 24–48 horas, reduz a variabilidade interobservador e limita a dependência exclusiva do cut‑off.
-        </p>
-      </section>
+      <p><strong>Três razões para essa escolha:</strong></p>
+      <ul>
+        <li><strong>Rigor prospectivo:</strong> Identificar limitações <em>a priori</em> permite desenhar mitigações no protocolo (não retroativamente em Discussion)</li>
+        <li><strong>Transparência:</strong> Leitores e stakeholders sabem exatamente quais são os riscos metodológicos e como os abordamos</li>
+        <li><strong>Confiança científica:</strong> Pesquisadores que reconhecem vulnerabilidades (e as enfrentam) ganham mais credibilidade que aqueles que fingem perfeição</li>
+      </ul>
 
-      <section id="desenho-estudos">
-        <h3 style="margin-block-end:12px">Desenho de estudos recomendado</h3>
+      <p>A estrutura é sistemática: <strong>7 limitações críticas</strong>, cada uma com (1) descrição do problema, (2) impacto esperado, (3) estratégias de mitigação concretas e testáveis.</p>
+    </section>
+
+    <!-- LIMITAÇÃO 1 -->
+    <section class="card" id="heterogeneidade">
+      <h2>1. Heterogeneidade Amostral e Validade Externa</h2>
+
+      <h3>Problema Identificado</h3>
+      <p>Os estudos fundacionais das escalas comportamentais de dor (DDQ-B, CPS-NAID, NCAPC) foram desenvolvidos em amostras heterogêneas quanto a:</p>
+      <ul>
+        <li><strong>Perfil clínico:</strong> Idade variável (pediátrico vs. adulto), severidade da deficiência intelectual (leve vs. grave), etiologia (síndrome genética vs. adquirida)</li>
+        <li><strong>Contexto assistencial:</strong> Domicílio vs. instituições de longa permanência vs. ambulatórios hospitais</li>
+        <li><strong>Polifarmácia:</strong> Uso concomitante de sedativos, antipsicóticos, anticonvulsivantes</li>
+      </ul>
+      <p>Quando transpomos pontos de corte e métricas diagnósticas entre populações distintas <strong>sem validação local</strong>, comprometemos sensibilidade, especificidade e probabilidades pós-teste.</p>
+
+      <h3>Impacto Esperado</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Cenário</th>
+            <th>Impacto Methodológico</th>
+            <th>Consequência Clínica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alta comorbidade neurológica (ex: epilepsia + autismo severo)</td>
+            <td>Especificidade reduzida; comportamentos de estimulação podem ser confundidos com dor</td>
+            <td>Sobrediagnóstico de dor; exposição desnecessária a medicação</td>
+          </tr>
+          <tr>
+            <td>Criança sob sedativos crônicos (benzodiazepina)</td>
+            <td>CPS-NAID ≥10 pode refletir agitação/ansiedade residual, não nocicepção</td>
+            <td>Falso positivo; tratamento inadequado dirigido a ansiedade, não dor</td>
+          </tr>
+          <tr>
+            <td>Interpretação de mudança percentual (≥30%)</td>
+            <td>MCID real pode ser 25% ou 40%, não 30%, nesta população específica</td>
+            <td>Resposta terapêutica interpretada incorretamente; decisões clínicas enviesadas</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Estratégias de Mitigação (Implementadas)</h3>
+
+      <h4>1.1 MGCFA (Análise Fatorial Confirmatória Multigrupo)</h4>
+      <p><strong>O que é:</strong> Teste estatístico que verifica se a estrutura de um instrumento é comparável entre grupos distintos.</p>
+      <p><strong>Aplicação:</strong> Testaremos invariância configuracional, métrica e escalar em estratos por:</p>
+      <ul>
+        <li><strong>Idade:</strong> Pediátrico (5–18 anos) vs. Adulto (>18 anos)</li>
+        <li><strong>Setting:</strong> Domicílio vs. Instituição</li>
+        <li><strong>Gravidade ID:</strong> Leve (QI 50–69) vs. Moderada (QI 35–49)</li>
+        <li><strong>Classe farmacológica:</strong> Sem sedativos crônicos vs. Com sedativos crônicos</li>
+      </ul>
+      <p><strong>Critérios de aceitação:</strong> CFI ≥0.95, RMSEA ≤0.06, SRMR ≤0.08. Se não atingidos, indicam que estrutura fatorial não é robusta entre grupos.</p>
+
+      <h4>1.2 DIF (Differential Item Functioning)</h4>
+      <p><strong>O que é:</strong> Análise que identifica itens (perguntas) que funcionam de modo diferente entre grupos, mesmo quando controlamos pelo construto subjacente.</p>
+      <p><strong>Aplicação:</strong> Usar IRT (Item Response Theory) ou Mantel–Haenszel para cada item das escalas. Se item funciona diferentemente em crianças vs. adultos, pode gerar viés de medida.</p>
+      <p><strong>Ação:</strong> Itens com DIF significativo serão revisados, removidos, ou versões "equated" (ajustadas) serão desenvolvidas.</p>
+
+      <h4>1.3 Reavaliações Seriadas (T0–T24–48h–T7–T30)</h4>
+      <p>Medidas repetidas em intervalos estruturados permitem:</p>
+      <ul>
+        <li>Distinguir variação clinicamente significativa de erro de medida aleatório</li>
+        <li>Ancorar interpretação de mudança percentual em função clínica (alimentação, sono, higiene)</li>
+        <li>Validar que escores elevados em T0 realmente refletem nocicepção (confirmarão por resposta à intervenção)</li>
+      </ul>
+
+      <h4>1.4 Recalibração Local de Pontos de Corte</h4>
+      <p>Para cada site/instituição participante:</p>
+      <ul>
+        <li>Estimar curvas ROC (Receiver Operating Characteristic) para CPS-NAID, DDQ-B contra diagnóstico clínico de ouro (avaliação especialista)</li>
+        <li>Calcular razões de verossimilhança (LR+, LR-) ajustadas pela prevalência local de dor</li>
+        <li>Se sensibilidade local de CPS-NAID ≥10 for 85% vs. 94% na literatura original, usar valor local para melhor acurácia contextual</li>
+      </ul>
+
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>Validade externa aumentada; proteção contra transposição indevida de pontos de corte; confiança que escores são interpretáveis em contextos heterogêneos.</p>
+      </div>
+    </section>
+
+    <!-- LIMITAÇÃO 2 -->
+    <section class="card" id="vieses">
+      <h2>2. Vieses de Seleção e Confundidores Não Controlados</h2>
+
+      <h3>Problema Identificado</h3>
+      <p>Fatores que alteram expressão comportamental de dor sem envolver nocicepção real:</p>
+      <ul>
+        <li><strong>Medicações psicoativas:</strong> Sedativos (benzodiazepinas), ansiolíticos, antipsicóticos podem aumentar letargia ou, paradoxalmente, agitação residual</li>
+        <li><strong>Comorbidades neurológicas:</strong> Epilepsia, distúrbios do movimento, autismo severo → comportamentos estereotipados ou disruptivos podem mimetizar sinais de dor</li>
+        <li><strong>Fatores ambientais:</strong> Privação de sono, mudanças de rotina, estresse do cuidador → aumentam irritabilidade geral independentemente de dor</li>
+        <li><strong>Ansiedade:</strong> Pessoa ansiosa por visita ao dentista pode ter escore elevado não por dor, mas por medo</li>
+      </ul>
+
+      <h3>Impacto Esperado</h3>
+      <p><strong>Falsos positivos/negativos altos:</strong> Uma pessoa sob benzodiazepina crônica pode ter escore CPS-NAID ≥10, mas o elevado score reflete agitação/ansiedade residual, não necessariamente nocicepção odontogênica. Tratamento dirigido a dor pode ser inapropriado.</p>
+
+      <h3>Estratégias de Mitigação</h3>
+
+      <h4>2.1 Documentação Pré-Avaliação Estruturada</h4>
+      <p>Em TODAS as avaliações (T0, T24–48h, T7, T30), registrar:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Item Documentado</th>
+            <th>Razão</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medicações ativas (classe, dose, horário última dose)</td>
+            <td>Entender potencial efeito confundidor</td>
+          </tr>
+          <tr>
+            <td>Febre, sinais infecção aguda</td>
+            <td>Alteração sistêmica pode elevar irritabilidade</td>
+          </tr>
+          <tr>
+            <td>Mudanças recentes de rotina</td>
+            <td>Estresse ambiental aumenta sensibilidade comportamental</td>
+          </tr>
+          <tr>
+            <td>Qualidade do sono noturno anterior (horas, perturbações)</td>
+            <td>Privação de sono degrada tolerância ao desconforto</td>
+          </tr>
+          <tr>
+            <td>Estado comportamental basal (calmo, levemente agitado, muito agitado)</td>
+            <td>Baseline para interpretação comparativa</td>
+          </tr>
+          <tr>
+            <td>Últimas 48h: mudanças de medicação? Internação? Evento estressor?</td>
+            <td>Contexto crítico para interpretação de escore elevado</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>2.2 Análise de Sensibilidade Estratificada</h4>
+      <p>Na análise estatística, estratificar por presença/ausência de cada confundidor:</p>
+      <ul>
+        <li>Estimar efeito de tratamento em subgrupo COM sedativos vs. SEM sedativos</li>
+        <li>Se magnitude de efeito muda drasticamente (ex: 50% vs. 10%), indicará confundimento forte</li>
+        <li>Reportar em Discussion com transparência</li>
+      </ul>
+
+      <h4>2.3 Randomização Estratificada (Parte II)</h4>
+      <p>No Piloto Randomizado (N=75), estratificar alocação por <strong>uso de sedativos crônicos</strong> para garantir distribuição equilibrada entre grupos (A, B, C). Assim, confundidor não fica concentrado em um braço.</p>
+
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>Confundidores documentados, contabilizados, e controlados analiticamente. Aumenta confiança que mudanças observadas refletem intervenção, não confundimento.</p>
+      </div>
+    </section>
+
+    <!-- LIMITAÇÃO 3 -->
+    <section class="card" id="confiabilidade">
+      <h2>3. Confiabilidade Inter-Avaliador e Reprodutibilidade</h2>
+
+      <h3>Problema Identificado</h3>
+      <p>Escalas observacionais comportamentais dependem criticamente da qualidade do avaliador. Fontes de variabilidade:</p>
+      <ul>
+        <li><strong>Treinamento insuficiente:</strong> Sem standardização, avaliadores interpretam itens diferentemente</li>
+        <li><strong>Drift (desvio) ao longo do tempo:</strong> Equipes que trabalham juntas gradualmente divergem em interpretação ("o novo normal")</li>
+        <li><strong>Observer bias:</strong> Avaliador que conhece diagnóstico ou história clínica tende a notar mais sinais confirmadores</li>
+        <li><strong>Variabilidade dentro-avaliador:</strong> Mesmo avaliador pode avaliar diferentemente em dias diferentes ou em estados emocionais diferentes</li>
+      </ul>
+
+      <h3>Impacto Esperado</h3>
+      <p>ICC inter-avaliador <0.80 = confiabilidade insuficiente para decisões clínicas. Erro de medida alto mascara efeitos reais de intervenção ou introduz falsos positivos/negativos.</p>
+
+      <h3>Estratégias de Mitigação</h3>
+
+      <h4>3.1 Treinamento Estruturado + Certificação Obrigatória</h4>
+      <ul>
+        <li><strong>Workshop 16h modular:</strong> Teoria (4h) + prática em vídeos calibrados (12h)</li>
+        <li><strong>Meta inicial:</strong> ICC ≥0.80 em dupla avaliação cega de 8 casos-teste padronizados ANTES de começar inclusão de participantes</li>
+        <li><strong>Certificação:</strong> Documento formal atestando que avaliador atingiu critério e está autorizado</li>
+      </ul>
+
+      <h4>3.2 Auditorias de Qualidade Trimestral</h4>
+      <ul>
+        <li>Selecionar aleatoriamente 20% de todas as avaliações realizadas em trimestre anterior</li>
+        <li>Dupla leitura cega (segundo avaliador não vê primeira leitura)</li>
+        <li>Recalcular ICC; se cair abaixo de 0.80 → refresco de treinamento obrigatório para equipe</li>
+        <li>Documentar achados de auditoria em relatório trimestral</li>
+      </ul>
+
+      <h4>3.3 Cegamento Parcial (Observer Bias Control)</h4>
+      <ul>
+        <li><strong>Avaliadores de vídeo cegos ao grupo alocado:</strong> Código os vídeos; avaliador não sabe se participante recebeu tratamento ativo ou sham</li>
+        <li><strong>Formulários padronizados:</strong> Mesmas perguntas em ordem, condições ambientais fotografadas, para reduzir variabilidade contextual</li>
+      </ul>
+
+      <h4>3.4 Teste-Reteste em Subgrupo</h4>
+      <ul>
+        <li>Em 30 participantes, repetir escala em intervalo de 7–14 dias com <strong>avaliador diferente</strong></li>
+        <li>Se confiabilidade (ICC) ≥0.80, confirma reprodutibilidade mesmo entre avaliadores diferentes</li>
+      </ul>
+
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>Confiabilidade rigorosamente documentada e monitorada. Aquífis de qualidade reduzem ao mínimo, aumentando confiança nos escores.</p>
+      </div>
+    </section>
+
+    <!-- LIMITAÇÃO 4 -->
+    <section class="card" id="corte">
+      <h2>4. Pontos de Corte Determinísticos sem Contexto Clínico</h2>
+
+      <h3>Problema Identificado</h3>
+      <p>Usar ponto de corte único (ex: "CPS-NAID ≥10 = dor") como veredito <strong>determinístico</strong> ignora:</p>
+      <ul>
+        <li><strong>Contexto clínico:</strong> Comorbidades, prevalência local, capacidade funcional</li>
+        <li><strong>Matriz de custos/benefícios:</strong> Falso positivo (exposição a medicação desnecessária) vs. falso negativo (atraso diagnóstico de urgência)</li>
+        <li><strong>Probabilidade pré-teste:</strong> Se 70% dos participantes têm cáries, prevalência local alta → ponto de corte deve ser menos "restritivo" que em ambiente com 10% cáries</li>
+      </ul>
+
+      <h3>Impacto Esperado</h3>
+      <div class="case-study">
+        <h5>Caso 1: Falso Positivo</h5>
+        <p>Pessoa adulta, 40 anos, deficiência intelectual moderada, sob benzodiazepina crônica para ansiedade. CPS-NAID = 11 (≥10 = "dor"). Exame intraoral: sem cáries, sem inchaço, sem sinais clínicos de dor. Escore elevado reflete agitação/ansiedade residual. Se iniciarmos ibuprofeno + restauração, negligenciamos ansiedade e expomo-nos a medicação desnecessária.</p>
+      </div>
+
+      <div class="case-study">
+        <h5>Caso 2: Falso Negativo</h5>
+        <p>Criança, 10 anos, deficiência intelectual severa, comunicação mínima. DDQ-B = 4 (<5 = "sem dor" por critério padrão). Exame: cárie profunda visível no molar. Criança tem reduzida expressividade comportamental da dor (comum em deficiência severa). Escore baixo falsamente sugere ausência; atraso de 2 semanas em tratamento resulta em abscesso.</p>
+      </div>
+
+      <h3>Estratégias de Mitigação</h3>
+
+      <h4>4.1 Integração Multimodal Obrigatória</h4>
+      <p><strong>Regra fundamental:</strong> Nunca decidir baseado em escore isolado. Sempre integrar TRÊS fontes:</p>
+      <ol>
+        <li><strong>Escore comportamental:</strong> DDQ-B, CPS-NAID, NCAPC</li>
+        <li><strong>Sinais orofaciais objetivos:</strong> Cárie visível? Inchaço? Eritema? Trismo? Halitose?</li>
+        <li><strong>Relato do cuidador:</strong> "Recusa alimentos duros?" "Toca a boca constantemente?" "Acordou mais vezes à noite?"</li>
+      </ol>
+
+      <h4>4.2 Série Temporal como Âncora de Significância Clínica</h4>
+      <ul>
+        <li>Mudança ≥30% T0–T24–48h, <strong>associada a melhora funcional</strong> (alimentação normaliza, sono melhora) = alta probabilidade de significância clínica real</li>
+        <li>Escore elevado mas <strong>sem tendência de melhora pós-intervenção</strong> = baixa probabilidade que base seja nocicepção responsiva a analgesia; investigar alternativa (ansiedade?, confundidor ambiental?)</li>
+      </ul>
+
+      <h4>4.3 Recalibração Local de Cut-offs</h4>
+      <p>Para cada site, estimar sensibilidade/especificidade via ROC curve:</p>
+      <ul>
+        <li>Coletar 30–50 casos com diagnóstico clínico confirmado (especialista odontológico, não apenas score)</li>
+        <li>Plotar ROC para CPS-NAID ≥10, ≥9, ≥8</li>
+        <li>Se sensibilidade local = 85% em site A (vs. 94% original), especificidade = 75%, razão verossimilhança positiva = 3.4 → informação localmente relevante</li>
+        <li>Usar cut-off que maximiza J-statistic (sensibilidade + especificidade) para site local</li>
+      </ul>
+
+      <h4>4.4 Algoritmo de Decisão Estruturado Pré-Especificado</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Cenário</th>
+            <th>Escore</th>
+            <th>Sinais Clínicos</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Prioridade Alta</strong></td>
+            <td>Elevado (≥10)</td>
+            <td>Concordantes (cárie, inchaço, relato)</td>
+            <td>Iniciar analgesia; agendar tratamento urgente</td>
+          </tr>
+          <tr>
+            <td><strong>Intermediária</strong></td>
+            <td>Elevado (≥10)</td>
+            <td>Discordantes (escore alto, exame normal)</td>
+            <td>Reavaliar em 24h; investigar confundidores</td>
+          </tr>
+          <tr>
+            <td><strong>Intermediária</strong></td>
+            <td>Baixo (<10)</td>
+            <td>Sinais presentes (cárie, edema, relato)</td>
+            <td>Não confiar em escore isolado; investigar (talvez deficiência grave, comunicação atípica)</td>
+          </tr>
+          <tr>
+            <td><strong>Inconclusivo</strong></td>
+            <td>Borderline</td>
+            <td>Ambíguo</td>
+            <td>Referenciar para especialista; não atrasar urgências</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>Decisões clínicas contextualizadas, não determinísticas. Redução de falsos positivos/negativos; melhor acurácia diagnóstica.</p>
+      </div>
+    </section>
+
+    <!-- LIMITAÇÃO 5 -->
+    <section class="card" id="responsividade">
+      <h2>5. Responsividade Não Testada em Amostra Real</h2>
+
+      <h3>Problema Identificado</h3>
+      <p>Escalas comportamentais foram validadas para <strong>detectar presença</strong> de dor (sensibilidade/especificidade estáticas), mas não sistematicamente testadas para <strong>medir mudança pós-intervenção</strong> (responsividade). Usar faixas genéricas (IMMPACT: ≥30% = "moderada") sem confirmação local pode levar a interpretações incorretas.</p>
+
+      <h3>Impacto Esperado</h3>
+      <div class="case-study">
+        <h5>Exemplo: MCID Incorreta</h5>
+        <p>Se MCID real nesta população for 40% (não 30%), pessoa que melhora 25% terá mudança clinicamente importante (família relata: "agora come alimentos duros novamente") mas não atingirá "critério 30%". Terapia corretamente eficaz seria classificada como "não-responder".</p>
+      </div>
+
+      <h3>Estratégias de Mitigação</h3>
+
+      <h4>5.1 Método Anchor-Based na Parte II (Piloto)</h4>
+      <ul>
+        <li>Medir mudança percentual em escore + melhora <strong>funcional reportada por cuidador</strong>: "agora consegue comer alimentos duros", "voltou a brincar normalmente", "dorme a noite toda"</li>
+        <li>Correlacionar % mudança escore com presença/ausência de melhora funcional</li>
+        <li>Estimar MCID empírico: qual % de redução em escore corresponde a "melhora funcional clinicamente importante"?</li>
+      </ul>
+
+      <h4>5.2 Método Distribution-Based Complementar</h4>
+      <ul>
+        <li><strong>SEM (Standard Error of Measurement):</strong> Erro típico da escala; MCID ≈ 1–2 × SEM</li>
+        <li><strong>0.5 DP basal:</strong> Metade do desvio padrão da distribuição de escores baseline; MCID ≈ 0.5 DP</li>
+        <li>Combinar com resultado anchor-based para triangulação</li>
+      </ul>
+
+      <h4>5.3 Consenso de Especialistas (Delphi)</h4>
+      <ul>
+        <li>Reunir painel de 8–10 experts (odontólogos domiciliares, pediatras, psicólogos especializados em ID)</li>
+        <li>Apresentar achados anchor-based e distribution-based</li>
+        <li>Consenso sobre MCID final para usar em Parte III</li>
+      </ul>
+
+      <h4>5.4 Teste Prospectivo em Parte III</h4>
+      <ul>
+        <li>Pré-especificar em protocolo: "Mudança ≥% X no escore, confirmada por melhora funcional, = resposta terapêutica"</li>
+        <li>Testar prospectivamente: % de respondedores em braço ativo vs. controle deve diferir significativamente</li>
+      </ul>
+
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>MCID localmente validado; interpretação de responsividade mais confiável; decisões clínicas melhor fundamentadas.</p>
+      </div>
+    </section>
+
+    <!-- LIMITAÇÃO 6 -->
+    <section class="card" id="especificidade">
+      <h2>6. Especificidade Orofacial Limitada do DDQ-B</h2>
+
+      <h3>Problema Identificado</h3>
+      <p>O DDQ-B foi validado para discriminar presença/ausência de dor odontológica em pediatria (ROC AUC ~0.80), mas <strong>não discrimina eficazmente entre tipos de dor orofacial</strong>:</p>
+      <ul>
+        <li>Dor odontogênica (cárie, endodontia) ✓ bem detectada</li>
+        <li>Dor temporomandibular (TMJ, mialgia) ✗ não bem diferenciada</li>
+        <li>Neuralgia ✗ pode ter escores elevados mas não é odontogênica</li>
+        <li>Estomatite/aftas ✗ causa desconforto oral mas diferente mecanismo</li>
+      </ul>
+
+      <h3>Impacto Esperado</h3>
+      <p>Criança com dor TMJ pode ter DDQ-B elevado, levando a triagem incorreta como "odontogênica" quando necessita fisioterapia/manejo postural/ortodontia. Potencial sobrediagnóstico e tratamento inadequado.</p>
+
+      <h3>Estratégias de Mitigação</h3>
+
+      <h4>6.1 Combinação com NCAPC/CPS-NAID</h4>
+      <ul>
+        <li>Em pediatria, complementar DDQ-B (questões) com NCAPC (observação comportamental estruturada) para aumentar especificidade</li>
+        <li>NCAPC inclui itens sobre localização de gestos autofocais (toca a boca? a mandíbula? o rosto?), que pode ajudar diferenciar</li>
+      </ul>
+
+      <h4>6.2 Exame Clínico Sistemático Sempre</h4>
+      <ul>
+        <li>Em TODAS avaliações: palpação ATM, teste de abertura (amplitude de movimento mandibular), ruídos articulares, dor à palpação articular</li>
+        <li>Discrimina dor articular (TMJ) de dor dentária</li>
+      </ul>
+
+      <h4>6.3 Recalibração Local de Interpretação</h4>
+      <ul>
+        <li>Se site identifica alta proporção de casos com DDQ-B elevado mas exame intraoral completamente negativo e palpação ATM positiva → ajustar interpretação: possível TMJ, não odontogênica</li>
+        <li>Considerar diagnóstico diferencial sistemático</li>
+      </ul>
+
+      <h4>6.4 Questionário Complementar de Localização</h4>
+      <ul>
+        <li>Adicionar ao protocolo: "Onde você acha que dói?" (cuidador aponta em diagrama: dente? mandíbula? músculo?)</li>
+        <li>Triangular com escore + exame clínico</li>
+      </ul>
+
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>Diagnóstico diferencial mais robusto; redução de falso-positivos para dor odontogênica quando mecanismo real é TMJ ou neuralgia.</p>
+      </div>
+    </section>
+
+    <!-- LIMITAÇÃO 7 -->
+    <section class="card" id="confirmacao">
+      <h2>7. Viés de Confirmação em Interpretação Multimodal</h2>
+
+      <h3>Problema Identificado</h3>
+      <p>Integrar múltiplas fontes de informação (escore + exame + relato) pode <strong>paradoxalmente introduzir viés de confirmação</strong>: se expectativa é "há dor", avaliador tende a notar todos os sinais compatíveis e ignorar discordâncias. Sem protocolos pré-especificados e cegueira parcial, risco alto.</p>
+
+      <h3>Impacto Esperado</h3>
+      <ul>
+        <li>Avaliador vê DDQ-B=8, já "sabe" que há dor, depois interpreta <strong>toda atividade motora</strong> como confirmação ("veja, toca a boca!")</li>
+        <li>Exclusão involuntária de interpretações alternativas: ansiedade, mudança de rotina, variação normal de comportamento</li>
+        <li>Recomendações sistemáticamente viesadas em favor de diagnóstico "dor"</li>
+      </ul>
+
+      <h3>Estratégias de Mitigação</h3>
+
+      <h4>7.1 Protocolos Pré-Especificados + Cegueira Parcial</h4>
+      <ul>
+        <li><strong>Antes de avaliar qualquer participante:</strong> Documentar por escrito critérios de prioridade (Alto/Intermediário/Inconclusivo). Não modificar durante estudo.</li>
+        <li><strong>Avaliador de vídeo:</strong> Não vê histórico clínico; não sabe resultado do exame físico</li>
+        <li><strong>Avaliador clínico:</strong> Faz exame sem saber escore comportamental até depois</li>
+        <li>Reduz confirmatory bias estruturalmente</li>
+      </ul>
+
+      <h4>7.2 Dupla Revisão Independente em Subgrupo</h4>
+      <ul>
+        <li>Em 20% de casos (seleção aleatória), <strong>dois avaliadores independentes</strong> fazem julgamento de prioridade sem ver avaliação do outro</li>
+        <li>Se concordância alta (>85%) = menos viés de confirmação</li>
+        <li>Se concordância baixa (<70%) = sinal que critérios são ambíguos ou aplicação inconsistente</li>
+      </ul>
+
+      <h4>7.3 Regra de Discordância Pré-Definida</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Discordância</th>
+            <th>Ação Automática (Não Discricionária)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Escore elevado + exame clínico normal</td>
+            <td>Reavaliar em 24h com mesmo protocolo; se persistir discordância, referenciar segundo parecer ou especialista</td>
+          </tr>
+          <tr>
+            <td>Escore baixo + sinais clínicos claros (cárie visível)</td>
+            <td>Não confiar em escore isolado; investigar (talvez comunicação atípica, deficiência grave); não retardar tratamento</td>
+          </tr>
+          <tr>
+            <td>Escore e exame discordam, cuidador "não sabe" se há dor</td>
+            <td>Inconclusivo; referenciar para investigação adicional (imagem, especialista)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>7.4 Auditoria de Decisões (Spot-Check)</h4>
+      <ul>
+        <li>Após cada mês, líder de equipe revisa 10% de decisões de prioridade tomadas</li>
+        <li>Verifica se lógica foi seguida conforme protocolo (não foi viés de confirmação aparente)</li>
+        <li>Docenta achados; se padrão de viés detectado, feedback à equipe</li>
+      </ul>
+
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>Decisões clínicas guiadas por protocolo, não por intuição. Viés de confirmação reduzido ao mínimo. Confiança em recomendações aumenta.</p>
+      </div>
+    </section>
+
+    <!-- SÍNTESE -->
+    <section class="card" id="sintese">
+      <h2>Síntese: Reconhecer Limites, Implementar Rigor</h2>
+
+      <p>Esta análise crítica estruturada não busca desacreditar o protocolo, mas demonstrar <strong>maturidade metodológica</strong>. Cada uma das 7 limitações identificadas tem contramedida concreta, testável e documentada:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Limitação</th>
+            <th>Estratégias-Chave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Heterogeneidade</td>
+            <td>MGCFA, DIF, série temporal, recalibração local</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Vieses/Confundidores</td>
+            <td>Documentação pré-eval, análise sensibilidade, randomização estratificada</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Confiabilidade</td>
+            <td>Treinamento 16h, auditorias trimestrais, cegamento parcial, teste-reteste</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Cut-offs Determinísticos</td>
+            <td>Integração multimodal, série temporal, recalibração local, algoritmo estruturado</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Responsividade</td>
+            <td>Anchor-based + distribution-based, Delphi, teste prospectivo</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Especificidade DDQ-B</td>
+            <td>Combinação NCAPC, exame ATM, recalibração, questionário localização</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Viés Confirmação</td>
+            <td>Protocolos pré-especificados, cegueira parcial, dupla revisão, auditoria decisões</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="warning-box">
+        <h4>⚠️ Limitações Residuais (Transparência Completa)</h4>
+        <p>Mesmo com todas essas mitigações, riscos residuais permanecem:</p>
         <ul>
-          <li><strong>Multicêntrico e estratificado:</strong> Incluir domicílio e instituições, estratificar por sedativos/psicotrópicos, nível de suporte e comorbidades neurológicas para estimar efeitos de contexto e interações.</li>
-          <li><strong>Tamanho amostral:</strong> Para CFA/MGCFA, visar &gt;200 casos no total com ≥ 50 por estrato; per ICC teste–reteste, ≥ 50–100, assicurando potere per stimare ICC ≥0,80 con IC stretti.</li>
-          <li><strong>Análise:</strong> Combinar métodos anchor‑based (mudança reportada por cuidador e medidas funcionais) e distribution‑based (SEM, 0,5 DP) para estimar MCID específico da população, superando o uso exclusivo de percentuais genéricos.</li>
+          <li><strong>Especificidade pode degradar</strong> em contextos de alta comorbidade neurológica ou sedação marcada → necessidade de confirmação clínica rigorosa permanece</li>
+          <li><strong>Tecnologia complementar</strong> (IA, wearables) permanece complementar ao julgamento clínico, não substituta</li>
+          <li><strong>Generalização geográfica:</strong> Validação local em Santa Catarina não garante que cut-offs funcionem nacionalmente sem adaptação</li>
         </ul>
-      </section>
+        <p>Transparência sobre essas limitações residuais aumenta confiança, não a reduz.</p>
+      </div>
 
-      <section id="implementacao-governanca">
-        <h3 style="margin-block-end:12px">Implementação e governança</h3>
-        <p>
-          Documentar versão/idioma da escala, ambiente, horário, estado comportamental e identidade do avaliador em cada medição para habilitar comparações válidas e auditorias de qualidade. Integrar formação modular (meta de concordância ≥ 80%), supervisões periódicas e planos de melhoria quando ICC/kappa &lt;0,80 para sustentar a confiabilidade ao longo do tempo.
-        </p>
-      </section>
-    
-      <section id="limitacoes-riscos">
-        <h3 style="margin-block-end:12px">Limitações e riscos residuais</h3>
-        <p>
-          Mesmo com invariância e séries temporais, a especificidade pode degradar em contextos de alta comorbidade ou sedação marcada, impondo cautela no uso de cut‑offs determinísticos e a necessidade de confirmação clínica. A tecnologia de suporte (apps de IA, wearables) permanece complementar: critérios mínimos de qualidade e exclusão de dados são essenciais para evitar atrasos ou falsas seguranças.
-        </p>
-      </section>
-    </div>
-    
-    <div class="card">
-      <h2 style="margin-block-end:12px">Racional para um Método Estruturado</h2>
+      <h3>Implicações para Parte II (Piloto) e Parte III (RCT Completo)</h3>
+      <p>A robustez da Parte II e III dependerá criticamente de quão bem implementarmos essas mitigações:</p>
+      <ul>
+        <li><strong>Parte II (N≤75, Piloto):</strong> Testa viabilidade operacional, gera dados de responsividade MCID, valida protocolos</li>
+        <li><strong>Parte III (N≤195, RCT Completo):</strong> Com aprendizados do Piloto, testa eficácia definitiva com desenho safety-gated e inclusão de deficiência grave</li>
+      </ul>
 
-      <section id="Fundamento-epidemiológico">
-        <h3 style="margin-block-end:12px">Fundamento epidemiológico</h3>
-        <p>
-          A subestimação da dor em pessoas com deficiência intelectual é um problema sistemático documentado por posicionamentos da IASP e diretrizes clínicas para pacientes não comunicantes, com impactos em atrasos diagnósticos, complicações e qualidade de vida, o que justifica processos avaliativos mais padronizados e sensíveis a mudanças clinicamente importantes. A estruturação do percurso em triagem, anamnese, exame orofacial e follow‑up seriado reduz erros ligados à variabilidade observacional, ao contexto de cuidado e às barreiras comunicacionais típicas dessa população.
-        </p>
-      </section>
+      <div class="alert-box">
+        <h4>✓ Mensagem Final</h4>
+        <p><strong>Transparência científica = confiança aumentada.</strong> Pesquisadores que reconhecem vulnerabilidades <em>e as enfrentam sistematicamente</em> ganham credibilidade. Protocolos "perfeitos" que fingem não ter limitações são suspeitos. Protocolos <em>rigorosos sobre limitações</em> são confiáveis.</p>
+      </div>
+    </section>
 
-      <section id="Barreiras-comunicacionais">
-        <h3 style="margin-block-end:12px">Barreiras comunicacionais</h3>
-        <p>
-          Padrões comportamentais atípicos e menor expressividade da dor tornam insatisfatória a autoavaliação e exigem escalas observacionais validadas, com treinamento específico dos profissionais e verificação contínua da concordância para mitigar falsos positivos/negativos induzidos por ansiedade, sedação ou mudanças ambientais. A combinação de observação estruturada com a entrevista ao cuidador e os sinais orofaciais objetivos permite uma triangulação que compensa as lacunas de cada fonte isolada.
-        </p>
-      </section>
+    <!-- REFERÊNCIAS -->
+    <section class="card" id="referencias">
+      <h2>Referências Bibliográficas</h2>
+      <ol>
+        <li>Breau LM, McGrath PJ, Camfield CS, Finley GA. Validating the Non-Communicating Children's Pain Checklist—Postoperative Version. <em>Anesthesiology</em>. 2002;96(5):1335–1340.</li>
+        <li>Burkitt C, et al. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities. <em>Res Dev Disabil</em>. 2010;31(4):809–816.</li>
+        <li>Daher A, et al. Validation of the Brazilian version of the Dental Discomfort Questionnaire. <em>Health Qual Life Outcomes</em>. 2014;12:30.</li>
+        <li>Dworkin RH, et al. Interpreting the clinical importance of treatment outcomes in chronic pain trials: IMMPACT recommendations. <em>J Pain</em>. 2008;9(2):105–121.</li>
+        <li>Lotan M, et al. Measurement properties of the Non-Communicating Adult Pain Checklist. <em>Res Dev Disabil</em>. 2010;31(4):809–816.</li>
+        <li>Terwee CB, et al. Quality criteria for measurement properties of health status questionnaires. <em>J Clin Epidemiol</em>. 2007;60(1):34–42.</li>
+        <li>Muthén B, Asparouhov T. Multilevel factor analysis with continuous outcomes. <em>Multivariate Behav Res</em>. 2018;53(4):556–574.</li>
+        <li>Holland WW, Gillett R. <em>Audit of clinical procedures</em>. Oxford: Oxford University Press; 1995.</li>
+      </ol>
+    </section>
 
-      <section id="Validação-do-modelo-multidimensional">
-        <h3 style="margin-block-end:12px">Validação do modelo multidimensional</h3>
-        <p>
-          O uso conjunto do DDQ‑B em pediatria e de CPS‑NAID/NCAPC em adultos não verbais aumenta a validade de construto e a capacidade discriminativa em relação a escalas únicas, sobretudo quando os escores são interpretados ao lado do exame clínico e do andamento temporal. As faixas de mudança clinicamente importante propostas pelo IMMPACT são âncoras operacionais úteis, mas devem ser contextualizadas para instrumentos observacionais, priorizando a confirmação funcional em alimentação, higiene e sono.
-        </p>
-      </section>
+  </main>
 
-       <section id="Métricas-de-desempenho-e-integração">
-        <h3 style="margin-block-end:12px">Métricas de desempenho e integração</h3>
-        <p>
-          Nenhuma escala isolada atinge desempenho ótimo em todos os subgrupos e contextos, enquanto a abordagem combinada melhora a acurácia e a responsividade clínica, especialmente quando guiada por pontos de corte interpretados como apoios e não como determinismos. O uso de faixas percentuais de melhora (≥ 30% moderada; ≥ 50% substancial) deve ser ancorado ao T0 e verificado em T24–48 h, evitando decisões baseadas unicamente no número na ausência de sinais clínicos concordantes.
-        </p>
-      </section>
-
-      <section id="Crítica-metodológica-e-risco-de-circularidade">
-        <h3 style="margin-block-end:12px">Crítica metodológica e risco de circularidade</h3>
-        <p>
-          Integrar múltiplas fontes pode introduzir viés de confirmação se faltarem protocolos pré‑especificados, cegueira parcial entre avaliações, critérios de escalonamento definidos e regras para tratar discordâncias entre escores e sinais clínicos. É, portanto, essencial definir a priori critérios de prioridade clínica, janelas de reavaliação e percursos de urgência para sinais de alarme, separando decisões críticas do mero ultrapassar de pontos de corte.
-        </p>
-      </section>
-
-      <section id="Padronização-treinamento-e-confiabilidade">
-        <h3 style="margin-block-end:12px">Padronização, treinamento e confiabilidade</h3>
-        <p>
-          A redução da variabilidade interobservador obtém‑se com formação modular, metas de concordância (ICC/kappa ≥ 0,80), auditorias trimestrais e reforços quando a meta não é alcançada, registrando sistematicamente versão/idioma dos instrumentos e condições de avaliação. A padronização das condições entre T0 e T24–48 h (ambiente, horário, estado comportamental) é crucial para distinguir sinal clínico de ruído de medida.
-        </p>
-      </section>
-
-      <section id="Análise-fatorial-invariância-e-DIF">
-        <h3 style="margin-block-end:12px">Análise fatorial, invariância e DIF</h3>
-        <p>
-          Para aumentar a transferibilidade, o percurso deve incluir adaptação transcultural com análise fatorial confirmatória e verificação de índices de ajuste, seguida de testes de invariância entre grupos clinicamente relevantes e, quando possível, análises de Differential Item Functioning para identificar itens sensíveis ao contexto. Essas verificações sustentam o uso comparativo dos escores e a calibração local de limites decisórios sem degradar a validade de construto.
-        </p>
-      </section>
-
-      <section id="Séries-temporais-e-responsividade-clínica">
-        <h3 style="margin-block-end:12px">Séries temporais e responsividade clínica</h3>
-        <p>
-          O desenho T0–T24/48 h–T7–T30 permite estimativas de responsividade e confirmação de tendência pós‑intervenção, com leitura percentual ancorada ao basal e validação funcional, melhorando a robustez das decisões em relação a “fotografias” isoladas. Em cenários de recursos limitados, uma versão “light” com T0 e T24–48 h pode preservar boa parte da confiabilidade ao custo de uma redução moderada da especificidade, a ser compensada com prudência clínica.
-        </p>
-      </section>
-
-      <section id="Implicações-clínicas-e-operacionais">
-        <h3 style="margin-block-end:12px">Implicações clínicas e operacionais</h3>
-        <p>
-          Interpretar os pontos de corte (por exemplo, CPS‑NAID) como sinais de probabilidade, e não como vereditos, reduz erros em subgrupos com comorbidades neurológicas ou sob sedativos, nos quais os comportamentos observados são mais ambíguos. A concordância entre escores, sinais orofaciais e variação percentual em 24–48 h deve orientar analgesia, prioridade de tratamento e necessidade de exames complementares ou percursos de urgência.
-        </p>
-      </section>
-    </div>
-    
-       <div class="card">
-      <h2 style="margin-block-end:12px">Validação Pediátrica﻿</h2>
-
-      <section id="Propriedades-Psicométricas">
-        <h3 style="margin-block-end:12px">Propriedades Psicométricas</h3>
-        <ul>
-          <li><strong>Estrutura fatorial:</strong> O DDQ‑B apresenta uma estrutura unifatorial estável, com eigenvalue > 3,2 e variância explicada de 67%. A análise fatorial confirmatória mostra bons índices de ajustamento (CFI = 0,96, RMSEA = 0,04). Confiabilidade: A consistência interna (alfa de Cronbach = 0,87) é excelente, enquanto a confiabilidade teste‑reteste (ICC = 0,84) é satisfatória para um intervalo de 7 dias. Validade criterial: A correlação com o padrão‑ouro clínico (r = 0,73) é boa, mas a sensibilidade (78%) e especificidade (82%) apresentam espaço para aprimoramento.</li>        
-          <li><strong>Confiabilidade:</strong> A consistência interna (alfa de Cronbach = 0,87) é excelente, enquanto a confiabilidade teste‑reteste (ICC = 0,84) é satisfatória para um intervalo de 7 dias.</li>
-          <li><strong>Validade criterial:</strong> A correlação com o padrão‑ouro clínico (r = 0,73) é boa, mas a sensibilidade (78%) e especificidade (82%) apresentam espaço para aprimoramento.</li>
-        </ul>
-      </section>
-
-      <section id="Limitações-Identificadas﻿">
-        <h3 style="margin-block-end:12px">Limitações Identificadas</h3>
-        <ul>
-          <li><strong>Especificidade orofacial limitada:</strong> O DDQ‑B não discrimina de modo eficaz entre dor odontogênica e outras formas de dor orofacial, o que limita seu valor para diagnóstico diferencial.</li>
-          <li><strong>Dependência do cuidador:</strong> A validade da informação depende criticamente da capacidade de observação e do conhecimento da criança por parte do cuidador.</li>
-        </ul>
-      </section>
-
-      <section id="Aprofundamento-científico-e-recomendações﻿">
-        <h3 style="margin-block-end:12px">Aprofundamento científico e recomendações</h3>
-        <p>
-          O DDQ‑B é uma escala observacional para triagem de dor/disconforto odontológico em crianças, indicada em situações onde o auto‑relato é pouco confiável ou inexistente. Evidências nacionais e internacionais mostram sua utilidade na identificação precoce de crianças que necessitam de tratamento para dor relacionada a cárie, desde que a aplicação seja feita de forma padronizada e contextualizada. A comprovação de robustez psicométrica exige análise fatorial confirmatória em amostras diversas (CFA), teste‑reteste em 7–14 dias e análise de invariância entre grupos distintos. Para uso no serviço, recomenda‑se treinamento dos observadores (vídeos, dupla leitura cega), avaliação periódica da concordância ICC/kappa ≥ 0,80, e documentação rigorosa das condições de aplicação. Nos contextos onde o DDQ‑B é utilizado apenas como instrumento único, destaca‑se a necessidade de validação convergente: a triangulação com exame orofacial e entrevista estruturada ao cuidador deve ser rotina, especialmente para evitar decisões clínicas baseadas em resultados isolados ou em situações de estresse/ansiedade do paciente ou do familiar. Por fim, seus limites devem ser enfrentados com protocolos operacionais claros para sinais de alarme (inchaço facial, febre, disfagia…), definindo o papel da escala na priorização do atendimento, sem postergar encaminhamento em casos de urgência.       
-        </p>
-      </section>
-    </div>
-  </article>
-</main>
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
