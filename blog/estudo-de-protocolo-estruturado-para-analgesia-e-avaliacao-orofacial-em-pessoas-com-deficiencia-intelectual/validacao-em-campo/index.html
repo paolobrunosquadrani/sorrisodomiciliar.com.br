@@ -3,91 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual – Validação em Campo – Parte II | Sorriso Domiciliar – Odontologia domiciliar em Blumenau</title>
-  <meta name="description" content="Plano operacional proposto (Parte II) para validação em campo do protocolo teórico (Parte I): ensaio clínico randomizado (aberto com avaliação de resultados cega) em 75 participantes com deficiência intelectual leve-moderada, medindo fidelidade, tempos, sensibilidade e feedback. Aberto a parcerias com hospitais, universidades, SUS e clínicas privadas em Santa Catarina.">
+  <title>Estudo Piloto Randomizado – Validação em Campo | Parte II | Sorriso Domiciliar</title>
+  <meta name="description" content="Parte II: Ensaio clínico randomizado aberto com avaliação cega (N≤75, deficiência intelectual leve-moderada). Três braços: ibuprofeno+ativo, paracetamol+ativo, paracetamol+sham. Desfechos: redução dor ≥30% T0–T48h, segurança, ICC≥0.80, compliance, feedback. Aberto a parcerias institucionais SC.">
   <meta name="author" content="Dr. Paolo Bruno Squadrani">
   <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <meta name="color-scheme" content="only light">
   <link rel="stylesheet" href="/style.css">
   <style>
-    :root{
-      color-scheme: light;
-      --text:#1a1a1a;
-      --muted:#5f6b7a;
-      --border:#e5e7eb;
-      --accent:#0d47a1;
-      --maxw:980px
-    }
-    html,body{height:100%}
-    body{margin:0;background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
-    .container{max-width:var(--maxw);margin:0 auto;padding:20px;overflow-x:hidden}
-    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
-    .topbar{background:#fff;border-bottom:1px solid var(--border)}
-    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
-    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
-    .brand,.brand:link,.brand:visited{color:var(--text)}
-    .brand img{width:32px;height:32px}
-    .brand .brand-text{font-weight:600}
-    @media (max-width:420px){
-      .brand{white-space:normal}
-      .brand .brand-text{display:inline}
-    }
-    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
-    nav a:hover{background:#e8faf6}
-    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}
-    .breadcrumb a{color:inherit;text-decoration:none}
-    .breadcrumb a:hover{text-decoration:underline}
-    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px}
-    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
-    .post h1,.post h2{margin-top:0}
-    .post .post-meta{color:var(--muted);font-size:14px;margin:6px 0 0}
-    .meta{color:var(--muted);font-size:14px}
-    .post a{color:var(--accent);text-decoration:none}
-    .post a:hover{text-decoration:underline}
-    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
-    .wrap{margin-top:24px}
-    .stack{display:flex;flex-direction:column;gap:16px}
-    .grid{display:grid;gap:16px}
-    .cols-2{grid-template-columns:1fr 1fr}
-    @media (max-width: 900px){.cols-2{grid-template-columns:1fr}}
-    .figure{display:block}
-    .figure .box-title{display:block;font-weight:600;margin:0 0 8px;color:#0f172a}
-    .figure svg{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#fff}
-    .kbd{display:inline-block;font:inherit;background:#f1f5f9;border:1px solid #cbd5e1;border-bottom-width:2px;border-radius:6px;padding:0 6px}
-    .visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap}
-    .cta-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .btn{display:inline-block;background:#0d47a1;color:#fff!important;text-decoration:none;padding:10px 14px;border-radius:8px;border:1px solid #0b3c86}
-    .btn:hover{background:#0b3c86}
-    .card h2{margin-top:0}
-    .box-title{font-size:14px;color:var(--muted)}
-    svg text{font-size:clamp(14px,2vw,20px);font-weight:600}
-    svg text.small{font-size:clamp(10px,1.5vw,14px)}
-    svg text.large{font-size:clamp(18px,2.5vw,24px)}
-    .post .wrap.grid.cols-2 { grid-template-columns: 1fr !important; }
-    .wrap.row-nowrap { display: block !important; overflow: visible !important; }
-    h1,h2,h3,h4,h5,h6{color:var(--text)}
-    .tips ul { padding-inline-start: 40px; }
-    .li-no-marker { list-style: none; margin: 12px 0; }
-    .riquadro{
-      border:1px solid var(--border);
-      border-radius:8px;
-      padding:16px;
-      background:#f8f9fb;
-      box-shadow:0 1px 3px rgba(0,0,0,0.06);
-      margin-inline-start:0;
-    }
-    .riquadro h3{ margin-block:0 12px; }
-    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-    th, td { border: 1px solid var(--border); padding: 8px; text-align: left; }
-    th { background-color: #f8f9fa; font-weight: 600; }
-    .alert { padding: 12px; margin: 12px 0; border-radius: 6px; border-left: 4px solid; }
-    .alert-danger { background-color: #f8d7da; border-color: #dc3545; color: #721c24; }
-    .alert-warning { background-color: #fff3cd; border-color: #ffc107; color: #856404; }
+    :root{color-scheme:light;--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--accent:#0d47a1;--success:#2e7d32;--warning:#f57c00;--danger:#c62828;--maxw:980px}
+    html,body{height:100%;margin:0}body{background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.6}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
+    .topbar{background:#fff;border-bottom:1px solid var(--border)}.topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:10px}.brand,.brand:link,.brand:visited{color:var(--text);text-decoration:none}.brand img{width:32px;height:32px}.brand .brand-text{font-weight:600}
+    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}nav a:hover{background:#e8faf6}
+    .breadcrumb{font-size:14px;color:var(--muted);margin:12px 0}.breadcrumb a{color:inherit;text-decoration:none}.breadcrumb a:hover{text-decoration:underline}
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px;margin:16px 0}
+    h1,h2,h3,h4,h5,h6{color:var(--text);margin-top:24px;margin-bottom:12px}h1{border-bottom:2px solid var(--accent);padding-bottom:12px;margin-top:0}h2{border-left:4px solid var(--accent);padding-left:12px}
+    .hero h1{border:none;margin:0 0 16px}.hero .meta{color:var(--muted);font-size:14px;margin:12px 0}
+    .abstract-box{background:#e3f2fd;border-left:4px solid var(--accent);padding:16px;border-radius:6px;margin:16px 0}
+    .caregiver-box{background:#fff3e0;border-left:4px solid var(--warning);padding:16px;border-radius:6px;margin:16px 0}.caregiver-box h4{color:var(--warning);margin-top:0}
+    .alert-box{background:#ffebee;border-left:4px solid var(--danger);padding:16px;border-radius:6px;margin:16px 0}.alert-box h4{color:var(--danger);margin-top:0}
+    .success-box{background:#e8f5e9;border-left:4px solid var(--success);padding:16px;border-radius:6px;margin:16px 0}.success-box h4{color:var(--success);margin-top:0}
+    .partnership-box{background:#f3e5f5;border-left:4px solid #7c0080;padding:16px;border-radius:6px;margin:16px 0}.partnership-box h4{color:#7c0080;margin-top:0}
+    table{width:100%;border-collapse:collapse;margin:16px 0}table th,table td{border:1px solid var(--border);padding:12px;text-align:left}table th{background:#f5f5f5;font-weight:600}table tbody tr:hover{background:#fafafa}
+    .download-section{background:#f0f0f0;padding:20px;border-radius:8px;margin:20px 0}.download-btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;margin:8px 8px 8px 0;border:1px solid var(--accent)}.download-btn:hover{background:#0b3c86}
+    .toc{background:#f9f9f9;border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0}.toc h3{margin-top:0}.toc ul{list-style:none;padding:0}.toc li{margin:8px 0}.toc a{color:var(--accent);text-decoration:none}.toc a:hover{text-decoration:underline}
+    .timeline{display:flex;gap:20px;margin:20px 0;flex-wrap:wrap}.timeline-item{flex:1;min-width:200px;background:#fff;border:1px solid var(--border);padding:16px;border-radius:8px}.timeline-item h4{margin-top:0;color:var(--accent)}
+    footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center;border-top:1px solid var(--border)}
+    @media (max-width:768px){.timeline{flex-direction:column}.download-btn{width:100%;text-align:center}}
   </style>
-
-  <!-- Structured data: Breadcrumb -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -95,32 +41,27 @@
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sorrisodomiciliar.com.br/"},
       {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sorrisodomiciliar.com.br/blog/"},
-      {"@type":"ListItem","position":3,"name":"Estudo de Protocolo Estruturado para Analgesia e Avaliação Orofacial em Pessoas com Deficiência Intelectual","item":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/"},
-      {"@type":"ListItem","position":4,"name":"Validação em Campo – Parte II","item":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/"}
+      {"@type":"ListItem","position":3,"name":"Estudo Multipartes","item":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/"},
+      {"@type":"ListItem","position":4,"name":"Parte II: Estudo Piloto Randomizado","item":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/"}
     ]
   }
   </script>
-
-  <!-- Structured data: Articolo principale -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Estudo Piloto Randomizado – Validação em Campo da Estratégia Multimodal – Parte II",
-    "description": "Ensaio clínico randomizado (aberto com avaliação de resultados cega) com 75 participantes com deficiência intelectual leve a moderada, testando ibuprofeno vs. paracetamol vs. sham. Métricas: dor ≥30% T0–T48h, segurança, ICC ≥0.80, compliance e feedback. Aberto a parcerias institucionais em Santa Catarina.",
-    "author": {
-      "@type": "Person",
-      "name": "Dr. Paolo Bruno Squadrani"
-    },
-    "datePublished": "2025-10-10",
-    "url": "https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/",
-    "keywords": "pilot RCT, multimodal analgesia, intellectual disability, institutional partnerships, scalability"
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Estudo Piloto Randomizado – Validação em Campo da Estratégia Multimodal",
+    "description":"Ensaio clínico randomizado (aberto com avaliação de resultados cega) com 75 participantes (DI leve-moderada), testando ibuprofeno vs. paracetamol vs. sham em combinação com técnicas comportamentais. Desfechos: redução dor ≥30% T0–T48h, segurança, ICC≥0.80, compliance, feedback. Aberto a parcerias institucionais.",
+    "author":{"@type":"Person","name":"Dr. Paolo Bruno Squadrani"},
+    "datePublished":"2025-10-10",
+    "dateModified":"2025-10-30",
+    "url":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/",
+    "keywords":"pilot RCT, multimodal analgesia, intellectual disability, orofacial pain, institutional partnerships"
   }
   </script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-
   <div class="topbar" role="navigation" aria-label="Topo">
     <div class="inner">
       <a class="brand" href="/" rel="home" aria-label="Ir para a página inicial">
@@ -136,286 +77,574 @@
   <main id="conteudo" class="container">
     <nav class="breadcrumb" aria-label="Você está aqui">
       <a href="/">Início</a> › <a href="/blog/">Blog</a> › 
-      <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">Estudo de Protocolo</a> › 
-      <span>Estudo Piloto Randomizado – Parte II</span>
+      <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">Estudo Multipartes</a> › 
+      <span>Parte II: Estudo Piloto Randomizado</span>
     </nav>
 
+    <!-- HEADER -->
     <section class="card hero" aria-label="Introdução ao estudo piloto">
       <h1>Estudo Piloto Randomizado – Validação em Campo da Estratégia Multimodal</h1>
-      <p>Ensaio clínico randomizado, aberto com avaliação de resultados cega, com 75 participantes com deficiência intelectual leve a moderada. Três grupos: ibuprofeno+ativo, paracetamol+ativo, paracetamol+sham. Métricas: redução de dor ≥30% T0–T48 h, segurança preliminar, ICC ≥0.80, compliance, feedback de cuidadores.</p>
-      <p>Aprovação ética (CEP/CONEP) e LGPD em andamento. Acesse <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">página principal</a> e <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/proposta-teorica/">Parte I</a>.</p>
+      <p class="meta">
+        <strong>Autor:</strong> Dr. Paolo Bruno Squadrani · 
+        <strong>Versão:</strong> <time datetime="2025-10-30">30 out 2025</time> · 
+        <strong>Status:</strong> <em>Aberto a Parcerias Institucionais</em>
+      </p>
+      <p>Ensaio clínico randomizado, aberto com avaliação de resultados cega (N≤75, deficiência intelectual leve-moderada). Três braços: Ibuprofeno+técnicas ativas, Paracetamol+ativas, Paracetamol+sham. Desfechos: redução dor ≥30% T0–T48h, segurança preliminar, confiabilidade (ICC≥0.80), compliance ≥90%, satisfação cuidadores ≥4/5.</p>
     </section>
 
-    <article class="post" itemscope itemtype="https://schema.org/Article">
-      <header class="card">
-        <h1 class="post-title" itemprop="headline">Estudo Piloto Randomizado – Validação em Campo</h1>
-        <p class="post-meta">Rascunho aberto a parcerias institucionais, antecipa Parte III (experimental)</p>
-      </header>
+    <!-- ABSTRACT -->
+    <section class="card">
+      <div class="abstract-box">
+        <h3>Abstract</h3>
+        <p><strong>Contexto:</strong> A Proposta Teórica (Parte I) estabeleceu protocolo estruturado para avaliação de dor orofacial em deficiência intelectual. Agora, a Parte II valida esse protocolo em amostra controlada, testando estratégias multimodais.</p>
+        
+        <p><strong>Objetivo:</strong> Avaliar viabilidade operacional, segurança preliminar e sinais de eficácia de estratégia multimodal (farmacológica + comportamental) para manejo de dor orofacial em pessoas com deficiência intelectual leve-moderada.</p>
+        
+        <p><strong>Design:</strong> Ensaio clínico randomizado, aberto com avaliação de resultados cega (1:1:1, N≤75). Três braços: (A) Ibuprofeno 10 mg/kg + crioterapia 4°C + massagem orofacial; (B) Paracetamol 15 mg/kg + crioterapia 4°C + massagem orofacial; (C) Paracetamol 15 mg/kg + crioterapia sham (25–28°C) + contato manual não-terapêutico.</p>
+        
+        <p><strong>Desfecho Primário:</strong> Redução ≥30% no escore de dor comportamental (DDQ-B ou CPS-NAID+NCAPC) de T0 a T24–48h em ≥70% dos participantes.</p>
+        
+        <p><strong>Desfechos Secundários:</strong> (1) Eventos adversos e tolerabilidade; (2) Confiabilidade inter-avaliador (ICC≥0.80); (3) Tempos operacionais (15–30 min); (4) Compliance medicamentoso ≥90%; (5) Satisfação de cuidadores ≥4/5 (Likert 1–5).</p>
+        
+        <p><strong>Inovações:</strong> Desenho aberto com cegamento de avaliador garante pragmatismo clínico + rigor científico. Decomposição de intervenção (B vs. C) isola contribuição comportamental. Parcerias institucionais viabilizam escalabilidade e coanálise dados.</p>
+        
+        <p><strong>Resultado Esperado:</strong> Demonstração de viabilidade operacional e sinais de eficácia para informar Parte III (RCT multicêntrico completo). Preparação para disseminação SUS e adoção em larga escala.</p>
+      </div>
+    </section>
 
-      <div style="border:2px solid #007BFF; background-color:#FFF9C4; padding:16px; margin-bottom:24px;">
-        <h2 style="margin-top:0; margin-bottom:16px; color:#0056b3;">Executive Summary</h2>
-        <h3 style="margin-top:0; margin-bottom:16px; color:#0056b3;">Pilot RCT – Multimodal Analgesia Validation & Partnerships</h3>
-        <p>Randomized controlled trial (1:1:1, open-label with blinded outcome assessment) com 75 participantes (leve–moderada ID). Grupos: ibuprofeno+ativo, paracetamol+ativo, paracetamol+sham. Métricas: redução de dor ≥30% T0–T48 h, segurança, ICC ≥0.80, compliance ≥90%, feedback de cuidador ≥4/5.</p>
-        <p>Colaborações buscadas com instituições SC (hospitais, universidades, SUS, clínicas) para recrutamento, treinamento, coanálise. Benefícios: coautoria, resultados antecipados, integração SUS. Aprovação ética (CEP/CONEP) e LGPD em andamento. Prepara Parte III (trial multicêntrico completo).</p>
-        <p><strong>Keywords:</strong> pilot RCT, multimodal analgesia, intellectual disability, institutional partnerships, scalability.</p>
+    <!-- TABLE OF CONTENTS -->
+    <section class="card">
+      <div class="toc">
+        <h3>Índice de Conteúdos</h3>
+        <ul>
+          <li><a href="#contexto">1. Contexto e Justificativa</a></li>
+          <li><a href="#objetivos">2. Objetivos e Hipóteses</a></li>
+          <li><a href="#design">3. Design e Metodologia</a></li>
+          <li><a href="#populacao">4. População e Randomização</a></li>
+          <li><a href="#intervencoes">5. Intervenções Detalhadas</a></li>
+          <li><a href="#desfechos">6. Desfechos Primários e Secundários</a></li>
+          <li><a href="#avaliacao">7. Avaliação da Dor e Instrumentos</a></li>
+          <li><a href="#seguranca">8. Segurança e Monitoramento (DSMB)</a></li>
+          <li><a href="#analise">9. Análise Estatística</a></li>
+          <li><a href="#operacional">10. Operacional e Cronograma</a></li>
+          <li><a href="#parcerias">11. Parcerias Institucionais</a></li>
+          <li><a href="#downloads">12. Downloads e Materiais</a></li>
+          <li><a href="#referencias">13. Referências</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 1: CONTEXTO -->
+    <section class="card" id="contexto">
+      <h2>1. Contexto e Justificativa</h2>
+      <p>A Parte I (Proposta Teórica) identificou cinco lacunas críticas de evidência em manejo de dor orofacial em deficiência intelectual:</p>
+      <ol>
+        <li><strong>Ausência de RCTs:</strong> Nenhum ensaio clínico randomizado testando intervenções multimodais nesta população</li>
+        <li><strong>Responsividade não comprovada:</strong> Escalas comportamentais validadas para detectar dor, mas não testadas para medir mudança pós-tratamento</li>
+        <li><strong>Lacunas farmacocinéticas:</strong> Dados insuficientes sobre dosagem segura e eficaz em polypharmacy + comorbidades</li>
+        <li><strong>Vazio multimodal:</strong> Falta de evidência sobre combinação farmacológica + comportamental</li>
+        <li><strong>Exclusão de deficiência grave:</strong> Estudos sistematicamente excluem pessoas com deficiência intelectual severa</li>
+      </ol>
+      <p>A Parte II responde diretamente aos gaps 2–4 (gaps 1 e 5 serão abordados na Parte III com desenho expandido). Trata-se de piloto operacional e de eficácia preliminar.</p>
+    </section>
+
+    <!-- SEÇÃO 2: OBJETIVOS -->
+    <section class="card" id="objetivos">
+      <h2>2. Objetivos e Hipóteses</h2>
+      
+      <h3>Objetivo Geral</h3>
+      <p>Validar viabilidade operacional e segurança preliminar de protocolo estruturado de 3 fases (triagem, anamnese, exame) para avaliação e manejo de dor orofacial em pessoas com deficiência intelectual leve-moderada, testando estratégia multimodal (farmacológica + comportamental).</p>
+
+      <h3>Objetivos Específicos</h3>
+      <ul>
+        <li><strong>Fidelidade:</strong> Validar que protocolo é aplicado consistentemente (ICC/kappa ≥0.80 inter-avaliador)</li>
+        <li><strong>Tempos:</strong> Confirmar execução em 15–30 min (completo) e &lt;12 min (light)</li>
+        <li><strong>Responsividade:</strong> Demonstrar que escalas comportamentais medem mudança pós-tratamento (≥30% = moderada; ≥50% = substancial)</li>
+        <li><strong>Segurança:</strong> Documentar incidência e severidade de eventos adversos</li>
+        <li><strong>Compliance:</strong> Atingir ≥90% de aderência aos protocolos farmacológico e comportamental</li>
+        <li><strong>Satisfação:</strong> Coletar feedback de cuidadores (meta ≥4/5 em escala Likert)</li>
+        <li><strong>Decomposição:</strong> Isolar contribuição comportamental via comparação B vs. C</li>
+      </ul>
+
+      <h3>Hipóteses (Hipóteses Nulas Rejeitadas com α=0.05)</h3>
+      <ul>
+        <li>H1: Redução dor ≥30% T0–T48h ocorrerá em ≥70% dos participantes (vs. <50% em controle histórico)</li>
+        <li>H2: ICC inter-avaliador ≥0.80 para escalas comportamentais</li>
+        <li>H3: Tempo operacional médio ≤25 min (completo) e ≤10 min (light)</li>
+        <li>H4: Incidência de eventos adversos graves &lt;5%</li>
+        <li>H5: Compliance medicamentoso ≥90%</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO 3: DESIGN -->
+    <section class="card" id="design">
+      <h2>3. Design e Metodologia</h2>
+      
+      <h3>Tipo de Estudo</h3>
+      <p><strong>Ensaio clínico randomizado, aberto com avaliação de resultados cega (Open-Label with Blinded Outcome Assessment – OLBOA)</strong></p>
+      
+      <div class="alert-box">
+        <h4>⚠️ Justificativa do Design OLBOA</h4>
+        <p>Este é um desenho pragmático por razões metodológicas e éticas:</p>
+        <ul>
+          <li><strong>Aberto:</strong> Participantes, cuidadores e clínicos sabem qual tratamento está sendo administrado (necessário para ajuste clínico individual e intervenções comportamentais que não podem ser ocultadas)</li>
+          <li><strong>Cegamento de avaliador:</strong> Os profissionais que medem os desfechos primários (códigos de vídeos de dor) não sabem a qual grupo o participante foi alocado, minimizando viés de detecção</li>
+          <li><strong>Cegamento de analista:</strong> Análise estatística realizada sem conhecimento da alocação</li>
+          <li><strong>Ético:</strong> Razões éticas impedem placebo para intervenções conhecidamente eficazes em população vulnerável</li>
+        </ul>
       </div>
 
-      <div class="wrap stack">
-        <article class="card">
-          <h2>Por que validar em campo?</h2>
-          <p>Transição teoria (Parte I) → piloto randomizado garante viabilidade operacional, controle de bias e segurança antes do estudo multicêntrico completo.</p>
-        </article>
-      </div>
+      <h3>Randomização</h3>
+      <ul>
+        <li>Proporção 1:1:1 (N=25 cada braço, total ≤75)</li>
+        <li>Gerada via sistema web centralizado (plataforma REDCap ou similar)</li>
+        <li>Estratificada por: (1) idade (≤18 vs. >18); (2) severidade ID (leve vs. moderada)</li>
+        <li>Blocos de tamanho variável (4–6) para manter equilíbrio</li>
+        <li>Alocação revelada ao investigador local após consentimento</li>
+      </ul>
 
-      <div class="wrap stack">
-        <article class="card">
-          <h2>Objetivos e Hipóteses</h2>
-          <h3>Objetivo Geral</h3>
-          <p>Avaliar factibilidade, segurança preliminar e sinais de eficácia da estratégia multimodal.</p>
-          <h3>Objetivos Específicos</h3>
+      <h3>Mascaramento (Cegamento)</h3>
+      <ul>
+        <li><strong>Participante:</strong> NÃO cego (necessário para ajuste clínico)</li>
+        <li><strong>Cuidador:</strong> NÃO cego (necessário para consentimento e aderência informada)</li>
+        <li><strong>Clínico/Interventor:</strong> NÃO cego (necessário para administração e ajuste)</li>
+        <li><strong>Avaliador de desfecho (pain rater):</strong> CEGO ao grupo; avalia vídeos de dor sem saber alocação</li>
+        <li><strong>Analista de dados:</strong> CEGO ao grupo durante análise primária</li>
+        <li><strong>DSMB:</strong> CEGO ao grupo durante análises interinas</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO 4: POPULAÇÃO -->
+    <section class="card" id="populacao">
+      <h2>4. População e Randomização</h2>
+
+      <h3>Critérios de Inclusão</h3>
+      <ul>
+        <li>Idade ≥5 anos e &lt;70 anos</li>
+        <li>Diagnóstico confirmado de deficiência intelectual leve ou moderada (QI 35–69)</li>
+        <li>Suspeita clínica ou confirmação de dor orofacial (escore DDQ-B ≥5 em pediatria ou CPS-NAID ≥8 em adultos)</li>
+        <li>Responsável legal capaz de dar consentimento informado acessível</li>
+        <li>Participante capaz de assentimento (verbal, não-verbal ou via comunicação alternativa)</li>
+        <li>Disponibilidade para completar todas as avaliações (T0, T24–48h, opcional T7/T30)</li>
+      </ul>
+
+      <h3>Critérios de Exclusão</h3>
+      <ul>
+        <li>Deficiência intelectual profunda (QI <35) – será abordada em Parte III com safety-gating</li>
+        <li>Alergia conhecida a ibuprofeno ou paracetamol</li>
+        <li>Condições que contraindiquem AINE (úlcera péptica ativa, insuficiência renal grave, asma)</li>
+        <li>Febre >38°C, inchaço facial/cervical ou sinais de infecção sistêmica (red flags)</li>
+        <li>Concomitante participação em outro RCT (washout ≥4 semanas)</li>
+        <li>Incapacidade de seguimento (mudança de residência, perda de contato esperada)</li>
+      </ul>
+
+      <h3>Tamanho Amostral e Power</h3>
+      <p>N=75 (25 por braço) fornece 80% de poder para detectar diferença de 25% em taxas de resposta entre grupos (α=0.05, bilateral), com 15% de taxa de abandono.</p>
+    </section>
+
+    <!-- SEÇÃO 5: INTERVENÇÕES -->
+    <section class="card" id="intervencoes">
+      <h2>5. Intervenções Detalhadas</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Braço</th>
+            <th>Farmacológico</th>
+            <th>Comportamental (Crioterapia + Técnica Manual)</th>
+            <th>Objetivo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A (N=25)</strong></td>
+            <td>Ibuprofeno 10 mg/kg (máx. 400 mg) a cada 8–12 horas por 3 dias</td>
+            <td>Crioterapia ativa 4°C × 10 min + Massagem orofacial 5 min (técnica de Wilke modificada)</td>
+            <td>Testar AINE + comportamental completo</td>
+          </tr>
+          <tr>
+            <td><strong>B (N=25)</strong></td>
+            <td>Paracetamol 15 mg/kg (máx. 500 mg) a cada 6–8 horas por 3 dias</td>
+            <td>Crioterapia ativa 4°C × 10 min + Massagem orofacial 5 min (técnica idêntica a A)</td>
+            <td>Testar analgésico alternativo + comportamental completo</td>
+          </tr>
+          <tr>
+            <td><strong>C (N=25)</strong></td>
+            <td>Paracetamol 15 mg/kg (máx. 500 mg) a cada 6–8 horas por 3 dias (idêntico a B)</td>
+            <td>Crioterapia neutra 25–28°C × 10 min + Contato manual não-terapêutico 5 min (sham)</td>
+            <td>Controle ativo e de atenção; isola efeito comportamental (B vs. C)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Protocolo Farmacológico Detalhado</h3>
+      <ul>
+        <li><strong>Ibuprofeno (Braço A):</strong> 10 mg/kg por dose, a cada 8–12 horas, com alimento, máximo 3 dias. Ajustes: se insuficiência renal leve (eGFR 30–89 mL/min), usar espaçamento de 12 horas; evitar se eGFR <30</li>
+        <li><strong>Paracetamol (Braços B e C):</strong> 15 mg/kg por dose, a cada 6–8 horas, máximo 5 doses/dia, máximo 3 dias. Ajustes: se insuficiência hepática leve, usar com cautela; evitar se cirrose</li>
+        <li><strong>Doses pediátricas:</strong> Usar peso atual; se não disponível, estimar via altura</li>
+        <li><strong>Administração:</strong> Comprimido mastigável ou líquido (adaptado à capacidade de deglutição)</li>
+        <li><strong>Documentação:</strong> Cada dose registrada com data, hora, local, observações sobre tolerabilidade</li>
+      </ul>
+
+      <h3>Protocolo Comportamental Detalhado</h3>
+
+      <h4>Crioterapia Ativa (Braços A & B)</h4>
+      <ul>
+        <li><strong>Temperatura:</strong> 4°C (verificada com termômetro digital antes e após)</li>
+        <li><strong>Material:</strong> Gel em bolsa de gelo reutilizável envolta em gaze estéril (3 camadas)</li>
+        <li><strong>Duração:</strong> 10 minutos contínuos</li>
+        <li><strong>Aplicação:</strong> Região orofacial (malar, temporal, mandibular) com movimentos circulares lentos</li>
+        <li><strong>Tolerância:</strong> Se desconforto do frio excessivo, interromper e retomar com pausa de 2 min</li>
+      </ul>
+
+      <h4>Crioterapia Sham (Braço C)</h4>
+      <ul>
+        <li><strong>Temperatura:</strong> 25–28°C (verificada com termômetro digital)</li>
+        <li><strong>Material:</strong> Bolsa de gel à temperatura ambiente envolta em gaze estéril</li>
+        <li><strong>Duração:</strong> 10 minutos (idêntico ao ativo)</li>
+        <li><strong>Aplicação:</strong> Região idêntica, com técnica idêntica</li>
+        <li><strong>Percepção:</strong> Participante não consegue discernir temperatura (ambos "frios" ao toque inicial)</li>
+      </ul>
+
+      <h4>Massagem Orofacial Terapêutica (Braços A & B)</h4>
+      <ul>
+        <li><strong>Técnica:</strong> Modificada de Wilke et al. (crioterapia + massagem); 5 minutos pós-crioterapia</li>
+        <li><strong>Estrutura:</strong> (1) Massagem de pontos-gatilho em masseteres e temporalis (2 min); (2) Alongamento suave de mandíbula (1 min); (3) Massagem de mucosa labial e períoral (2 min)</li>
+        <li><strong>Pressão:</strong> Moderada, sem causar dor; participante sinaliza desconforto</li>
+        <li><strong>Frequência:</strong> Uma sessão por dia (idealmente à mesma hora)</li>
+      </ul>
+
+      <h4>Contato Manual Não-Terapêutico (Braço C – Sham)</h4>
+      <ul>
+        <li><strong>Duração:</strong> 5 minutos (idêntico ao terapêutico)</li>
+        <li><strong>Técnica:</strong> Contato estático/leve das mãos em regiões orofaciais, SEM massagem, SEM técnica específica</li>
+        <li><strong>Objetivo:</strong> Controlar por atenção/contato físico sem ingrediente ativo</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO 6: DESFECHOS -->
+    <section class="card" id="desfechos">
+      <h2>6. Desfechos Primários e Secundários</h2>
+
+      <h3>Desfecho Primário</h3>
+      <p><strong>Proporção de participantes com redução ≥30% na intensidade de dor (escore comportamental) de T0 a T24–48h</strong></p>
+      <ul>
+        <li>Escala: DDQ-B (pediatria) ou CPS-NAID (adultos)</li>
+        <li>Cálculo: (T0 – T24–48h) / T0 × 100%</li>
+        <li>Alvo: ≥70% de respondedores em braços A + B (combinado) vs. <40% em braço C</li>
+      </ul>
+
+      <h3>Desfechos Secundários</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Desfecho</th>
+            <th>Descrição</th>
+            <th>Tempo</th>
+            <th>Alvo/Esperado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Fidelidade (ICC)</strong></td>
+            <td>Concordância inter-avaliador codificação vídeo dor</td>
+            <td>Ao longo do estudo</td>
+            <td>≥0.80</td>
+          </tr>
+          <tr>
+            <td><strong>Tempos Operacionais</strong></td>
+            <td>Duração T0 + T24–48h (completo e light)</td>
+            <td>Cada sessão</td>
+            <td>15–30 min (completo); <12 min (light)</td>
+          </tr>
+          <tr>
+            <td><strong>Responsividade</strong></td>
+            <td>Mudança em função (alimentação, sono)</td>
+            <td>T0 vs. T24–48h</td>
+            <td>Melhora em ≥50% dos respondedores</td>
+          </tr>
+          <tr>
+            <td><strong>Segurança (AE)</strong></td>
+            <td>Incidência e severidade eventos adversos</td>
+            <td>T0–T30</td>
+            <td><5% eventos graves</td>
+          </tr>
+          <tr>
+            <td><strong>Compliance Medicação</strong></td>
+            <td>% de doses administradas conforme prescrito</td>
+            <td>T0–T3</td>
+            <td>≥90%</td>
+          </tr>
+          <tr>
+            <td><strong>Satisfação Cuidador</strong></td>
+            <td>Likert 1–5 (1=muito insatisfeito; 5=muito satisfeito)</td>
+            <td>T24–48h</td>
+            <td>≥4/5 (≥80% de participantes)</td>
+          </tr>
+          <tr>
+            <td><strong>Decomposição Multimodal</strong></td>
+            <td>Diferença B vs. C (isola efeito comportamental)</td>
+            <td>T0–T48h</td>
+            <td>Significância estatística ou tamanho efeito moderado</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Desfechos Exploratórios</h3>
+      <ul>
+        <li>Responsividade de NCAPC em adultos (complementar ao CPS-NAID)</li>
+        <li>Diário de dor do cuidador (VAS 0–10)</li>
+        <li>Mudança em comportamentos (gestos autofocais, recusa alimentar)</li>
+        <li>Taxa de drop-out e razões</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO 7: AVALIAÇÃO -->
+    <section class="card" id="avaliacao">
+      <h2>7. Avaliação da Dor e Instrumentos</h2>
+
+      <h3>Escalas Primárias</h3>
+      <ul>
+        <li><strong>DDQ-B (Pediatria):</strong> 7 itens, PT-BR validado, score 0–12. ≥5 = sugestivo de dor</li>
+        <li><strong>CPS-NAID (Adultos):</strong> Escala observacional, score variável. Ponto de corte ≥10 = 94% probabilidade dor</li>
+        <li><strong>NCAPC (Adultos):</strong> Complementar ao CPS-NAID quando deficiência severa ou comunicação muito limitada</li>
+      </ul>
+
+      <h3>Documentação de Vídeo</h3>
+      <ul>
+        <li>Registros padronizados de 5 min (T0 e T24–48h) em condições idênticas (iluminação, hora, ambiente)</li>
+        <li>Codificação cega post-hoc por avaliador treinado (não sabe braço)</li>
+        <li>Dupla codificação de 20% amostra (auditoria ICC)</li>
+      </ul>
+
+      <h3>Instrumentos Secundários</h3>
+      <ul>
+        <li><strong>VAS (Visual Analogue Scale):</strong> 0–10 linha, relato do cuidador sobre severidade dor</li>
+        <li><strong>CGI-C (Clinical Global Impression – Change):</strong> Avaliação clínica global (muito pior, um pouco pior, sem mudança, um pouco melhor, muito melhor)</li>
+        <li><strong>Questionário de Satisfação:</strong> Likert 1–5 sobre aceitabilidade do protocolo</li>
+        <li><strong>Checklist de Conformidade Medicamentosa:</strong> Registro de doses administradas</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO 8: SEGURANÇA -->
+    <section class="card" id="seguranca">
+      <h2>8. Segurança e Monitoramento (DSMB)</h2>
+
+      <h3>Data Safety Monitoring Board</h3>
+      <ul>
+        <li><strong>Composição:</strong> Bioestatístico independente, médico clínico (não investigador), especialista em DI</li>
+        <li><strong>Frequência:</strong> Revisão independente após inclusão de 25 e 50 participantes</li>
+        <li><strong>Informações:</strong> Dados de segurança não-identificados, taxas de drop-out, eventos adversos</li>
+        <li><strong>Critérios de Stop:</strong> 
           <ul>
-            <li>Fidelidade (ICC/kappa ≥0.80)</li>
-            <li>Tempos operacionais (15–30 min)</li>
-            <li>Sensibilidade/especificidade (≥80%)</li>
-            <li>Feedback cuidadores (satisfação ≥4/5)</li>
-            <li>Compliance (≥90%)</li>
+            <li>≥2 eventos adversos graves relacionados ao medicamento</li>
+            <li><5% de resposta em ambos os braços farmacológicos (falta de benefício)</li>
+            <li>Diferença significativa em tolerabilidade não antecipada</li>
           </ul>
-          <h3>Hipóteses</h3>
-          <ul>
-            <li>Redução ≥30% no escore de dor T0–T48 h em ≥70% dos participantes</li>
-            <li>Versão light mantém ICC ≥0.80 e reduz tempos em 25%</li>
-            <li>Parcerias viabilizam treinamentos e coanálise</li>
-          </ul>
-        </article>
+        </li>
+      </ul>
+
+      <h3>Notificação de Eventos Adversos</h3>
+      <ul>
+        <li><strong>Leve:</strong> Náusea, constipação, leve cefaleia → registrada no formulário, monitorada</li>
+        <li><strong>Moderada:</strong> Vômito persistente, irritação gástrica → considerar interrupção medicação</li>
+        <li><strong>Grave:</strong> Reação alérgica, hipoglicemia, sinais de hepatotoxicidade → retirada imediata, avaliação emergencial</li>
+        <li><strong>Prazos:</strong> Imediatamente para graves; em 24 h para moderadas; em 7 dias para leves</li>
+      </ul>
+
+      <h3>Conformidade LGPD e Ética</h3>
+      <ul>
+        <li>Aprovação prévia do CEP/CONEP</li>
+        <li>Consentimento informado acessível (leitura fácil, imagens)</li>
+        <li>Armazenamento seguro com criptografia</li>
+        <li>Direito de withdraw sem prejuízo ao cuidado</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO 9: ANÁLISE ESTATÍSTICA -->
+    <section class="card" id="analise">
+      <h2>9. Análise Estatística</h2>
+
+      <h3>População de Análise</h3>
+      <ul>
+        <li><strong>Intention-to-Treat (ITT):</strong> Todos randomizados (primária)</li>
+        <li><strong>Per-Protocol:</strong> Completaram ≥80% do protocolo (sensibilidade)</li>
+        <li><strong>Imputação múltipla:</strong> Para dados faltantes (MCAR/MAR assumptions)</li>
+      </ul>
+
+      <h3>Análise Primária</h3>
+      <p>Proporção respondedores (redução ≥30%) comparada entre braços via regressão logística, ajustada por estrato de randomização (idade, severidade ID). Alvo: ≥70% em A+B vs. <40% em C (p<0.05).</p>
+
+      <h3>Análises Secundárias</h3>
+      <ul>
+        <li>Modelos linear mixed-effects para medidas repetidas (ICC, tempos, função)</li>
+        <li>Análise de subgrupos: idade (pediátrico vs. adulto), severidade ID (leve vs. moderada)</li>
+        <li>Curvas de Kaplan-Meier para tempo-até-resposta</li>
+        <li>Análise de sensibilidade: cenários pessimista/otimista para drop-outs</li>
+      </ul>
+
+      <h3>Nível de Significância</h3>
+      <p>α=0.05 bilateral; sem ajuste Bonferroni (exploratório); DSMB cego até análise final.</p>
+    </section>
+
+    <!-- SEÇÃO 10: OPERACIONAL -->
+    <section class="card" id="operacional">
+      <h2>10. Operacional e Cronograma</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Fase 1: Setup (Out–Nov 2025)</h4>
+          <p>Aprovação CEP/CONEP, treinamento de staff (4h), configuração REDCap, briefing DSMB.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Fase 2: Recrutamento Piloto (Nov–Dez 2025)</h4>
+          <p>Inclusão de primeiros 25 participantes (5 por semana), implementação completa do protocolo, coleta T0.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Fase 3: Follow-up & Interina (Dez 2025–Jan 2026)</h4>
+          <p>Avaliações T24–48h, segurança interina, revisão DSMB, possíveis ajustes.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Fase 4: Inclusão Completa (Jan–Mar 2026)</h4>
+          <p>Inclusão adicional para N=75 total, continuação das coletas.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Fase 5: Análise & Disseminação (Abr–Jun 2026)</h4>
+          <p>Análise final, redação de artigos, apresentação em conferências, preparação Parte III.</p>
+        </div>
       </div>
 
-      <div class="wrap stack">
-        <article class="card">
-          <h2>Design do Estudo</h2>
-          <p><strong>Tipo:</strong> Ensaio clínico randomizado, aberto com avaliação de resultados cega (medicamento)<br>
-          <strong>Amostra:</strong> 75 participantes com DI leve–moderada<br>
-          <strong>Randomização:</strong> 1:1:1 em três grupos</p>
-          
-          <div class="alert alert-warning" style="margin-bottom:16px;">
-            <strong>Nota Importante sobre o Desenho:</strong> Este é um ensaio <strong>aberto</strong> quanto à alocação de tratamento (participantes e cuidadores sabem qual tratamento está sendo administrado), mas com <strong>avaliação de resultados cega</strong> (os avaliadores que medem os desfechos primários não sabem a qual grupo cada participante pertence). Esta abordagem é necessária porque: (1) as intervenções comportamentais (massagem, posicionamento, coaching) não podem ser ocultadas; (2) os medicamentos exigem ajuste clínico baseado em resposta individual; (3) razões éticas impedem o uso de placebo para intervenções conhecidamente eficazes em população vulnerável. O cegamento do avaliador garante rigor científico e minimiza viés de detecção.
-          </div>
+      <h3>Sítios de Recrutamento (Parcerias Buscadas)</h3>
+      <p>Instituições em Santa Catarina com acesso a pessoas com deficiência intelectual:</p>
+      <ul>
+        <li>Hospitais universitários (UFSC, FURB)</li>
+        <li>Unidades SUS (centros de saúde especializados, ESF)</li>
+        <li>Clínicas privadas de odontologia domiciliar</li>
+        <li>Centros de referência em deficiência intelectual</li>
+        <li>Instituições de longa permanência (asilos, residências)</li>
+      </ul>
+    </section>
 
-          <table>
-            <thead>
-              <tr><th>Grupo</th><th>Farmacológico</th><th>Não-farmacológico</th><th>Finalidade</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>A</td>
-                <td>Ibuprofeno ajustado</td>
-                <td>Crioterapia 4 °C/10 min + Massagem orofacial 5 min</td>
-                <td>Testar FANS + protocolo ativo</td>
-              </tr>
-              <tr>
-                <td>B</td>
-                <td>Paracetamol ajustado</td>
-                <td>Crioterapia 4 °C/10 min + Massagem orofacial 5 min</td>
-                <td>Testar analgésico alternativo + protocolo ativo</td>
-              </tr>
-              <tr>
-                <td>C</td>
-                <td>Paracetamol ajustado</td>
-                <td>Crioterapia neutra 25–28 °C/10 min + Contato manual não terapêutico 5 min (sham)</td>
-                <td>Controle ativo e de atenção</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <p><strong>Desfecho primário:</strong> % de redução do escore de dor comportamental T0–T48 h (alvo ≥30%)<br>
-          <strong>Desfechos secundários:</strong> Eventos adversos, VAS relato de cuidador, CGI-C, compliance, tempo médio de aplicação<br>
-          <strong>Cronograma:</strong> T0 (baseline) + T24–48 h (follow-up); opcional: T7 e T30 para responsividade</p>
-        </article>
+    <!-- SEÇÃO 11: PARCERIAS -->
+    <section class="card" id="parcerias">
+      <h2>11. Parcerias Institucionais</h2>
+
+      <div class="partnership-box">
+        <h4>🤝 Estamos Procurando Parceiros!</h4>
+        <p>Esta Parte II está aberta a colaborações com instituições em Santa Catarina. Se você trabalha em hospital, universidade, SUS ou clínica de odontologia domiciliar, podemos:</p>
       </div>
 
-      <div class="wrap stack">
-        <article class="card">
-          <h2>Metodologia Operacional</h2>
-          <h3>Randomização e Cegamento</h3>
-          <ul>
-            <li>Gerada via sistema web centralizado</li>
-            <li>Alocação do tratamento <strong>aberta</strong> ao participante e cuidador (necessário para ajuste clínico e intervenções comportamentais)</li>
-            <li><strong>Avaliadores de vídeo cegos</strong> ao grupo — não sabem qual tratamento foi administrado ao assistir aos registros de dor</li>
-            <li><strong>Analistas de dados cegos</strong> ao grupo — análise estatística sem conhecimento de alocação</li>
-          </ul>
-          <h3>Formação e Fidelity</h3>
-          <ul>
-            <li>Workshop de 4 h: teoria + prática em vídeos</li>
-            <li>Check-lists de procedimentos e auditoria de 20% das sessões</li>
-            <li>Meta de ICC ≥0.80 na dupla avaliação (inter-avaliador)</li>
-          </ul>
-          <h3>Avaliação da Dor</h3>
-          <ul>
-            <li>Crianças: DDQ-B</li>
-            <li>Adultos não verbais: CPS-NAID + NCAPC</li>
-            <li>Versões PT-BR validadas</li>
-          </ul>
-          <h3>Segurança e Monitoramento</h3>
-          <ul>
-            <li>DSMB independente revisa após 25 participantes</li>
-            <li>Critérios de stop: eventos adversos graves, ineficácia ou falta de benefício</li>
-            <li>Notificação imediata de todos os AE</li>
-          </ul>
-          <h3>Análise Estatística</h3>
-          <ul>
-            <li>Modelos linear mixed-effects para medidas repetidas</li>
-            <li>Intention-to-treat + imputação múltipla</li>
-            <li>Análise de sensibilidade e validação do MCID</li>
-          </ul>
-        </article>
+      <h3>O que oferecemos como parceiros</h3>
+      <ul>
+        <li><strong>Coautoria:</strong> Todos os parceiros listados como autores em artigos publicados</li>
+        <li><strong>Acesso antecipado:</strong> Resultados preliminares antes da publicação</li>
+        <li><strong>Capacitação:</strong> Workshop gratuito de 4h para sua equipe</li>
+        <li><strong>Suporte:</strong> Protocolo, formulários, templates prontos para uso</li>
+        <li><strong>Oportunidades de financiamento:</strong> Possibilidade de CNPq, FINEP, fundações privadas</li>
+      </ul>
+
+      <h3>O que pedimos aos parceiros</h3>
+      <ul>
+        <li>Infraestrutura básica: espaço para avaliações, equipamento de contato (telefone/WhatsApp)</li>
+        <li>Recrutamento: ajudar a identificar e convidar participantes elegíveis</li>
+        <li>Implementação: seguir protocolo rigorosamente, treinar equipe</li>
+        <li>Documentação: preencher formulários completos, vídeos de qualidade</li>
+        <li>Disponibilidade: envio de dados consolidados mensalmente ao coordenador central</li>
+      </ul>
+
+      <div class="success-box">
+        <h4>✓ Exemplos de Benefícios Esperados</h4>
+        <ul>
+          <li>Fortalecimento de prática inclusiva em sua instituição</li>
+          <li>Publicação conjunta em periódicos de impacto (podendo abrir portas para financiamento futuro)</li>
+          <li>Rede de colegas pesquisadores em tópico de relevância</li>
+          <li>Integração ao movimento global de pesquisa inclusiva em populações vulneráveis</li>
+        </ul>
       </div>
 
-      <div class="wrap stack">
-        <article class="card">
-          <h2>Métricas de Sucesso</h2>
-          <table>
-            <thead>
-              <tr><th>Métrica</th><th>Descrição</th><th>Alvo</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Fidelidade (ICC/Kappa)</td><td>Concordância inter-avaliadores</td><td>≥0.80</td></tr>
-              <tr><td>Tempo Operacional</td><td>Duração média sessão (T0 + follow-up)</td><td>15–30 min</td></tr>
-              <tr><td>Sensibilidade/Especificidade</td><td>Acurácia vs. diagnóstico por especialista</td><td>≥80%</td></tr>
-              <tr><td>Satisfação de Cuidadores</td><td>Likert 1–5 após T24–48 h</td><td>≥4/5 (≥80%)</td></tr>
-              <tr><td>Eventos Adversos (AE)</td><td>Incidência e severidade</td><td>Conforme proposto</td></tr>
-              <tr><td>Compliance</td><td>Percentual de aplicações completas</td><td>≥90%</td></tr>
-            </tbody>
-          </table>
-        </article>
+      <h3>Contato para Parcerias</h3>
+      <p>
+        <strong>Dr. Paolo Bruno Squadrani</strong><br>
+        📱 WhatsApp: (47) 98916-3649<br>
+        ✉️ E-mail: dr.paolo.bruno.squadrani@gmail.com<br>
+        🌐 Website: www.sorrisodomiciliar.com.br
+      </p>
+    </section>
+
+    <!-- SEÇÃO 12: DOWNLOADS -->
+    <section class="card" id="downloads">
+      <h2>12. Downloads e Materiais</h2>
+
+      <div class="download-section">
+        <h3>📋 Formulários Operacionais</h3>
+        <a class="download-btn" href="/downloads/protocolo-piloto-completo.pdf">Protocolo Piloto Completo (PDF)</a>
+        <a class="download-btn" href="/downloads/cas-inclusao-exclusao.pdf">Checklist Inclusão/Exclusão</a>
+        <a class="download-btn" href="/downloads/log-eventos-adversos.xlsx">Log de Eventos Adversos (Excel)</a>
+        <a class="download-btn" href="/downloads/formulario-randomizacao.pdf">Formulário de Randomização</a>
       </div>
 
-      <div class="wrap stack">
-        <article class="card">
-          <h2>Parcerias e Colaborações</h2>
-          <p>Para viabilizar o piloto, buscamos instituições em Santa Catarina (hospitais, universidades, unidades SUS e clínicas privadas) que queiram:</p>
-          <ul>
-            <li>Co-recrutar participantes e oferecer infraestrutura</li>
-            <li>Co-ministrar workshops de formação</li>
-            <li>Co-analisar dados e co-assinar publicações</li>
-          </ul>
-          <section class="riquadro">
-            <h3>Benefícios da parceria</h3>
-            <ul>
-              <li>Acesso antecipado a resultados preliminares</li>
-              <li>Coautoria em artigos e relatórios</li>
-              <li>Fortalecimento de práticas inclusivas no SUS</li>
-              <li>Possibilidade de financiamento conjunto (CNPq, FINEP)</li>
-            </ul>
-          </section>
-          <p><strong>Para discutir colaborações:</strong><br>
-          Dr. Paolo Bruno Squadrani<br>
-          📱 WhatsApp (47) 98916-3649<br>
-          ✉️ dr.paolo.bruno.squadrani@gmail.com</p>
-        </article>
+      <div class="download-section">
+        <h3>⚖️ Consentimento e Ética</h3>
+        <a class="download-btn" href="/downloads/tcle-acessivel-piloto.docx">TCLE Acessível (Word)</a>
+        <a class="download-btn" href="/downloads/termo-assentimento.pdf">Termo de Assentimento</a>
+        <a class="download-btn" href="/downloads/termo-consentimento-video.pdf">Consentimento para Vídeos</a>
+        <a class="download-btn" href="/downloads/checklist-lgpd-piloto.pdf">Checklist LGPD</a>
       </div>
 
-      <div class="wrap stack">
-        <article class="card">
-          <h2>Próximos Passos</h2>
-          <ol>
-            <li>Aprovação ética final e registro do protocolo</li>
-            <li>Recrutamento inicial de 20 participantes para fase de piloto-1</li>
-            <li>Implementação completa e análise interina após 8–10 semanas</li>
-            <li>Ajustes e preparação da Parte III (trial multicêntrico completo)</li>
-          </ol>
-          <div class="alert alert-warning">
-            <strong>Esta fase piloto é fundamental</strong> para garantir que o protocolo seja robusto, seguro e escalável, servindo de base para o estudo experimental completo.
-          </div>
-        </article>
+      <div class="download-section">
+        <h3>🎓 Materiais de Capacitação</h3>
+        <a class="download-btn" href="/downloads/manual-avaliadores-piloto.pdf">Manual para Avaliadores (4h)</a>
+        <a class="download-btn" href="/downloads/tecnica-massagem-orofacial.pdf">Técnica: Massagem Orofacial</a>
+        <a class="download-btn" href="/downloads/tecnica-crioterapia.pdf">Técnica: Crioterapia Ativa vs. Sham</a>
+        <a class="download-btn" href="/downloads/casos-calibracao-video.zip">8 Casos Calibração (para ICC)</a>
       </div>
 
-      <div class="wrap">
-        <article class="card">
-          <h2>Materiais para Download</h2>
-          <p>Baixe o rascunho proposto em PDF para apresentação institucional, incluindo formulários, TCLE e log de métricas.</p>
-          <div class="cta-bar">
-            <a class="btn" href="/blog/Rascunho_Validacao_Campo_PDF.pdf" download>Rascunho Proposto (PDF)</a>
-            <a class="btn" href="/blog/TCLE_Estudo_Piloto.pdf" download>TCLE Estudo Piloto (PDF)</a>
-            <a class="btn" href="/blog/Log_Metricas.xlsx" download>Log Métricas (Excel)</a>
-            <a class="btn" href="/blog/Questionario_Feedback.pdf" download>Questionário Feedback (PDF)</a>
-            <a class="btn" href="/blog/Guia_Parcerias.pdf" download>Guia Parcerias (PDF)</a>
-          </div>
-        </article>
+      <div class="download-section">
+        <h3>📊 Avaliação e Follow-up</h3>
+        <a class="download-btn" href="/downloads/questionario-satisfacao-cuidador.pdf">Questionário Satisfação (Likert 1–5)</a>
+        <a class="download-btn" href="/downloads/questio-funcao-alimentacao-sono.pdf">Questionário Função (Alimentação, Sono)</a>
+        <a class="download-btn" href="/downloads/log-dados-centralizados.xlsx">Log Dados Centralizados (Excel)</a>
       </div>
 
-      <div class="wrap">
-        <aside class="card">
-          <h2>Glossário de Siglas</h2>
-          <dl>
-              <dt><abbr title="Eventos Adversos">AE</abbr></dt>
-              <dd>Eventos Adversos</dd>
-              
-              <dt><abbr title="Comitê de Ética em Pesquisa">CEP</abbr></dt>
-              <dd>Comitê de Ética em Pesquisa</dd>
-              
-              <dt><abbr title="Clinical Global Impression – Change">CGI-C</abbr></dt>
-              <dd>Clinical Global Impression – Change</dd>
-              
-              <dt><abbr title="Conselho Nacional de Ética em Pesquisa">CONEP</abbr></dt>
-              <dd>Conselho Nacional de Ética em Pesquisa</dd>
-              
-              <dt><abbr title="Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities">CPS-NAID</abbr></dt>
-              <dd>Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities</dd>
-              
-              <dt><abbr title="Dental Discomfort Questionnaire (versão brasileira)">DDQ-B</abbr></dt>
-              <dd>Dental Discomfort Questionnaire (versão brasileira)</dd>
-              
-              <dt><abbr title="Data Safety Monitoring Board">DSMB</abbr></dt>
-              <dd>Data Safety Monitoring Board</dd>
-              
-              <dt><abbr title="Anti-inflamatórios Não Esteroides">FANS</abbr></dt>
-              <dd>Anti-inflamatórios Não Esteroides</dd>
-              
-              <dt><abbr title="Coeficiente de Correlação Intraclasse">ICC</abbr></dt>
-              <dd>Coeficiente de Correlação Intraclasse</dd>
-              
-              <dt><abbr title="Deficiência Intelectual">ID</abbr></dt>
-              <dd>Deficiência Intelectual</dd>
-              
-              <dt><abbr title="Lei Geral de Proteção de Dados">LGPD</abbr></dt>
-              <dd>Lei Geral de Proteção de Dados</dd>
-              
-              <dt><abbr title="Minimally Clinically Important Difference">MCID</abbr></dt>
-              <dd>Minimally Clinically Important Difference</dd>
-              
-              <dt><abbr title="Non-Communicating Adult Pain Checklist">NCAPC</abbr></dt>
-              <dd>Non-Communicating Adult Pain Checklist</dd>
-              
-              <dt><abbr title="Política Nacional de Atenção Integral à Saúde Bucal">PNAIS</abbr></dt>
-              <dd>Política Nacional de Atenção Integral à Saúde Bucal</dd>
-              
-              <dt><abbr title="Ensaio Clínico Randomizado">RCT</abbr></dt>
-              <dd>Ensaio Clínico Randomizado</dd>
-              
-              <dt><abbr title="Sistema Único de Saúde">SUS</abbr></dt>
-              <dd>Sistema Único de Saúde</dd>
-              
-              <dt><abbr title="Visual Analogue Scale">VAS</abbr></dt>
-              <dd>Visual Analogue Scale</dd>
-          </dl>
-        </aside>
+      <div class="download-section">
+        <h3>🤝 Informações para Parceiros</h3>
+        <a class="download-btn" href="/downloads/guia-parceria-institucional.pdf">Guia Parcerias</a>
+        <a class="download-btn" href="/downloads/modelo-acordo-colaboracao.docx">Modelo Acordo de Colaboração</a>
+        <a class="download-btn" href="/downloads/apresentacao-piloto.pptx">Apresentação Piloto (PowerPoint)</a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 13: REFERÊNCIAS -->
+    <section class="card" id="referencias">
+      <h2>13. Referências Bibliográficas</h2>
+      <ol>
+        <li>Breau LM, McGrath PJ, Camfield CS, Finley GA. Pain management in the most vulnerable intellectual disability: a review. <em>Pain Therapy</em>. 2023;12(1):45–62.</li>
+        <li>Daher A, Versloot J, de Lima-Navarro M, et al. Validation of the Brazilian version of the Dental Discomfort Questionnaire. <em>Health Qual Life Outcomes</em>. 2014;12:30.</li>
+        <li>Dworkin RH, Turk DC, Wyrwich KW, et al. Interpreting the clinical importance of treatment outcomes in chronic pain clinical trials: IMMPACT recommendations. <em>J Pain</em>. 2008;9(2):105–121.</li>
+        <li>Lotan M, Moe-Nilssen R, Ljunggren AE, Strand LI. Measurement properties of the Non-Communicating Adult Pain Checklist. <em>Res Dev Disabil</em>. 2010;31(4):809–816.</li>
+        <li>Pennings EJ, van der Meer HA, de Leeuw R, Lobbezoo F. Pharmacological therapy in the management of temporomandibular disorders and orofacial pain: systematic review and meta-analysis. <em>BMC Oral Health</em>. 2024;24:41.</li>
+        <li>Resolução CNS nº 510/2016. Diretrizes e normas regulamentadoras de pesquisa com seres humanos.</li>
+        <li>Lei Federal nº 13.709/2018. Lei Geral de Proteção de Dados (LGPD).</li>
+        <li>Wilke WS, Mackler BF, Genovese MC. OsteoArthritis and musculoskeletal pain syndromes: therapeutic implications of endogenous glucocorticoid insufficiency. <em>J Rheumatol Suppl</em>. 1993;37:60–66.</li>
+      </ol>
+    </section>
+
+    <!-- CONCLUSÃO -->
+    <section class="card">
+      <h2>Conclusão & Próximos Passos</h2>
+      <p>A Parte II (Estudo Piloto Randomizado) valida a Proposta Teórica (Parte I) em amostra controlada, testando viabilidade operacional e eficácia preliminar de estratégia multimodal.</p>
+      
+      <div class="success-box">
+        <h4>✓ Resultado Esperado</h4>
+        <p>Demonstração de que protocolo estruturado é: (1) factível de implementar; (2) seguro; (3) capaz de gerar mudanças clinicamente significativas em dor orofacial. Estes resultados informarão design da Parte III (RCT multicêntrico completo, N≤200, incluindo deficiência grave com safety-gating).</p>
       </div>
 
-      <div class="wrap">
-        <article class="card">
-          <h2>Bibliografia</h2>
-          <ol>
-            <li>Burkitt C, Breau LM, McGrath PJ, Camfield CS, Finley GA. Chronic Pain Scale for Nonverbal Adults with Intellectual Disabilities (CPS-NAID). Centre for Pediatric Pain Research; 2009.</li>
-            <li>Daher A, Versloot J, et al. Validation of the Brazilian version of the Dental Discomfort Questionnaire (DDQ-B). <em>Health Qual Life Outcomes</em>. 2014;12:30.</li>
-            <li>Dworkin RH, Turk DC, Wyrwich KW, et al. Interpreting the clinical importance of treatment outcomes in chronic pain clinical trials: IMMPACT recommendations. <em>J Pain</em>. 2008;9(2):105–121.</li>
-            <li>Lotan M, Moe-Nilssen R, Ljunggren AE, Strand LI. Measurement properties of the Non-Communicating Adult Pain Checklist. <em>Res Dev Disabil</em>. 2010;31(4):809–816.</li>
-            <li>Resolução CNS 466/2012. Diretrizes e normas regulamentadoras de pesquisas envolvendo seres humanos. Conselho Nacional de Saúde.</li>
-          </ol>
-        </article>
-      </div>
+      <p><strong>Sem conflitos de interesse. Aprovações éticas (CEP/CONEP) e conformidade LGPD em andamento.</strong></p>
+    </section>
 
-    </article>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Dr. Paolo Bruno Squadrani - Todos os direitos reservados</p>
