@@ -80,10 +80,29 @@
     footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
 
     /* Styles para Análise Crítica */
-    .critical-section{border-left:4px solid #d32f2f;background:#fff3e0;}
-    .critical-section h2{color:#d32f2f}
+    .critical-section{border-left:4px solid #d32f2f;background:#fff3e0;padding:20px;border-radius:8px;margin:16px 0}
+    .critical-section h2{color:#d32f2f;margin-top:0}
     .critical-section h3{margin-top:20px;margin-bottom:12px}
     .critical-section h4{margin-top:12px;font-size:16px;color:#333}
+
+    /* NEW: Styles for Appendices Section */
+    .appendices-section{border-left:4px solid #7c0080;background:#f3e5f5;padding:20px;border-radius:8px;margin:16px 0}
+    .appendices-section h2{color:#7c0080;margin-top:0}
+    .appendices-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0}
+    .appendix-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:16px;border-left:4px solid #7c0080}
+    .appendix-card h4{margin-top:0;color:#7c0080;font-size:16px}
+    .appendix-label{font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#7c0080;font-weight:600;margin-bottom:6px;display:block}
+    .appendix-card p{font-size:14px;color:var(--muted);margin:8px 0}
+    .appendix-card .appendix-status{font-size:12px;font-weight:600;color:#2e7d32}
+    .appendix-download-btn{display:inline-block;background:#7c0080;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;font-size:13px;margin-top:8px}
+    .appendix-download-btn:hover{background:#5a0059}
+    .appendix-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px}
+    .appendix-table th,.appendix-table td{border:1px solid var(--border);padding:10px;text-align:left}
+    .appendix-table th{background:#f5f5f5;font-weight:600}
+
+    @media (max-width:768px){
+      .appendices-grid{grid-template-columns:1fr}
+    }
   </style>
 
   <!-- Structured data: Breadcrumb -->
@@ -111,7 +130,7 @@
       "name":"Dr. Paolo Bruno Squadrani"
     },
     "datePublished":"2025-10-10",
-    "dateModified":"2025-10-30",
+    "dateModified":"2025-10-31",
     "url":"https://www.sorrisodomiciliar.com.br/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/",
     "keywords":"intellectual disability, orofacial pain, multimodal analgesia, pain assessment, randomized controlled trial, inclusive research, safety-gated, pharmacokinetics"
   }
@@ -165,7 +184,7 @@
       </div>
     </section>
 
-    <!-- ANÁLISE CRÍTICA METODOLÓGICA (INSERIDA AQUI) -->
+    <!-- ANÁLISE CRÍTICA METODOLÓGICA -->
     <section class="card critical-section" aria-label="Análise crítica metodológica">
       <h2>⚠️ Análise Crítica: Limitações Metodológicas e Estratégias de Mitigação</h2>
       
@@ -264,6 +283,137 @@
         → Leia a Análise Crítica Completa em artigo dedicado
       </a>
     </p>
+
+    <!-- NEW: APPENDICES SECTION -->
+    <section class="card appendices-section" aria-label="7 Appendices Metodológicas">
+      <h2>📚 Os 7 Appendices: Rigor Metodológico Completo</h2>
+      
+      <p>Este protocolo inclui <strong>7 appendices metodológicas</strong> pronto-para-implementação e publicação. Cada appendix é um documento standalone que operacionaliza um aspecto crítico do protocolo.</p>
+
+      <table class="appendix-table">
+        <thead>
+          <tr>
+            <th>Appendix</th>
+            <th>Título</th>
+            <th>Usado em</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A</strong></td>
+            <td>Pre-Trial Pilots (Phase 0)</td>
+            <td>Parte II (before randomization)</td>
+            <td>✓ Pronto</td>
+          </tr>
+          <tr>
+            <td><strong>B</strong></td>
+            <td>DSMB Charter</td>
+            <td>Parte II + III (governance)</td>
+            <td>✓ Pronto</td>
+          </tr>
+          <tr>
+            <td><strong>C</strong></td>
+            <td>PAR Committee Charter</td>
+            <td>Parte II + III (authentic leadership)</td>
+            <td>✓ Pronto</td>
+          </tr>
+          <tr>
+            <td><strong>D</strong></td>
+            <td>Statistical Analysis Plan</td>
+            <td>Parte II + III (pre-registration)</td>
+            <td>✓ Pronto</td>
+          </tr>
+          <tr>
+            <td><strong>E</strong></td>
+            <td>Plain Language Consent</td>
+            <td>Parte II + III (ethical)</td>
+            <td>✓ Pronto</td>
+          </tr>
+          <tr>
+            <td><strong>F</strong></td>
+            <td>Treatment Fidelity Checklists</td>
+            <td>Parte II + III (operational)</td>
+            <td>✓ Pronto</td>
+          </tr>
+          <tr>
+            <td><strong>G</strong></td>
+            <td>Behavioral Withdrawal Coding</td>
+            <td>Parte II + III (safety)</td>
+            <td>✓ Pronto</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="appendices-grid">
+        <!-- Appendix A -->
+        <div class="appendix-card">
+          <span class="appendix-label">📋 Appendix A</span>
+          <h4>Pre-Trial Pilots (Phase 0)</h4>
+          <p><strong>Conteúdo:</strong> NCCPC-R responsiveness validation, epidemiological screening, telemedicine feasibility</p>
+          <p class="appendix-status">✓ Publication-Ready</p>
+          <a class="appendix-download-btn" href="/downloads/Appendix-A-Pilot-Studies.md" download>Download PDF →</a>
+        </div>
+
+        <!-- Appendix B -->
+        <div class="appendix-card">
+          <span class="appendix-label">🛡️ Appendix B</span>
+          <h4>DSMB Charter</h4>
+          <p><strong>Conteúdo:</strong> Independent safety oversight, 5 voting members, unilateral halt authority, stopping rules pre-specified</p>
+          <p class="appendix-status">✓ Publication-Ready</p>
+          <a class="appendix-download-btn" href="/downloads/Appendix-B-DSMB-Charter.md" download>Download PDF →</a>
+        </div>
+
+        <!-- Appendix C -->
+        <div class="appendix-card">
+          <span class="appendix-label">♿ Appendix C</span>
+          <h4>PAR Committee Charter</h4>
+          <p><strong>Conteúdo:</strong> Authentic self-advocate leadership, voting on protocols, veto power, compensation</p>
+          <p class="appendix-status">✓ Publication-Ready</p>
+          <a class="appendix-download-btn" href="/downloads/Appendix-C-PAR-Committee.md" download>Download PDF →</a>
+        </div>
+
+        <!-- Appendix D -->
+        <div class="appendix-card">
+          <span class="appendix-label">📊 Appendix D</span>
+          <h4>Statistical Analysis Plan</h4>
+          <p><strong>Conteúdo:</strong> Pre-registered SAP, 7 sensitivity analyses, missing data, stopping rules, no p-hacking</p>
+          <p class="appendix-status">✓ Publication-Ready</p>
+          <a class="appendix-download-btn" href="/downloads/Appendix-D-Statistical-Analysis.md" download>Download PDF →</a>
+        </div>
+
+        <!-- Appendix E -->
+        <div class="appendix-card">
+          <span class="appendix-label">📋 Appendix E</span>
+          <h4>Plain Language Consent</h4>
+          <p><strong>Conteúdo:</strong> 6th–8th grade reading level, accessible formats (print, audio, pictorial, sign language)</p>
+          <p class="appendix-status">✓ Publication-Ready</p>
+          <a class="appendix-download-btn" href="/downloads/Appendix-E-Consent-Form.md" download>Download PDF →</a>
+        </div>
+
+        <!-- Appendix F -->
+        <div class="appendix-card">
+          <span class="appendix-label">✓ Appendix F</span>
+          <h4>Treatment Fidelity Checklists</h4>
+          <p><strong>Conteúdo:</strong> 4 behavioral components, 0–2 scoring, κ≥0.80 target, 3-tier caregiver training</p>
+          <p class="appendix-status">✓ Publication-Ready</p>
+          <a class="appendix-download-btn" href="/downloads/Appendix-F-Fidelity-Training.md" download>Download PDF →</a>
+        </div>
+
+        <!-- Appendix G -->
+        <div class="appendix-card">
+          <span class="appendix-label">🔍 Appendix G</span>
+          <h4>Behavioral Withdrawal Coding</h4>
+          <p><strong>Conteúdo:</strong> Five-window temporal attribution, objective criteria, BWAS adjudication, 3 case studies</p>
+          <p class="appendix-status">✓ Publication-Ready</p>
+          <a class="appendix-download-btn" href="/downloads/Appendix-G-Withdrawal-Coding.md" download>Download PDF →</a>
+        </div>
+      </div>
+
+      <p style="margin-top:20px;font-size:14px;color:var(--muted);">
+        <strong>Todos os 7 Appendices estão prontos para download individual acima.</strong> Para usar em publicação ou implementação, faça download e adapte conforme necessário para seu contexto local.
+      </p>
+    </section>
 
     <!-- Lista das três partes do estudo -->
     <section class="post-list" aria-label="Partes do estudo">
