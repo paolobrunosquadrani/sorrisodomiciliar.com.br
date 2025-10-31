@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Estudo Multipartes: Orofacial Pain Management in Intellectual Disability | Sorriso Domiciliar</title>
-  <meta name="description" content="Estudo estruturado em 3 partes: Parte I (Proposta Teórica), Parte II (Estudo Piloto N≤75), Parte III (RCT Multicêntrico N=150–200). Com 7 appendices metodológicas (Pre-trials, DSMB, PAR Committee, SAP, Consent, Fidelity, Withdrawal Coding).">
+  <meta name="description" content="Estudo estruturado em 3 partes: Parte I (Proposta Teórica), Parte II (Estudo Piloto N≤75), Parte III (RCT Multicêntrico N=150–200). Com 7 appendices metodológicas (Pre-trials, DSMB, PAR Committee, SAP, Consent, Fidelity, Withdrawal Coding). + Análise Crítica com 7 limitações estruturadas.">
   <meta name="author" content="Dr. Paolo Bruno Squadrani">
   <link rel="canonical" href="https://www.sorrisodomiciliar.com.br/estudo-multipartes/">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <meta name="color-scheme" content="only light">
   <link rel="stylesheet" href="/style.css">
   <style>
-    :root{color-scheme:light;--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--accent:#0d47a1;--success:#2e7d32;--warning:#f57c00;--danger:#c62828;--maxw:1020px}
+    :root{color-scheme:light;--text:#1a1a1a;--muted:#5f6b7a;--border:#e5e7eb;--accent:#0d47a1;--success:#2e7d32;--warning:#f57c00;--danger:#c62828;--critical:#d32f2f;--maxw:1020px}
     html,body{height:100%;margin:0}body{background:#f7f9fb;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.6}
     .container{max-width:var(--maxw);margin:0 auto;padding:20px}
     .skip{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.skip:focus{left:8px;top:8px;width:auto;height:auto;background:#fff;padding:8px;border:1px solid var(--border);border-radius:6px}
@@ -24,19 +24,18 @@
     .hero h1{border:none;margin:0 0 16px}.hero .meta{color:var(--muted);font-size:14px;margin:12px 0}
     .study-phase{background:#fff;border-left:6px solid var(--accent);border-radius:8px;padding:20px;margin:20px 0;transition:all 0.3s ease}
     .study-phase h3{margin-top:0;color:var(--accent)}
-    .study-phase.phase-1{border-left-color:#2196F3}
-    .study-phase.phase-1 h3{color:#2196F3}
-    .study-phase.phase-2{border-left-color:#FF9800}
-    .study-phase.phase-2 h3{color:#FF9800}
-    .study-phase.phase-3{border-left-color:#4CAF50}
-    .study-phase.phase-3 h3{color:#4CAF50}
+    .study-phase.phase-1{border-left-color:#2196F3}.study-phase.phase-1 h3{color:#2196F3}
+    .study-phase.phase-2{border-left-color:#FF9800}.study-phase.phase-2 h3{color:#FF9800}
+    .study-phase.phase-3{border-left-color:#4CAF50}.study-phase.phase-3 h3{color:#4CAF50}
     .study-phase:hover{box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+    .critical-appraisal{background:#fff;border-left:6px solid var(--critical);border-radius:8px;padding:20px;margin:20px 0;transition:all 0.3s ease}
+    .critical-appraisal h3{margin-top:0;color:var(--critical)}
+    .critical-appraisal:hover{box-shadow:0 2px 8px rgba(211,47,47,0.15)}
     .flow-diagram{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:24px 0;align-items:stretch}
     .flow-box{background:linear-gradient(135deg,#f5f5f5 0%,#e8e8e8 100%);border:2px solid var(--border);border-radius:8px;padding:16px;text-align:center;display:flex;flex-direction:column;justify-content:center}
-    .flow-box h4{margin:0 0 8px;color:var(--accent)}
-    .flow-box p{font-size:13px;color:var(--muted);margin:0}
+    .flow-box h4{margin:0 0 8px;color:var(--accent)}.flow-box p{font-size:13px;color:var(--muted);margin:0}
     .flow-arrow{display:none;align-items:center;justify-content:center;font-size:24px;color:var(--accent)}.flow-arrow::before{content:"↓"}
-    @media (min-width:900px){.flow-diagram{grid-template-columns:repeat(3,1fr)}.flow-arrow{display:flex}}
+    @media (min-width:900px){.flow-diagram{grid-template-columns:repeat(4,1fr)}.flow-arrow{display:flex}}
     .appendix-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0}
     .appendix-card{background:#f3e5f5;border-left:4px solid #7c0080;border-radius:8px;padding:16px}
     .appendix-card h4{margin-top:0;color:#7c0080}
@@ -57,7 +56,7 @@
     .comparison-table tbody tr:hover{background:#fafafa}
     footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center;border-top:1px solid var(--border)}
     .summary-box{background:#e3f2fd;border-left:4px solid var(--accent);padding:16px;border-radius:6px;margin:16px 0}
-    @media (max-width:768px){.timeline{flex-wrap:wrap}.timeline-item{flex-basis:calc(50% - 6px)}}
+    @media (max-width:768px){.timeline{flex-wrap:wrap}.timeline-item{flex-basis:calc(50% - 6px)}.flow-diagram{grid-template-columns:repeat(2,1fr)}}
   </style>
   <script type="application/ld+json">
   {
@@ -105,218 +104,220 @@
         <p><strong>Visão Geral:</strong> Programa de pesquisa estruturado em <strong>3 partes sequenciais</strong> (Teórica → Piloto → Definitivo), totalizando 7 appendices metodológicas que garantem rigor científico, governança autêntica (DSMB independente, PAR voting), e pesquisa inclusiva com populações vulneráveis.</p>
         
         <p><strong>Objetivo Global:</strong> Validar estratégia multimodal (farmacológica + comportamental) para manejo de dor orofacial em pessoas com deficiência intelectual, começando pela população leve-moderada (Parte II) e expandindo progressivamente para deficiência grave-profunda (Parte III com safety-gating).</p>
+
+        <p><strong>Diferenciais:</strong> <strong>Transparência radical</strong> sobre 7 limitações críticas + mitigações prospectivas + cronograma visual de validação (Parte II vs. III).</p>
       </div>
     </section>
 
-    <!-- ESTRUTURA DAS 3 PARTES -->
+    <!-- ESTRUTURA DAS 3 PARTES + ANÁLISE CRÍTICA -->
     <section class="card" id="estudo">
-      <h2>Estrutura Completa do Estudo: Três Partes Sequenciais</h2>
+      <h2>Estrutura Completa: 3 Partes + Análise Crítica Integrada</h2>
 
       <!-- PARTE I -->
       <div class="study-phase phase-1">
         <h3>📋 PARTE I: Proposta Teórica (✓ COMPLETADA)</h3>
-        
-        <p><strong>Duração:</strong> 2024–2025</p>
-        <p><strong>Objetivo:</strong> Revisão crítica da literatura; identificação de 5 lacunas de evidência; desenvolvimento de protocolos estruturados de avaliação.</p>
+        <p><strong>Duração:</strong> 2024–2025 | <strong>Objetivo:</strong> Revisão crítica da literatura; 5 lacunas identificadas; protocolos estruturados</p>
         
         <h4>Destaques:</h4>
         <ul>
           <li>Análise sistemática de 120+ estudos em dor orofacial e deficiência intelectual</li>
-          <li>Protocolo estruturado de avaliação em 3 fases: triagem (escalas validadas DDQ-B/CPS-NAID/NCAPC), anamnese dirigida, exame clínico gentil</li>
-          <li>Versões completa (15–30 min) e light (&lt;12 min) adaptadas a diferentes contextos</li>
-          <li>Critérios de mudança clinicamente significativa (10–20% mínima; ≥30% moderada; ≥50% substancial)</li>
-          <li>Integração de tecnologias emergentes (IA, wearables) como complementos opcionais</li>
+          <li>Protocolo estruturado de avaliação em 3 fases: triagem (DDQ-B/CPS-NAID/NCAPC), anamnese dirigida, exame clínico gentil</li>
+          <li>Versões completa (15–30 min) e light (&lt;12 min)</li>
+          <li>Critérios MCID: 10–20% mínima; ≥30% moderada; ≥50% substancial</li>
         </ul>
 
-        <h4>Acesso:</h4>
-        <p><a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/proposta-teorica">📖 Ler Parte I: Proposta Teórica Completa →</a></p>
+        <p><a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">📖 Ler Parte I Completa →</a></p>
       </div>
 
       <!-- PARTE II -->
       <div class="study-phase phase-2">
         <h3>🧪 PARTE II: Estudo Piloto Randomizado (ATUAL – N≤75)</h3>
-        
-        <p><strong>Duração:</strong> Out 2025 – Jun 2026 (8 meses)</p>
-        <p><strong>População:</strong> Deficiência Intelectual Leve-Moderada (QI 35–69)</p>
-        <p><strong>Design:</strong> Open-label com blinded outcome assessment (OLBOA)</p>
+        <p><strong>Duração:</strong> Out 2025–Jun 2026 (8 meses) | <strong>Design:</strong> Open-label OLBOA | <strong>População:</strong> DI Leve-Moderada (QI 35–69)</p>
         
         <h4>Objetivos Principais:</h4>
         <ul>
-          <li>✓ Validar viabilidade operacional (tempos, fidelity ICC≥0.80)</li>
-          <li>✓ Documentar segurança preliminar (&lt;5% eventos adversos graves)</li>
-          <li>✓ Demonstrar sinais de eficácia (≥70% resposta ≥30% redução dor)</li>
+          <li>✓ Viabilidade operacional (tempos, ICC≥0.80)</li>
+          <li>✓ Segurança preliminar (&lt;5% eventos adversos graves)</li>
+          <li>✓ Sinais de eficácia (≥70% resposta ≥30% dor)</li>
           <li>✓ Go/No-Go decision para Parte III</li>
         </ul>
 
-        <h4>Desenho Experimental:</h4>
+        <h4>3 Braços Paralelos (Decomposição Multimodal):</h4>
         <ul>
-          <li><strong>Braço A (N=25):</strong> Ibuprofeno 10 mg/kg + Crioterapia ativa 4°C + Massagem orofacial</li>
-          <li><strong>Braço B (N=25):</strong> Paracetamol 15 mg/kg + Crioterapia ativa 4°C + Massagem orofacial</li>
-          <li><strong>Braço C (N=25):</strong> Paracetamol 15 mg/kg + Crioterapia sham 25–28°C + Contato manual não-terapêutico</li>
+          <li><strong>A (N=25):</strong> Ibuprofeno 10 mg/kg + Crioterapia 4°C + Massagem orofacial</li>
+          <li><strong>B (N=25):</strong> Paracetamol 15 mg/kg + Crioterapia 4°C + Massagem orofacial</li>
+          <li><strong>C (N=25):</strong> Paracetamol 15 mg/kg + Crioterapia sham (25–28°C) + Contato manual sham</li>
         </ul>
 
-        <h4>Desfecho Primário:</h4>
-        <p>Proporção com ≥30% redução dor T0–T48h em ≥70% (A+B combinado) vs. &lt;40% em C</p>
-
-        <h4>Acesso:</h4>
-        <p><a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/">🧬 Ler Parte II: Estudo Piloto Completo →</a></p>
+        <p><a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/">🧬 Ler Parte II Completa →</a></p>
       </div>
 
       <!-- PARTE III -->
       <div class="study-phase phase-3">
         <h3>🎯 PARTE III: RCT Multicêntrico Definitivo (PLANEJADA – N=150–200)</h3>
+        <p><strong>Duração:</strong> Jul 2026–Jun 2028 (24 meses) | <strong>Design:</strong> Two-phase safety-gated multicenter | <strong>Sítios:</strong> 3–5 (Brasil + expansão)</p>
         
-        <p><strong>Duração:</strong> Jul 2026 – Jun 2028 (24 meses)</p>
-        <p><strong>Design:</strong> Two-phase safety-gated RCT multicêntrico</p>
+        <h4>Phase 1 (Leve-Moderada, N=150):</h4>
+        <ul>
+          <li>Validação definitiva em população accessible</li>
+          <li>Go/No-Go: Efficacy confirmed + Safety acceptable</li>
+        </ul>
+
+        <h4>Phase 2 (Severa-Profunda, N=90–120):</h4>
+        <ul>
+          <li>Expansão para deficiência intelectual grave com safety-gating rigoroso</li>
+          <li>DSMB oversight + interim analysis (N=50) + stop-for-futility rules</li>
+        </ul>
+
+        <p><strong>Status:</strong> Planejada. Depende de Go decision Parte II (jun 2026).</p>
+      </div>
+
+      <!-- ANÁLISE CRÍTICA & TRANSPARÊNCIA -->
+      <div class="critical-appraisal">
+        <h3>🔍 Análise Crítica & Transparência Metodológica</h3>
         
-        <h4>Phase 1 (Continuação de Parte II):</h4>
-        <ul>
-          <li><strong>População:</strong> Deficiência Intelectual Leve-Moderada (N=150)</li>
-          <li><strong>Objetivo:</strong> Validação definitiva em população accessible</li>
-          <li><strong>Go/No-Go Criteria:</strong> Efficacy confirmed + Safety profile acceptable → Proceed to Phase 2</li>
+        <p><strong>Princípio:</strong> Pesquisa responsável <strong>não esconde vulnerabilidades</strong> — as enfrenta estruturadamente e prospectivamente. Esta seção integrada documenta <strong>7 limitações críticas</strong> com:</p>
+        
+        <ul style="font-size:14px; margin:12px 0;">
+          <li>✓ Citações precisas em métodos estatísticos (Hu & Bentler 1999, Kline 2016, Enninga et al. 2023)</li>
+          <li>✓ Explicações didáticas (IRT vs. Mantel-Haenszel, SEM vs. 0.5 DP)</li>
+          <li>✓ Links diretos aos 7 Appendices implementacionais (A–G)</li>
+          <li>✓ Cronograma visual de testagem (Parte II vs. Parte III)</li>
         </ul>
 
-        <h4>Phase 2 (Expansão):</h4>
-        <ul>
-          <li><strong>População:</strong> Deficiência Intelectual Severa-Profunda (N=90–120)</li>
-          <li><strong>Enhanced Oversight:</strong> DSMB independent com stopping rules rigorosos</li>
-          <li><strong>Safety Gates:</strong> Interim analysis após N=50; stop-for-futility se <30% resposta</li>
-          <li><strong>Objetivo:</strong> Generalizar achados para spectrum completo de ID</li>
-        </ul>
+        <h4>7 Limitações Estruturadas:</h4>
+        <ol style="font-size:13px; margin:12px 0;">
+          <li><strong>Heterogeneidade Amostral:</strong> MGCFA validação (CFI≥0.95 Hu & Bentler 1999, RMSEA≤0.06)</li>
+          <li><strong>Vieses Seleção:</strong> Medicações, confundidores, stress ambiental — análise sensibilidade estratificada</li>
+          <li><strong>Confiabilidade ICC:</strong> ICC≥0.80 obrigatório antes randomização; auditorias trimestrais</li>
+          <li><strong>Pontos de Corte:</strong> Integração multimodal (escore + exame + relato); ROC local calibração</li>
+          <li><strong>Responsividade:</strong> MCID empírico anchor-based + distribution-based (SEM Stratford & Riddle 1996)</li>
+          <li><strong>Especificidade Orofacial:</strong> DDQ-B + NCAPC + exame ATM sistemático</li>
+          <li><strong>Viés Confirmação:</strong> Protocolos pré-especificados + cegueira parcial + dupla revisão 20%</li>
+        </ol>
 
-        <h4>Features Principais:</h4>
-        <ul>
-          <li>✓ 3–5 sítios multicêntricos (Brasil + possível expansão internacional)</li>
-          <li>✓ Powered para definitive efficacy conclusions em cada phase</li>
-          <li>✓ Full 7-appendix implementation (Pre-trials, DSMB, PAR, SAP, Consent, Fidelity, Withdrawal)</li>
-          <li>✓ Integration with health systems (SUS, private, NGO)</li>
-        </ul>
-
-        <h4>Status:</h4>
-        <p><em>Em fase de planejamento. Depende de Go decision de Parte II (esperado Jun 2026).</em></p>
+        <p style="margin-top:16px;"><strong>📊 Acesso Completo:</strong> <a href="/blog/analise-critica-protocolo-dor-orofacial-deficiencia-intelectual/">Leia Análise Crítica com Tabela Visual de Cronograma →</a></p>
       </div>
     </section>
 
-    <!-- FLOW DIAGRAM -->
+    <!-- FLOW DIAGRAM 4-COMPONENTES -->
     <section class="card">
-      <h2>Fluxo Temporal Integrado</h2>
+      <h2>Fluxo Integrado: 3 Partes + Análise Crítica</h2>
       
       <div class="flow-diagram">
         <div class="flow-box">
           <h4>Parte I</h4>
-          <p><strong>Teórica</strong><br>2024–2025<br>Literatura + Protocolos</p>
+          <p><strong>Teórica</strong><br>2024–2025<br>120+ estudos<br>5 lacunas</p>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-box">
+          <h4>Análise Crítica</h4>
+          <p><strong>Transparência</strong><br>31 out 2025<br>7 limitações<br>Mitigações</p>
         </div>
         <div class="flow-arrow"></div>
         <div class="flow-box">
           <h4>Parte II</h4>
-          <p><strong>Piloto</strong><br>Out 2025–Jun 2026<br>N≤75 (Leve-Moderada)</p>
+          <p><strong>Piloto</strong><br>Out 2025–Jun 2026<br>N=75<br>Leve-Moderada</p>
         </div>
         <div class="flow-arrow"></div>
         <div class="flow-box">
           <h4>Parte III</h4>
-          <p><strong>Definitiva</strong><br>Jul 2026–Jun 2028<br>N=150–200 (All ID Spectrum)</p>
+          <p><strong>Definitiva</strong><br>Jul 2026–Jun 2028<br>N=150–200<br>All Spectrum</p>
         </div>
       </div>
 
       <p style="text-align:center; color:var(--muted); font-size:13px; margin-top:20px;">
-        <strong>Go/No-Go Gates:</strong> Cada parte tem critérios específicos para prosseguimento. Decisões tomadas por DSMB independente.
+        <strong>Go/No-Go Gates + Limitações Testadas Prospectivamente:</strong> Cada transição depende de decisão DSMB + validação de mitigações.
       </p>
     </section>
 
     <!-- OS 7 APPENDICES -->
     <section class="card">
-      <h2>Os 7 Appendices: Rigor Metodológico Integrado</h2>
+      <h2>Os 7 Appendices: Implementação Operativa Estruturada</h2>
 
-      <p>Cada appendix é um documento standalone pronto para publicação, implementação operativa, ou regulatory submission. Distribuem-se entre as 3 partes do estudo:</p>
+      <p>Cada appendix é documento standalone pronto para publicação/regulatory submission. Implementam mitigações da Análise Crítica:</p>
 
       <div class="appendix-grid">
-        <!-- Appendix A -->
         <div class="appendix-card">
           <span class="appendix-label">📋 Appendix A</span>
           <h4>Pre-Trial Pilots (Phase 0)</h4>
-          <p><strong>Conteúdo:</strong> Validação NCCPC-R responsiveness, screening epidemiológico, telemedicine feasibility</p>
-          <p class="associated-phases"><strong>Usado em:</strong> Parte II (antes de randomizar)</p>
+          <p>Validação NCCPC-R responsiveness, screening epidemiológico, telemedicine feasibility</p>
+          <p class="associated-phases"><strong>Mitigações:</strong> Heterogeneidade, Responsividade</p>
           <p><strong>Timeline:</strong> 3–4 meses | <strong>Budget:</strong> $85–130K</p>
           <a href="/downloads/Appendix-A-Pilot-Studies.md">Download →</a>
         </div>
 
-        <!-- Appendix B -->
         <div class="appendix-card">
           <span class="appendix-label">🛡️ Appendix B</span>
           <h4>DSMB Charter</h4>
-          <p><strong>Conteúdo:</strong> Independent safety oversight, 5 voting members, unilateral halt authority, stopping rules</p>
-          <p class="associated-phases"><strong>Usado em:</strong> Parte II + III (continuous)</p>
-          <p><strong>Budget:</strong> $35–63K/ano</p>
+          <p>Independent oversight, 5 voting members, unilateral halt authority, stopping rules</p>
+          <p class="associated-phases"><strong>Mitigações:</strong> Viés Confirmação, Segurança</p>
+          <p><strong>Budget:</strong> $35–63K/ano | <strong>Usado:</strong> Parte II + III</p>
           <a href="/downloads/Appendix-B-DSMB-Charter.md">Download →</a>
         </div>
 
-        <!-- Appendix C -->
         <div class="appendix-card">
           <span class="appendix-label">♿ Appendix C</span>
           <h4>PAR Committee Charter</h4>
-          <p><strong>Conteúdo:</strong> Authentic self-advocate leadership, voting on protocols, veto power, $100–150/meeting honoraria</p>
-          <p class="associated-phases"><strong>Usado em:</strong> Parte II + III (governance)</p>
-          <p><strong>Budget:</strong> $9–14K/ano</p>
+          <p>Authentic self-advocate co-leadership, voting authority, veto power, honoraria</p>
+          <p class="associated-phases"><strong>Mitigações:</strong> Viés Seleção, Governança</p>
+          <p><strong>Budget:</strong> $9–14K/ano | <strong>Usado:</strong> Parte II + III</p>
           <a href="/downloads/Appendix-C-PAR-Committee.md">Download →</a>
         </div>
 
-        <!-- Appendix D -->
         <div class="appendix-card">
           <span class="appendix-label">📊 Appendix D</span>
-          <h4>Statistical Analysis Plan</h4>
-          <p><strong>Conteúdo:</strong> Pre-registered SAP, 7 sensitivity analyses, missing data handling, stopping rules</p>
-          <p class="associated-phases"><strong>Usado em:</strong> Parte II + III (analysis)</p>
-          <p><strong>Status:</strong> Locked ≥4 weeks pre-database-lock</p>
+          <h4>Statistical Analysis Plan (SAP)</h4>
+          <p>Pre-registered, 7 sensitivity analyses, missing data handling, stopping rules</p>
+          <p class="associated-phases"><strong>Mitigações:</strong> Responsividade, Pontos Corte, Viés</p>
+          <p><strong>Status:</strong> Locked ≥4 semanas pré-database-lock | <strong>Usado:</strong> Parte II + III</p>
           <a href="/downloads/Appendix-D-Statistical-Analysis.md">Download →</a>
         </div>
 
-        <!-- Appendix E -->
         <div class="appendix-card">
           <span class="appendix-label">📋 Appendix E</span>
           <h4>Plain Language Consent</h4>
-          <p><strong>Conteúdo:</strong> 6th–8th grade reading level, accessible formats (print, audio, pictorial, sign language)</p>
-          <p class="associated-phases"><strong>Usado em:</strong> Parte II + III (participant protection)</p>
-          <p><strong>Tested with:</strong> 5 people with ID</p>
+          <p>6th–8th grade reading, formatos acessíveis (print, áudio, pictorial, Libras)</p>
+          <p class="associated-phases"><strong>Mitigações:</strong> Proteção participante, Viés seleção</p>
+          <p><strong>Testado com:</strong> 5 pessoas com DI | <strong>Usado:</strong> Parte II + III</p>
           <a href="/downloads/Appendix-E-Consent-Form.md">Download →</a>
         </div>
 
-        <!-- Appendix F -->
         <div class="appendix-card">
           <span class="appendix-label">✓ Appendix F</span>
           <h4>Treatment Fidelity Checklists</h4>
-          <p><strong>Conteúdo:</strong> 4 behavioral components, 0–2 scoring, κ≥0.80 target, 3-tier caregiver training</p>
-          <p class="associated-phases"><strong>Usado em:</strong> Parte II + III (operational)</p>
-          <p><strong>Training:</strong> 12 hours total per interventionist</p>
+          <p>4 componentes comportamentais, scoring 0–2, κ≥0.80 target, 3-tier training</p>
+          <p class="associated-phases"><strong>Mitigações:</strong> Confiabilidade ICC, Implementação</p>
+          <p><strong>Training:</strong> 12h total per interventionist | <strong>Usado:</strong> Parte II + III</p>
           <a href="/downloads/Appendix-F-Fidelity-Training.md">Download →</a>
         </div>
 
-        <!-- Appendix G -->
         <div class="appendix-card">
           <span class="appendix-label">🔍 Appendix G</span>
           <h4>Behavioral Withdrawal Coding</h4>
-          <p><strong>Conteúdo:</strong> Five-window temporal attribution, objective criteria, BWAS adjudication, 3 case studies</p>
-          <p class="associated-phases"><strong>Usado em:</strong> Parte II + III (safety)</p>
-          <p><strong>Video coding:</strong> 100% dual coding, κ≥0.80</p>
+          <p>Five-window temporal attribution, objective criteria, BWAS adjudication, 3 case studies</p>
+          <p class="associated-phases"><strong>Mitigações:</strong> Segurança, Viés Confirmação</p>
+          <p><strong>Coding:</strong> 100% dual, κ≥0.80 | <strong>Usado:</strong> Parte II + III</p>
           <a href="/downloads/Appendix-G-Withdrawal-Coding.md">Download →</a>
         </div>
       </div>
 
       <div class="success-box">
-        <h4>✓ Todos os 7 Appendices Prontos para Download</h4>
-        <p><strong>Opção 1:</strong> <a class="download-btn" href="/downloads/All-Appendices-A-to-G.zip">Download Todos (ZIP)</a></p>
-        <p><strong>Opção 2:</strong> Acesse individualmente nos cards acima ↑</p>
+        <h4>✓ Download Completo</h4>
+        <p><a class="download-btn" href="/downloads/All-Appendices-A-to-G.zip">Download Todos (ZIP)</a> ou acesse individualmente acima.</p>
       </div>
     </section>
 
-    <!-- COMPARAÇÃO DAS PARTES -->
+    <!-- TABELA COMPARAÇÃO -->
     <section class="card">
-      <h2>Comparação: Parte I vs. Parte II vs. Parte III</h2>
+      <h2>Comparação: Parte I vs. Análise Crítica vs. Parte II vs. Parte III</h2>
 
       <table class="comparison-table">
         <thead>
           <tr>
             <th>Aspecto</th>
             <th>Parte I: Teórica</th>
+            <th>Análise Crítica</th>
             <th>Parte II: Piloto</th>
             <th>Parte III: Definitiva</th>
           </tr>
@@ -325,92 +326,81 @@
           <tr>
             <td><strong>Status</strong></td>
             <td>✓ Completada</td>
+            <td>✓ Publicada (31 out 2025)</td>
             <td>Atual (Out 2025–Jun 2026)</td>
             <td>Planejada (Jul 2026+)</td>
           </tr>
           <tr>
+            <td><strong>Foco</strong></td>
+            <td>Literatura + Gaps</td>
+            <td><strong>Limitações + Mitigações</strong></td>
+            <td>Viabilidade + Efficacy sinais</td>
+            <td>Definitiva + Generalização</td>
+          </tr>
+          <tr>
             <td><strong>Sample</strong></td>
-            <td>Revisão de literatura (120+ estudos)</td>
-            <td>N≤75 (1:1:1 randomização)</td>
-            <td>N=150–200 (two-phase safety-gated)</td>
+            <td>120+ estudos</td>
+            <td>—</td>
+            <td>N≤75 (1:1:1)</td>
+            <td>N=150–200 (safety-gated)</td>
           </tr>
           <tr>
             <td><strong>População</strong></td>
-            <td>Theoretical framework</td>
-            <td>ID Leve-Moderada (QI 35–69)</td>
-            <td>Phase 1: Leve-Moderada (N=150)<br>Phase 2: Severa-Profunda (N=90–120)</td>
-          </tr>
-          <tr>
-            <td><strong>Design</strong></td>
-            <td>Qualitative synthesis</td>
-            <td>Open-label OLBOA RCT</td>
-            <td>Blinded multicenter RCT (full rigor)</td>
-          </tr>
-          <tr>
-            <td><strong>Duration</strong></td>
-            <td>12 meses</td>
-            <td>8 meses</td>
-            <td>24 meses</td>
-          </tr>
-          <tr>
-            <td><strong>Objetivo</strong></td>
-            <td>Protocolo teórico</td>
-            <td>Viabilidade + safety + eficácia sinais</td>
-            <td>Efficacy definitiva + generalizability</td>
+            <td>Theoretical</td>
+            <td>—</td>
+            <td>DI Leve-Moderada</td>
+            <td>Phase 1: Leve-Mod | Phase 2: Severa-Prof</td>
           </tr>
           <tr>
             <td><strong>Rigor</strong></td>
             <td>Literature-based</td>
-            <td>Medium (open-label, single-site)</td>
-            <td>High (multicenter, blinded, safety-gated)</td>
+            <td><strong>Prospective planning</strong></td>
+            <td>Medium (OLBOA)</td>
+            <td>High (Blinded multicenter)</td>
           </tr>
           <tr>
             <td><strong>Appendices</strong></td>
             <td>—</td>
-            <td>All 7 (A–G implemented)</td>
-            <td>All 7 (expanded + enhanced)</td>
+            <td>Links aos A–G</td>
+            <td>All 7 implemented</td>
+            <td>All 7 (expanded)</td>
           </tr>
           <tr>
-            <td><strong>Budget Aprox.</strong></td>
+            <td><strong>Budget</strong></td>
             <td>$20–30K</td>
-            <td>$85–130K (+ pre-trials)</td>
-            <td>$500K–1M+ (multicenter)</td>
-          </tr>
-          <tr>
-            <td><strong>Funding Goal</strong></td>
-            <td>Completed (internal)</td>
-            <td>FINEP, CNPq, institutional support</td>
-            <td>CNPq Universal, FAPESP, international grants</td>
+            <td>—</td>
+            <td>$85–130K</td>
+            <td>$500K–1M+</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- COMO NAVEGAR O ESTUDO -->
+    <!-- NAVEGAÇÃO -->
     <section class="card">
       <h2>Como Navegar Este Estudo Multipartes</h2>
 
-      <h3>Se você quer entender a BASE TEÓRICA:</h3>
-      <p>👉 <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/proposta-teorica">Leia Parte I: Proposta Teórica</a></p>
-      <p><em>Inclui: revisão crítica de literatura, 5 lacunas identificadas, protocolo de avaliação estruturado em 3 fases</em></p>
+      <h3>📖 BASE TEÓRICA:</h3>
+      <p>👉 <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">Parte I: Proposta Teórica</a> | Revisão crítica, 5 lacunas, protocolo 3-fases</p>
 
-      <h3>Se você quer ver o ESTUDO PILOTO em detalhes:</h3>
-      <p>👉 <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/">Leia Parte II: Estudo Piloto Randomizado</a></p>
-      <p><em>Inclui: design completo, 3 braços, desfechos primários/secundários, análise estatística, cronograma Out 2025–Jun 2026</em></p>
+      <h3>🔍 LIMITAÇÕES & MITIGAÇÕES:</h3>
+      <p>👉 <a href="/blog/analise-critica-protocolo-dor-orofacial-deficiencia-intelectual/">Análise Crítica: 7 Limitações</a> | Citações, explicações didáticas, links Appendices, cronograma visual</p>
 
-      <h3>Se você quer contribuir como PARCEIRO INSTITUCIONAL:</h3>
-      <p>👉 <a href="#parcerias">Scroll para "Parcerias Institucionais"</a> ou contate: dr.paolo.bruno.squadrani@gmail.com</p>
-      <p><em>Benefícios: Coautoria, acesso antecipado, financiamento colaborativo, capacitação de equipes</em></p>
+      <h3>🧪 ESTUDO PILOTO:</h3>
+      <p>👉 <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/validacao-em-campo/">Parte II: Piloto Randomizado</a> | Design completo, 3 braços, desfechos, cronograma Out 2025–Jun 2026</p>
 
-      <h3>Se você quer IMPLEMENTAR O PROTOCOLO:</h3>
-      <p>👉 Download os 7 Appendices (A–G) acima</p>
-      <p><em>Cada appendix tem procedimentos prontos para implementação operativa</em></p>
+      <h3>🤝 PARCEIRO INSTITUCIONAL:</h3>
+      <p>👉 <a href="#parcerias">Parcerias Institucionais</a> | Coautoria, financiamento colaborativo, capacitação</p>
 
-      <h3>Se você quer entender a GOVERNANÇA & ÉTICA:</h3>
+      <h3>⚙️ IMPLEMENTAÇÃO:</h3>
+      <p>👉 Download 7 Appendices (A–G) acima | Procedimentos prontos para uso operativo</p>
+
+      <h3>⚖️ GOVERNANÇA & ÉTICA:</h3>
       <div class="nav-pills">
         <a class="nav-pill" href="/downloads/Appendix-B-DSMB-Charter.md">DSMB Charter</a>
         <a class="nav-pill" href="/downloads/Appendix-C-PAR-Committee.md">PAR Committee</a>
         <a class="nav-pill" href="/downloads/Appendix-E-Consent-Form.md">Plain Language Consent</a>
+        <a class="nav-pill" href="/blog/analise-critica-protocolo-dor-orofacial-deficiencia-intelectual/">Análise Crítica</a>
       </div>
     </section>
 
@@ -418,98 +408,87 @@
     <section class="card">
       <h2 id="parcerias">Parcerias Institucionais Abertas</h2>
 
-      <p>Buscamos parceiros em <strong>Santa Catarina, Brasil, e internacionalmente</strong> para implementar Parte II (Piloto 2025–2026).</p>
+      <p>Buscamos parceiros em <strong>Santa Catarina, Brasil, e internacionalmente</strong> para Parte II (Out 2025–Jun 2026).</p>
 
-      <h3>✓ O que oferecemos:</h3>
+      <h3>✓ Oferecemos:</h3>
       <ul>
-        <li><strong>Coautoria:</strong> Todos os parceiros listados como autores em artigos publicados</li>
-        <li><strong>Acesso antecipado:</strong> Resultados preliminares antes da publicação pública</li>
-        <li><strong>Capacitação:</strong> Workshop gratuito 4h para equipe + training contínuo</li>
-        <li><strong>Suporte operativo:</strong> Protocolo, formulários, templates, data management</li>
-        <li><strong>Financiamento colaborativo:</strong> CNPq, FINEP, fundações (co-proposal com parceiros)</li>
+        <li><strong>Coautoria</strong> em artigos publicados</li>
+        <li><strong>Acesso antecipado</strong> a resultados</li>
+        <li><strong>Workshop 4h grátis</strong> + training contínuo</li>
+        <li><strong>Suporte operativo:</strong> protocolos, templates, data management</li>
+        <li><strong>Financiamento colaborativo:</strong> CNPq, FINEP, fundações</li>
       </ul>
 
-      <h3>✓ O que pedimos:</h3>
+      <h3>✓ Pedimos:</h3>
       <ul>
-        <li><strong>Infraestrutura:</strong> Espaço para avaliações, equipamento básico (telefone/WhatsApp)</li>
-        <li><strong>Recrutamento:</strong> Identificar e convidar participantes elegíveis</li>
-        <li><strong>Implementação:</strong> Seguir protocolo rigorosamente, treinar equipe</li>
-        <li><strong>Documentação:</strong> Formulários completos, vídeos de qualidade, dados mensais</li>
+        <li>Infraestrutura para avaliações + equipamento básico</li>
+        <li>Recrutamento de participantes elegíveis</li>
+        <li>Implementação rigorosa do protocolo</li>
+        <li>Documentação de qualidade (vídeos, formulários, dados mensais)</li>
       </ul>
 
-      <div class="success-box">
-        <h4>✓ Tipos de Parceiros Buscados:</h4>
-        <ul>
-          <li>Hospitais universitários (UFSC, FURB, etc.)</li>
-          <li>Unidades SUS (centros de saúde especializados, ESF)</li>
-          <li>Clínicas privadas (odontologia, geriatria, reabilitação)</li>
-          <li>Centros de referência em deficiência intelectual</li>
-          <li>Instituições de longa permanência</li>
-        </ul>
-      </div>
-
-      <h3>Contato para Parcerias:</h3>
+      <h3>Contato:</h3>
       <p>
         <strong>Dr. Paolo Bruno Squadrani</strong><br>
-        📱 WhatsApp: <a href="https://wa.me/554798916649">(47) 98916-3649</a><br>
-        ✉️ E-mail: <a href="mailto:dr.paolo.bruno.squadrani@gmail.com">dr.paolo.bruno.squadrani@gmail.com</a><br>
-        🌐 Website: <a href="https://www.sorrisodomiciliar.com.br">www.sorrisodomiciliar.com.br</a>
+        📱 <a href="https://wa.me/554798916649">(47) 98916-3649</a> · 
+        ✉️ <a href="mailto:dr.paolo.bruno.squadrani@gmail.com">dr.paolo.bruno.squadrani@gmail.com</a> · 
+        🌐 <a href="https://www.sorrisodomiciliar.com.br">www.sorrisodomiciliar.com.br</a>
       </p>
     </section>
 
-    <!-- CRONOGRAMA RESUMIDO -->
+    <!-- CRONOGRAMA -->
     <section class="card">
-      <h2>Cronograma Resumido: Todos os Eventos</h2>
+      <h2>Cronograma: Out 2025 – Jun 2028</h2>
 
       <div class="timeline">
         <div class="timeline-item">
           <h5>Out–Nov 2025</h5>
-          <p><strong>Phase 0 Pilots</strong><br>NCCPC validation, epidemiology screening, telemedicine testing</p>
+          <p>Phase 0 Pilots<br>Validação + Epidemiologia</p>
         </div>
         <div class="timeline-item">
           <h5>Nov 2025–Jan 2026</h5>
-          <p><strong>Part II Setup & Enrollment</strong><br>Aprovação CEP, treinamento, randomização N=75</p>
+          <p>Setup Parte II<br>CEP + Treinamento</p>
         </div>
         <div class="timeline-item">
           <h5>Feb–Jun 2026</h5>
-          <p><strong>Part II Follow-up</strong><br>T0, T24–48h, T7/T30 assessments</p>
+          <p>Follow-up Parte II<br>T0, T24–48h, T7/T30</p>
         </div>
         <div class="timeline-item">
           <h5>Apr–Jun 2026</h5>
-          <p><strong>Interim Analysis & Go/No-Go</strong><br>DSMB review, publication prep</p>
+          <p>Análise + Go/No-Go<br>DSMB review</p>
         </div>
         <div class="timeline-item">
           <h5>Jul 2026–Jun 2028</h5>
-          <p><strong>Part III RCT Multicentric</strong><br>Phase 1 (Mild-Moderate) + Phase 2 (Severe-Profound)</p>
+          <p>Parte III RCT<br>Multicenter</p>
         </div>
         <div class="timeline-item">
           <h5>Jun–Dec 2028</h5>
-          <p><strong>Final Analysis & Dissemination</strong><br>Manuscripts, conferences, SUS integration</p>
+          <p>Final Analysis<br>Disseminação</p>
         </div>
       </div>
     </section>
 
     <!-- CONCLUSÃO -->
     <section class="card">
-      <h2>Conclusão & Próximos Passos</h2>
+      <h2>Conclusão: Research Justice para Populações Vulneráveis</h2>
 
-      <p>Este estudo multipartes (<strong>Teórico → Piloto → Definitivo</strong>) representa o estado-da-arte em <strong>research justice para populações vulneráveis</strong>. Através de:</p>
+      <p>Este estudo multipartes integrado com <strong>Análise Crítica estruturada</strong> representa best-practice em pesquisa responsável:</p>
 
       <ul>
-        <li>✓ <strong>Rigor metodológico:</strong> Pre-trials, SAP pré-registrado, fidelity monitoring, objective withdrawal attribution</li>
-        <li>✓ <strong>Governança autêntica:</strong> DSMB independence com halt authority, PAR voting authority, contracess mechanisms</li>
-        <li>✓ <strong>Transparência radical:</strong> 7 appendices publicadas, open science, null results reportados equally</li>
-        <li>✓ <strong>Proteção de população vulnerável:</strong> Pain assessment compassionate, supported decision-making, harassment-free environment</li>
+        <li>✓ <strong>Rigor:</strong> Pre-trials, SAP pré-registrado, fidelity monitoring, objective withdrawal</li>
+        <li>✓ <strong>Transparência:</strong> 7 limitações + mitigações prospectivas + citações precisas</li>
+        <li>✓ <strong>Governança:</strong> DSMB independent, PAR voting, contracess mechanisms</li>
+        <li>✓ <strong>Proteção:</strong> Pain assessment compassionate, supported decision-making</li>
       </ul>
 
       <div class="success-box">
-        <h4>🚀 Próximos Passos Imediatos (Out–Nov 2025):</h4>
+        <h4>🚀 Imediato (Out–Nov 2025):</h4>
         <ol>
-          <li>Implementar Phase 0 Pilots (NCCPC-R responsiveness, epidemiology screening, telemedicine feasibility)</li>
-          <li>Assegurar aprovações IRB/CONEP + LGPD compliance</li>
-          <li>Recrutar primeiros parceiros institucionais para Parte II</li>
-          <li>Finalizar DSMB e PAR Committee memberships</li>
-          <li>Publicar Parte I Proposta Teórica em periódico de impacto</li>
+          <li>Implementar Phase 0 Pilots</li>
+          <li>Aprovações CEP/CONEP + LGPD</li>
+          <li>Recrutar parceiros Parte II</li>
+          <li>Finalizar DSMB + PAR memberships</li>
+          <li>Publicar Parte I em periódico de impacto</li>
         </ol>
       </div>
 
