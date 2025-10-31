@@ -69,9 +69,13 @@
     .post-list{margin-top:24px;display:grid;gap:16px}
     .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
     .post h2{margin:0 0 6px;font-size:22px}
-    .meta{color:var(--muted);font-size:14px}
-    .post a{color:var(--accent);text-decoration:none}
-    .post a:hover{text-decoration:underline}
+    .post h2 a{color:var(--accent)}
+    .post h2 a:hover{text-decoration:underline}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:12px}
+    .post-description{font-size:15px;color:var(--text);line-height:1.6}
+    .post-description strong{color:var(--accent);font-weight:600}
+    .read-more{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-weight:500}
+    .read-more:hover{text-decoration:underline}
 
     footer{color:var(--muted);font-size:14px;padding:20px 0;text-align:center}
   </style>
@@ -118,7 +122,7 @@
 
     <!-- Lista de artigos -->
     <section class="post-list" aria-label="Artigos recentes">
-      <!-- Artigo AGGIORNATO -->
+      <!-- Artigo REVISADO -->
       <article class="post" itemscope itemtype="https://schema.org/Article">
         <h2 itemprop="headline">
           <a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/">
@@ -129,17 +133,20 @@
           Autor: <span itemprop="author">Dr. Paolo Bruno Squadrani</span> · Publicado:
           <time datetime="2025-10-10" itemprop="datePublished">10 out 2025</time> 
         </p>
-        <p itemprop="description">
-          <strong>Contexto:</strong> O manejo da dor orofacial em pessoas com deficiência intelectual permanece um desafio clínico significativo, impulsionado por exclusão sistemática desta população da pesquisa clínica. Apesar de carga epidemiológica substancial (odds 2,3 vezes maior de dor de dente; 32% prevalência de disfunção temporomandibular), indivíduos com deficiência intelectual têm a maior carga de dor e o menor acesso ao cuidado baseado em evidência.
-          <br><br>
-          <strong>Lacuna de Evidência:</strong> Uma revisão sistemática abrangente (PRISMA 2020) confirma ausência quase total de ensaios clínicos randomizados (RCTs) de alta qualidade para manejo de dor orofacial nesta população. Este projeto em três fases responde diretamente a cinco lacunas críticas identificadas: (1) ausência de RCTs; (2) responsividade não comprovada de escalas comportamentais a intervenções farmacológicas; (3) lacuna de dados farmacocinéticos e de segurança em comorbidades; (4) vazio de evidências sobre intervenções multimodais integradas; (5) exclusão sistemática da deficiência intelectual grave.
-          <br><br>
-          <strong>Desenho do Estudo:</strong> Ensaio clínico randomizado controlado multicêntrico, 3 braços, com desenho sequencial <em>safety-gated</em> (Fase 1: N≤150 deficiência leve–moderada; Fase 2: N≤45 deficiência grave em ambientes supervisionados). <strong>Inovações metodológicas:</strong> decomposição de intervenção multimodal para isolar contribuição de técnicas comportamentais mediante comparação hierárquica (Grupo B vs. C); inclusão responsável de pessoas com deficiência grave por meio de monitoramento de segurança quantificado e aprovação sequencial do Data and Safety Monitoring Board (DSMB); validação de escalas comportamentais (NCCPC-R, CPS-NAID) para responsividade a intervenções; sub-estudo farmacocinético em contextos de polypharmacy e comorbidades.
-          <br><br>
-          <strong>Outcomes Primários:</strong> (1) Redução da frequência de comportamentos autolesivos relacionados à dor (outcome clínico direto); (2) Melhoria da função alimentar e qualidade de vida (outcome funcional); (3) Validação da responsividade de escalas comportamentais mediante correlação com mudanças clinicamente significativas (outcome metodológico).
-          <br><br>
-          <strong>Implicações:</strong> Este estudo fornecerá a primeira evidência RCT-nível para manejo de dor orofacial em deficiência intelectual, estabelecendo metodologia para pesquisa inclusiva em populações vulneráveis e direcionamento clínico para prática baseada em evidência. Aprovações éticas (CEP/CONEP) e conformidade LGPD em curso. Sem conflitos de interesse.
-        </p>
+        <div class="post-description" itemprop="description">
+          <p><strong>Desafio:</strong> Pessoas com deficiência intelectual têm <strong>2,3 vezes mais dor dentária</strong> do que população geral, mas são <strong>sistematicamente excluídas</strong> de pesquisas clínicas. Como avaliar e tratar dor orofacial quando comunicação é limitada?</p>
+          
+          <p><strong>Nossa Resposta:</strong> Estudo integrado em <strong>3 partes sequenciais</strong>:</p>
+          <ul style="margin:10px 0; padding-left:20px; font-size:15px;">
+            <li><strong>Parte I – Proposta Teórica:</strong> Protocolo estruturado de avaliação em 3 fases (triagem com escalas validadas, anamnese dirigida, exame clínico gentil)</li>
+            <li><strong>Parte II – Piloto Randomizado:</strong> N≤75 pessoas com deficiência leve-moderada testando estratégia multimodal (farmacológica + comportamental)</li>
+            <li><strong>Parte III – RCT Multicêntrico:</strong> N=150–200 com segurança-gating, expandindo para deficiência grave</li>
+          </ul>
+          
+          <p><strong>Por Que Importa:</strong> Primeira evidência RCT-nível para manejo de dor orofacial em deficiência intelectual + metodologia modelo para <strong>pesquisa inclusiva</strong> em populações vulneráveis.</p>
+          
+          <p style="margin-top:16px;"><a href="/blog/estudo-de-protocolo-estruturado-para-analgesia-e-avaliacao-orofacial-em-pessoas-com-deficiencia-intelectual/" class="read-more">Leia as 3 partes completas →</a></p>
+        </div>
       </article>
     </section>
   </main>
